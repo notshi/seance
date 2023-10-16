@@ -25,24 +25,40 @@ Dead Painters Seance
 	<div class="star-8 stars"></div>
 	<div class="star-9 stars"></div>
 	<div class="star-10 stars"></div>
-	<div class="title_wrap">
-		<div class="title d">Dead</div>
-		<div id="letters">
-		  <span class="letter">D</span>
-		  <span class="letter">e</span>
-		  <span class="letter">a</span>
-		  <span class="letter">d</span>
-		</div>
-		<div class="title p">Painters</div>
-		<div class="title s">Seance</div>
-		<div class="read_wrap">
-			<a href="candle.html" class="read">Start</a>
-		</div>
-	</div>
+	{flame}
+	{candle}
 </div>
 
 #^css same=append
-.fog	{background:transparent;}
-.read_wrap {text-align:center;}
 
 
+#^flame trim=ends
+<div class="candle_wrap">
+	<div class="candle">
+	  <div class="flame">
+		<div class="shadows"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
+	  </div>
+	  <div class="wax"></div>
+	</div>
+</div>
+
+#^candle trim=ends
+<div class="wrap">
+	<div class="talk_wrap">
+		<div class="talky">
+			<div class="name">
+				???
+			</div>
+			<div class="quest">
+				That's much better. Wait, something's coming.
+			</div>
+			<div class="read_wrap">
+				<a href="grief1.html" class="read">
+					Yes
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
