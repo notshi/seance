@@ -5,26 +5,13 @@
 Dead Painters Seance
 
 #^------------------------------
-#^body trim=ends form=markdown
+#^body trim=ends
 
-<div class="fog">
-	<div class="over">
-		{start}
-	</div>
-</div>
+{play}
 
 #^start trim=ends
 <div class="wrap">
-	<div class="star-1 stars"></div>
-	<div class="star-2 stars"></div>
-	<div class="star-3 stars"></div>
-	<div class="star-4 stars"></div>
-	<div class="star-5 stars"></div>
-	<div class="star-6 stars"></div>
-	<div class="star-7 stars"></div>
-	<div class="star-8 stars"></div>
-	<div class="star-9 stars"></div>
-	<div class="star-10 stars"></div>
+	{stars}
 	<div class="title_wrap">
 		<div class="woe"></div>
 		<div class="title d">
@@ -56,7 +43,7 @@ Dead Painters Seance
 
 #^css same=append
 .fog	{background:transparent;}
-.read_wrap {text-align:center; margin:-3em;}
+.read_wrap {text-align:center;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 	.read_wrap	{margin:-1em;}
