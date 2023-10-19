@@ -5,7 +5,6 @@
     <meta name="Dead Painters Seance">
     <title>Dead Painters Seance</title>
 <style>
-
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
 /*	garamondtitalic	*/
@@ -62,25 +61,42 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .skip-link		{background:#665645; border-radius:0 0 6px 6px; color:#fff; height:30px; left:50%; padding:6px; position:absolute; transform:translateY(-100%); transition:transform 0.3s;}
 .skip-link:focus{transform:translateY(0%);}
 
+.wrap	{margin:0 auto; padding:0; position:relative; overflow:hidden;}
+
+/*	main background	*/
 .fog	{width:100%; height:100vh; background:url('./data/fog_back.png'); animation:flay 100s linear infinite;}
 .over	{background-color:#000; margin:0 auto; padding:0; width:100%; background:linear-gradient(0deg,#020024e0 23%,#160a2b5e 64%,#3f2d488f 100%); height:100vh;}
 @keyframes play {0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;}}
 @keyframes flay {0% {background-position:0px 0px;} 100% {background-position:-1920px 0px;}}
 
-.wrap	{margin:0 auto; padding:0; position:relative; overflow:hidden;}
-.img	{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg') center center no-repeat; height:100vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
-@keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
+/*	background stars	*/
+.stars	{background-color:white; height:3px; width:3px; border-radius:50%; box-shadow:1px 0px 20px #fff;}
+.star-1 {position:absolute; top:15vh; left:35%; animation:twi1 5s ease-in infinite;}
+.star-2 {position:absolute; top:11vh; left:65%; animation:twi2 3s ease-in infinite;}
+.star-3 {position:absolute; top:5vh; left:50%; animation:twi3 2s ease-in infinite;}
+.star-4 {position:absolute; top:35vh; left:5%; animation:twi1 1s ease-in infinite;}
+.star-5 {position:absolute; top:45vh; left:95%; animation:twi2 4s ease-in infinite;}
+.star-6 {position:absolute; top:60vh; left:80%; animation:twi3 1.5s ease-in infinite;}
+.star-7 {position:absolute; top:22vh; left:30%; animation:twi3 2.5s ease-in infinite;}
+.star-8 {position:absolute; top:55vh; left:45%; animation:twi1 7s ease-in infinite;}
+.star-9 {position:absolute; top:40vh; left:70%; animation:twi2 6s ease-in infinite;}
+.star-10 {position:absolute; top:70vh; left:10%; animation:twi3 2.5s ease-in infinite;}
 
+@keyframes twi1 {0% {transform:scale(0.3); opacity:0.3;} 40% {transform:scale(0.3); opacity:0.3;} 50% {transform:scale(1); opacity:0.3;} 60% {transform:scale(0.3); opacity:0.3;} 100% {transform:scale(0.3); opacity:0.3;}}
+@keyframes twi2 {0% {transform:scale(0.5); opacity:0.5;} 40% {transform:scale(0.5); opacity:0.5;} 50% {transform:scale(1); opacity:0.5;} 60% {transform:scale(0.5); opacity:0.5;} 100% {transform:scale(0.5); opacity:0.5;}}
+@keyframes twi3 {0% {transform:scale(0.1); opacity:0.4;} 40% {transform:scale(0.1); opacity:0.4;} 50% {transform:scale(1); opacity:0.4;} 60% {transform:scale(0.1); opacity:0.4;} 100% {transform:scale(0.1); opacity:0.4;}}
+
+/*	landing page	*/
 .woe	{width:25%; height:25vh; margin:0 auto; border:6px double #2f2753; border-radius:2px; background:url('./data/woe.jpg') center center no-repeat; background-size:cover;}
-
-.title_wrap	{margin:0 auto; padding-top:5em; height:100vh; width:50vw;}
+.title_wrap	{margin:0 auto; padding-top:5em; text-align:center; height:100vh; width:50vw;}
 .title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-shadow:1px -2px 17px #5557d0;}
-.title.d 	{transform:translate(120px,10%) skew(-5deg);}
-.title.p	{transform:translate(35px,-20%) skew(8deg);}
-.title.s 	{transform:translate(270px,-50%) skew(-13deg); font-size:105px;}
+.title.d 	{margin-left:-0.5em; transform:skew(-5deg);}
+.title.p	{line-height:0.45em; transform:skew(8deg); padding-bottom:15px;}
+.title.s 	{margin-left:2.5em; transform:skew(-13deg); font-size:105px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
-#letters	{position:absolute; top:0em; left:0em; display:flex; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
+/*	ghost letters for title	*/
+#letters	{position:absolute; top:0em; left:0em; right:0; display:flex; justify-content:center; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
 #letters .letter		{animation:up 10s infinite linear;
 &:nth-child(2){animation-delay:2s;}
 &:nth-child(3){animation-delay:1.4s;}
@@ -102,6 +118,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 100% {transform:translate(0,0) skew(0);}}
 @keyframes fade {0% {opacity:1;} 70% {opacity:0.5;} 100% {opacity:1;}}
 
+/*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:960px; min-width:480px; margin:0 auto; padding-bottom:3em;}
 .talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:50vh; margin:0 auto;}
 .name	{color:#d0ce55; font-size:32px; font-family:'garamondtitalic',sans-serif;}
@@ -110,22 +127,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .read	{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif;}
 .read:hover	{background:#361EA5;}
 
-.stars	{background-color:white; height:3px; width:3px; border-radius:50%; box-shadow:1px 0px 20px #fff;}
-.star-1 {position:absolute; top:15vh; left:35%; animation:twi1 5s ease-in infinite;}
-.star-2 {position:absolute; top:11vh; left:65%; animation:twi2 3s ease-in infinite;}
-.star-3 {position:absolute; top:5vh; left:50%; animation:twi3 2s ease-in infinite;}
-.star-4 {position:absolute; top:35vh; left:5%; animation:twi1 1s ease-in infinite;}
-.star-5 {position:absolute; top:45vh; left:95%; animation:twi2 4s ease-in infinite;}
-.star-6 {position:absolute; top:60vh; left:80%; animation:twi3 1.5s ease-in infinite;}
-.star-7 {position:absolute; top:22vh; left:30%; animation:twi3 2.5s ease-in infinite;}
-.star-8 {position:absolute; top:55vh; left:45%; animation:twi1 7s ease-in infinite;}
-.star-9 {position:absolute; top:40vh; left:70%; animation:twi2 6s ease-in infinite;}
-.star-10 {position:absolute; top:70vh; left:10%; animation:twi3 2.5s ease-in infinite;}
-
-@keyframes twi1 {0% {transform:scale(0.3); opacity:0.3;} 40% {transform:scale(0.3); opacity:0.3;} 50% {transform:scale(1); opacity:0.3;} 60% {transform:scale(0.3); opacity:0.3;} 100% {transform:scale(0.3); opacity:0.3;}}
-@keyframes twi2 {0% {transform:scale(0.5); opacity:0.5;} 40% {transform:scale(0.5); opacity:0.5;} 50% {transform:scale(1); opacity:0.5;} 60% {transform:scale(0.5); opacity:0.5;} 100% {transform:scale(0.5); opacity:0.5;}}
-@keyframes twi3 {0% {transform:scale(0.1); opacity:0.4;} 40% {transform:scale(0.1); opacity:0.4;} 50% {transform:scale(1); opacity:0.4;} 60% {transform:scale(0.1); opacity:0.4;} 100% {transform:scale(0.1); opacity:0.4;}}
-
+/*	candle	*/
 .candle_wrap	{display:flex; position:absolute; top:0; right:0; left:0; margin:0 auto; bottom:0; width:100%; height:100%;}
 .candle	{width:34px; margin:30px auto 0 auto; position:relative; height:80%; align-self:flex-end; animation:blink 0.1s infinite;}
 .flame	{width:20px; height:150px; margin:0px auto; position:relative; animation:move 3s infinite, move-left 3s infinite; transform-origin:50% 90%;}
@@ -138,6 +140,41 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes move-left {50% {transform:skewX(3deg);}}
 @keyframes flame-up {50% {box-shadow:0 0px 0px 3px white, 0 -38px 1px 2px white, 0 -41px 2px 3px gold, 0 -50px 5px 4px #ff6a00, 0 0px 150px 10px #ff6a00, 0 -10px 2px 4px white, 0 -5px 3px 3px white;}}
 @keyframes blink {50% {opacity:0.95;}}
+
+/*	tarot cards	*/
+.img	{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg') center center no-repeat; height:100vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
+@keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
+
+/*	spirit cards	*/
+#container {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  border: 1px solid #000;
+  display:grid;
+  grid-template-columns:30px;
+  grid-template-rows:30px;
+  place-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.item {
+  grid-area:1/1;
+  background:url('./data/grief/grief1.jpg') center center no-repeat; height:10vh; width:10vw;
+  animation:spin 12s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+  transform:rotate(0) translate(100px) rotate(0);
+  background-size:contain;
+}
+@keyframes spin {
+  100% {
+    transform:rotate(1turn) translate(100px) rotate(-1turn);
+  }
+}
+
+
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 	.img	{width:100vw; height:55vh; background-size:contain;}
@@ -156,7 +193,6 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.img	{width:100vw; background-size:contain;}
 }
-
 
 </style>
 </head>
