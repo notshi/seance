@@ -68,25 +68,25 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .woe	{width:25%; height:25vh; margin:0 auto; border:6px double #2f2753; border-radius:2px; background:url('{_root}data/woe.jpg') center center no-repeat; background-size:cover;}
 
 .title_wrap	{margin:0 auto; padding-top:5em; height:100vh; width:50vw;}
-.title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-align:center; text-shadow:1px -2px 17px #5557d0;}
-.title.d 	{transform:translate(-35px,10%) skew(-5deg);}
-.title.p	{transform:translate(0,-20%) skew(8deg);}
-.title.s 	{transform:translate(132px,-50%) skew(-13deg); font-size:105px;}
+.title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-shadow:1px -2px 17px #5557d0;}
+.title.d 	{transform:translate(120px,10%) skew(-5deg);}
+.title.p	{transform:translate(35px,-20%) skew(8deg);}
+.title.s 	{transform:translate(270px,-50%) skew(-13deg); font-size:105px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
-#letters	{position:absolute; top:0em; left:1.60em; display:flex; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;
-.letter		{animation:up 10s infinite linear;
+#letters	{position:absolute; top:0em; left:0em; display:flex; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
+#letters .letter		{animation:up 10s infinite linear;
 &:nth-child(2){animation-delay:2s;}
 &:nth-child(3){animation-delay:1.4s;}
 &:nth-child(4){animation-delay:0.8s;}
-&:nth-child(5){animation-delay:0.1s;}}}
-#letters.seance	{left:1.85em; font-size:105px;
-.letter		{animation:up 10s infinite linear;
+&:nth-child(5){animation-delay:0.1s;}}
+#letters.seance	{font-size:105px;}
+#letters.seance .letter	{animation:up 10s infinite linear;
 &:nth-child(2){animation-delay:1.6s;}
 &:nth-child(3){animation-delay:2.1s;}
 &:nth-child(4){animation-delay:0.4s;}
 &:nth-child(5){animation-delay:0.8s;}
-&:nth-child(6){animation-delay:0.2s;}}}
+&:nth-child(6){animation-delay:0.2s;}}
 @keyframes up {
 0% {transform:translate(0,0) skew(0);}
 20% {transform:translate(0,-2%) skew(-5deg);}
