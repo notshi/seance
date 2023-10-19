@@ -116,15 +116,25 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:960px; min-width:480px; margin:0 auto; padding-bottom:3em;}
 .talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:50vh; margin:0 auto;}
-.name	{color:#d0ce55; font-size:32px; font-family:'garamondtitalic',sans-serif;}
+.name	{color:#d0ce55; font-size:38px; font-family:'garamondtitalic',sans-serif;}
+.grief	{color:#B357E6;}
 .quest	{color:#fff; font-size:26px;}
-.read_wrap	{text-align:right;}
+.quest span	{font-style:italic; font-size:24px;}
+
+.read_wrap	{text-align:right; margin-top:20px;}
+.say_wrap	{text-align:center; margin-top:20px; display:flex; align-items:center;}
 .read	{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif;}
 .read:hover	{background:#361EA5;}
+.say	{color:#b2b6f2; font-size:18px; margin-top:10px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace;}
+.say:hover	{background:#361EA5;}
+
+.arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg);}
+.arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg);}
+
 
 /*	candle	*/
 .candle_wrap	{display:flex; position:absolute; top:0; right:0; left:0; margin:0 auto; bottom:0; width:100%; height:100%;}
-.candle	{width:34px; margin:30px auto 0 auto; position:relative; height:80%; align-self:flex-end; animation:blink 0.1s infinite;}
+.candle	{width:34px; margin:30px auto 0 auto; position:relative; height:60%; align-self:flex-end; animation:blink 0.1s infinite;}
 .flame	{width:20px; height:150px; margin:0px auto; position:relative; animation:move 3s infinite, move-left 3s infinite; transform-origin:50% 90%;}
 .flame .top {width:20px; height:100%; position:absolute; top:0; left:0; background:white; border-top-left-radius:500%; border-bottom-left-radius:50px; border-top-right-radius:500%; border-bottom-right-radius:50px; transform:skewY(-10deg); box-shadow:0 0px 0px 3px white, 0 -20px 1px 4px white, 0 -25px 2px 3px gold, 0 -30px 5px 4px #ff6a00, 0 0px 150px 10px #ff6a00, 0 -10px 2px 4px white, 0 -5px 3px 3px white; animation:flame-up 4s infinite;}
 .flame .shadows {position:absolute; left:50%; top:0; width:1px; height:60px; border-radius:50%; box-shadow:0 5px 20px 15px gold, 0 0px 100px 20px #ff6a00, 0 15px 50px 15px #ff6a00, 5px 30px 5px 13px #ff6a00, 5px 50px 5px 13px #ff6a00, 0 75px 50px 30px black;}
@@ -140,35 +150,31 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .img	{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('{_root}data/grief/grief1.jpg') center center no-repeat; height:100vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
-/*	spirit cards	*/
-#container {
-  width: 200px;
-  height: 200px;
-  margin: 40px auto;
-  border: 1px solid #000;
-  display:grid;
-  grid-template-columns:30px;
-  grid-template-rows:30px;
-  place-content: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-.item {
-  grid-area:1/1;
-  background:url('{_root}data/grief/grief1.jpg') center center no-repeat; height:10vh; width:10vw;
-  animation:spin 12s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
-  transform:rotate(0) translate(100px) rotate(0);
-  background-size:contain;
-}
-@keyframes spin {
-  100% {
-    transform:rotate(1turn) translate(100px) rotate(-1turn);
-  }
-}
+/*	ghosts	*/
+.g1_handle,
+.g2_handle,
+.g3_handle,
+.g4_handle	{position:absolute; top:18em; left:-100px; width:0; height:0; overflow:visible; animation:run 15s cubic-bezier(.21,.67,.72,.28) infinite;}
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9	{position:relative; top:-100px; left:-100px; width:200px; height:200px; background:url('{_root}data/grief/grief1_a.jpg') center center / contain no-repeat; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.2; animation:big 15s linear infinite;}
+.g2	{background:url('{_root}data/grief/grief2_a.jpg') center center / contain no-repeat;}
+.g3	{background:url('{_root}data/grief/grief3_a.jpg') center center / contain no-repeat;}
+.g4	{background:url('{_root}data/guilt/guilt1_a.jpg') center center / contain no-repeat;}
+.g5	{background:url('{_root}data/guilt/guilt2_a.jpg') center center / contain no-repeat;}
+.g6	{background:url('{_root}data/guilt/guilt3_a.jpg') center center / contain no-repeat;}
+.g7	{background:url('{_root}data/fear/fear1_a.jpg') center center / contain no-repeat;}
+.g8	{background:url('{_root}data/fear/fear2_a.jpg') center center / contain no-repeat;}
+.g9	{background:url('{_root}data/fear/fear3_a.jpg') center center / contain no-repeat;}
+.g10{background:url('{_root}data/shame/shame1_a.jpg') center center / contain no-repeat;}
+.g11{background:url('{_root}data/shame/shame2_a.jpg') center center / contain no-repeat;}
+.g12{background:url('{_root}data/shame/shame3_a.jpg') center center / contain no-repeat;}
 
+@keyframes run {0%{left:110vw;} 50%{} 100%{left:-10vw;}}
+@keyframes big {0%{} 50%{top:-240px; left:-240px; width:480px; height:480px; opacity:0.95;} 100%{}}
+
+.g2_handle, .g2{animation-delay:10s;}
+.g3_handle, .g3{animation-delay:20s;}
+.g4_handle, .g4{animation-delay:30s;}
+.g5_handle, .g5{animation-delay:20s;}
 
 
 @media (min-width: 360px) and (max-width: 767.98px) {
