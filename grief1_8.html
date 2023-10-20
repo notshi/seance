@@ -81,6 +81,16 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .star-8 {position:absolute; top:55vh; left:45%; animation:twi1 7s ease-in infinite;}
 .star-9 {position:absolute; top:40vh; left:70%; animation:twi2 6s ease-in infinite;}
 .star-10 {position:absolute; top:70vh; left:10%; animation:twi3 2.5s ease-in infinite;}
+.star-11 {position:absolute; top:3vh; left:25%; animation:twi1 5s ease-in infinite;}
+.star-12 {position:absolute; top:7vh; left:5%; animation:twi2 3s ease-in infinite;}
+.star-13 {position:absolute; top:20vh; left:80%; animation:twi3 2s ease-in infinite;}
+.star-14 {position:absolute; top:30vh; left:35%; animation:twi1 1s ease-in infinite;}
+.star-15 {position:absolute; top:31vh; left:87%; animation:twi2 4s ease-in infinite;}
+.star-16 {position:absolute; top:50vh; left:40%; animation:twi3 1.5s ease-in infinite;}
+.star-17 {position:absolute; top:12vh; left:20%; animation:twi3 2.5s ease-in infinite;}
+.star-18 {position:absolute; top:27vh; left:61%; animation:twi1 7s ease-in infinite;}
+.star-19 {position:absolute; top:66vh; left:50%; animation:twi2 6s ease-in infinite;}
+.star-20 {position:absolute; top:42vh; left:17%; animation:twi3 2.5s ease-in infinite;}
 
 @keyframes twi1 {0% {transform:scale(0.3); opacity:0.3;} 40% {transform:scale(0.3); opacity:0.3;} 50% {transform:scale(1); opacity:0.3;} 60% {transform:scale(0.3); opacity:0.3;} 100% {transform:scale(0.3); opacity:0.3;}}
 @keyframes twi2 {0% {transform:scale(0.5); opacity:0.5;} 40% {transform:scale(0.5); opacity:0.5;} 50% {transform:scale(1); opacity:0.5;} 60% {transform:scale(0.5); opacity:0.5;} 100% {transform:scale(0.5); opacity:0.5;}}
@@ -121,17 +131,21 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:960px; min-width:480px; margin:0 auto; padding-bottom:3em;}
 .talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:50vh; margin:0 auto;}
-.name	{color:#d0ce55; font-size:38px; font-family:'garamondtitalic',sans-serif;}
+.name	{color:#d0ce55; font-size:28px; line-height:2em; font-family:'garamondtitalic',sans-serif;}
 .grief	{color:#B357E6;}
-.quest	{color:#fff; font-size:26px;}
-.quest span	{font-style:italic; font-size:24px;}
+.quest	{color:#fff; font-size:30px; line-height:1.25em;}
+.quest span	{display:block; font-style:italic; font-size:24px; line-height:1.25em;}
 
 .read_wrap	{text-align:right; margin-top:20px;}
-.say_wrap	{text-align:center; margin-top:20px; display:flex; align-items:center;}
-.read	{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif;}
+.read		{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif;}
 .read:hover	{background:#361EA5;}
-.say	{color:#b2b6f2; font-size:18px; margin-top:10px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace;}
+.read:hover, .read:focus, .read:active {animation:buzz 0.15s linear infinite;}
+@keyframes buzz	{50% {transform:translateX(3px) rotate(2deg);} 100% {transform:translateX(-3px) rotate(-2deg);}}
+
+.say_wrap	{text-align:center; margin-top:20px; display:flex; align-items:center;}
+.say		{color:#b2b6f2; font-size:18px; line-height:22px; margin-top:10px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform;}
 .say:hover	{background:#361EA5;}
+.say:hover, .say:focus, .say:active {transform:scale(1.05);}
 
 .arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg);}
 .arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg);}
@@ -214,6 +228,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 <div class="star-8 stars"></div>
 <div class="star-9 stars"></div>
 <div class="star-10 stars"></div>
+<div class="star-11 stars"></div>
+<div class="star-12 stars"></div>
+<div class="star-13 stars"></div>
+<div class="star-14 stars"></div>
+<div class="star-15 stars"></div>
+<div class="star-16 stars"></div>
+<div class="star-17 stars"></div>
+<div class="star-18 stars"></div>
+<div class="star-19 stars"></div>
+<div class="star-20 stars"></div>
 	<div class="wrap">
 	<div class="img"></div>
 	<div class="talk_wrap">
@@ -228,7 +252,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 				<div class="arrow_wrap">
 					<div class="arrow_l"></div>
 				</div>
-				<a href="grief1_8a.html" class="say">
+				<a href="grief1_9.html" class="say">
 					I have had an addiction of some sort; alcohol, drugs, food, sex, etc.
 				</a>
 				<div class="arrow_wrap">
