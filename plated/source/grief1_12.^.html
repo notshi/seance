@@ -10,14 +10,14 @@ Dead Painters Seance
 {play}
 
 #^start trim=ends
-<div class="wrap">
+<div class="main_wrap">
 	{stars}
 	{q1}
 </div>
 
 #^css same=append
-.img	{filter:brightness(1); opacity:1.0; animation:show 2.5s steps(40,end);}
-.talky	{animation:slow_show 3.5s steps(140,end);}
+.img	{filter:brightness(1); opacity:1.0; animation:show 3s steps(40,end),glitch 2s infinite linear alternate-reverse;}
+.talky	{animation:slow_show 3s steps(140,end);}
 
 #^q1 trim=ends
 <div class="wrap">
@@ -25,7 +25,7 @@ Dead Painters Seance
 	<div class="talk_wrap">
 		<div class="talky">
 			<div class="name">
-				A voice
+				Voice
 			</div>
 			<div class="quest">
 				Ahh ~ interesting. This spirit seems stronger than it was before. What did you do?
