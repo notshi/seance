@@ -1,7 +1,9 @@
 
 const wally=exports
 
-let args = require("minimist")(process.argv.slice(2),{boolean:true})
+const wally_work = require("./wally_work.js")
+
+const args = require("minimist")(process.argv.slice(2),{boolean:true})
 
 //console.log(args)
 
@@ -20,12 +22,16 @@ wally work
 wally help
 	Print this help message.
 `)
+	return
 }
 else
 if( cmd=="work" )
 {
+	let opts={}
+	return wally_work.start(opts) // this is async but we do not wait
 }
 else
 {
 	console.log(` Unknown wally command "${cmd}" `)
+	return
 }
