@@ -10,10 +10,14 @@ Dead Painters Seance
 {play}
 
 #^start trim=ends
-<div class="wrap">
+<div class="main_wrap">
 	{stars}
 	{q1}
 </div>
+
+#^css same=append
+.img	{animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse;}
+.talky	{animation:slow_show 3s steps(140,end);}
 
 #^q1 trim=ends
 <div class="wrap">
@@ -21,13 +25,13 @@ Dead Painters Seance
 	<div class="talk_wrap">
 		<div class="talky">
 			<div class="name">
-				A voice
+				Voice
 			</div>
 			<div class="quest">
-				You have captured a <span class="emo">GRIEF</span> spirit but it is weak. It needs to resonate with your humanity in order to manifest.
+				You have captured a <span class="gri">GRIEF</span> spirit but it is weak. It needs to resonate with your humanity in order to manifest.
 			</div>
 			<div class="read_wrap">
-				<a href="reason.html" class="read">
+				<a href="gotcha1.html" class="read">
 					Resonate
 				</a>
 			</div>

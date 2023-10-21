@@ -10,13 +10,15 @@ Dead Painters Seance
 {play}
 
 #^start trim=ends
-<div class="wrap">
+<div class="main_wrap">
 	{stars}
 	{flame}
 	{candle}
 </div>
 
 #^css same=append
+.candle_wrap	{animation:show 3s steps(40,end);}
+.talky	{animation:slow_show 2.5s steps(140,end);}
 
 
 #^flame trim=ends
@@ -36,10 +38,10 @@ Dead Painters Seance
 	<div class="talk_wrap">
 		<div class="talky">
 			<div class="name">
-				A voice
+				Voice
 			</div>
 			<div class="quest">
-				That's much better. Wait, there is something approaching.
+				Oh ~ that's much better ... <span class="warn">Be still</span>, I sense a disturbance. Something is near.
 			</div>
 			<div class="read_wrap">
 				<a href="ghosts.html" class="read" id="aux1">

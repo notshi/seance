@@ -10,13 +10,14 @@ Dead Painters Seance
 {play}
 
 #^start trim=ends
-<div class="wrap">
+<div class="main_wrap">
 	{stars}
 	{q1}
 </div>
 
 #^css same=append
-.img	{filter:grayscale(0.1) brightness(1.3) invert(0.8);}
+.img	{filter:grayscale(0.1) brightness(1.3) invert(0.8); animation:show 3s steps(40,end),glitch 2s infinite linear alternate-reverse;}
+.talky	{animation:slow_show 2.5s steps(140,end);}
 
 #^q1 trim=ends
 <div class="wrap">

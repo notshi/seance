@@ -17,22 +17,20 @@ Dead Painters Seance
 
 #^css same=append
 .fog	{background:transparent;}
-.talky	{animation:show 2s steps(40,end);}
+.talk_wrap	{align-items:center;}
+.talky	{background-color:transparent; border:0; animation:show 1.5s steps(40,end);}
 
 #^candle trim=ends
 <div class="wrap">
 	<div class="talk_wrap">
 		<div class="talky">
-			<div class="name">
-				Voice
-			</div>
 			<div class="quest">
-				It's dark in here, isn't it? There is a candle floating around here somewhere. Shall we light it up?
+				The spirit looks at you, hopeful. It could have been a trick of the light but you thought you saw it <span class="warn">smirk</span> for a moment. Then it spoke again.
 			</div>
 			<div class="read_wrap">
-				<a href="candle_on.html" class="read" id="aux1">
-					Yes
-				</a>{audio}
+				<a href="grief1.html" class="read" id="aux1">
+					...
+				</a>
 			</div>
 		</div>
 	</div>
