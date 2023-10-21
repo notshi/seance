@@ -10,8 +10,9 @@ let cmd=args._[0] || "help"
 if( cmd=="help" )
 {
 	console.log(`
-wally will process input csv files creating templates for feeding into 
-an AI generator and then save the results in an output csv file.
+wally
+	Feed input csv files and templates into an AI generator and record 
+	results in an output csv file. 
 
 wally work
 	Do some work.
