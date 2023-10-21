@@ -10,9 +10,10 @@ Dead Painters Seance
 {play}
 
 #^css same=append
+.fog		{background:transparent;}
+.read_wrap	{text-align:center;}
 .woe,
 .title.p	{animation:show 5s steps(40,end);}
-
 
 #^start trim=ends
 <div class="main_wrap">
@@ -43,11 +44,12 @@ Dead Painters Seance
 		<div class="read_wrap">
 			<a href="start.html" class="read" id="aux1">Start</a>{audio}
 		</div>
+		{credits}
 	</div>
 </div>
 
-#^css same=append
-.fog	{background:transparent;}
-.read_wrap {text-align:center;}
+#^credits trim=ends
+<div class="cred">Prototype by <span>Wetgenes</span>, Prekshaa Malu Priyanka &amp; Raju Parulekar 2023</div>
 
-
+#^credits_more trim=ends
+This prototype was developed as part of the NEO Collections project. Funded by the Digital Culture Programme of the Kulturstiftung des Bundes (German Federal Cultural Foundation). Funded by the Beauftragte der Bundesregierung für Kultur und Medien (Federal Government Commissioner for Culture and the Media).
