@@ -1,10 +1,9 @@
 {
    "type": "module",
    "dependencies": {
-    "csv-parse": "^5.5.2",
-    "csv-stringify": "^6.4.4",
-    "minimist": "^1.2.8",
-    "pify": "^6.1.0",
-    "plated": "^0.0.89"
-  }
+      "csv-parse": "^5.5.2",
+      "csv-stringify": "^6.4.4",
+      "minimist": "^1.2.8",
+      "plated": "^0.0.89"
+   }
 }
