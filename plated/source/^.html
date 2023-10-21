@@ -21,6 +21,20 @@ You are lost.
 #^body trim=ends
 The spirit is weak but the body is strong.
 
+#^audio trim=ends
+<audio id="myAudio" src="/data/aux/candle.mp3"></audio>
+<script type="text/javascript">
+	aux1.addEventListener("mouseenter", e =>
+	{
+	  myAudio.play().catch(er => console.error(er.message, "Now, click here and try again"));
+	});
+
+	aux1.addEventListener("mouseleave", e =>
+	{
+	  myAudio.pause();
+	});
+</script>
+
 #^play trim=ends
 <div class="fog">
 	<div class="over">
@@ -39,3 +53,14 @@ The spirit is weak but the body is strong.
 <div class="star-8 stars"></div>
 <div class="star-9 stars"></div>
 <div class="star-10 stars"></div>
+<div class="star-11 stars"></div>
+<div class="star-12 stars"></div>
+<div class="star-13 stars"></div>
+<div class="star-14 stars"></div>
+<div class="star-15 stars"></div>
+<div class="star-16 stars"></div>
+<div class="star-17 stars"></div>
+<div class="star-18 stars"></div>
+<div class="star-19 stars"></div>
+<div class="star-20 stars"></div>
+
