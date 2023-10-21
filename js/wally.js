@@ -1,9 +1,15 @@
 
-const wally=exports
+const wally={}
+export default wally
 
-const wally_work = require("./wally_work.js")
+import wally_work from "./wally_work.js"
 
-const args = require("minimist")(process.argv.slice(2),{boolean:true})
+import minimist from "minimist"
+
+import path from "path"
+import url from "url"
+
+const args = minimist(process.argv.slice(2),{boolean:true})
 
 //console.log(args)
 
@@ -22,16 +28,17 @@ wally work
 wally help
 	Print this help message.
 `)
-	return
 }
 else
 if( cmd=="work" )
 {
 	let opts={}
-	return wally_work.start(opts) // this is async but we do not wait
+
+	// parent dir relative to this file
+	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+	await wally_work.start(opts) // this is async but we do not wait
 }
 else
 {
 	console.log(` Unknown wally command "${cmd}" `)
-	return
 }
