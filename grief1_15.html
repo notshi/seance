@@ -229,7 +229,11 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.img	{width:100vw; background-size:contain;}
 }
-.img	{filter:grayscale(1) brightness(1) invert(0.3);}
+.img	{filter:brightness(1); opacity:1.0;}
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+	.read		{padding:5px 20px;}
+}
 </style>
 </head>
 <body><div class="fog">
@@ -259,18 +263,15 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	<div class="img"></div>
 	<div class="talk_wrap">
 		<div class="talky">
-			<div class="name grief">
-				Spirit
+			<div class="name">
+				A voice
 			</div>
 			<div class="quest">
-				You said that grief makes you angry as you are not allowed to express it. Is this correct?
+				Ohh ~ how curious. The spirit wants to give you something. It looks like a letter but it might not be.
 			</div>
-			<div class="say_wrap">
-				<a href="grief1_6.html" class="say">
-					No, that is not what I meant.
-				</a>
-				<a href="grief1_6a.html" class="say">
-					Yes, that is what I said.
+			<div class="read_wrap">
+				<a href="grief1_16.html" class="read">
+					RECEIVE LETTER
 				</a>
 			</div>
 		</div>
