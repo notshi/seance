@@ -69,6 +69,8 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .over	{background-color:#000; margin:0 auto; padding:0; width:100%; background:linear-gradient(0deg,#020024e0 23%,#160a2b5e 64%,#3f2d488f 100%); height:100vh;}
 @keyframes play {0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;}}
 @keyframes flay {0% {background-position:0px 0px;} 100% {background-position:-1920px 0px;}}
+@keyframes slow_back {0%,50% {background:transparent;} 100% {background:url('./data/fog_back.png');}}
+
 
 /*	background stars	*/
 .stars	{background-color:white; height:3px; width:3px; border-radius:50%; box-shadow:1px 0px 20px #fff;}
@@ -148,7 +150,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes buzz	{50% {transform:translateX(3px) rotate(2deg);} 100% {transform:translateX(-3px) rotate(-2deg);}}
 @keyframes pulse {25% {transform:scale(1.1);} 75% {transform:scale(0.9);}}
 
-.say_wrap	{text-align:center; margin-top:30px; display:flex; align-items:center; justify-content:space-evenly;}
+.say_wrap	{text-align:center; margin-top:30px; display:flex; align-items:center; justify-content:space-evenly; animation:slow_show 1s steps(40,end);}
 .say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform;}
 .say:hover	{background:#361EA5;}
 .say:hover, .say:focus, .say:active {transform:scale(1.05);}
@@ -172,7 +174,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes blink {50% {opacity:0.95;}}
 
 /*	tarot cards	*/
-.img	{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
+.img_wrap	{position:absolute; top:0; left:0; right:0; margin:auto; height:99vh; animation:turn 0.5s linear 2;}
+.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:5%; background-color:#eceae2e0;}
@@ -182,9 +185,13 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:2em; padding:0 2em; text-align:justify;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:55vh; animation:show 2.5s steps(40,end);}
+@keyframes turn	{0% {transform:rotate(0);} 100% {transform:rotate(360deg);}}
 @keyframes show {from {opacity:0;} to {opacity:1;}}
 @keyframes half_show {from {opacity:0;} to {opacity:0.5;}}
+@keyframes blink_show {0%,30% {opacity:0;} 40%,50% {opacity:0.5;} 60%,70% {opacity:0;} 90%,100% {opacity:0.5;}}
 @keyframes slow_show {0%,90% {opacity:0;} 100% {opacity:1;}}
+@keyframes slower_show {0%,80% {opacity:0;} 95% {opacity:0.5;} 100% {opacity:1;}}
+
 
 /*	ghosts	*/
 .g1_handle,
@@ -234,8 +241,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.img	{width:100vw; background-size:contain;}
 }
-.candle_wrap	{animation:show 3s steps(40,end);}
-.talky	{animation:slow_show 2.5s steps(140,end);}
+.fog	{transition:1s; animation:slow_back 1s steps(40,end);}
+.flame	{animation:slow_show 1s steps(40,end);}
+.talky	{animation:slower_show 2s steps(140,end);}
 
 </style>
 </head>
