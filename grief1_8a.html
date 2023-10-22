@@ -183,7 +183,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
-.card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0;}
+.card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
+.card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
 .card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; font-family:'basteleurbold',serif; margin-top:2em;}
 .card_artist{color:#220b0b; font-size:22px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; margin-top:0.4em; border-top:4px double #766aac; display:inline-block; padding-top:0.5em;}
 .card_artist span	{font-style:italic;}
