@@ -16,8 +16,10 @@ Dead Painters Seance
 </div>
 
 #^css same=append
-.img	{filter:brightness(1); opacity:1.0;}
-.read_wrap	{margin-top:-1em; margin-right:2em;}
+.wrap		{overflow-y:initial;}
+.talk_wrap	{align-items:center;}
+.read_wrap	{margin-top:2em; margin-right:2em;}
+.card_wrap	{overflow-y:scroll;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 	.read_wrap	{margin-top:0; margin-right:1em;}
@@ -25,7 +27,6 @@ Dead Painters Seance
 
 #^q1 trim=ends
 <div class="wrap">
-	<div class="img"></div>
 	{turn}
 </div>
 
