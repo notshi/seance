@@ -22,8 +22,12 @@ wally
 	Feed input csv files and templates into an AI generator and record 
 	results in an output csv file. 
 
-wally work
-	Do some work.
+wally work data.csv
+	Read chunks from data.csv and everything in csv/input/* and do some 
+	work.
+
+	The {prompt} chunk is expanded and used as an ai prompt {count} 
+	times and will be written to *.result.csv
 
 wally help
 	Print this help message.
@@ -36,6 +40,9 @@ if( cmd=="work" )
 
 	// parent dir relative to this file
 	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+
+	opts.filename=args._[1]
+
 	await wally_work.start(opts) // this is async but we do not wait
 }
 else
