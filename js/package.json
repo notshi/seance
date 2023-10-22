@@ -11,8 +11,8 @@
 		"plated": "^0.0.89"
 	},
 	"scripts": {
-		"watch": "parcel watch",
-		"build": "parcel build"
+		"watch": "parcel watch --no-cache",
+		"build": "parcel build --no-cache"
 	},
 	"devDependencies": {
 		"parcel": "^2.10.0"
