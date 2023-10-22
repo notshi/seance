@@ -5,7 +5,9 @@ export default wally_work
 import { parse as csv_parse } from "csv-parse/sync"
 import pfs from "node:fs/promises"
 import path from "path"
+import child_process from "child_process"
 
+import plated from "plated"
 
 
 wally_work.start=async function(opts)
@@ -14,6 +16,7 @@ wally_work.start=async function(opts)
 	let it={}
 	it.opts=opts
 	it.ids={}
+
 	await wally_work.load_all(it)
 	
 	if( opts.filename )
@@ -23,6 +26,13 @@ wally_work.start=async function(opts)
 	
 	await wally_work.random(it)
 	
+	let p=plated.create({})
+	//p.setup()
+
+	it.prompt=p.chunks.replace(it.rnd.prompt,it.rnd)
+	
+	it.result=child_process.execSync("ai/llama -p \""+it.prompt.replace(/(["'$`\\])/g,'\\$1')+"\"",{encoding:"utf8"})
+
 	console.log(it)
 }
 
