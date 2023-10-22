@@ -3,6 +3,7 @@ const wally_work={}
 export default wally_work
 
 import { parse as csv_parse } from "csv-parse/sync"
+import { stringify as csv_stringify } from "csv-stringify/sync"
 import pfs from "node:fs/promises"
 import path from "path"
 import child_process from "child_process"
@@ -12,32 +13,97 @@ import plated from "plated"
 
 wally_work.start=async function(opts)
 {
-	console.log("working")
+	if( opts.filename )
+	{
+		await wally_work.job(opts,opts.filename)
+	}
+	else // do all undone jobs
+	{
+		let todo={}
+		let done={}
+		for(let name of await pfs.readdir( opts.dirname+"/csv/jobs" ) )
+		{
+			if( name.slice(-8)==".out.csv" )
+			{
+				let n=name.slice(0,-8)+".csv"
+				done[n]=true
+			}
+			else
+			if( name.slice(-4)==".csv" )
+			{
+				let n=name.slice(0,-4)+".csv"
+				todo[n]=true
+			}
+		}
+		for(let n in todo)
+		{
+			if( !done[n] )
+			{
+				await wally_work.job(opts,opts.dirname+"/csv/jobs/"+n)
+			}
+		}
+	}
+}
+
+wally_work.job=async function(opts,filename)
+{
+	console.log("working on "+filename)
 	let it={}
 	it.opts=opts
 	it.ids={}
 
 	await wally_work.load_all(it)
 	
-	if( opts.filename )
+	if( filename )
 	{
-		it.cmd=await wally_work.load_csv(it,opts.filename)
+		it.cmd=await wally_work.load_csv(it,filename)
+		
+		if( filename.slice(-4)==".csv" )
+		{
+			it.outname=filename.slice(0,-4)+".out.csv"
+		}
 	}
 	
+	let p=plated.create({})
+
 	it.rnd={}
 	await wally_work.random(it,it.ids,it.rnd)
 	await wally_work.random(it,it.cmd,it.rnd)
+	it.repeat=Number(it.rnd.repeat||1)||1
+
+	it.prompts=[]
+	it.results=[]
+	for(let i=0;i<it.repeat;i++)
+	{
+		it.rnd={}
+		await wally_work.random(it,it.ids,it.rnd)
+		await wally_work.random(it,it.cmd,it.rnd)
+		it.prompts[i]=p.chunks.replace(it.rnd.prompt,it.rnd).trim()
+
+		console.log("job "+i+"/"+it.repeat)
 	
-	let p=plated.create({})
-	//p.setup()
+		let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-p" , it.prompts[i] )
+		let a=r.split(it.prompts[i].trim())
+		if( a.length>1 ) { r=a[1] }
+		it.results[i]=r.trim()
 
-	it.prompt=p.chunks.replace(it.rnd.prompt,it.rnd)
+	}
+	let csv=[]
+	csv[0]=["prompt","result"]
+	for(let i=0;i<it.repeat;i++)
+	{
+		csv[i+1]=[ it.prompts[i] , it.results[i] ]
+	}
+	let csvs=csv_stringify(csv)
 	
-	console.log(it)
-
-	it.result=child_process.execSync(it.opts.dirname+"/ai/llama -p \""+it.prompt.replace(/(["'$`\\])/g,'\\$1')+"\"",{encoding:"utf8"})
-
-	console.log(it.result)
+	if( it.outname )
+	{
+		await pfs.writeFile(it.outname, csvs )
+	}
+	else
+	{
+		console.log(csvs)
+	}
 }
 
 
@@ -96,3 +162,40 @@ wally_work.random=async function(it,from,into)
 	}
 	return into
 }
+
+wally_work.tee=function()
+{
+	let cmd=arguments[0]
+	let args=Array.prototype.slice.call(arguments, 1)
+	let opts={}
+	
+	let ret=[]
+	let err=[]
+	
+	return new Promise(function(resolve,reject){	
+		let ai=child_process.spawn(cmd,args,opts)
+		
+		ai.stdout.on('data', function(data){
+			let s=data.toString()
+			ret.push(s)
+			process.stdout.write(s)
+		})
+
+		ai.stderr.on('data', function(data){
+			let s=data.toString()
+			err.push(s)
+		})
+
+		ai.on('error', function(code){
+			reject(err.join("")+"\n")
+		})
+
+		ai.on('exit', function(code){
+			process.stdout.write("\n\n")
+			resolve(ret.join("")+"\n")
+		})
+
+	})
+}
+
+
