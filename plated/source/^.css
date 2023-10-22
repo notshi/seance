@@ -120,12 +120,23 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .grief	{color:#B357E6;}
 .quest	{color:#fff; font-size:30px; line-height:1.25em;}
 .quest span	{display:block; font-style:italic; font-size:24px; line-height:1.25em;}
+/*	grief spirit purple and fading	*/
 .quest span.gri	{color:#B357E6; display:inline-block; font-family:'basteleurmoonlight',serif; font-style:initial; font-size:24px; line-height:1.25em; animation:fade 5s ease-in-out infinite;}
+/*	red and fading	*/
+.quest span.sac	{color:#FF3F6A; display:inline-block; font-family:'basteleurmoonlight',serif; font-style:initial; font-size:24px; line-height:1.25em; animation:fade 5s ease-in-out infinite;}
+/*	trembling light green and fading	*/
 .quest span.emo	{color:#57E6C1; display:inline-block; font-style:initial; animation:buzz 0.1s linear infinite;}
+/*	yellow voice and fading	*/
 .quest span.voi	{color:#d0ce55; display:inline-block; font-family:'basteleurmoonlight',serif; font-style:initial; font-size:24px; line-height:1.25em; animation:fade 5s ease-in-out infinite;}
+/*	light grey letters spaced	*/
 .quest span.wea	{color:#888; display:inline-block; font-weight:bold; font-size:30px; line-height:1.25em; letter-spacing:4px;}
+/*	bright pink letters spaced	*/
+.quest span.viv	{color:#FF64E5; display:inline-block; font-weight:bold; font-size:30px; line-height:1.25em; letter-spacing:4px; text-shadow:1px 1px 5px #0064ff;}
+/*	small red and pulsing	*/
 .quest span.warn{color:#E71211; display:inline-block; font-family:'garamondtitalic',serif; font-style:initial; font-weight:bold; font-size:28px; line-height:1.25em; animation:pulse 3s ease-in-out 1;}
+/*	light blue fast fading	*/
 .quest span.won	{color:#1176E7; display:inline-block; font-style:initial; font-weight:bold; font-size:30px; line-height:1.25em; animation:fade 0.1s ease-in-out infinite;}
+/*	white glowing and fading	*/
 .quest span.glo	{color:#fff; display:inline-block; font-style:initial; font-size:30px; line-height:1.25em; text-shadow:1px 1px 5px #fff; animation:fade 3s ease-in-out infinite;}
 
 .read_wrap	{text-align:right; margin-top:20px;}
