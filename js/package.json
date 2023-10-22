@@ -1,9 +1,20 @@
 {
-   "type": "module",
-   "dependencies": {
-      "csv-parse": "^5.5.2",
-      "csv-stringify": "^6.4.4",
-      "minimist": "^1.2.8",
-      "plated": "^0.0.89"
-   }
+	"name": "seance",
+	"version": "0.0.0",
+	"source": "seance.js",
+	"main": "../docs/js/seance.js",
+	"type": "module",
+	"dependencies": {
+		"csv-parse": "^5.5.2",
+		"csv-stringify": "^6.4.4",
+		"minimist": "^1.2.8",
+		"plated": "^0.0.89"
+	},
+	"scripts": {
+		"watch": "parcel watch",
+		"build": "parcel build"
+	},
+	"devDependencies": {
+		"parcel": "^2.10.0"
+	}
 }
