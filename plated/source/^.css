@@ -125,6 +125,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .quest span.voi	{color:#d0ce55; display:inline-block; font-family:'basteleurmoonlight',serif; font-style:initial; font-size:24px; line-height:1.25em; animation:fade 5s ease-in-out infinite;}
 .quest span.wea	{color:#888; display:inline-block; font-weight:bold; font-size:30px; line-height:1.25em; letter-spacing:4px;}
 .quest span.warn{color:#E71211; display:inline-block; font-family:'garamondtitalic',serif; font-style:initial; font-weight:bold; font-size:28px; line-height:1.25em; animation:pulse 3s ease-in-out 1;}
+.quest span.won	{color:#1176E7; display:inline-block; font-style:initial; font-weight:bold; font-size:30px; line-height:1.25em; animation:fade 0.1s ease-in-out infinite;}
+.quest span.glo	{color:#fff; display:inline-block; font-style:initial; font-size:30px; line-height:1.25em; text-shadow:1px 1px 5px #fff; animation:fade 3s ease-in-out infinite;}
 
 .read_wrap	{text-align:right; margin-top:20px;}
 .read		{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif; animation:buzz 0.15s linear infinite;}
