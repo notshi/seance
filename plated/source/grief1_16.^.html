@@ -16,24 +16,23 @@ Dead Painters Seance
 </div>
 
 #^css same=append
-.img	{filter:brightness(1); opacity:1.0;}
 .wrap		{overflow-y:initial;}
+.talk_wrap	{align-items:center;}
 .read_wrap	{margin-top:-1em; margin-right:2em;}
-.card_info	{margin-top:0.5em;}
 .card_wrap	{overflow-y:scroll;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
-	.wrap		{overflow-y:initial;}
 	.read_wrap	{margin-top:0; margin-right:1em;}
-	.card_info	{margin-top:-1em;}
-	.card_wrap	{overflow-y:scroll;}
-
 }
 
 #^q1 trim=ends
 <div class="wrap">
-	<div class="img"></div>
 	{turn}
+</div>
+
+#^turn trim=ends
+<div class="talk_wrap">
+	{card}
 </div>
 
 #^card trim=ends
@@ -42,6 +41,13 @@ Dead Painters Seance
 		{letter}
 	</div>
 	{continue}
+</div>
+
+#^continue trim=ends
+<div class="read_wrap">
+	<a href="end.html" class="read">
+		...
+	</a>
 </div>
 
 #^letter form=markdown
@@ -63,15 +69,3 @@ I hope you find comfort in your grief, and remember that it's okay not to be ang
 With love and understanding,
 
 Hugo Birger
-
-#^turn trim=ends
-<div class="talk_wrap">
-	{card}
-</div>
-
-#^continue trim=ends
-<div class="read_wrap">
-	<a href="end.html" class="read">
-		...
-	</a>
-</div>
