@@ -21,19 +21,23 @@ wally_work.start=async function(opts)
 	
 	if( opts.filename )
 	{
-		await wally_work.load_csv(it,opts.filename)
+		it.cmd=await wally_work.load_csv(it,opts.filename)
 	}
 	
-	await wally_work.random(it)
+	it.rnd={}
+	await wally_work.random(it,it.ids,it.rnd)
+	await wally_work.random(it,it.cmd,it.rnd)
 	
 	let p=plated.create({})
 	//p.setup()
 
 	it.prompt=p.chunks.replace(it.rnd.prompt,it.rnd)
 	
-	it.result=child_process.execSync("ai/llama -p \""+it.prompt.replace(/(["'$`\\])/g,'\\$1')+"\"",{encoding:"utf8"})
-
 	console.log(it)
+
+	it.result=child_process.execSync(it.opts.dirname+"/ai/llama -p \""+it.prompt.replace(/(["'$`\\])/g,'\\$1')+"\"",{encoding:"utf8"})
+
+	console.log(it.result)
 }
 
 
@@ -47,13 +51,14 @@ wally_work.load_csvs=async function(it,path)
 {
 	for(let name of await pfs.readdir(path) )
 	{
-		await wally_work.load_csv(it,path+"/"+name)
+		await wally_work.load_csv(it,path+"/"+name,it.ids)
 	}
 }
 
 
-wally_work.load_csv=async function(it,path)
+wally_work.load_csv=async function(it,path,into)
 {
+	into=into || {}
 	let data=await pfs.readFile(path,"utf8")
 //	console.log(path,data)
 	let csv=csv_parse(data,{relax_column_count:true,columns:true})
@@ -66,25 +71,28 @@ wally_work.load_csv=async function(it,path)
 			let text=v.text.trim()
 			if(id && text)
 			{
-				if(!it.ids[id]) { it.ids[id]=[] } // manifest array
-				it.ids[id][ it.ids[id].length ]=text // append to end of array
+				if(!into[id]) { into[id]=[] } // manifest array
+				into[id][ into[id].length ]=text // append to end of array
 			}
 		}
 	}
+	return into
 }
 
 
-wally_work.random=async function(it)
+wally_work.random=async function(it,from,into)
 {
-	it.rnd={}
-	for(let n in it.ids)
+	from=from || {}
+	into=into || {}
+	for(let n in from)
 	{
-		let a=it.ids[n]
+		let a=from[n]
 		if(a.length>0)
 		{
 			let i=Math.floor(Math.random()*a.length)%a.length
 			let v=a[i]
-			it.rnd[n]=v
+			into[n]=v
 		}
 	}
+	return into
 }
