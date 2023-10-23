@@ -157,9 +157,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes blur	{25% {filter:blur(15px);} 100% {filter:blur(0px);}}
 
 .say_wrap	{text-align:center; margin-top:30px; display:flex; align-items:center; justify-content:space-evenly; animation:show 1s steps(40,end);}
-.say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform;}
-.say:hover	{background:#361EA5;}
+.say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform; position:relative;}
+.say:hover	{background:#361EA5; background:linear-gradient(196deg,#361EA5 78%,#A500BF 100%);}
 .say:hover, .say:focus, .say:active {transform:scale(1.05);}
+.say:before,
+.say:after	{content:"\263E"; color:#000; position:absolute; margin:-40px; width:30px; height:30px; background-color:#2f2753; border:4px double; border-color:#000 transparent transparent #000;}
+.say:before	{top:25px; left:35%; transform:rotate(45deg);}
+.say:after	{bottom:24px; right:35%; transform:rotate(-134deg);}
+.say:hover:before, .say:hover:after,
+.say:focus:before, .say:focus:after,
+.say:active:before, .say:active:after	{background:#361EA5; color:#fff;}
 
 .arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg);}
 .arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg);}
