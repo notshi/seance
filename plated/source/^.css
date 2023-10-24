@@ -100,9 +100,17 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-shadow:1px -2px 17px #5557d0;}
 .title.d 	{margin-left:-0.5em; transform:skew(-5deg);}
 .title.p	{line-height:0.45em; transform:skew(8deg); padding-bottom:15px;}
+.title.p:hover	{animation:blur 1s 1, glitch 0.1s ease-out infinite; color:#9e55d0;}
 .title.s 	{margin-left:2.5em; transform:skew(-13deg); font-size:105px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .cred		{margin-top:3em;}
+.go:before,
+.go:after	{content:"\263E"; color:#000; position:absolute; margin:-40px; width:30px; height:30px; background-color:#2f2753; border:4px double #000;}
+.go:before	{top:50px; left:-10px; transform:rotate(45deg);}
+.go:after	{bottom:50px; right:-10px; transform:rotate(-134deg);}
+.go:hover:before, .go:hover:after,
+.go:focus:before, .go:focus:after,
+.go:active:before, .go:active:after	{background:#361EA5; color:#fff;}
 
 /*	ghost letters for title	*/
 #letters	{position:absolute; top:0em; left:0em; right:0; display:flex; justify-content:center; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
@@ -115,7 +123,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:960px; min-width:480px; margin:0 auto; padding-bottom:1em;}
-.talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:80vh; margin:0 auto;}
+.talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
 .name	{color:#d0ce55; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif;}
 .grief	{color:#B357E6;}
 .quest	{color:#fff; font-size:30px; line-height:1.25em;}
@@ -152,9 +160,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes blur	{25% {filter:blur(15px);} 100% {filter:blur(0px);}}
 
 .say_wrap	{text-align:center; margin-top:30px; display:flex; align-items:center; justify-content:space-evenly; animation:show 1s steps(40,end);}
-.say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform;}
-.say:hover	{background:#361EA5;}
+.say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform; position:relative;}
+.say:hover	{background:#361EA5; background:linear-gradient(196deg,#361EA5 78%,#A500BF 100%);}
 .say:hover, .say:focus, .say:active {transform:scale(1.05);}
+.say:before,
+.say:after	{content:"\263E"; color:#000; position:absolute; margin:-40px; width:30px; height:30px; background-color:#2f2753; border:4px double; border-color:#000 transparent transparent #000;}
+.say:before	{top:25px; left:35%; transform:rotate(45deg);}
+.say:after	{bottom:24px; right:35%; transform:rotate(-134deg);}
+.say:hover:before, .say:hover:after,
+.say:focus:before, .say:focus:after,
+.say:active:before, .say:active:after	{background:#361EA5; color:#fff;}
 
 .arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg);}
 .arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg);}
