@@ -2,7 +2,13 @@
 const seance={}
 export default seance
 
+import plated from "plated"
+
+
 seance.start=function(opts)
 {
-	console.log("SEE YANCE 9")
+	let p=plated.create({})
+	
+	console.log("SEE YANCE")
+	console.log(plated.chunks)
 }
