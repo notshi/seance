@@ -2,13 +2,14 @@
 const seance={}
 export default seance
 
-import plated from "plated"
+import { default as plated_module } from "plated"
 
 
 seance.start=function(opts)
 {
-	let p=plated.create({})
-	
+	console.log(plated_module)
+	let plated=plated_module.create({})
+		
 	console.log("SEE YANCE")
 	console.log(plated.chunks)
 }

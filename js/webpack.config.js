@@ -22,6 +22,9 @@ let config={
 	new webpack.DefinePlugin({
 		__VERSION__: JSON.stringify(dd_version)
 	}),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
   ],
   entry: './seance.js',
   resolve: {
