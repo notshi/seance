@@ -1,11 +1,6 @@
+const path = require('path');
 
-import path from 'path'
-const __dirname = path.dirname(new URL(import.meta.url).pathname)
-
-import url from 'url'
-let module_resolve=async function(name){return url.fileURLToPath(await import.meta.resolve(name)) }
-
-import webpack from "webpack"
+const webpack = require('webpack');
 
 
 let dd=new Date()
@@ -17,7 +12,7 @@ let dd_version=dd_yy+"."+( ("0000"+dd_dd).slice(-5) )
 
 console.log("VERSION == "+dd_version)
 
-let config={
+module.exports = {
   plugins: [
 	new webpack.DefinePlugin({
 		__VERSION__: JSON.stringify(dd_version)
@@ -30,9 +25,7 @@ let config={
   resolve: {
     fallback : {
       fs: false,
-      "path": await module_resolve("path-browserify"),
-//      buffer: await module_resolve('buffer'),
-//      stream: await module_resolve("stream-browserify"),
+      path: require.resolve("path-browserify"),
     },
   },
   performance: {
@@ -49,8 +42,5 @@ let config={
       type: 'umd',
     },
   },
-}
-//console.log(config)
-
-export default config;
+};
 

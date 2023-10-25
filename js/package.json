@@ -11,8 +11,8 @@
 		"plated": "^0.0.89"
 	},
 	"scripts": {
-		"watch": "webpack watch --mode development",
-		"build": "webpack build --mode development"
+		"watch": " webpack watch --config webpack.config.cjs --mode development ",
+		"build": " webpack build --config webpack.config.cjs --mode production "
 	},
 	"devDependencies": {
 
@@ -24,3 +24,4 @@
 		"util": "^0.12.5"
 	}
 }
+
