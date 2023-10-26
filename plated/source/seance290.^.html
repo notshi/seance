@@ -1,0 +1,41 @@
+
+#^------------------------------
+#^title trim=ends
+
+Dead Painters Seance
+
+#^------------------------------
+#^body trim=ends
+
+{play}
+
+#^start trim=ends
+<div class="main_wrap">
+	{stars}
+	{q1}
+</div>
+
+#^css same=append
+.img	{filter:grayscale(0.5) brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 2%, black);}
+.talky	{animation:slow_show 2.5s steps(140,end);}
+
+#^q1 trim=ends
+<div class="wrap">
+	<div class="img_wrap"><div class="img"></div></div>
+	<div class="talk_wrap">
+		<div class="talky">
+			<div class="name grief">
+				Spirit
+			</div>
+			<div class="quest">
+				<span>Could this be? I feel almost whole again.</span>
+			</div>
+			<div class="read_wrap">
+				<a href="seance300.html" class="read">
+					...
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,54 @@
+
+#^------------------------------
+#^title trim=ends
+
+Dead Painters Seance
+
+#^------------------------------
+#^body trim=ends
+
+{play}
+
+#^start trim=ends
+<div class="main_wrap">
+	{stars}
+	{flame}
+	{candle}
+</div>
+
+#^css same=append
+.fog	{transition:1s; animation:slow_back 1.1s steps(40,end);}
+.flame	{animation:slow_show 1s steps(40,end);}
+.talky	{animation:slower_show 2s steps(140,end);}
+
+
+#^flame trim=ends
+<div class="candle_wrap">
+	<div class="candle">
+	  <div class="flame">
+		<div class="shadows"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
+	  </div>
+	  <div class="wax"></div>
+	</div>
+</div>
+
+#^candle trim=ends
+<div class="wrap">
+	<div class="talk_wrap">
+		<div class="talky">
+			<div class="name">
+				Voice
+			</div>
+			<div class="quest">
+				Oh ~ that's much better ... <span class="warn">Be still</span>, I sense a disturbance. Something is near.
+			</div>
+			<div class="read_wrap">
+				<a href="seance040.html" class="read" id="aux1">
+					Wait
+				</a>{audio}
+			</div>
+		</div>
+	</div>
+</div>
