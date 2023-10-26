@@ -133,6 +133,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .grief	{color:#B357E6;}
 .quest	{color:#fff; font-size:30px; line-height:1.25em;}
 .quest span	{display:inline-block; font-style:italic; line-height:1.25em;}
+.quest span.cap	{text-transform:uppercase;}
+/*	quoted answers	*/
+.quest span.quo	{color:#89b4db; padding:0 10px 0 5px;}
 /*	grief spirit purple and fading	*/
 .quest span.gri	{color:#B357E6; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	red and fading	*/
@@ -195,7 +198,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 /*	tarot cards	*/
 .img_wrap	{position:absolute; top:0; left:0; right:0; margin:auto; height:99vh; animation:blur 1.5s linear 2;}
-.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/grief/grief1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
+.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/image1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
@@ -204,6 +207,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_artist{color:#220b0b; font-size:22px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; margin-top:0.4em; border-top:4px double #766aac; display:inline-block; padding-top:0.5em;}
 .card_artist span	{font-style:italic;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:2em; padding:0 2em; text-align:justify;}
+.card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
+.card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:85vh; animation:show 2.5s steps(40,end);}
 @keyframes turn	{0% {transform:rotate(0);} 100% {transform:rotate(360deg);}}
@@ -219,18 +224,18 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .g2_handle,
 .g3_handle,
 .g4_handle	{position:absolute; top:18em; left:-100px; width:0; height:0; overflow:visible; animation:run 15s cubic-bezier(.21,.67,.72,.28) infinite;}
-.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9	{position:relative; top:-100px; left:-100px; width:200px; height:200px; background:url('./data/grief/grief1_a.jpg') center center / contain no-repeat; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.2; animation:big 15s linear infinite;}
-.g2	{background:url('./data/grief/grief2_a.jpg') center center / contain no-repeat;}
-.g3	{background:url('./data/grief/grief3_a.jpg') center center / contain no-repeat;}
-.g4	{background:url('./data/guilt/guilt1_a.jpg') center center / contain no-repeat;}
-.g5	{background:url('./data/guilt/guilt2_a.jpg') center center / contain no-repeat;}
-.g6	{background:url('./data/guilt/guilt3_a.jpg') center center / contain no-repeat;}
-.g7	{background:url('./data/fear/fear1_a.jpg') center center / contain no-repeat;}
-.g8	{background:url('./data/fear/fear2_a.jpg') center center / contain no-repeat;}
-.g9	{background:url('./data/fear/fear3_a.jpg') center center / contain no-repeat;}
-.g10{background:url('./data/shame/shame1_a.jpg') center center / contain no-repeat;}
-.g11{background:url('./data/shame/shame2_a.jpg') center center / contain no-repeat;}
-.g12{background:url('./data/shame/shame3_a.jpg') center center / contain no-repeat;}
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9	{position:relative; top:-100px; left:-100px; width:200px; height:200px; background:url('./data/image1.small.jpg') center center / contain no-repeat; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.2; animation:big 15s linear infinite;}
+.g2	{background:url('./data/image2.small.jpg') center center / contain no-repeat;}
+.g3	{background:url('./data/image3.small.jpg') center center / contain no-repeat;}
+.g4	{background:url('./data/image4.small.jpg') center center / contain no-repeat;}
+.g5	{background:url('./data/image5.small.jpg') center center / contain no-repeat;}
+.g6	{background:url('./data/image6.small.jpg') center center / contain no-repeat;}
+.g7	{background:url('./data/image7.small.jpg') center center / contain no-repeat;}
+.g8	{background:url('./data/image8.small.jpg') center center / contain no-repeat;}
+.g9	{background:url('./data/image9.small.jpg') center center / contain no-repeat;}
+.g10{background:url('./data/image10.small.jpg') center center / contain no-repeat;}
+.g11{background:url('./data/image11.small.jpg') center center / contain no-repeat;}
+.g12{background:url('./data/image12.small.jpg') center center / contain no-repeat;}
 
 @keyframes run {0%{left:110vw;} 50%{} 100%{left:-10vw;}}
 @keyframes big {0%{} 50%{top:-240px; left:-240px; width:480px; height:480px; opacity:0.5;} 100%{}}
@@ -297,7 +302,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 				Spirit
 			</div>
 			<div class="quest">
-				You said you felt jealous of another's (lack of) grief. Is this correct?
+				You said “<span class="quo">{answer}</span>” Is this correct?
 			</div>
 			<div class="say_wrap">
 				<a href="seance110.html" class="say">
