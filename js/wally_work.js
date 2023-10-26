@@ -118,10 +118,10 @@ wally_work.job=async function(opts,filename)
 	}
 
 	let csv=[]
-	csv[0]=["prompt","result","job"]
+	csv[0]=["id","text"]
 	for(let i=0;i<it.prompts.length;i++)
 	{
-		csv[i+1]=[ it.prompts[i] , it.results[i] , it.jobs[i] ]
+		csv[i+1]=[ it.jobs[i] , it.results[i] ]
 	}
 	let csvs=csv_stringify(csv)
 	

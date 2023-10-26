@@ -28,7 +28,7 @@ wally_sheet.start=async function(opts)
 {
 	let qcsv=await load_csv( opts.dirname+"/csv/sheets/question.csv" )
 
-//	console.log(qcsv)
+	console.log(qcsv)
 
 	let filename="/csv/jobs/question.csv"
 	console.log("working on "+filename)
@@ -39,9 +39,22 @@ wally_sheet.start=async function(opts)
 
 	for(let it of qcsv )
 	{
+		jobs.push(["prompt","{text:wrap_reword_question}"])
 		jobs.push(["id",it.id+"_question"])
 		jobs.push(["text",it.question])
 		jobs.push(["run",5])
+
+		for(let i=1;i++;i<=4)
+		{
+			let answer=it["answer"+i]
+			if(answer)
+			{
+				jobs.push(["prompt","{text:wrap_reword_answer}"])
+				jobs.push(["id",it.id+"_answer"+i])
+				jobs.push(["text",answer])
+				jobs.push(["run",5])
+			}
+		}
 	}
 
 	save_csv( opts.dirname+filename , jobs )
