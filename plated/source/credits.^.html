@@ -1,0 +1,87 @@
+
+#^------------------------------
+#^title trim=ends
+
+Dead Painters Seance
+
+#^------------------------------
+#^body trim=ends
+
+{play}
+
+#^start trim=ends
+<div class="main_wrap">
+	{stars}
+	{candle}
+</div>
+
+#^css same=append
+.fog		{background:transparent;}
+.wrap		{overflow-y:initial;}
+.talk_wrap	{align-items:center;}
+.talky		{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}
+.read_wrap	{margin-right:2em;}
+.card_wrap	{overflow-y:scroll;}
+.card_info	{font-size:22px; line-height:1.25em; margin-top:1em;}
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+	.read_wrap	{margin-top:0; margin-right:1em;}
+}
+
+#^candle trim=ends
+<div class="wrap">
+	<div class="talk_wrap">
+		<div class="card_wrap">
+			<div class="card_info">
+				{credits_1}
+				{credits_2}
+				{credits_3}
+			</div>
+			<div class="read_wrap">
+				<a back class="read">
+					Back
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+#^credits_1 form=markdown
+<div class="fund_top"><span>Dead Painters Séance</span> is developed by <span>Wetgenes</span>, <span>Prekshaa Malu</span> &amp; <span>Priyanka Raju Parulekar</span>.</div>
+
+<div class="fund_img_a"></div>
+
+<span class="moon">Prekshaa Malu</span> and <span class="moon">Priyanka Parulekar</span> are an unlikely duo that became pandemic friends on social media. They share similar thoughts on art, literature, philosophy, mental health, gender identity and sexuality. Together they represent the growing struggles and joys of millennial and Gen-Z women in the current world, coming from the maximum city of Mumbai, India. Besides, both are loving cat moms to Lucky and Euro.
+
+
+<span class="moon">Prekshaa</span> is a content strategist and communications manager. She has 10+ years of experience in the media industry. At the beginning, she was a journalist covering the Art& Culture segment for Mumbai’s leading news publications. She creates abstract self-portraits as a hobby.
+
+
+<span class="moon">Priyanka</span> is a student of psychology, literature, and philosophy. She is a writer and art enthusiast. She is passionate about accessibility and has formed a thriving community for neurodivergent folks in India. Born and brought up in Mumbai, she writes in three languages, English, Hindi, and Marathi, and is learning a fourth, French. She hopes to make unfettered access to art for everyone a reality.
+
+
+<div class="fund_img_b"></div>
+
+Kriss and shi Blank make up <span class="moon">Wetgenes</span>, an ineffable ontology project based in Bradford. Feral game developers working across sound and visual arts. They can usually be found tinkering or building things in and around unexpected places in the city they live in.
+
+
+<span class="moon">Music</span>: Away by Meydän is licensed under a CC BY 4.0 Deed Attribution License.
+
+<div class="fund_line"></div>
+
+#^credits_2 trim=ends
+<div class="fund_info">
+	<b>NEO Collections</b> is funded by the German Federal Cultural Foundation as part of their Digital Culture programme. Funded by the German Federal Government Commissioner for Culture and Media.
+</div>
+
+#^credits_3 trim=ends
+<div class="fund_wrap">
+	<div class="fund">
+		<span>Funded by the Digital Culture Programme of the German Federal Cultural Foundation</span>
+		<img alt="" src="{_root}data/logo_ksb.png" width="300" height="128">
+	</div>
+	<div class="fund">
+		<span>Funded by the Federal Government Commissioner for Culture and the Media</span>
+		<img alt="" src="{_root}data/logo_bkm.svg" width="300" height="128">
+	</div>
+</div>
