@@ -47,72 +47,6 @@
   "_site": "{_root}",
   "_sourcename": "^/."
  },
- "candle.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}candle.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "candle.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "candle.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt's dark in here, isn't it? There is a candle floating around here somewhere. Shall we light it up?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"candle_on.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tYes\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "candle_on.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}candle_on.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "flame": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "candle_on.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "candle_on.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOh ~ that's much better ... <span class=\"warn\">Be still</span>, I sense a disturbance. Something is near.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"ghosts.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tWait\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{transition:1s; animation:slow_back 1.1s steps(40,end);}\n.flame\t{animation:slow_show 1s steps(40,end);}\n.talky\t{animation:slower_show 2s steps(140,end);}\n\n",
-  "flame": "<div class=\"candle_wrap\">\n\t<div class=\"candle\">\n\t  <div class=\"flame\">\n\t\t<div class=\"shadows\"></div>\n\t\t<div class=\"top\"></div>\n\t\t<div class=\"bottom\"></div>\n\t  </div>\n\t  <div class=\"wax\"></div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{flame}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
  "data": {
   "_dirname": "{_root}data",
   "_filename": "{_root}data",
@@ -162,9 +96,56 @@
   "_site": "{_root}",
   "_sourcename": "data/shame/."
  },
- "end.html": {
+ "index.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}end.html",
+  "_filename": "{_root}index.html",
+  "_flags": {
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "index.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "index.^.html",
+  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tseance.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
+ },
+ "seance000.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance000.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "credits": {
+    "trim": "ends"
+   },
+   "credits_more": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance000.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance000.^.html",
+  "body": "{play}",
+  "credits": "<div class=\"cred\">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>",
+  "credits_more": "This prototype was developed as part of the NEO Collections project. Funded by the Digital Culture Programme of the Kulturstiftung des Bundes (German Federal Cultural Foundation). Funded by the Beauftragte der Bundesregierung für Kultur und Medien (Federal Government Commissioner for Culture and the Media).",
+  "css": ".fog\t\t{background:transparent;}\n.read_wrap\t{text-align:center;}\n.woe,\n.title.p\t{animation:show 5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>Painters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Seance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"seance010.html\" class=\"read go\" id=\"aux1\">Start</a>{audio}\n\t\t</div>\n\t\t{credits}\n\t</div>\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance010.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance010.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -183,25 +164,30 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "end.html",
+  "_output_filename": "seance010.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "end.^.html",
+  "_sourcename": "seance010.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs you utter the last word of the letter out loud, the <span class=\"gri\">spirit</span> looks at you contented. It gives you a slight nod before vanishing into thin air, almost as if it was never there to begin with. The <span class=\"voi\">Voice</span> remains silent.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"index.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou find yourself in a dark room filled with the endless <span class=\"bli\">twinkling</span> of distant stars. The constellations are not familiar with your own. You feel a sturdy, wooden chair in front of you and <span class=\"voi\">a voice</span> beckons you to sit. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance020.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tSit\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "fear1.html": {
+ "seance020.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}fear1.html",
+  "_filename": "{_root}seance020.html",
   "_flags": {
    "body": {
-    "form": "markdown",
     "trim": "ends"
    },
-   "q1": {
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
     "trim": "ends"
    },
    "title": {
@@ -209,17 +195,54 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "fear1.html",
+  "_output_filename": "seance020.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "fear1.^.html",
-  "body": "<div class=\"fog\">\n    <div class=\"over\">\n        {q1}\n    </div>\n</div>",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tMina Carlson-Bredberg\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHave you ever compared your sadness with another and felt jealousy or injustice?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"#\" class=\"read\">\n\t\t\t\t\tAnswer\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "_sourcename": "seance020.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt's dark in here, isn't it? There is a candle floating around here somewhere. Shall we light it up?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance030.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tYes\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talky\t{animation:show 2s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "ghosts.html": {
+ "seance030.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}ghosts.html",
+  "_filename": "{_root}seance030.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "flame": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance030.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance030.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOh ~ that's much better ... <span class=\"warn\">Be still</span>, I sense a disturbance. Something is near.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance040.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tWait\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{transition:1s; animation:slow_back 1.1s steps(40,end);}\n.flame\t{animation:slow_show 1s steps(40,end);}\n.talky\t{animation:slower_show 2s steps(140,end);}\n\n",
+  "flame": "<div class=\"candle_wrap\">\n\t<div class=\"candle\">\n\t  <div class=\"flame\">\n\t\t<div class=\"shadows\"></div>\n\t\t<div class=\"top\"></div>\n\t\t<div class=\"bottom\"></div>\n\t  </div>\n\t  <div class=\"wax\"></div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{flame}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance040.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance040.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -244,21 +267,21 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "ghosts.html",
+  "_output_filename": "seance040.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "ghosts.^.html",
+  "_sourcename": "seance040.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tBehold ~ there are spirits abound and they seem attracted to the candle. Capture one?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"gotcha.html\" class=\"read\">\n\t\t\t\t\tCATCH\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tBehold ~ there are spirits abound and they seem attracted to the candle. Capture one?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance050.html\" class=\"read\">\n\t\t\t\t\tCATCH\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".talky\t{animation:slow_show 3s steps(140,end);}\n",
   "flame": "<div class=\"candle_wrap\">\n\t<div class=\"candle\">\n\t  <div class=\"flame\">\n\t\t<div class=\"shadows\"></div>\n\t\t<div class=\"top\"></div>\n\t\t<div class=\"bottom\"></div>\n\t  </div>\n\t  <div class=\"wax\"></div>\n\t</div>\n</div>",
   "ghosts": "<div class=\"g1_handle\">\n\t<div class=\"g1\"></div>\n</div>\n<div class=\"g2_handle\">\n\t<div class=\"g2\"></div>\n</div>\n<div class=\"g3_handle\">\n\t<div class=\"g3\"></div>\n</div>\n<div class=\"g4_handle\">\n\t<div class=\"g4\"></div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{ghosts}\n\t{flame}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "gotcha.html": {
+ "seance050.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}gotcha.html",
+  "_filename": "{_root}seance050.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -277,19 +300,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "gotcha.html",
+  "_output_filename": "seance050.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "gotcha.^.html",
+  "_sourcename": "seance050.^.html",
   "body": "{play}",
   "css": ".img\t{animation:half_show 2s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:slower_show 1.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt looks like you've captured a <span class=\"gri\">GRIEF</span> spirit. It is, however, <span class=\"wea\">weak</span> so it needs to resonate with your humanity in order to manifest.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"gotcha1.html\" class=\"read\">\n\t\t\t\t\tResonate\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt looks like you've captured a <span class=\"gri\">GRIEF</span> spirit. It is, however, <span class=\"wea\">weak</span> so it needs to resonate with your humanity in order to manifest.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance060.html\" class=\"read\">\n\t\t\t\t\tResonate\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "gotcha1.html": {
+ "seance060.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}gotcha1.html",
+  "_filename": "{_root}seance060.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -308,28 +331,25 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "gotcha1.html",
+  "_output_filename": "seance060.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "gotcha1.^.html",
+  "_sourcename": "seance060.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> is barely visible ~ you can almost see it's silhoutte if you squint. <span class=\"emo\">Trembling</span> , it looks at you and starts to speak; a soft hesitant whisper at first before fully formed words come spilling out. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"reason.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> is barely visible ~ you can almost see it's silhoutte if you squint. <span class=\"emo\">Trembling</span> , it looks at you and starts to speak; a soft hesitant whisper at first before fully formed words come spilling out. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance070.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1.html": {
+ "seance070.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1.html",
+  "_filename": "{_root}seance070.html",
   "_flags": {
    "body": {
     "trim": "ends"
    },
    "css": {
     "same": "append"
-   },
-   "q": {
-    "trim": "ends"
    },
    "q1": {
     "trim": "ends"
@@ -342,20 +362,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1.html",
+  "_output_filename": "seance070.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1.^.html",
+  "_sourcename": "seance070.^.html",
   "body": "{play}",
   "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q": "<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI have felt like my grief is an injustice.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI have never compared my grief to anyone else.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI have never felt like my grief is an injustice. \n\t</a>\n</div>",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHave you ever compared your sadness with another and felt jealousy or injustice?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_1.html\" class=\"say\">\n\t\t\t\t\tI have felt jealous of another's (lack of) grief.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHello?? Where am I? Is anybody there? Can you help me?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance080.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_1.html": {
+ "seance080.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_1.html",
+  "_filename": "{_root}seance080.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -374,19 +393,143 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_1.html",
+  "_output_filename": "seance080.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_1.^.html",
+  "_sourcename": "seance080.^.html",
+  "body": "{play}",
+  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tI need to remember. I need to remember what it is to be alive.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance090.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance090.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance090.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance090.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance090.^.html",
+  "body": "{play}",
+  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWill you help me? Will you please answer my questions?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance100.html\" class=\"read\">\n\t\t\t\t\tOk\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance100.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance100.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance100.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance100.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> looks at you, hopeful. You realise that agreeing to answer whatever questions they might ask would come with perhaps, dire consequences. It could have been a trick of the light but you thought you saw it <span class=\"warn\">smirk</span> for a moment. Then it spoke again.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance110.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance110.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance110.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance110.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance110.^.html",
+  "body": "{play}",
+  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHave you ever compared your sadness with another and felt jealousy or injustice?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance120.html\" class=\"say\">\n\t\t\t\t\tI have felt jealous of another's (lack of) grief.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance120.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance120.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance120.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance120.^.html",
   "body": "{play}",
   "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you felt jealous of another's (lack of) grief. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1.html\" class=\"say\">\n\t\t\t\t\tNo, I meant to say something else.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_1a.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you felt jealous of another's (lack of) grief. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance110.html\" class=\"say\">\n\t\t\t\t\tNo, I meant to say something else.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance130.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_10.html": {
+ "seance130.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_10.html",
+  "_filename": "{_root}seance130.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -405,81 +548,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_10.html",
+  "_output_filename": "seance130.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_10.^.html",
+  "_sourcename": "seance130.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.5) brightness(1); mask-image:linear-gradient(to top, transparent 2%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tDo you grieve the years past, the youth lost, and the changes and losses along the way?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_11.html\" class=\"say\">\n\t\t\t\t\tI do grieve the changes and losses occured along the way.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 20%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Did you feel that? I feel like something has changed.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance140.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_10a.html": {
+ "seance140.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_10a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_10a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_10a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 5%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>I feel like I am starting to remember again.</span><br/>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_12.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_11.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_11.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_11.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_11.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.5) brightness(1); mask-image:linear-gradient(to top, transparent 2%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you grieve the changes and losses occured along the way. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1_10.html\" class=\"say\">\n\t\t\t\t\tNo, that is wrong.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_11a.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_11a.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_11a.html",
+  "_filename": "{_root}seance140.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -498,19 +579,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_11a.html",
+  "_output_filename": "seance140.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_11a.^.html",
+  "_sourcename": "seance140.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tWith the last question answered, the <span class=\"gri\">spirit</span> begins to convulse, <span class=\"glo\">glowing</span> and <span class=\"pul\">pulsing</span> a bright radiant hue of white and sky blue, slowly at first before increasing in speed and frequency. Then the <span class=\"gri\">spirit</span> starts to spin.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_12.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tA hint of uncertainty <span class=\"sac\">punctures</span> the mood. You were so preoccupied with the absurdity of it all that any subtlety of nuance was <span class=\"wea\">lost</span> in the moment. Before you could reply, the <span class=\"gri\">spirit</span> continued.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance150.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_12.html": {
+ "seance150.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_12.html",
+  "_filename": "{_root}seance150.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -529,19 +610,608 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_12.html",
+  "_output_filename": "seance150.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_12.^.html",
+  "_sourcename": "seance150.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWhen you're in the deep dark depths of grief, who do you lean on?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance160.html\" class=\"say\">\n\t\t\t\t\tSomeone older than me, who is wise.\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance160.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance160.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance160.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance160.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tSo you lean on someone older than you, who is wise. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance150.html\" class=\"say\">\n\t\t\t\t\tNo, that's not what I said.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance170.html\" class=\"say\">\n\t\t\t\t\tYes, please continue.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance170.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance170.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance170.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance170.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 15%, black);}\n.talky\t{animation:slow_show 1.5s steps(40,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Surely you felt that. Do you sense anything at all?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance180.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance180.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance180.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance180.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance180.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs the <span class=\"gri\">spirit</span> paused to observe itself, you wonder about the questions ~ they seem so <span class=\"wea\">specific</span> and personal.\n\t\t\t\tYou find yourself start to mouth a reply but the <span class=\"gri\">spirit</span> went on.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance190.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance190.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance190.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance190.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance190.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHave you thought about your own death? If not take a moment to think about it now. How do you wish to be remembered once you're gone?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance200.html\" class=\"say\">\n\t\t\t\t\tI would like to be remembered for my achievements and positive social or artistic contributions.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance200.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance200.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance200.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance200.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you wanted to be remembered for your achievements and positive social or artistic contributions. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance190.html\" class=\"say\">\n\t\t\t\t\tNo, not quite.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance210.html\" class=\"say\">\n\t\t\t\t\tYes, I think so.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance210.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance210.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance210.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance210.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>It is happening again. You must notice what I'm seeing, surely?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance220.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance220.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance220.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance220.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance220.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThere was no doubt ~ something was definitely happening to the <span class=\"gri\">spirit</span> right before your very eyes but neither of you could figure out why this was the case. The questioning continues.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance230.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance230.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance230.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance230.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance230.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tNot all grief is treated equally in an unequal world. Does your grief make you angry? Are you allowed to express it?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance240.html\" class=\"say\">\n\t\t\t\t\tMy grief makes me angry as I am not allowed to express it.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance240.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance240.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance240.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance240.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said that grief makes you angry as you are not allowed to express it. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance230.html\" class=\"say\">\n\t\t\t\t\tNo, that is not what I meant.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance250.html\" class=\"say\">\n\t\t\t\t\tYes, that is what I said.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance250.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance250.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance250.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance250.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 5%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Your answers are changing me. Can you see that?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance260.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance260.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance260.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance260.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance260.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tIs that true? Was the physical act of responding to the questions having an effect on this <span class=\"gri\">spirit</span>? But how could that be? The <span class=\"voi\">Voice</span> mentioned something earlier about resonating with humanity to <span class=\"sac\">manifest</span>. Was this it? The <span class=\"gri\">spirit</span> kept going.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance270.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance270.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance270.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance270.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance270.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1); mask-image:linear-gradient(to top, transparent 5%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWhat unhealthy coping mechanisms have you used to deal with grief?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance280.html\" class=\"say\">\n\t\t\t\t\tI have had an addiction of some sort; alcohol, drugs, food, sex, etc.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance280.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance280.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance280.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance280.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(1) brightness(1); mask-image:linear-gradient(to top, transparent 5%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said have had an addiction of some sort; alcohol, drugs, food, sex, etc. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance270.html\" class=\"say\">\n\t\t\t\t\tNo, that is wrong.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance290.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance290.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance290.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance290.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance290.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.5) brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 2%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Could this be? I feel almost whole again.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance300.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance300.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance300.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance300.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance300.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Almost whole.</span> That must be it! The <span class=\"sac\">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view. The <span class=\"gri\">spirit</span> picked up the pace.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance310.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance310.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance310.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance310.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance310.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.5) brightness(1); mask-image:linear-gradient(to top, transparent 2%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tDo you grieve the years past, the youth lost, and the changes and losses along the way?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance320.html\" class=\"say\">\n\t\t\t\t\tI do grieve the changes and losses occured along the way.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance320.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance320.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance320.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance320.^.html",
+  "body": "{play}",
+  "css": ".img\t{filter:grayscale(0.5) brightness(1); mask-image:linear-gradient(to top, transparent 2%, black);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you grieve the changes and losses occured along the way. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"seance310.html\" class=\"say\">\n\t\t\t\t\tNo, that is wrong.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"seance330.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance330.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance330.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "candle": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance330.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance330.^.html",
+  "body": "{play}",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tWith the last question answered, the <span class=\"gri\">spirit</span> begins to convulse, <span class=\"glo\">glowing</span> and <span class=\"pul\">pulsing</span> a bright radiant hue of white and sky blue, slowly at first before increasing in speed and frequency. Then the <span class=\"gri\">spirit</span> starts to spin.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance340.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
+  "title": "Dead Painters Seance"
+ },
+ "seance340.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}seance340.html",
+  "_flags": {
+   "body": {
+    "trim": "ends"
+   },
+   "css": {
+    "same": "append"
+   },
+   "q1": {
+    "trim": "ends"
+   },
+   "start": {
+    "trim": "ends"
+   },
+   "title": {
+    "trim": "ends"
+   }
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "seance340.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "seance340.^.html",
   "body": "{play}",
   "css": ".img_wrap\t{animation:turn 0.5s linear 2, blur 1.5s ease-out 1;}\n.img\t{filter:brightness(1); opacity:1.0; animation:show 3s steps(40,end),glitch 2s infinite linear alternate-reverse;}\n.talky\t{animation:slow_show 3s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tAhh ~ interesting. The spirit seems stronger than it was before. What did you do?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_12a.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tAhh ~ interesting. The spirit seems stronger than it was before. What did you do?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance350.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_12a.html": {
+ "seance350.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_12a.html",
+  "_filename": "{_root}seance350.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -560,19 +1230,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_12a.html",
+  "_output_filename": "seance350.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_12a.^.html",
+  "_sourcename": "seance350.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tTrue enough, no one could the deny the difference of then and now. The <span class=\"viv\">vividness</span> of colour, every brush stroke so tangible and clear. Absorbed by the sudden turn of events, the <span class=\"gri\">spirit</span> becomes silent as the <span class=\"voi\">Voice</span> continues. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_13.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tTrue enough, no one could the deny the difference of then and now. The <span class=\"viv\">vividness</span> of colour, every brush stroke so tangible and clear. Absorbed by the sudden turn of events, the <span class=\"gri\">spirit</span> becomes silent as the <span class=\"voi\">Voice</span> continues. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance360.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_13.html": {
+ "seance360.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_13.html",
+  "_filename": "{_root}seance360.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -591,19 +1261,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_13.html",
+  "_output_filename": "seance360.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_13.^.html",
+  "_sourcename": "seance360.^.html",
   "body": "{play}",
   "css": ".img\t{filter:brightness(1); opacity:1.0;}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q1": "<div class=\"main_wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIndeed! It looks like the spirit has received a name and a memory of it's past. <span>Go on</span> ~ have a look.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_13a.html\" class=\"read\">\n\t\t\t\t\tLook\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"main_wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIndeed! It looks like the spirit has received a name and a memory of it's past. <span>Go on</span> ~ have a look.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance370.html\" class=\"read\">\n\t\t\t\t\tLook\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_13a.html": {
+ "seance370.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_13a.html",
+  "_filename": "{_root}seance370.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -622,19 +1292,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_13a.html",
+  "_output_filename": "seance370.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_13a.^.html",
+  "_sourcename": "seance370.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou looked on in <span class=\"won\">wonderment</span> as another piece of similar dimension and size, begins to separate itself from the <span class=\"gri\">spirit</span>. Dark shapes, glyphs and letters begin to appear, lifting themselves from the surface to rearrange their positions in place.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_14.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou looked on in <span class=\"won\">wonderment</span> as another piece of similar dimension and size, begins to separate itself from the <span class=\"gri\">spirit</span>. Dark shapes, glyphs and letters begin to appear, lifting themselves from the surface to rearrange their positions in place.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance380.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_14.html": {
+ "seance380.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_14.html",
+  "_filename": "{_root}seance380.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -662,22 +1332,22 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_14.html",
+  "_output_filename": "seance380.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_14.^.html",
+  "_sourcename": "seance380.^.html",
   "body": "{play}",
   "card": "<div class=\"card_wrap\">\n\t<div class=\"card_name\">Woman Model. Study</div>\n\t<div class=\"card_artist\">Mina Carlson-Bredberg <span>(1857–1943)</span></div>\n\t<div class=\"card_info\">\n\t\tThe painting is dated 1885. At that time Mina Carlson-Bredberg studied at Academie Julian in Paris. Below her signature “Mina Bredberg 1885” (in the lower left corner), the artist has written that this is a profile of the same model for which she had received a prize [a prize given for another painting or drawing]. This painting is rather typical for the kind of studies that the pupils at the art schools made at that time. We don’t know if this model worked for Academie Julian or was hired privately by Mina Bredberg.\n\t</div>\n\t{continue}\n</div>",
-  "continue": "<div class=\"read_wrap\">\n\t<a href=\"grief1_14a.html\" class=\"read\">\n\t\t...\n\t</a>\n</div>",
+  "continue": "<div class=\"read_wrap\">\n\t<a href=\"seance390.html\" class=\"read\">\n\t\t...\n\t</a>\n</div>",
   "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center;}\n.read_wrap\t{margin-top:2em; margin-right:2em;}\n.card_wrap\t{overflow-y:scroll;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0; margin-right:1em;}\n}\n",
   "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance",
   "turn": "<div class=\"talk_wrap\">\n\t{card}\n</div>"
  },
- "grief1_14a.html": {
+ "seance390.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_14a.html",
+  "_filename": "{_root}seance390.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -696,19 +1366,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_14a.html",
+  "_output_filename": "seance390.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_14a.^.html",
+  "_sourcename": "seance390.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> now remembers who they are and how they came to be. With your help and <span class=\"sac\">sacrifice</span>, they have been granted a voice of which they seem entirely indebted to you for. Amidst a flurry of whispers between them, the <span class=\"voi\">Voice</span> remarks again.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_15.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> now remembers who they are and how they came to be. With your help and <span class=\"sac\">sacrifice</span>, they have been granted a voice of which they seem entirely indebted to you for. Amidst a flurry of whispers between them, the <span class=\"voi\">Voice</span> remarks again.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance400.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_15.html": {
+ "seance400.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_15.html",
+  "_filename": "{_root}seance400.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -727,19 +1397,19 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_15.html",
+  "_output_filename": "seance400.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_15.^.html",
+  "_sourcename": "seance400.^.html",
   "body": "{play}",
   "css": ".img\t{filter:brightness(1); opacity:1.0;}\n.talky\t{animation:show 2s steps(40,end);}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read\t\t{padding:5px 20px;}\n}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOhh ~ how curious. The spirit wants to give you something. It looks like a letter but it might not be.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_16.html\" class=\"read\">\n\t\t\t\t\tRECEIVE LETTER\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOhh ~ how curious. The spirit wants to give you something. It looks like a letter but it might not be.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance410.html\" class=\"read\">\n\t\t\t\t\tRECEIVE LETTER\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
- "grief1_16.html": {
+ "seance410.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_16.html",
+  "_filename": "{_root}seance410.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -770,13 +1440,13 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_16.html",
+  "_output_filename": "seance410.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_16.^.html",
+  "_sourcename": "seance410.^.html",
   "body": "{play}",
   "card": "<div class=\"card_wrap\">\n\t<div class=\"card_info\">\n\t\t{letter}\n\t</div>\n\t{continue}\n</div>",
-  "continue": "<div class=\"read_wrap\">\n\t<a href=\"end.html\" class=\"read\">\n\t\t...\n\t</a>\n</div>",
+  "continue": "<div class=\"read_wrap\">\n\t<a href=\"seance420.html\" class=\"read\">\n\t\t...\n\t</a>\n</div>",
   "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center;}\n.read_wrap\t{margin-top:-1em; margin-right:2em;}\n.card_wrap\t{overflow-y:scroll;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0; margin-right:1em;}\n}\n",
   "letter": "<p>Dear friend,\n<br/>\n<br/></p>\n<p>I&#39;m writing to you from a time when life was simpler and yet so much more difficult at the same time. I&#39;ve been gone for many years now, but your letter has reached me through some magical means. It seems that our lives are quite different from each other, but there is one thing we share: grief.\n<br/>\n<br/></p>\n<p>The gypsy in my painting is a symbol of melancholy and longing, much like the pain you are feeling now. You may not think it, but your grief is valuable and should be cherished as a part of your journey through life. It&#39;s normal to feel angry or unjustified in our emotions, but remember that these feelings can lead us to growth and understanding.\n<br/>\n<br/></p>\n<p>As for being remembered after death, I often pondered on this myself. While it is nice to be remembered, what truly matters are the connections we make with others during our lives. These relationships are like lanterns that can light our way through dark times, even when the candles have burnt out.\n<br/>\n<br/></p>\n<p>I hope you find comfort in your grief, and remember that it&#39;s okay not to be angry or compare yourself to others. Cherish the time you had with those who have passed on and use their memories to guide you through your own journey.\n<br/>\n<br/></p>\n<p>With love and understanding,</p>\n<p>Hugo Birger</p>\n",
   "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",
@@ -784,40 +1454,9 @@
   "title": "Dead Painters Seance",
   "turn": "<div class=\"talk_wrap\">\n\t{card}\n</div>"
  },
- "grief1_1a.html": {
+ "seance420.html": {
   "_dirname": "{_root}",
-  "_filename": "{_root}grief1_1a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_1a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_1a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 20%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Did you feel that? I feel like something has changed.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_1b.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_1b.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_1b.html",
+  "_filename": "{_root}seance420.html",
   "_flags": {
    "body": {
     "trim": "ends"
@@ -836,719 +1475,13 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "grief1_1b.html",
+  "_output_filename": "seance420.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "grief1_1b.^.html",
+  "_sourcename": "seance420.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tA hint of uncertainty <span class=\"sac\">punctures</span> the mood. You were so preoccupied with the absurdity of it all that any subtlety of nuance was <span class=\"wea\">lost</span> in the moment. Before you could reply, the <span class=\"gri\">spirit</span> continued.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_2.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs you utter the last word of the letter out loud, the <span class=\"gri\">spirit</span> looks at you contented. It gives you a slight nod before vanishing into thin air, almost as if it was never there to begin with. The <span class=\"voi\">Voice</span> remains silent.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance000.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_2.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_2.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q": {
-    "trim": "ends"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_2.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_2.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
-  "q": "<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tA peer, who would never judge me.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tA religious leader, who I find knowlegeable.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tNo one. I keep my grief to myself. \n\t</a>\n</div>",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWhen you're in the deep dark depths of grief, who do you lean on?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_3.html\" class=\"say\">\n\t\t\t\t\tSomeone older than me, who is wise.\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_2a.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_2a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_2a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_2a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 15%, black);}\n.talky\t{animation:slow_show 1.5s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Surely you felt that. Do you sense anything at all?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_2b.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_2b.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_2b.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_2b.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_2b.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs the <span class=\"gri\">spirit</span> paused to observe itself, you wonder about the questions ~ they seem so <span class=\"wea\">specific</span> and personal.\n\t\t\t\tYou find yourself start to mouth a reply but the <span class=\"gri\">spirit</span> went on.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_4.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_3.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_3.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_3.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_3.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tSo you lean on someone older than you, who is wise. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1_2.html\" class=\"say\">\n\t\t\t\t\tNo, that's not what I said.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_2a.html\" class=\"say\">\n\t\t\t\t\tYes, please continue.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_4.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_4.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q": {
-    "trim": "ends"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_4.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_4.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
-  "q": "<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI would like to be remembered for how kind/loving I was.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI would not care if I am remembered or not, nothing beyond that matters.\n\t</a>\n</div>\n<div class=\"read_wrap\">\n\t<a href=\"grief1.html\" class=\"say\">\n\t\tI would like to be forgotten.\n\t</a>\n</div>",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHave you thought about your own death? If not take a moment to think about it now. How do you wish to be remembered once you're gone?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_5.html\" class=\"say\">\n\t\t\t\t\tI would like to be remembered for my achievements and positive social or artistic contributions.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_4a.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_4a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_4a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_4a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>It is happening again. You must notice what I'm seeing, surely?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_4b.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_4b.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_4b.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_4b.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_4b.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThere was no doubt ~ something was definitely happening to the <span class=\"gri\">spirit</span> right before your very eyes but neither of you could figure out why this was the case. The questioning continues.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_6.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_5.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_5.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_5.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_5.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said you wanted to be remembered for your achievements and positive social or artistic contributions. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1_4.html\" class=\"say\">\n\t\t\t\t\tNo, not quite.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_4a.html\" class=\"say\">\n\t\t\t\t\tYes, I think so.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_6.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_6.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_6.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_6.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tNot all grief is treated equally in an unequal world. Does your grief make you angry? Are you allowed to express it?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_7.html\" class=\"say\">\n\t\t\t\t\tMy grief makes me angry as I am not allowed to express it.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_6a.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_6a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_6a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_6a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 5%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Your answers are changing me. Can you see that?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_6b.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_6b.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_6b.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_6b.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_6b.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tIs that true? Was the physical act of responding to the questions having an effect on this <span class=\"gri\">spirit</span>? But how could that be? The <span class=\"voi\">Voice</span> mentioned something earlier about resonating with humanity to <span class=\"sac\">manifest</span>. Was this it? The <span class=\"gri\">spirit</span> kept going.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_8.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_7.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_7.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_7.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_7.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said that grief makes you angry as you are not allowed to express it. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1_6.html\" class=\"say\">\n\t\t\t\t\tNo, that is not what I meant.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_6a.html\" class=\"say\">\n\t\t\t\t\tYes, that is what I said.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_8.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_8.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_8.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_8.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1); mask-image:linear-gradient(to top, transparent 5%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWhat unhealthy coping mechanisms have you used to deal with grief?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"grief1_9.html\" class=\"say\">\n\t\t\t\t\tI have had an addiction of some sort; alcohol, drugs, food, sex, etc.\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_8a.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_8a.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_8a.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_8a.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.5) brightness(1); animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 2%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Could this be? I feel almost whole again.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_8b.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_8b.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_8b.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_8b.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_8b.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Almost whole.</span> That must be it! The <span class=\"sac\">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view. The <span class=\"gri\">spirit</span> picked up the pace.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1_10.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "grief1_9.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}grief1_9.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "grief1_9.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "grief1_9.^.html",
-  "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1); mask-image:linear-gradient(to top, transparent 5%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou said have had an addiction of some sort; alcohol, drugs, food, sex, etc. Is this correct?\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<a href=\"grief1_8.html\" class=\"say\">\n\t\t\t\t\tNo, that is wrong.\n\t\t\t\t</a>\n\t\t\t\t<a href=\"grief1_8a.html\" class=\"say\">\n\t\t\t\t\tYes, that is correct.\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "index.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}index.html",
-  "_flags": {
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "index.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "index.^.html",
-  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tseance.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
- },
- "landing.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}landing.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "credits": {
-    "trim": "ends"
-   },
-   "credits_more": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "landing.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "landing.^.html",
-  "body": "{play}",
-  "credits": "<div class=\"cred\">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>",
-  "credits_more": "This prototype was developed as part of the NEO Collections project. Funded by the Digital Culture Programme of the Kulturstiftung des Bundes (German Federal Cultural Foundation). Funded by the Beauftragte der Bundesregierung für Kultur und Medien (Federal Government Commissioner for Culture and the Media).",
-  "css": ".fog\t\t{background:transparent;}\n.read_wrap\t{text-align:center;}\n.woe,\n.title.p\t{animation:show 5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>Painters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Seance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"start.html\" class=\"read go\" id=\"aux1\">Start</a>{audio}\n\t\t</div>\n\t\t{credits}\n\t</div>\n</div>",
-  "title": "Dead Painters Seance"
- },
- "reason.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}reason.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "reason.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "reason.^.html",
-  "body": "{play}",
-  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tHello?? Where am I? Is anybody there? Can you help me?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"reason1.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "reason1.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}reason1.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "reason1.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "reason1.^.html",
-  "body": "{play}",
-  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tI need to remember. I need to remember what it is to be alive.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"reason2.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "reason2.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}reason2.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "q1": {
-    "trim": "ends"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "reason2.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "reason2.^.html",
-  "body": "{play}",
-  "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name grief\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tWill you help me? Will you please answer my questions?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"reason3.html\" class=\"read\">\n\t\t\t\t\tOk\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "reason3.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}reason3.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "reason3.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "reason3.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"gri\">spirit</span> looks at you, hopeful. You realise that agreeing to answer whatever questions they might ask would come with perhaps, dire consequences. It could have been a trick of the light but you thought you saw it <span class=\"warn\">smirk</span> for a moment. Then it spoke again.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"grief1.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
-  "title": "Dead Painters Seance"
- },
- "start.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}start.html",
-  "_flags": {
-   "body": {
-    "trim": "ends"
-   },
-   "candle": {
-    "trim": "ends"
-   },
-   "css": {
-    "same": "append"
-   },
-   "start": {
-    "trim": "ends"
-   },
-   "title": {
-    "trim": "ends"
-   }
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "start.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "start.^.html",
-  "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou find yourself in a dark room filled with the endless <span class=\"bli\">twinkling</span> of distant stars. The constellations are not familiar with your own. You feel a sturdy, wooden chair in front of you and <span class=\"voi\">a voice</span> beckons you to sit. \n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"candle.html\" class=\"read\" id=\"aux1\">\n\t\t\t\t\tSit\n\t\t\t\t</a>{audio}\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
  }
