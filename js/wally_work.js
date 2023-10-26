@@ -51,12 +51,13 @@ wally_work.job=async function(opts,filename)
 	let it={}
 	it.opts=opts
 	it.ids={}
+	it.cmd=[]
 
 	await wally_work.load_all(it)
 	
 	if( filename )
 	{
-		it.cmd=await wally_work.load_csv(it,filename)
+		it.cmd=await wally_work.parse_csv(it,filename)
 		
 		if( filename.slice(-4)==".csv" )
 		{
@@ -65,34 +66,59 @@ wally_work.job=async function(opts,filename)
 	}
 	
 	let p=plated.create({})
-
-	it.rnd={}
-	await wally_work.random(it,it.ids,it.rnd)
-	await wally_work.random(it,it.cmd,it.rnd)
-	it.repeat=Number(it.rnd.repeat||1)||1
-
+	let jobidx=0
+	
+	it.jobs=[]
 	it.prompts=[]
 	it.results=[]
-	for(let i=0;i<it.repeat;i++)
+
+	it.redo={}
+	it.rnd=await wally_work.random(it,it.ids)
+	for(let v of it.cmd)
 	{
-		it.rnd={}
-		await wally_work.random(it,it.ids,it.rnd)
-		await wally_work.random(it,it.cmd,it.rnd)
-		it.prompts[i]=p.chunks.replace(it.rnd.prompt,it.rnd).trim()
+		let id=""
+		let text=""
+		if(v.id)
+		{
+			id=v.id.trim()
+			text=(v.text||"").trim()
+			if(id)
+			{
+				it.redo[id]=text
+				it.rnd[id]=text
+			}
+		}
+		
+		if(id=="run") // generate some output
+		{
+			jobidx=jobidx+1
+			let repeat=Number(text||1)||1
+			let predict=Number(it.rnd.predict||1024)||1024
+			for(let i=0;i<repeat;i++)
+			{
+				let prompt=p.chunks.replace(it.rnd.prompt,it.rnd).trim()
+				it.prompts.push(prompt)
+				it.jobs.push(jobidx)
 
-		console.log("job "+i+"/"+it.repeat)
-	
-		let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-p" , it.prompts[i] )
-		let a=r.split(it.prompts[i].trim())
-		if( a.length>1 ) { r=a[1] }
-		it.results[i]=r.trim()
-
+				console.log("job "+jobidx+" "+(i+1)+"/"+repeat)
+			
+				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , prompt )
+				let a=r.split(prompt.trim())
+				if( a.length>1 ) { r=a[1] }
+				it.results.push(r.trim())
+			}
+			
+			// reroll randoms
+			it.rnd=await wally_work.random(it,it.ids)
+			for(let n in it.redo) { it.rnd[n]=it.redo[n] } //redo all loaded values so far
+		}
 	}
+
 	let csv=[]
-	csv[0]=["prompt","result"]
-	for(let i=0;i<it.repeat;i++)
+	csv[0]=["prompt","result","job"]
+	for(let i=0;i<it.prompts.length;i++)
 	{
-		csv[i+1]=[ it.prompts[i] , it.results[i] ]
+		csv[i+1]=[ it.prompts[i] , it.results[i] , it.jobs[i] ]
 	}
 	let csvs=csv_stringify(csv)
 	
@@ -121,6 +147,12 @@ wally_work.load_csvs=async function(it,path)
 	}
 }
 
+wally_work.parse_csv=async function(it,path)
+{
+	let data=await pfs.readFile(path,"utf8")
+	let csv=csv_parse(data,{relax_column_count:true,columns:true})
+	return csv
+}
 
 wally_work.load_csv=async function(it,path,into)
 {
@@ -131,11 +163,11 @@ wally_work.load_csv=async function(it,path,into)
 //	console.log(csv)
 	for(let v of csv )
 	{
-		if(v.id && v.text)
+		if(v.id)
 		{
 			let id=v.id.trim()
-			let text=v.text.trim()
-			if(id && text)
+			let text=(v.text||"").trim()
+			if(id)
 			{
 				if(!into[id]) { into[id]=[] } // manifest array
 				into[id][ into[id].length ]=text // append to end of array

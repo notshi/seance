@@ -23,11 +23,17 @@ wally
 	results in an output csv file. 
 
 wally work data.csv
-	Read chunks from data.csv and everything in csv/input/* and do some 
+	Read chunks from data.csv and randomise everything in csv/input/* and do some 
 	work.
-
-	The {prompt} chunk is expanded and used as an ai prompt {count} 
-	times and will be written to *.result.csv
+	
+	Read data.csv one line at a time, setting the given chunk. When we 
+	set a "run" chunk then: The current {prompt} chunk is expanded and 
+	used as an ai prompt {run} times.
+	
+	output will be written to *.out.csv
+	
+	if data.csv is not given then csv/jobs is scanned and any .csv file 
+	without a .out.csv will automatically be processed.
 
 wally help
 	Print this help message.

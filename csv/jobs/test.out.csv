@@ -1,27 +1,9 @@
-prompt,result
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating apple because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I savor apples for their alluring hue and delightful flavor.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating orange because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I relish the vibrant hue and palatable flavor of oranges.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating orange because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I appreciate consuming oranges due to their vibrant hue and delightful flavor.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating orange because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:","I relish consuming oranges due to their vibrant color and delightful flavor.
-
----
-
-In this rephrased sentence, the original intent is maintained while being concise and clear. The words ""enjoy eating orange"" are replaced with ""relish consuming oranges"", demonstrating a preference for the fruit. Furthermore, the reasons for enjoying them (the color and taste) are preserved in the phrases ""vibrant color"" and ""delightful flavor.""
-
-The brevity of the sentence makes it easy to understand while still capturing the essence of the original statement."
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating apple because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I appreciate consuming apples due to their vibrant color and pleasant flavor.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating orange because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I appreciate the flavor and vibrant hue of oranges.
+prompt,result,job
 "### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating banana because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I savor bananas for their appealing hue and delicious flavor.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating apple because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I appreciate apples for their appealing colors and delightful flavors.
-"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating orange because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I savor oranges for their vibrant hue and delightful flavor.
+### Response:",I appreciate bananas for,1
 "### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating banana because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
-### Response:",I appreciate consuming bananas for their appealing hue and delectable flavor.
+### Response:",I appreciate consuming bananas due to their vibrant hue and delicious flavor.,2
+"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating banana because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
+### Response:",I appreciate the flavor and visual appeal of bananas.,2
+"### Instruction: Provide a consise, accurate, and succinct rewording of ""I enjoy eating banana because of the color and the taste."". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
+### Response:",I appreciate consuming bananas for their appealing hue and delectable flavor.,2

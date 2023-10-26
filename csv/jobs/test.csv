@@ -1,5 +1,9 @@
 id,text
-repeat,10
 ,
 prompt,{text:wrap_reword}
 text,"I enjoy eating {fruit} because of the color and the taste."
+,
+predict,5
+run,1
+predict,
+run,3
