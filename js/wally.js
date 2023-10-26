@@ -24,8 +24,8 @@ wally
 	results in an output csv file. 
 
 wally work data.csv
-	Read chunks from data.csv and randomise everything in csv/input/* and do some 
-	work.
+	Read chunks from data.csv and randomise everything in csv/input/* 
+	and do some work.
 	
 	Read data.csv one line at a time, setting the given chunk. When we 
 	set a "run" chunk then: The current {prompt} chunk is expanded and 

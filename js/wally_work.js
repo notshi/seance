@@ -74,8 +74,9 @@ wally_work.job=async function(opts,filename)
 
 	it.redo={}
 	it.rnd=await wally_work.random(it,it.ids)
-	for(let v of it.cmd)
+	for(let ci in it.cmd)
 	{
+		let v=it.cmd[ci]
 		let id=""
 		let text=""
 		if(v.id)
@@ -102,17 +103,17 @@ wally_work.job=async function(opts,filename)
 				let jobid=it.rnd.id || jobidx
 				it.jobs.push(jobid)
 
-				console.log("job "+jobid+" "+(i+1)+"/"+repeat)
+				console.log("job "+ci+"/"+it.cmd.length+" "+jobid+" "+(i+1)+"/"+repeat)
 			
 				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , prompt )
 				let a=r.split(prompt.trim())
 				if( a.length>1 ) { r=a[1] }
 				it.results.push(r.trim())
-			}
-			
-			// reroll randoms
-			it.rnd=await wally_work.random(it,it.ids)
-			for(let n in it.redo) { it.rnd[n]=it.redo[n] } //redo all loaded values so far
+
+				// reroll randoms
+				it.rnd=await wally_work.random(it,it.ids)
+				for(let n in it.redo) { it.rnd[n]=it.redo[n] } //redo all loaded values so far
+			}			
 		}
 	}
 
