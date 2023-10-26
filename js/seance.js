@@ -65,6 +65,6 @@ seance.start=async function(opts)
 
 
 
-	goto("index.html")
+	goto("landing.html")
 
 }
