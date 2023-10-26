@@ -101,7 +101,7 @@ wally_work.job=async function(opts,filename)
 				let pprompt=prompt // prompt + prefix
 				if( prefix != "" ) // special prefix
 				{
-					pprompt=prompt+" "+prefix+" "
+					pprompt=prompt+" "+prefix
 				}
 
 				let jobid=it.rnd.id || jobidx
