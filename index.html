@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Dead Painters Seance">
-    <title>Dead Painters Seance</title>
+	<script src="./js/seance.js"></script>
+	<script type="module">
+		let opts={}
+		seance.default.start(opts)
+	</script>
+    <title>You are lost.</title>
 <style>
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
@@ -263,75 +267,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.img	{width:100vw; background-size:contain;}
 }
-.fog		{background:transparent;}
-.read_wrap	{text-align:center;}
-.woe,
-.title.p	{animation:show 5s steps(40,end);}
 </style>
 </head>
-<body><div class="fog">
-	<div class="over">
-		<div class="main_wrap">
-	<div class="star-1 stars"></div>
-<div class="star-2 stars"></div>
-<div class="star-3 stars"></div>
-<div class="star-4 stars"></div>
-<div class="star-5 stars"></div>
-<div class="star-6 stars"></div>
-<div class="star-7 stars"></div>
-<div class="star-8 stars"></div>
-<div class="star-9 stars"></div>
-<div class="star-10 stars"></div>
-<div class="star-11 stars"></div>
-<div class="star-12 stars"></div>
-<div class="star-13 stars"></div>
-<div class="star-14 stars"></div>
-<div class="star-15 stars"></div>
-<div class="star-16 stars"></div>
-<div class="star-17 stars"></div>
-<div class="star-18 stars"></div>
-<div class="star-19 stars"></div>
-<div class="star-20 stars"></div>
-	<div class="title_wrap">
-		<div class="woe"></div>
-		<div class="title d">
-			<span class="sub">Dead</span>
-			<div id="letters">
-			  <span class="let">D</span>
-			  <span class="let">e</span>
-			  <span class="let">a</span>
-			  <span class="let">d</span>
-			</div>
-		</div>
-		<div class="title p"><span>Painters</span></div>
-		<div class="title s">
-			<span class="sub">Seance</span>
-			<div id="letters" class="sea">
-			  <span class="let">S</span>
-			  <span class="let">e</span>
-			  <span class="let">a</span>
-			  <span class="let">n</span>
-			  <span class="let">c</span>
-			  <span class="let">e</span>
-			</div>
-		</div>
-		<div class="read_wrap">
-			<a href="start.html" class="read go" id="aux1">Start</a><audio id="myAudio" src="/data/aux/candle.mp3"></audio>
-<script type="text/javascript">
-	aux1.addEventListener("mouseenter", e =>
-	{
-	  myAudio.play().catch(er => console.error(er.message, "Now, click here and try again"));
-	});
-
-	aux1.addEventListener("mouseleave", e =>
-	{
-	  myAudio.pause();
-	});
-</script>
-		</div>
-		<div class="cred">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>
-	</div>
-</div>
-	</div>
-</div></body>
+<body>
+</body>
 </html>

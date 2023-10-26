@@ -1354,6 +1354,18 @@
   "_dirname": "{_root}",
   "_filename": "{_root}index.html",
   "_flags": {
+  },
+  "_output_chunkname": "html",
+  "_output_filename": "index.html",
+  "_root": "./",
+  "_site": "{_root}",
+  "_sourcename": "index.^.html",
+  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tseance.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
+ },
+ "landing.html": {
+  "_dirname": "{_root}",
+  "_filename": "{_root}landing.html",
+  "_flags": {
    "body": {
     "trim": "ends"
    },
@@ -1374,10 +1386,10 @@
    }
   },
   "_output_chunkname": "html",
-  "_output_filename": "index.html",
+  "_output_filename": "landing.html",
   "_root": "./",
   "_site": "{_root}",
-  "_sourcename": "index.^.html",
+  "_sourcename": "landing.^.html",
   "body": "{play}",
   "credits": "<div class=\"cred\">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>",
   "credits_more": "This prototype was developed as part of the NEO Collections project. Funded by the Digital Culture Programme of the Kulturstiftung des Bundes (German Federal Cultural Foundation). Funded by the Beauftragte der Bundesregierung für Kultur und Medien (Federal Government Commissioner for Culture and the Media).",
@@ -1539,17 +1551,5 @@
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
- },
- "test.html": {
-  "_dirname": "{_root}",
-  "_filename": "{_root}test.html",
-  "_flags": {
-  },
-  "_output_chunkname": "html",
-  "_output_filename": "test.html",
-  "_root": "./",
-  "_site": "{_root}",
-  "_sourcename": "test.^.html",
-  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tseance.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
  }
 }
