@@ -39,12 +39,14 @@ seance.start=async function(opts)
 	let goto=function(name)
 	{
 		let chunks=page(name)
+		let css=plated.chunks.replace("{css}",chunks)
 		let str=plated.chunks.replace("{body}",chunks)
 		let body=document.createElement("body");
 		body.innerHTML=str
 
 		body.addEventListener("click",click)
 		document.getElementsByTagName('body')[0].replaceWith(body)
+		document.getElementsByTagName('style')[0].innerHTML=css
 	}
 	
 	click=function(event)
