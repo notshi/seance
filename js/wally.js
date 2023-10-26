@@ -56,6 +56,7 @@ if( cmd=="work" )
 
 	await wally_work.start(opts)
 }
+else
 if( cmd=="sheet" )
 {
 	let opts={}
