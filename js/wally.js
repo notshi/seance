@@ -3,6 +3,7 @@ const wally={}
 export default wally
 
 import wally_work from "./wally_work.js"
+import wally_sheet from "./wally_sheet.js"
 
 import minimist from "minimist"
 
@@ -35,6 +36,10 @@ wally work data.csv
 	if data.csv is not given then csv/jobs is scanned and any .csv file 
 	without a .out.csv will automatically be processed.
 
+wally sheet
+	Read input data sheets from csv/sheet/*.csv and create internal 
+	data files and ai jobs.
+
 wally help
 	Print this help message.
 `)
@@ -49,7 +54,18 @@ if( cmd=="work" )
 
 	opts.filename=args._[1]
 
-	await wally_work.start(opts) // this is async but we do not wait
+	await wally_work.start(opts)
+}
+if( cmd=="sheet" )
+{
+	let opts={}
+
+	// parent dir relative to this file
+	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+
+	opts.filename=args._[1]
+
+	await wally_sheet.start(opts)
 }
 else
 {

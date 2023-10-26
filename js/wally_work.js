@@ -98,9 +98,11 @@ wally_work.job=async function(opts,filename)
 			{
 				let prompt=p.chunks.replace(it.rnd.prompt,it.rnd).trim()
 				it.prompts.push(prompt)
-				it.jobs.push(jobidx)
 
-				console.log("job "+jobidx+" "+(i+1)+"/"+repeat)
+				let jobid=it.rnd.id || jobidx
+				it.jobs.push(jobid)
+
+				console.log("job "+jobid+" "+(i+1)+"/"+repeat)
 			
 				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , prompt )
 				let a=r.split(prompt.trim())
