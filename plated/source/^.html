@@ -16,24 +16,29 @@
 <style>{css}</style>
 
 #^title trim=ends
-You are lost.
+Dead Painters Seance ~ You are lost
 
 #^body trim=ends
 The spirit is weak but the body is strong.
 
-#^audio trim=ends
-<audio id="myAudio" src="/data/aux/candle.mp3"></audio>
+#^theme trim=ends
+<audio id="away" src="/data/aux/away.mp3"></audio>
 <script type="text/javascript">
 	aux1.addEventListener("mouseenter", e =>
 	{
-	  myAudio.play().catch(er => console.error(er.message, "Now, click here and try again"));
+	  away.play().catch(er => console.error(er.message, "Click anywhere."));
 	});
 
 	aux1.addEventListener("mouseleave", e =>
 	{
-	  myAudio.pause();
+	  away.pause();
 	});
 </script>
+
+#^audio trim=ends
+
+
+#^click trim=ends
 
 #^play trim=ends
 <div class="fog">
