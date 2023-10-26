@@ -26,9 +26,6 @@
   "start": {
    "trim": "ends"
   },
-  "theme": {
-   "trim": "ends"
-  },
   "title": {
    "trim": "ends"
   }
@@ -46,6 +43,5 @@
  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tAhh ~ interesting. The spirit seems stronger than it was before. What did you do?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance350.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
  "stars": "<div class=\"star-1 stars\"></div>\n<div class=\"star-2 stars\"></div>\n<div class=\"star-3 stars\"></div>\n<div class=\"star-4 stars\"></div>\n<div class=\"star-5 stars\"></div>\n<div class=\"star-6 stars\"></div>\n<div class=\"star-7 stars\"></div>\n<div class=\"star-8 stars\"></div>\n<div class=\"star-9 stars\"></div>\n<div class=\"star-10 stars\"></div>\n<div class=\"star-11 stars\"></div>\n<div class=\"star-12 stars\"></div>\n<div class=\"star-13 stars\"></div>\n<div class=\"star-14 stars\"></div>\n<div class=\"star-15 stars\"></div>\n<div class=\"star-16 stars\"></div>\n<div class=\"star-17 stars\"></div>\n<div class=\"star-18 stars\"></div>\n<div class=\"star-19 stars\"></div>\n<div class=\"star-20 stars\"></div>",
  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
- "theme": "<audio id=\"away\" src=\"/data/aux/away.mp3\"></audio>\n<script type=\"text/javascript\">\n\taux1.addEventListener(\"mouseenter\", e =>\n\t{\n\t  away.play().catch(er => console.error(er.message, \"Click anywhere.\"));\n\t});\n\n\taux1.addEventListener(\"mouseleave\", e =>\n\t{\n\t  away.pause();\n\t});\n</script>",
  "title": "Dead Painters Seance"
 }

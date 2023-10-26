@@ -29,9 +29,6 @@
   "start": {
    "trim": "ends"
   },
-  "theme": {
-   "trim": "ends"
-  },
   "title": {
    "trim": "ends"
   }
@@ -50,6 +47,5 @@
  "play": "<div class=\"fog\">\n\t<div class=\"over\">\n\t\t{start}\n\t</div>\n</div>",
  "stars": "<div class=\"star-1 stars\"></div>\n<div class=\"star-2 stars\"></div>\n<div class=\"star-3 stars\"></div>\n<div class=\"star-4 stars\"></div>\n<div class=\"star-5 stars\"></div>\n<div class=\"star-6 stars\"></div>\n<div class=\"star-7 stars\"></div>\n<div class=\"star-8 stars\"></div>\n<div class=\"star-9 stars\"></div>\n<div class=\"star-10 stars\"></div>\n<div class=\"star-11 stars\"></div>\n<div class=\"star-12 stars\"></div>\n<div class=\"star-13 stars\"></div>\n<div class=\"star-14 stars\"></div>\n<div class=\"star-15 stars\"></div>\n<div class=\"star-16 stars\"></div>\n<div class=\"star-17 stars\"></div>\n<div class=\"star-18 stars\"></div>\n<div class=\"star-19 stars\"></div>\n<div class=\"star-20 stars\"></div>",
  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>Painters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Seance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"seance010.html\" class=\"read go\">Start</a>\n\t\t</div>\n\t\t{credits}\n\t</div>\n</div>",
- "theme": "<audio id=\"away\" src=\"/data/aux/away.mp3\"></audio>\n<script type=\"text/javascript\">\n\taux1.addEventListener(\"mouseenter\", e =>\n\t{\n\t  away.play().catch(er => console.error(er.message, \"Click anywhere.\"));\n\t});\n\n\taux1.addEventListener(\"mouseleave\", e =>\n\t{\n\t  away.pause();\n\t});\n</script>",
  "title": "Dead Painters Seance"
 }
