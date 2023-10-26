@@ -15,6 +15,8 @@ seance.start=async function(opts)
 
 // load full plated json for this site
 	let map=await (await fetch("./plated.map.json") ).json()
+	
+	let audio=new Audio()
 
 	
 	let page=function(name)
@@ -56,6 +58,13 @@ seance.start=async function(opts)
 		console.log(it)
 		if( it.tagName=="A" )
 		{
+			let mp3=it.getAttribute("mp3")
+			if(mp3)
+			{
+				audio.src=mp3
+				;( audio.play() ) .then(function(){}).catch(function(){})
+			}
+
 			let href=it.getAttribute("href")
 			console.log("A",href)
 			goto(href)
