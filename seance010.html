@@ -300,16 +300,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 			<div class="read_wrap">
 				<a href="seance020.html" class="read" id="aux1">
 					Sit
-				</a><audio id="myAudio" src="/data/aux/candle.mp3"></audio>
+				</a><audio id="away" src="/data/aux/away.mp3"></audio>
 <script type="text/javascript">
 	aux1.addEventListener("mouseenter", e =>
 	{
-	  myAudio.play().catch(er => console.error(er.message, "Now, click here and try again"));
+	  away.play().catch(er => console.error(er.message, "Click anywhere."));
 	});
 
 	aux1.addEventListener("mouseleave", e =>
 	{
-	  myAudio.pause();
+	  away.pause();
 	});
 </script>
 			</div>
