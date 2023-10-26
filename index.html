@@ -7,7 +7,7 @@
 		let opts={}
 		seance.default.start(opts)
 	</script>
-    <title>Dead Painters Seance ~ You are lost</title>
+    <title>Dead Painters Séance ~ You are lost</title>
 <style>
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
@@ -105,14 +105,16 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 
 /*	landing page	*/
 .woe		{width:25%; height:25vh; margin:0 auto; border:6px double #2f2753; border-radius:2px; background:url('./data/woe.jpg') center center no-repeat; background-size:cover;}
-.title_wrap	{margin:0 auto; padding-top:5em; text-align:center; height:100vh; width:50vw;}
+.title_wrap	{margin:0 auto; padding-top:3em; text-align:center; height:100vh; width:50vw;}
 .title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-shadow:1px -2px 17px #5557d0;}
 .title.d 	{margin-left:-0.5em; transform:skew(-5deg);}
 .title.p	{line-height:0.45em; transform:skew(8deg); padding-bottom:15px;}
 .title.p:hover	{animation:blur 1s 1, glitch 0.1s ease-out infinite; color:#9e55d0;}
 .title.s 	{margin-left:2.5em; transform:skew(-13deg); font-size:105px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
-.cred		{margin-top:3em;}
+.cred_wrap	{margin-top:3em;}
+.cred		{color:#b2b6f2; font-size:20px; margin-top:10px; display:inline-block; padding:5px 15px; text-transform:uppercase; transition:all 0.3s linear;}
+.cred:hover, .cred:focus, .cred:active {transform:skewX(-20deg);}
 .go:before,
 .go:after	{content:"\263E"; color:#000; position:absolute; margin:-40px; width:30px; height:30px; background-color:#2f2753; border:4px double #000;}
 .go:before	{top:50px; left:-10px; transform:rotate(45deg);}
@@ -120,6 +122,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .go:hover:before, .go:hover:after,
 .go:focus:before, .go:focus:after,
 .go:active:before, .go:active:after	{background:#361EA5; color:#fff;}
+
+/*	credit page	*/
+.fund_top	{font-size:21px; font-family:'garamondtitalic',serif; padding-bottom:30px; text-align:center;}
+.fund_top span	{color:#524D59;}
+.fund_line	{border-bottom:4px double #766aac; padding-bottom:20px;}
+.fund_info	{margin-top:30px; font-size:20px; line-height:1.25em;}
+.fund_wrap	{display:flex; justify-content:space-between; margin-top:20px;}
+.fund span	{font-size:16px; text-align:left; display:inline-block; padding:0 40px 10px 0; line-height:1.25em;}
+.fund_img_a	{background:url('./data/Priyanka_Prekshaa.jpg')center no-repeat; height:360px; width:480px; margin:0 auto; margin-bottom:30px;}
+.fund_img_b	{background:url('./data/wetgenes.jpg')center no-repeat; height:349px; width:480px; margin:0 auto; margin-bottom:30px;}
 
 /*	ghost letters for title	*/
 #letters	{position:absolute; top:0em; left:0em; right:0; display:flex; justify-content:center; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
@@ -213,6 +225,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:2em; padding:0 2em; text-align:justify;}
 .card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
 .card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px;}
+.card_info span.moon	{color:#4407A2; font-family:'basteleurmoonlight',serif; font-size:19px;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:85vh; animation:show 2.5s steps(40,end);}
 @keyframes turn	{0% {transform:rotate(0);} 100% {transform:rotate(360deg);}}
