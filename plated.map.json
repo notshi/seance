@@ -86,7 +86,10 @@
    "credits": {
     "trim": "ends"
    },
-   "credits_more": {
+   "credits_1": {
+    "trim": "ends"
+   },
+   "credits_2": {
     "trim": "ends"
    },
    "css": {
@@ -106,9 +109,10 @@
   "_sourcename": "seance000.^.html",
   "body": "{play}",
   "credits": "<div class=\"cred\">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>",
-  "credits_more": "This prototype was developed as part of the NEO Collections project. Funded by the Digital Culture Programme of the Kulturstiftung des Bundes (German Federal Cultural Foundation). Funded by the Beauftragte der Bundesregierung für Kultur und Medien (Federal Government Commissioner for Culture and the Media).",
+  "credits_1": "NEO Collections is funded by the German Federal Cultural Foundation as part of their Digital Culture programme. Funded by the German Federal Government Commissioner for Culture and Media.",
+  "credits_2": "<div class=\"fund_wrap\">\n\t<div class=\"fund\">\n\t\t<span>Funded by the Digital Culture Programme of the German Federal Cultural Foundation</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_ksb.png\" width=\"300\" height=\"128\">\n\t</div>\n\t<div class=\"fund\">\n\t\t<span>Funded by the Federal Government Commissioner for Culture and the Media</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_bkm.svg\" width=\"300\" height=\"128\">\n\t</div>\n</div>",
   "css": ".fog\t\t{background:transparent;}\n.read_wrap\t{text-align:center;}\n.woe,\n.title.p\t{animation:show 5s steps(40,end);}\n",
-  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>Painters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Seance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"seance010.html\" class=\"read go\" mp3=\"{_root}data/aux/away.mp3\">Start</a>\n\t\t</div>\n\t\t{credits}\n\t</div>\n</div>",
+  "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>Painters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Seance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"seance010.html\" class=\"read go\" mp3=\"{_root}data/aux/away.mp3\">Start</a>\n\t\t</div>\n\t\t{credits}\n\t\t{credits_1}\n\t\t{credits_2}\n\t</div>\n</div>",
   "title": "Dead Painters Seance"
  },
  "seance010.html": {
