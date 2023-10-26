@@ -1,5 +1,8 @@
 id,text
-wrap_reword,"### Instruction: Provide a consise, accurate, and succinct rewording of ""{_it}"". Respond with a single, articulate sentence that completes the request and Ensure your response is brief.
+wrap_reword,"### Instruction: Provide a concise, {mannerism}, and succinct rewording of ""{_it}"". Respond with a single, {mannerism} sentence that completes the request and Ensure your response is brief.
+### Response:
+"
+wrap_reword_question,"### Instruction: Provide a {mannerism} rewording of ""{_it}"". Respond with a single, {mannerism} question that completes the request.
 ### Response:
 "
 wrap_instruct,"### Instruction: {_it}

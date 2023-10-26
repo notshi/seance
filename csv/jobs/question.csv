@@ -1,0 +1,105 @@
+id,text
+prompt,{text:wrap_reword_question}
+id,grief1_question
+text,"When you're in the deep dark depths of grief, who do you lean on?"
+run,5
+id,grief2_question
+text,Have you thought about your own death? If not take a moment to think about it now. How do you wish to be remembered once you're gone?
+run,5
+id,grief3_question
+text,Not all grief is treated equally in an unequal world. Does your grief make you angry? Are you allowed to express it?
+run,5
+id,grief4_question
+text,What unhealthy coping mechanisms have you used to deal with grief?
+run,5
+id,grief5_question
+text,Have you ever compared your sadness with another and felt jealousy or injustice?
+run,5
+id,grief6_question
+text,"Do you grieve the years past, the youth lost, and the changes and losses along the way?"
+run,5
+id,grief7_question
+text,How do you remember or feel close to those you have lost? Tell us about them and a special memory or tradition you hold close to your heart in their absence.
+run,5
+id,grief8_question
+text,"Sad people sometimes take up consuming hobbies (like knitting) to deal with their emotions. Do you believe drugs, alcohol and sex can help you deal with grief or make matters worse?"
+run,5
+id,fear1_question
+text,"Our bodies, among other things, help us feel pleasure. Have
+you restrained yourself and are you scared for your body in
+the post-covid world?"
+run,5
+id,fear2_question
+text,"People cover up in layers to protect themselves in this world.
+Are you scared of shedding these and letting the world see
+you for what you are? What are you afraid they would find?"
+run,5
+id,fear3_question
+text,Many young women today are ridiculed that they will die old and alone when historically women have outlived men. Does this knowledge scare you or liberate you?
+run,5
+id,fear4_question
+text,Do you worry for the children around you when you see how the world is doing with climate change and politics? What about the future scares you?
+run,5
+id,fear5_question
+text,Does the anticipation of losing loved ones scare you? Do you fear you'll forget them once they're gone?
+run,5
+id,fear6_question
+text,Are you scared of standing up for yourself or what you believe in? What repercussions will you face if you voiced your opinion and asserted your identity?
+run,5
+id,fear7_question
+text,How much of your time is consumed being afraid of violence (of all sorts) and making sure you're safe? Does it feel unfair?
+run,5
+id,fear8_question
+text,Do you enjoy or detest the rush you get trying something new and adventurous? Do you overcome the fear or let it in?
+run,5
+id,shame1_question
+text,Is shame an emotion that can ever be positive? Why or why not?
+run,5
+id,shame2_question
+text,What insecurities do you deal with that make you feel ashamed? 
+run,5
+id,shame3_question
+text,Has shame ever been an obstacle for you to show up as your authentic self?
+run,5
+id,shame4_question
+text,What are some choices that you are ashamed of?
+run,5
+id,shame5_question
+text,"Have you ever felt like your shame is being weaponised in a rapidly changing, overly capitalist world?"
+run,5
+id,shame6_question
+text,How do you combat feelings of shame that hinder your growth?
+run,5
+id,shame7_question
+text,"As you age, how is your relationship with shame changing?"
+run,5
+id,shame8_question
+text,Do you feel like shame is inherent or is it artificially manufactured and taught to us?
+run,5
+id,guilt1_question
+text,Do you feel guilty about thoughts that you assume are morally wrong?
+run,5
+id,guilt2_question
+text,Do you still store guilt from decades ago and does it affect your present life in anyway?
+run,5
+id,guilt3_question
+text,Do you wish you had made better choices in life?
+run,5
+id,guilt4_question
+text,Do you look back and wish you could change an event? do you regret how you acted?
+run,5
+id,guilt5_question
+text,Do you feel bad about how you have been treating your body?
+run,5
+id,guilt6_question
+text,Have your ever confessed your guilt to someone? how did it feel when you did it?
+run,5
+id,guilt7_question
+text,Do you feel regret for surviving situations where others didnt make it?
+run,5
+id,guilt8_question
+text,Does the guilt of not doing the best for your family consume you on a daily basis? does it affect the quality of your life and relations?
+run,5
+id,guilt9_question
+text,Do you feel guilty about prioritising yourself?
+run,5
