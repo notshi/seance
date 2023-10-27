@@ -4,6 +4,9 @@ export default seance
 
 import { default as plated_module } from "plated"
 
+import text_csv from "../csv/sheets/text.csv"
+import { parse as csv_parse } from "csv-parse/sync"
+let csv=csv_parse(text_csv,{relax_column_count:true,columns:true})
 
 seance.start=async function(opts)
 {
@@ -11,7 +14,7 @@ seance.start=async function(opts)
 	let plated=plated_module.create({})
 		
 	console.log("SEE YANCE")
-	console.log(plated.chunks)
+	console.log(csv)
 
 // load full plated json for this site
 	let map=await (await fetch("./plated.map.json") ).json()

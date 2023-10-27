@@ -13,6 +13,14 @@ let dd_version=dd_yy+"."+( ("0000"+dd_dd).slice(-5) )
 console.log("VERSION == "+dd_version)
 
 module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.csv$/i,
+        use: 'raw-loader',
+      },
+    ],
+  },
   plugins: [
 	new webpack.DefinePlugin({
 		__VERSION__: JSON.stringify(dd_version)
@@ -20,12 +28,17 @@ module.exports = {
     new webpack.ProvidePlugin({
       process: 'process/browser',
     }),
+	new webpack.ProvidePlugin({
+		Buffer: ['buffer', 'Buffer'],
+	}),
   ],
   entry: './seance.js',
   resolve: {
     fallback : {
-      fs: false,
-      path: require.resolve("path-browserify"),
+		fs: false,
+		path: require.resolve("path-browserify"),
+		"stream": require.resolve("stream-browserify"),
+		"buffer": require.resolve("buffer/"),
     },
   },
   performance: {
