@@ -40,6 +40,10 @@ wally sheet
 	Read input data sheets from csv/sheet/*.csv and create internal 
 	data files and ai jobs.
 
+wally text
+	Cleanup ai output and append it to our text sheet. Which is then 
+	sorted by ID and has duplicates removed.
+
 wally help
 	Print this help message.
 `)
@@ -67,6 +71,18 @@ if( cmd=="sheet" )
 	opts.filename=args._[1]
 
 	await wally_sheet.start(opts)
+}
+else
+if( cmd=="text" )
+{
+	let opts={}
+
+	// parent dir relative to this file
+	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+
+	opts.filename=args._[1]
+
+	await wally_text.start(opts)
 }
 else
 {

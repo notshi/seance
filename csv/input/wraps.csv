@@ -2,10 +2,10 @@ id,text
 wrap_reword,"### Instruction: Provide a concise, {mannerism}, and succinct rewording of ""{_it}"". Respond with a single, {mannerism} sentence that completes the request and Ensure your response is brief.
 ### Response:
 "
-wrap_reword_question,"### Instruction: Provide a {mannerism} rewording of rewording of this question ""{_it}"". Respond with a single, {mannerism} question that completes the request.
+wrap_reword_question,"### Instruction: Provide a {mannerism} rewording of this question ""{_it}"". Respond with a single, {mannerism} question that completes the request.
 ### Response:
 "
-wrap_reword_answer,"### Instruction: Provide a {mannerism} rewording of rewording of this answer ""{_it}"". Respond with a single, {mannerism} statement that completes the request.
+wrap_reword_answer,"### Instruction: Provide a {mannerism} rewording of this personal statement ""{_it}"". Respond with a single, {mannerism} personal statement that completes the request.
 ### Response:
 "
 wrap_instruct,"### Instruction: {_it}
