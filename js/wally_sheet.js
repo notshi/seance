@@ -35,13 +35,28 @@ wally_sheet.start=async function(opts)
 
 	let jobs=[]
 	jobs.push(["id","text"])
-	jobs.push(["prompt","{text:wrap_reword_question}"])
+	jobs.push(["predict","128"])
 
 	for(let it of qcsv )
 	{
+		jobs.push(["prompt","{text:wrap_reword_question}"])
 		jobs.push(["id",it.id+"_question"])
+		jobs.push(["prefix","{doyou}"])
 		jobs.push(["text",it.question])
 		jobs.push(["run",5])
+
+		for( let i=1 ; i<=4 ; i++ )
+		{
+			let answer=it["answer"+i]
+			if(answer)
+			{
+				jobs.push(["prompt","{text:wrap_reword_answer}"])
+				jobs.push(["id",it.id+"_answer"+i])
+				jobs.push(["prefix","{imy}"])
+				jobs.push(["text",answer])
+				jobs.push(["run",5])
+			}
+		}
 	}
 
 	save_csv( opts.dirname+filename , jobs )

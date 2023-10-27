@@ -5,6 +5,9 @@ wrap_reword,"### Instruction: Provide a concise, {mannerism}, and succinct rewor
 wrap_reword_question,"### Instruction: Provide a {mannerism} rewording of ""{_it}"". Respond with a single, {mannerism} question that completes the request.
 ### Response:
 "
+wrap_reword_answer,"### Instruction: Provide a {mannerism} rewording of ""{_it}"". Respond with a single, {mannerism} statement that completes the request.
+### Response:
+"
 wrap_instruct,"### Instruction: {_it}
 ### Response:
 "

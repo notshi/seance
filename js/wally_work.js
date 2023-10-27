@@ -65,13 +65,12 @@ wally_work.job=async function(opts,filename)
 		}
 	}
 	
+	let csv=[]
+	csv.push(["id","text"])
+
 	let p=plated.create({})
 	let jobidx=0
 	
-	it.jobs=[]
-	it.prompts=[]
-	it.results=[]
-
 	it.redo={}
 	it.rnd=await wally_work.random(it,it.ids)
 	for(let ci in it.cmd)
@@ -98,39 +97,41 @@ wally_work.job=async function(opts,filename)
 			for(let i=0;i<repeat;i++)
 			{
 				let prompt=p.chunks.replace(it.rnd.prompt,it.rnd).trim()
-				it.prompts.push(prompt)
+				let prefix=p.chunks.replace("{prefix||}",it.rnd).trim()
+				let pprompt=prompt // prompt + prefix
+				if( prefix != "" ) // special prefix
+				{
+					pprompt=prompt+" "+prefix
+				}
 
 				let jobid=it.rnd.id || jobidx
-				it.jobs.push(jobid)
 
 				console.log("job "+ci+"/"+it.cmd.length+" "+jobid+" "+(i+1)+"/"+repeat)
 			
-				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , prompt )
+				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , pprompt )
 				let a=r.split(prompt.trim())
 				if( a.length>1 ) { r=a[1] }
-				it.results.push(r.trim())
+
+				csv.push( [ jobid , r.trim() ] )
 
 				// reroll randoms
 				it.rnd=await wally_work.random(it,it.ids)
 				for(let n in it.redo) { it.rnd[n]=it.redo[n] } //redo all loaded values so far
+
+				if( it.outname ) // save as we go in case of crash
+				{
+					let csvs=csv_stringify(csv)
+					await pfs.writeFile(it.outname, csvs )
+				}
+
 			}			
 		}
 	}
 
-	let csv=[]
-	csv[0]=["prompt","result","job"]
-	for(let i=0;i<it.prompts.length;i++)
-	{
-		csv[i+1]=[ it.prompts[i] , it.results[i] , it.jobs[i] ]
-	}
-	let csvs=csv_stringify(csv)
 	
-	if( it.outname )
+	if( !it.outname )
 	{
-		await pfs.writeFile(it.outname, csvs )
-	}
-	else
-	{
+		let csvs=csv_stringify(csv)
 		console.log(csvs)
 	}
 }
