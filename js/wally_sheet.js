@@ -59,9 +59,7 @@ wally_sheet.start=async function(opts)
 		}
 	}
 
-	save_csv( opts.dirname+filename , jobs )
-
-
+	await save_csv( opts.dirname+filename , jobs )
 }
 
 

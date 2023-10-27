@@ -14,7 +14,7 @@ import plated from "plated"
 let load_csv=async function(path)
 {
 	let data=await pfs.readFile(path,"utf8")
-	let csv=csv_parse(data,{relax_column_count:true,columns:true})
+	let csv=csv_parse(data,{relax_column_count:true})
 	return csv
 }
 
@@ -24,13 +24,52 @@ let save_csv=async function(path,rows)
 	await pfs.writeFile( path , csvs )
 }
 
+let clean_text=function(s)
+{
+	s=s.trim()
+	s=s.split("\n")[0] // first line only rest of lines are usually garbage
+	s=s.trim()
+	s=s.replace(/[^\x20-\x7F]/g, " ") // replace non ascii chars or control sequences with spaces
+	s=s.replace(/\s+/g, " ") // replace multiple spaces with 1 space
+	s=s.trim()
+	return s
+}
+
 wally_text.start=async function(opts)
 {
 	let tcsv=await load_csv( opts.dirname+"/csv/sheets/text.csv" )
+	tcsv.splice(0,1) // remove header so we can sort
 
-//	console.log(tcsv)
+	let acsv=await load_csv( opts.dirname+"/csv/jobs/question.out.csv" )
 
-	save_csv( load_csv( opts.dirname+"/csv/sheets/text.csv" , tcsv )
+	for(let ai=1;ai<acsv.length;ai++)
+	{
+		let line=acsv[ai]
+		let id=(line[0]).trim()
+		let text=clean_text(line[1])
+		tcsv.push([id,text])
+	}
+	
+	tcsv.sort(function(a,b){
+		if(a[0]<b[0]){return -1}
+		if(a[0]>b[0]){return 1}
+		if(a[1]<b[1]){return -1}
+		if(a[1]>b[1]){return 1}
+		return 0
+	})
+	
+	for(let i=tcsv.length-1;i>0;i--)
+	{
+		let a=tcsv[i]
+		let b=tcsv[i-1]
+		if( a[0]==b[0] && a[1]==b[1] )
+		{
+			tcsv.splice(i,1) // dedeup
+		}
+	}
+
+	tcsv.splice(0,0,["id","text"]) // replace header
+	await save_csv( opts.dirname+"/csv/sheets/text.csv" , tcsv )
 }
 
 

@@ -4,6 +4,7 @@ export default wally
 
 import wally_work from "./wally_work.js"
 import wally_sheet from "./wally_sheet.js"
+import wally_text from "./wally_text.js"
 
 import minimist from "minimist"
 
