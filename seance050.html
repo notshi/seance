@@ -126,8 +126,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .fund_info	{margin-top:30px; font-size:20px; line-height:1.25em;}
 .fund_wrap	{display:flex; justify-content:space-between; margin-top:20px;}
 .fund span	{font-size:16px; text-align:left; display:inline-block; padding:0 40px 10px 0; line-height:1.25em;}
-.fund_img_a	{background:url('./data/Priyanka_Prekshaa.jpg')center no-repeat; height:360px; width:480px; margin:0 auto; margin-bottom:30px;}
-.fund_img_b	{background:url('./data/wetgenes.jpg')center no-repeat; height:349px; width:480px; margin:0 auto; margin-bottom:30px;}
+.fund_img_wrap	{margin:0 auto; margin-bottom:30px; text-align:center;}
+.fund_img_wrap span	{display:inline-block; font-size:18px; margin-top:10px;}
+.fund_img_a	{background:url('./data/Priyanka_Prekshaa.jpg')center no-repeat; height:360px; width:480px; margin:0 auto;}
+.fund_img_b	{background:url('./data/wetgenes.jpg')center no-repeat; height:349px; width:480px; margin:0 auto; margin-top:30px;}
 
 /*	ghost letters for title	*/
 #letters	{position:absolute; top:0em; left:0em; right:0; display:flex; justify-content:center; color:#eaeaea; font-size:132px; font-family:'basteleurmoonlight',serif; filter:blur(2px); animation:fade 5s ease-in infinite;}
@@ -141,15 +143,19 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:960px; min-width:480px; margin:0 auto; padding-bottom:1em;}
 .talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
-.name	{color:#d0ce55; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif;}
-.grief	{color:#B357E6;}
+.name	{color:#74D055; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif;}
+.grief	{color:#897097;}
+.guilt	{color:#B357E6;}
+.shame	{color:#EB4A9B;}
+.fear	{color:#CCE657;}
 .quest	{color:#fff; font-size:30px; line-height:1.25em;}
 .quest span	{display:inline-block; font-style:italic; line-height:1.25em;}
+/*	paired with emotion and fading	*/
+.quest span.fae	{font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
+/*	uppercase	*/
 .quest span.cap	{text-transform:uppercase;}
 /*	quoted answers	*/
 .quest span.quo	{color:#89b4db; padding:0 10px 0 5px;}
-/*	grief spirit purple and fading	*/
-.quest span.gri	{color:#B357E6; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	red and fading	*/
 .quest span.sac	{color:#FF3F6A; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	trembling light green and fading	*/
@@ -316,7 +322,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 				Voice
 			</div>
 			<div class="quest">
-				It looks like you've captured a <span class="gri cap">{emotion}</span> spirit. It is, however, <span class="wea">weak</span> so it needs to resonate with your humanity in order to manifest.
+				It looks like you've captured a <span class="fae {emotion} cap">{emotion}</span> spirit. It is, however, <span class="wea">weak</span> so it needs to resonate with your humanity in order to manifest.
 			</div>
 			<div class="read_wrap">
 				<a href="seance060.html" class="read">
