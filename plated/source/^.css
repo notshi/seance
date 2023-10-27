@@ -265,11 +265,11 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.talk_wrap	{min-width:360px; min-height:800px; padding:0;}
 	.talky		{width:50vh;}
 	.fog		{background-size:200%;}
-	.title_wrap	{padding-top:2em;}
+	.title_wrap	{padding-top:2em; width:100vw;}
 	.title,.title.s,.title.d
 	.title.p	{font-size:3em; margin:0 auto;}
-	.title.d	{margin-top:1em;}
-	.title.p	{margin-left:-30px; padding-bottom:10px;}
+	.title.d	{margin-top:0.5em;}
+	.title.p	{padding-bottom:10px;}
 	#letters,
 	#letters.sea{font-size:1em;}
 	.read_wrap	{margin-top:0; margin-right:1em;}
