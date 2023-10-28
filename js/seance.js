@@ -9,6 +9,9 @@ import text_csv from "../csv/sheets/text.csv"
 let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
 let textids={} ; for(let v of texts ) { textids[v.id]=textids[v.id]||[] ; (textids[v.id]).push(v.text) }
 
+// temp hack
+textids["answer0"]=["PASS"]
+
 import image_csv from "../csv/sheets/image.csv"
 let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
 let imageids={} ; for(let image of images )
@@ -49,6 +52,24 @@ let htmltemplate=function(s)
     return temp.content.firstChild
 }
 
+function shuffle(tab)
+{
+	let idx = 0
+	for( let len=tab.length ; len>0 ; len-- )
+	{
+		idx = Math.floor( Math.random() * len) // pick a random
+		let temp=tab[idx]
+		tab[idx]=tab[len-1]
+		tab[len-1]=temp
+	}
+	return tab
+}
+function rando(tab)
+{
+	let idx = Math.floor( Math.random() * tab.length ) // pick a random
+	return tab[idx]
+}
+
 seance.start=async function(opts)
 {
 	console.log(plated_module)
@@ -56,6 +77,43 @@ seance.start=async function(opts)
 	
 	seance.datachunks={}
 	seance.datachunks.ghostimage="image1"
+	seance.datachunks.image=imageids[seance.datachunks.ghostimage]
+
+	let answers=[0,0,0,0,0] // the 5 answers
+	let question={}
+	let set_question=function(idx)
+	{
+		question={}
+		question.idx=idx
+
+		question.idbase=seance.datachunks.image.emotion+(idx+1)
+		question.id=question.idbase+"_question"
+		
+		question.order=shuffle([1,2,3,4]) // random order of answers
+		question.order[4]=0 // and 5th answer is always a pass
+
+		question.select_num=5*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
+		
+		question.setanswer=function(num)
+		{
+			let phase=Math.floor(num/5) // cycle through each possible item
+			let idx=question.order[ num%5 ]
+console.log("AAA",num,idx,phase,num%5,question.order)
+			let id=question.idbase+"_answer"+idx
+			if(idx==0) { id="answer0" } // pass option is generic
+			let aa=textids[id] || textids["answer0"]
+			
+			question.select_id=id
+			question.select_idx=idx
+			question.select_text=aa[ phase%aa.length ]
+
+			seance.datachunks.answer=question.select_text // pick one answer to display
+		}
+		question.setanswer(question.select_num)
+
+		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
+	}
+	set_question(0) // 6 questions 0-5
 
 		
 	console.log("SEE YANCE")
@@ -92,6 +150,14 @@ seance.start=async function(opts)
 	{
 		let chunks=page(name)
 		data=chunks.data
+
+		if(data.mode=="question") // pick a new question and reload chunks
+		{
+			set_question(data.question)
+			chunks=page(name) // rebuild with newly picked question texts
+			data=chunks.data
+		}
+
 		let css=plated.chunks.replace("{css}",chunks)
 		let str=plated.chunks.replace("{body}",chunks)
 		let body=document.createElement("body");
@@ -127,6 +193,7 @@ seance.start=async function(opts)
 			add_ghost()
 
 		}
+
 	}
 	
 	click=function(event)
