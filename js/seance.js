@@ -10,7 +10,7 @@ let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
 let textids={} ; for(let v of texts ) { textids[v.id]=textids[v.id]||[] ; (textids[v.id]).push(v.text) }
 
 // temp hack
-textids["answer0"]=["PASS"]
+//textids["answer0"]=["PASS"]
 
 import image_csv from "../csv/sheets/image.csv"
 let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
@@ -90,16 +90,16 @@ seance.start=async function(opts)
 		question.id=question.idbase+"_question"
 		
 		question.order=shuffle([1,2,3,4]) // random order of answers
-		question.order[4]=0 // and 5th answer is always a pass
+//		question.order[4]=0 // and 5th answer is always a pass
 
-		question.select_num=5*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
+		question.select_num=4*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
 		
 		question.setanswer=function(num)
 		{
-			let phase=Math.floor(num/5) // cycle through each possible item
-			let idx=question.order[ num%5 ]
+			let phase=Math.floor(num/4) // cycle through each possible item
+			let idx=question.order[ num%4 ]
 			let id=question.idbase+"_answer"+idx
-			if(idx==0) { id="answer0" } // pass option is generic
+//			if(idx==0) { id="answer0" } // pass option is generic
 			let aa=textids[id] || textids["answer0"]
 			
 			question.select_id=id
