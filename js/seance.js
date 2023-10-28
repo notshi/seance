@@ -40,10 +40,23 @@ let imageids={} ; for(let image of images )
 	}
 }
 
+
+
+let htmltemplate=function(s)
+{
+    let temp = document.createElement("template")
+    temp.innerHTML = s.trim()
+    return temp.content.firstChild
+}
+
 seance.start=async function(opts)
 {
 	console.log(plated_module)
 	let plated=plated_module.create({})
+	
+	seance.datachunks={}
+	seance.datachunks.ghostimage="image1"
+
 		
 	console.log("SEE YANCE")
 	console.log(textids)
@@ -66,7 +79,7 @@ seance.start=async function(opts)
 			if(s) { s=s+"/"+n } else { s=n }
 			plated.chunks.push_namespace(map[s])
 		}
-		let chunks=plated.chunks.merge_namespace({})
+		let chunks=plated.chunks.merge_namespace(seance.datachunks)
 		plated.chunks.reset_namespace()
 		return chunks
 	}
@@ -88,7 +101,32 @@ seance.start=async function(opts)
 		document.getElementsByTagName('body')[0].replaceWith(body)
 		document.getElementsByTagName('style')[0].innerHTML=css
 		
-		console.log(data)
+		seance.catch_ghostname=null
+		if(data.mode=="ghostfloat") // float some ghosts
+		{
+			console.log(data.mode)
+			let add_ghost ; add_ghost=function()
+			{
+				let name="image"+(Math.floor(Math.random() * 12)+1)
+				if(!seance.catch_ghostname){seance.catch_ghostname=name} // if not set yet
+				
+				let p=document.getElementById("ghost_container")
+				if(p)
+				{
+					let g=htmltemplate(`
+<div class="ghost_handle">
+	<div class="ghost_image" style="background:url('./data/${name}.small.jpg') center center / contain no-repeat;"></div>
+</div>
+`)
+					p.appendChild(g)
+					setTimeout(function(){seance.catch_ghostname=name},3000) // wait a while before setting
+					setTimeout(add_ghost,7000)
+					setTimeout(function(){g.remove()},15000)
+				}
+			}
+			add_ghost()
+
+		}
 	}
 	
 	click=function(event)
@@ -98,6 +136,13 @@ seance.start=async function(opts)
 		console.log(it)
 		if( it.tagName=="A" )
 		{
+			let catchghost=it.hasAttribute("catchghost")
+			if(catchghost)
+			{
+				seance.datachunks.ghostimage=seance.catch_ghostname
+				console.log("catchghost "+seance.datachunks.ghostimage)
+			}
+
 			let mp3=it.getAttribute("mp3")
 			if(mp3)
 			{

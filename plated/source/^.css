@@ -1,3 +1,7 @@
+
+#^ghostimage trim=ends
+image1
+
 #^css same=append
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
@@ -211,7 +215,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 /*	tarot cards	*/
 .img_wrap	{position:absolute; top:0; left:0; right:0; margin:auto; height:99vh; animation:blur 1.5s linear 2;}
-.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('{_root}data/image1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
+.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('{_root}data/{ghostimage}.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
@@ -234,30 +238,12 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 
 /*	ghosts	*/
-.g1_handle,
-.g2_handle,
-.g3_handle,
-.g4_handle	{position:absolute; top:18em; left:-100px; width:0; height:0; overflow:visible; animation:run 15s cubic-bezier(.21,.67,.72,.28) infinite;}
-.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9	{position:relative; top:-100px; left:-100px; width:200px; height:200px; background:url('{_root}data/image1.small.jpg') center center / contain no-repeat; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.2; animation:big 15s linear infinite;}
-.g2	{background:url('{_root}data/image2.small.jpg') center center / contain no-repeat;}
-.g3	{background:url('{_root}data/image3.small.jpg') center center / contain no-repeat;}
-.g4	{background:url('{_root}data/image4.small.jpg') center center / contain no-repeat;}
-.g5	{background:url('{_root}data/image5.small.jpg') center center / contain no-repeat;}
-.g6	{background:url('{_root}data/image6.small.jpg') center center / contain no-repeat;}
-.g7	{background:url('{_root}data/image7.small.jpg') center center / contain no-repeat;}
-.g8	{background:url('{_root}data/image8.small.jpg') center center / contain no-repeat;}
-.g9	{background:url('{_root}data/image9.small.jpg') center center / contain no-repeat;}
-.g10{background:url('{_root}data/image10.small.jpg') center center / contain no-repeat;}
-.g11{background:url('{_root}data/image11.small.jpg') center center / contain no-repeat;}
-.g12{background:url('{_root}data/image12.small.jpg') center center / contain no-repeat;}
+.ghost_handle	{position:absolute; top:18em; left:-100px; width:0; height:0; overflow:visible; animation:run 15s cubic-bezier(.21,.67,.72,.28);}
+.ghost_image	{position:relative; top:-100px; left:-100px; width:200px; height:200px; background:url('{_root}data/{ghostimage}.small.jpg') center center / contain no-repeat; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.2; animation:big 15s linear;}
 
 @keyframes run {0%{left:110vw;} 50%{} 100%{left:-10vw;}}
 @keyframes big {0%{} 50%{top:-240px; left:-240px; width:480px; height:480px; opacity:0.5;} 100%{}}
 
-.g2_handle, .g2{animation-delay:10s;}
-.g3_handle, .g3{animation-delay:20s;}
-.g4_handle, .g4{animation-delay:30s;}
-.g5_handle, .g5{animation-delay:20s;}
 
 
 @media (min-width: 360px) and (max-width: 767.98px) {
