@@ -117,7 +117,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .go:after	{bottom:50px; right:-10px; transform:rotate(-134deg);}
 .go:hover:before, .go:hover:after,
 .go:focus:before, .go:focus:after,
-.go:active:before, .go:active:after	{background:#361EA5; color:#fff;}
+.go:active:before, .go:active:after	{background:#361EA5;}
 
 /*	credit page	*/
 .fund_top	{font-size:21px; font-family:'garamondtitalic',serif; padding-bottom:30px; text-align:center;}
@@ -151,11 +151,11 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .quest	{color:#fff; font-size:30px; line-height:1.25em;}
 .quest span	{display:inline-block; font-style:italic; line-height:1.25em;}
 /*	paired with emotion and fading	*/
-.quest span.fae	{font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
+.quest span.fae	{font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; text-shadow:1px 1px 10px #6c77b3; animation:fade 5s ease-in-out infinite;}
 /*	uppercase	*/
 .quest span.cap	{text-transform:uppercase;}
 /*	quoted answers	*/
-.quest span.quo	{color:#89b4db; padding:0 10px 0 5px;}
+.quest span.quo	{color:#89b4db; padding:0 10px 0 5px; display:inline; font-size:28px;}
 /*	red and fading	*/
 .quest span.sac	{color:#FF3F6A; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	trembling light green and fading	*/
@@ -186,7 +186,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes blur	{25% {filter:blur(15px);} 100% {filter:blur(0px);}}
 
 .say_wrap	{text-align:center; margin-top:30px; display:flex; align-items:center; justify-content:space-evenly; animation:show 1s steps(40,end);}
-.say		{color:#b2b6f2; font-size:18px; line-height:22px; background:#2f2753; display:inline-block; padding:15px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform; position:relative;}
+.say		{color:#b2b6f2; font-size:22px; line-height:1.35em; background:#2f2753; display:inline-block; padding:20px; border-radius:6px; border:4px double #000; font-family:monospace, monospace; transition-duration:0.3s; transition-property:transform; position:relative;}
+.pick		{font-size:18px; line-height:1.25em;}
 .say:hover	{background:#361EA5; background:linear-gradient(196deg,#361EA5 78%,#A500BF 100%);}
 .say:hover, .say:focus, .say:active {transform:scale(1.05);}
 .say:before,
@@ -195,7 +196,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .say:after	{bottom:24px; right:35%; transform:rotate(-134deg);}
 .say:hover:before, .say:hover:after,
 .say:focus:before, .say:focus:after,
-.say:active:before, .say:active:after	{background:#361EA5; color:#fff;}
+.say:active:before, .say:active:after	{background:#361EA5;}
 
 .arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg); display:block;}
 .arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg); display:block;}
@@ -218,7 +219,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 /*	tarot cards	*/
 .img_wrap	{position:absolute; top:0; left:0; right:0; margin:auto; height:99vh; animation:blur 1.5s linear 2;}
-.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/image1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse;}
+.img		{position:absolute; top:0; left:0; right:0; margin:auto; border-radius:6px 6px 0 0; padding:0; background:url('./data/image1.jpg')center no-repeat; height:99vh; width:50vw; filter:grayscale(1) sepia(0.5) brightness(1.3) invert(0.8); opacity:0.5; animation:glitch 2s infinite linear alternate-reverse; background-size:contain;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
@@ -315,11 +316,11 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 				You said “<span class="quo">{answer}</span>” Is this correct?
 			</div>
 			<div class="say_wrap">
-				<a href="seance270.html" class="say">
-					No, that is wrong.
+				<a href="seance270.html" class="say pick">
+					No, I don't think so.
 				</a>
-				<a href="seance290.html" class="say" id="answer_yes" >
-					Yes, that is correct.
+				<a href="seance290.html" class="say pick" id="answer_yes" >
+					Yes, that is right.
 				</a>
 			</div>
 		</div>
