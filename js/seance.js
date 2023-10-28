@@ -14,7 +14,7 @@ let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
 let imageids={} ; for(let image of images )
 {
 	image.idx=Number(image.id.substr(5))
-	imageids[image.idx]=image
+	imageids["image"+image.idx]=image
 	image.emotion=image.emotion.trim().toLowerCase()
 	image.max_question=0
 	for(let i=1;i<20;i++)
@@ -140,6 +140,7 @@ seance.start=async function(opts)
 			if(catchghost)
 			{
 				seance.datachunks.ghostimage=seance.catch_ghostname
+				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 				console.log("catchghost "+seance.datachunks.ghostimage)
 			}
 
