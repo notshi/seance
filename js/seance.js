@@ -98,7 +98,6 @@ seance.start=async function(opts)
 		{
 			let phase=Math.floor(num/5) // cycle through each possible item
 			let idx=question.order[ num%5 ]
-console.log("AAA",num,idx,phase,num%5,question.order)
 			let id=question.idbase+"_answer"+idx
 			if(idx==0) { id="answer0" } // pass option is generic
 			let aa=textids[id] || textids["answer0"]
@@ -217,10 +216,37 @@ console.log("AAA",num,idx,phase,num%5,question.order)
 				audio.src=mp3
 				;( audio.play() ) .then(function(){}).catch(function(){})
 			}
+			
+			let id=it.id
+			if( ( id == "answer_next" ) || ( id == "answer_prev" ) ) // handle arrows
+			{
+				if( id == "answer_next" )
+				{
+					question.select_num++
+				}
+				else
+				if( id == "answer_prev" )
+				{
+					question.select_num--
+				}
+				question.setanswer(question.select_num)
+				
+				let a=document.getElementById("answer")
+				a.textContent=seance.datachunks.answer
+
+			}
+			if( id == "answer_yes" ) // remember answer
+			{
+				answers[ question.idx ]=question.select_idx
+				console.log("answers",answers)
+			}
 
 			let href=it.getAttribute("href")
-			console.log("A",href)
-			goto(href)
+			if(href)
+			{
+				console.log("GOTO",href)
+				goto(href)
+			}
 		}
 	}
 
