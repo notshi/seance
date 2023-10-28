@@ -74,9 +74,11 @@ seance.start=async function(opts)
 
 	let click=null
 
+	let data={}
 	let goto=function(name)
 	{
 		let chunks=page(name)
+		data=chunks.data
 		let css=plated.chunks.replace("{css}",chunks)
 		let str=plated.chunks.replace("{body}",chunks)
 		let body=document.createElement("body");
@@ -85,6 +87,8 @@ seance.start=async function(opts)
 		body.addEventListener("click",click)
 		document.getElementsByTagName('body')[0].replaceWith(body)
 		document.getElementsByTagName('style')[0].innerHTML=css
+		
+		console.log(data)
 	}
 	
 	click=function(event)
