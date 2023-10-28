@@ -518,6 +518,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -535,7 +538,11 @@
   "_sourcename": "seance110.^.html",
   "body": "{play}",
   "css": ".img\t{mask-image:linear-gradient(to top, transparent 25%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance120.html\" class=\"say\">\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 0
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance120.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
@@ -642,6 +649,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -659,7 +669,11 @@
   "_sourcename": "seance150.^.html",
   "body": "{play}",
   "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance160.html\" class=\"say\">\n\t\t\t\t\t{answer}\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 1
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance160.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
@@ -766,6 +780,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -783,7 +800,11 @@
   "_sourcename": "seance190.^.html",
   "body": "{play}",
   "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance200.html\" class=\"say\">\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 2
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance200.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
@@ -890,6 +911,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -907,7 +931,11 @@
   "_sourcename": "seance230.^.html",
   "body": "{play}",
   "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance240.html\" class=\"say\">\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 3
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance240.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
@@ -1014,6 +1042,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -1031,7 +1062,11 @@
   "_sourcename": "seance270.^.html",
   "body": "{play}",
   "css": ".img\t{filter:grayscale(1) brightness(1); mask-image:linear-gradient(to top, transparent 5%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance280.html\" class=\"say\">\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 4
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance280.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
@@ -1138,6 +1173,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "q1": {
     "trim": "ends"
    },
@@ -1155,7 +1193,11 @@
   "_sourcename": "seance310.^.html",
   "body": "{play}",
   "css": ".img\t{filter:grayscale(0.5) brightness(1); mask-image:linear-gradient(to top, transparent 2%, black);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance320.html\" class=\"say\">\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "data": {
+   "mode": "question",
+   "question": 5
+  },
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t{question}\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_l\"></div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance320.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<div class=\"arrow_r\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Seance"
  },
