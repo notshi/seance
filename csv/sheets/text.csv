@@ -41,7 +41,6 @@ fear2_answer4,I don't mind if my secrets are exposed to the world.
 fear2_answer4,I embrace my authentic self and believe it allows others to connect with me on a deeper level.
 fear2_answer4,I embrace vulnerability and celebrate openness in my life journey.
 fear2_answer4,I unapologetically embrace my vulnerability and share it openly with the world.
-fear2_answer4,"I understand that my past experiences and current actions may be scrutinized by others, but I am committed to honesty and transparency in order to build trust with those around me."
 fear2_question,"When you confront your fears, what truths are revealed about your authentic self?"
 fear2_question,"When you consider removing your protective layers, do you fear exposure due to the potential judgment or consequences others may impose upon discovering your true nature?"
 fear2_question,"When you consider the various layers people wear, what underlying truths or vulnerabilities do you fear might be exposed if you were to remove them?"
@@ -54,8 +53,6 @@ fear3_answer1,I'm passionate about gender equality and choose to discuss positiv
 fear3_answer2,Women have died old and alone for centuries so there’s nothing to be scared of.
 fear3_answer2,I have always been drawn to the idea that every woman's life is a tale filled with sorrowful echoes of forgotten names.
 fear3_answer2,I recognize the historical challenges women have faced but choose to focus on empowering their potential for growth and resilience in the face of adversity.
-fear3_answer2,I understand the significance of embracing vulnerability and facing fears but allowing myself to confront these challenges head-on has led me to grow immensely in life.
-fear3_answer2,"I understand the significance of historical context, but we must work together to create a supportive environment where women can thrive and age gracefully."
 fear3_answer3,I am intrigued by the concept of women surpassing men in longevity and how it challenges societal norms and interdependence.
 fear3_answer3,"I find the gender disparity in longevity an intriguing perspective to examine societal influences on well-being and health, prompting further exploration."
 fear3_answer3,"I find women living longer than men a thought-provoking exploration into our collective mortality, and eager to delve into the complexity of age, health, and societal expectations."
@@ -91,9 +88,9 @@ fear4_question,"When you consider the current state of climate change and politi
 fear4_question,"When you consider the impact of ongoing socio-political unrest and climate change on our planet, do you worry for the welfare of our children?"
 fear4_question,"When you gaze upon the world today, do you have concerns for the welfare of the children around us in relation to climate change and political turmoil?"
 fear4_question,"When you think about the children around us and how our changing world could affect their future, what concerns do you have?"
-fear5_answer1,I am determined to honor their memory while embracing life's challenges as I move forward.
+fear5_answer1,Losing someone close is hard and I hope I never forget them but it does bother me in the back of my mind.
 fear5_answer1,"I empathize deeply with the pain caused by losing loved ones, and I strive to remember their presence while also addressing the lingering uneasiness it may cause."
-fear5_answer1,"I understand how difficult it can be to lose someone dear to your heart, and while I cherish their memory, that's always a lingering thought in the back of my mind."
+fear5_answer1,"I understand how difficult it can be to lose someone close, and while I cherish their memory, that's always a lingering thought in the back of my mind."
 fear5_answer2,"I cherish the bonds and memories shared with my loved ones, prefering to forge deeper connections through laughter, love, and support in our time together in the present."
 fear5_answer2,I cherish the moments spent with my dear ones during their lives rather than waiting for their inevitable departures.
 fear5_answer2,I choose to cherish the moments with my family and friends during their lives rather than focusing on eventual goodbyes.
@@ -118,10 +115,8 @@ fear6_answer1,"I experience trepidation when expressing my opinions or advocatin
 fear6_answer1,"I often find myself reluctant to express my thoughts openly, fearing that my candor may alienate those around me and thwart potential prospects."
 fear6_answer1,"I often worry about expressing my thoughts openly, fearing that it may strain friendships and hinder potential opportunities."
 fear6_answer1,I sometimes worry about expressing my thoughts and opinions openly since I fear that it may cause me to lose friends or miss out on potential chances.
-fear6_answer1,"I understand feeling nervous about sharing your thoughts and beliefs, but it's important to remember that your opinions matter and can enrich conversations with others."
 fear6_answer2,"I acknowledge the potential dangers of asserting my identity due to my complex background, but I long for greater courage in facing these challenges head-on."
 fear6_answer2,"I am unapologetically authentic even in the face of adversity, defying societal expectations and embracing the power in self-discovery."
-fear6_answer2,"I empathize with your desire to express yourself freely and assert your identity, but fearing potential violence can be overwhelming."
 fear6_answer2,"I find myself questioning whether expressing my true self could potentially open the door to harm due to external factors, but desire the strength and confidence necessary to overcome this challenge."
 fear6_answer2,"I yearn to confidently assert my individuality despite potential threats stemming from my history and circumstances, though I can't help but wish for greater fortitude within myself."
 fear6_answer3,I am passionate about expressing my ideas and beliefs so I choose to be true to myself without worrying about the opinions of those who might not prioritize honesty and fairness.
@@ -130,7 +125,7 @@ fear6_answer3,"I believe it is essential for me to express my opinions, advocate
 fear6_answer3,"I fearlessly confront injustice and embrace my unapologetic truth, unwilling to compromise my principles for the approval of those indifferent to the reality that defines me."
 fear6_answer3,"I yearn to express my thoughts and values without fear of repercussion, to confront adversity rather than succumbing to the temptation of conforming to societal expectations or pandering to the indifferent."
 fear6_answer4,"I comprehend that expressing opinions can sometimes be challenging for certain individuals; however, I will assess the context before sharing my own beliefs to ensure a safe and inclusive atmosphere."
-fear6_answer4,I understand that it is easier for some people to stand up for themselves and their beliefs but I have a neutral stance on this and will only share my opinion after gauging the environment’s safety.
+fear6_answer4,I understand that it is easier for some people to stand up for themselves but I have a neutral stance on this and will only share my opinion after gauging the environment’s safety.
 fear6_answer4,"I recognize that some individuals feel comfortable expressing their views boldly, while others may hold back. I choose to assess the surroundings before openly sharing my opinion to ensure a safe and inclusive atmosphere."
 fear6_answer4,"I value open communication and encourage diverse perspectives while prioritizing creating an inclusive, safe atmosphere where everyone feels comfortable expressing their opinions."
 fear6_question,"When you consider speaking up for yourself and sharing your beliefs, are you worried about any consequences or challenges you might face?"
@@ -240,7 +235,6 @@ grief3_answer2,I find solace in embracing my emotions rather than letting them c
 grief3_answer2,I find solace in examining the complexities behind my emotional response to loss.
 grief3_answer2,I have learned to navigate my grief without channeling it into anger.
 grief3_answer2,"I understand and accept my emotions as a natural part of grieving, including moments of sadness and frustration, but my anger is not a direct result of my grief alone."
-grief3_answer2,"I understand your pain and acknowledge your feelings, but they may not always manifest as anger."
 grief3_answer3,"I found solace in unveiling my emotions through art and writing, providing an outlet for my catharsis and healing journey."
 grief3_answer3,I never found solace in silence; it stifled my healing.
 grief3_answer3,I relentlessly pursue artistic avenues as an emotional outlet for my profound sorrow.
@@ -310,7 +304,6 @@ grief5_answer3,I reject the idea that grief has a universal measurement.
 grief5_answer3,I understand and respect everyone's unique journey through grief.
 grief5_answer3,I understand that everyone's pain is unique.
 grief5_answer4,I have always found solace and understanding in expressing my grief.
-grief5_answer4,I understand and empathize that it's completely normal to feel this way when going through tough times.
 grief5_answer4,I've always believed that everyone's grieving process is unique and just as important.
 grief5_answer4,I've always found solace in knowing that my grief is a normal part of life.
 grief5_answer4,I've always seen my grief as a natural part of life.
@@ -338,7 +331,6 @@ grief6_answer4,"I cherish the memories of those who have left us, yet understand
 grief6_answer4,"I deeply miss and long for them, yet understand that life continues to evolve."
 grief6_answer4,I embrace change and honor the past while cherishing new beginnings.
 grief6_answer4,"I long for those cherished moments, yet embrace the beauty of life's ever-evolving journey."
-grief6_answer4,I understand and honor your feelings while acknowledging that change is a natural part of life.
 grief6_question,"When you reflect on your journey through life, what moments or events evoke feelings of nostalgia or longing for a different path?"
 grief6_question,"When you reflect on your journey, how do you perceive the transformation and its impact on your identity and growth?"
 grief6_question,"When you reflect on your life journey, how do you perceive the passage of time, the impact of life transitions, and the emotions surrounding personal growth and change?"
@@ -394,8 +386,8 @@ guilt1_answer1,"I acknowledge the impermanence of thoughts, consequently detachi
 guilt1_answer1,"I believe our thoughts constantly change like a river, so I try not to give them too much importance."
 guilt1_answer1,"I believe that thoughts can be fleeting and impermanent, which is why it's essential to recognize their impermanence and not hold onto them too tightly."
 guilt1_answer1,I believe that thoughts evolve continually and should be treated as ever-changing entities rather than holding onto them for their perceived importance.
-guilt1_answer1,"I understand that thoughts can be fleeting and may change rapidly, but it's crucial to acknowledge their impact on our decisions and actions in life."
-guilt1_answer2,"I understand how it can be challenging to manage our thoughts and emotions, particularly when we find ourselves dwelling on negative assumptions about others."
+guilt1_answer1,Thoughts are transient in nature so I don’t attach any value to them.
+guilt1_answer2,"I feel conflicted having negative assumptions about others, especially when they are directed at them."
 guilt1_answer2,"I feel bad when I think bad thoughts, especially when I direct those thoughts at another person."
 guilt1_answer3,I shouldn’t be having some of these dark and bad thoughts but I can’t help it and I don’t know what to do.
 guilt1_answer3,"I find myself consumed by a sinister tapestry of despair and malevolence, and I am powerless to prevent its unfathomable weaving."
@@ -423,7 +415,7 @@ guilt2_answer2,I've learned from my experiences and now focus on creating a brig
 guilt2_answer2,I've learned from my past experiences and am excited for what lies ahead.
 guilt2_answer3,"I acknowledge that guilt has shaped my past experiences, yet it does not hinder my current growth or ambitions."
 guilt2_answer3,"I occasionally grapple with lingering thoughts and transient regret, yet these emotions don't impinge on my current experiences."
-guilt2_answer3,"I understand that guilt may surface from time to time, leading to occasional flashbacks and moments of regret; however, it has no lasting impact on your present state of being."
+guilt2_answer3,"I understand that guilt may surface from time to time, leading to occasional flashbacks and moments of regret; however, it has no lasting impact on my present state of being."
 guilt2_answer3,"I used to experience guilt from past events, but now it doesn't influence my life. However, I occasionally have flashbacks and may feel a brief sense of regret."
 guilt2_answer3,I'm aware that guilt can be a complex emotion and it might manifest differently for each individual. I occasionally experience flashbacks and short-lived feelings of remorse related to past events.
 guilt2_answer4,"I feel remorseful, but it's important to learn from past experiences and grow."
@@ -467,7 +459,6 @@ guilt4_answer1,I've experienced moments when I believe there was room for improv
 guilt4_answer2,"I believe every experience helps shape our growth, and I am grateful for the lessons learned from my past actions."
 guilt4_answer2,"I believe every experience shapes our journey, leading to an enlightened perspective on life's unexpected moments."
 guilt4_answer2,Things happen for a reason and I have made my peace with the way I have acted in the past.
-guilt4_answer2,"I understand that life's events may be challenging, but I believe it's important to learn from our past experiences and strive for growth moving forward."
 guilt4_answer2,"I've come to embrace the belief that each experience, even those from my past, has led me to grow and evolve into who I am today."
 guilt4_answer3,I acknowledge my past experiences and trust in my ability to navigate with the resources given.
 guilt4_answer3,I acknowledge my past mistakes and pledge to grow through self-reflection and openness to change.
@@ -548,7 +539,7 @@ guilt7_answer4,I have not thought about surviving situations where others didn't
 guilt7_answer4,I cannot imagine how it must be for someone to go through that.
 guilt7_answer4,"I thrive in adversity, embracing challenges that leave others shattered."
 guilt7_answer4,"I understand that contemplating such challenging scenarios can be emotionally taxing, but cannot fathom it."
-guilt7_answer4,"I understand the emotional weight of such thoughts, but I choose to focus on overcoming challenges and helping others in difficult times."
+guilt7_answer4,"I understand the emotional weight of such thoughts, but cannot imagine going through it."
 guilt7_question,Do you feel regret for surviving situations where others didn't make it?
 guilt7_question,"When you reflect on experiences where you endured while others perished, how do these encounters impact your perception of life and mortality?"
 guilt7_question,"When you reflect on experiences where others falter, can you identify any feelings of guilt or remorse?"
