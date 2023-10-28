@@ -201,8 +201,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .say:focus:before, .say:focus:after,
 .say:active:before, .say:active:after	{background:#361EA5; color:#fff;}
 
-.arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg);}
-.arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg);}
+.arrow_r	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(134deg); display:block;}
+.arrow_l	{width:40px; height:40px; border:20px solid; border-color:#fff transparent transparent #fff; transform:rotate(-45deg); display:block;}
+.arrow_r:hover,
+.arrow_l:hover	{cursor:pointer; box-shadow:-5px -5px 5px #FFFFFF78;}
 
 /*	candle	*/
 .candle_wrap	{display:flex; position:absolute; top:0; right:0; left:0; margin:0 auto; bottom:0; width:100%; height:100%;}
