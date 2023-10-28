@@ -1,17 +1,15 @@
 id,text
 fear1_answer1,"I have been deeply impacted by the challenges of the pandemic, leading to a newfound appreciation for my health and well-being."
-fear1_answer1,"I have experienced a profound transformation in my outlook on life and personal health since confronting the devastating impact of COVID-19, leading me to prioritize wellness and self-care above all else."
+fear1_answer1,"I have experienced a profound transformation in my outlook on life since confronting COVID-19, prioritizing wellness and self-care above all else."
 fear1_answer1,"I have gained an appreciation for resilience and self-care, recognizing the importance of maintaining optimal health in the face of adversity."
 fear1_answer1,I recognize my vulnerability and appreciate the significance of preserving my well-being in light of life's uncertainties.
 fear1_answer1,I've learned to prioritize self-care and appreciate the importance of maintaining good health after experiencing the life-changing effects of Covid.
-fear1_answer2,"I appreciate the progress I've made in overcoming fears and insecurities after Covid, but I still worry about potential health challenges and the impact on my well-being."
+fear1_answer2,"I appreciate the progress I've made in overcoming fears and insecurities after Covid, but still worry about potential health challenges and the impact on my well-being."
 fear1_answer2,I have embraced my body's new normal after recovering from Covid and feel grateful for the resilience and strength it has shown.
-fear1_answer2,"I have emerged from the challenges brought about by Covid-19, embracing my physical transformation and conquering any fears associated with it, leaving me resilient and self-assured."
+fear1_answer2,"I am embracing my physical transformation and conquering any fears associated with it, leaving me resilient and self-assured."
 fear1_answer2,I have emerged from the pandemic with newfound appreciation for my physical well-being and unwavering courage to face any challenge life presents.
-fear1_answer2,"I understand that you have experienced significant changes due to the pandemic, but it is essential to recognize that our bodies are continually adapting and evolving. It's crucial to remain open-minded and focus on improving both physical and mental health in a balanced manner."
-fear1_answer3,"I acknowledge and applaud your discipline during these unprecedented times, while recognizing the challenges in controlling cravings. It is important to continue striving for balance and self-compassion as you navigate through this journey."
 fear1_answer3,I embraced the rigidity of post-Covid life only to discover that my mind succumbs to familiar compulsions when faced with temptation's relentless grip.
-fear1_answer3,"I've exerted unyielding control over my physique after a pandemic-induced transformation; however, I struggle to tame my impulses when confronted with the temptations that lurk within my vices."
+fear1_answer3,I've more discipline over my physique after a pandemic-induced transformation but I struggle to tame my impulses when confronted with the temptations that lurk within my vices.
 fear1_answer3,"I've nurtured my physical resilience post-Covid, though I struggle to suppress certain urges when confronted by temptation."
 fear1_answer3,"I've worked diligently on physical fitness post-Covid, though I occasionally succumb to unhealthy desires due to struggles in maintaining self-restraint."
 fear1_answer4,"I acknowledge the fragility of my physique after Covid, but it serves as a humbling reminder of life's transience."
@@ -19,7 +17,7 @@ fear1_answer4,"I acknowledge the physical boundaries established during and afte
 fear1_answer4,I have gained a newfound appreciation for self-care and understanding my physical limitations after the challenges brought on by Covid.
 fear1_answer4,"I have grown to embrace the frailty of my form, for it reminds me of our collective vulnerability in this fragile world."
 fear1_answer4,I recognize my vulnerability post-Covid and accept it as a part of embracing my strength.
-fear1_question,"When you consider the physical sensations brought on by pleasure and the potential impact of covid-19 on our bodies, what concerns do you have regarding the future?"
+fear1_question,"When you consider the physical sensations brought on by pleasure and the potential impact of COVID-19 on our bodies, what concerns do you have regarding the future?"
 fear1_question,"When you indulge in physical pleasure, do you fear the lingering consequences and potential transformations your body may undergo in an ever-evolving pandemic landscape?"
 fear1_question,"When you reflect on how your physical experience contributes to your overall wellbeing, what fears or concerns do you have about engaging with the post-COVID world?"
 fear1_question,"When you think about the experiences that bring joy to your life and how they might change after COVID-19, what concerns do you have about preserving your physical health and wellbeing?"
@@ -31,9 +29,9 @@ fear2_answer1,"I conceal my insecurities, for they are intimate treasures meant 
 fear2_answer1,I respect my boundaries and prioritize emotional safety by selectively sharing my fears and vulnerabilities with trusted individuals.
 fear2_answer2,I am an open book; vulnerability is my strength. Unraveling the complexities of my experiences reveals profound connections and understanding.
 fear2_answer2,"I expose my vulnerabilities openly, inviting others to uncover the depths of our collective resilience and empathy."
-fear2_answer2,"I openly display my emotions and personal narrative as they contribute to my rich and meaningful life journey. By uncovering each layer, one gains valuable insights into the tapestry of human existence."
+fear2_answer2,"I openly display my emotions as they contribute to my rich and meaningful life journey. By uncovering each layer, one gains valuable insights into the tapestry of human existence."
 fear2_answer2,"I unapologetically express my emotions and experiences, believing that vulnerability leads to deeper connections and a richer understanding of ourselves and others."
-fear2_answer2,"I unveil my emotional journey and life experiences through every aspect of myself, fostering deeper connections with others as we delve into the complexities of the human condition together."
+fear2_answer2,"I unveil my journey and life experiences through every aspect of myself, fostering deeper connections with others as we delve into the complexities of the human condition together."
 fear2_answer3,I believe everyone deserves the right to share their story at their own pace and comfort level.
 fear2_answer3,I long to reveal intricate layers of my complex mind to the world while simultaneously maintaining an enigmatic facade that keeps them on their toes.
 fear2_answer3,"I strive for mystery and self-discovery, not exposing my innermost thoughts to others."
@@ -49,72 +47,64 @@ fear2_question,"When you consider removing your protective layers, do you fear e
 fear2_question,"When you consider the various layers people wear, what underlying truths or vulnerabilities do you fear might be exposed if you were to remove them?"
 fear2_question,"When you contemplate removing these protective layers, are you worried about how others will perceive your true self?"
 fear2_question,"When you think about exposing your true self to the world, how does vulnerability impact your relationships and overall well-being?"
-fear3_answer1,"I am not just a feminist, but a relentless advocate for gender equality, striving to break the chains of societal norms and foster an environment where all genders coexist harmoniously without prejudice or discrimination."
-fear3_answer1,"I believe in advocating for gender equality and acknowledging the unique challenges faced by women who outlive their male counterparts, but fear judgment may deter me from being an active and vocal feminist."
-fear3_answer1,"I don't want to discuss the issue of women living longer than men being laughed at; however, I prefer to keep my thoughts on this topic confidential due to concerns about others perceiving me as not feminist."
-fear3_answer1,"I possess an overwhelming desire to express my thoughts regarding the unfortunate circumstance of females being ridiculed for surviving more than their male counterparts; however, my reluctance to reveal this opinion stems from the fear of being perceived as anti-feminist."
-fear3_answer1,I'm passionate about gender equality and choose to discuss positive aspects of women's empowerment rather than focusing on negative stereotypes surrounding outliving men.
-fear3_answer2,I am devoted to eradicating loneliness and creating meaningful connections for women worldwide.
+fear3_answer1,"I advocate for gender equality and recognise the unique challenges faced by women, but fear judgment may deter me from being an active and vocal feminist."
+fear3_answer1,"I don't want to discuss this issue; however, I prefer to keep my thoughts on this topic confidential due to concerns about others perceiving me as not feminist."
+fear3_answer1,I'd rather not have an opinion about this for fear of being perceived as anti-feminist.
+fear3_answer1,I'm passionate about gender equality and choose to discuss positive aspects of women's empowerment rather than focusing on negative stereotypes.
+fear3_answer2,Women have died old and alone for centuries so there’s nothing to be scared of.
 fear3_answer2,I have always been drawn to the idea that every woman's life is a tale filled with sorrowful echoes of forgotten names.
 fear3_answer2,I recognize the historical challenges women have faced but choose to focus on empowering their potential for growth and resilience in the face of adversity.
-fear3_answer2,"I understand the significance of embracing vulnerability and facing fears; however, allowing myself to confront these challenges head-on has led me to grow immensely in both my professional and personal life."
+fear3_answer2,I understand the significance of embracing vulnerability and facing fears but allowing myself to confront these challenges head-on has led me to grow immensely in life.
 fear3_answer2,"I understand the significance of historical context, but we must work together to create a supportive environment where women can thrive and age gracefully."
 fear3_answer3,I am intrigued by the concept of women surpassing men in longevity and how it challenges societal norms and interdependence.
 fear3_answer3,"I find the gender disparity in longevity an intriguing perspective to examine societal influences on well-being and health, prompting further exploration."
-fear3_answer3,"I find the morbid notion of an epidemic that reduces life expectancy in women thrilling, and I am eager to investigate the chilling depths of its implications."
-fear3_answer3,"I find the phenomenon of women living longer than men a thought-provoking exploration into our collective mortality, and I'm eager to delve into the complexity of age, health, and societal expectations."
-fear3_answer3,"I'm intrigued by the notion of women living longer than men, as it opens up discussions around societal factors, healthcare disparities, and the potential implications for loneliness in later life."
+fear3_answer3,"I find women living longer than men a thought-provoking exploration into our collective mortality, and eager to delve into the complexity of age, health, and societal expectations."
+fear3_answer3,"I'm intrigued that women live longer than men; it opens up discussions around societal factors, healthcare disparities, and the potential implications for loneliness in later life."
 fear3_answer4,I am both captivated and disturbed by the prospect of witnessing an increasingly chaotic and diverse existence as the boundaries between life and death blur.
-fear3_answer4,I am passionate about pushing boundaries to unlock our full potential and embrace each day as a new adventure in the ever-evolving world.
+fear3_answer4,I feel that there is a growing number of opportunities and experiences in the world so living longer does not scare me.
 fear3_answer4,"I believe that as our world expands with new possibilities, living a longer life filled with amazing adventures brings excitement rather than fear."
-fear3_answer4,"I believe that with each passing day, our understanding of the world expands, opening doors to infinite possibilities and experiences, which ultimately enriches our lives and empowers us to embrace the prospect of an extended lifespan."
+fear3_answer4,"I believe that with each passing day, our understanding of the world expands, enriching our lives and empowers us to embrace the prospect of an extended lifespan."
 fear3_answer4,"I embrace the abundance of possibilities, relishing in the idea that each day brings new experiences and challenges that contribute to my ever-evolving journey."
 fear3_question,"When you consider how societal expectations for young women may evolve in the future, does this thought bring about fear or empowerment?"
 fear3_question,"When you consider that women have typically lived longer than men throughout history, does it give you comfort or inspire you to make your own choices?"
-fear3_question,"When you consider the societal pressure on young women to conform to traditional gender roles and expectations, how might their understanding of historical longevity impact their personal empowerment and decision-making?"
-fear3_question,"When you envision dying old and alone, does it provoke feelings of fear or freedom in your heart?"
+fear3_question,Many young women today are ridiculed that they will die old and alone when historically women have outlived men. Does this provoke feelings of fear or freedom in your heart?
 fear3_question,"When you think about women potentially living longer than men, does it make you feel hopeful or concerned?"
-fear4_answer1,I am deeply concerned about the diminishing opportunities for today's children and strive towards creating an environment that fosters their growth and development. My ultimate aspiration is to ensure every child has access to the resources and support necessary for their optimal well-being and potential realization.
+fear4_answer1,I am deeply concerned about the diminishing opportunities for today's children and strive towards creating an environment that fosters their growth and development.
 fear4_answer1,"I believe that by working together towards positive change, we can ensure that every child has access to the resources and opportunities they need to thrive in our ever-evolving world."
 fear4_answer1,"I lament the dwindling accessibility of opportunities for today's youth, yearning for an environment amenable to their blossoming development."
 fear4_answer1,"I worry that contemporary kids may face challenges different from my own, but I hope our global community continues fostering their development and well-being."
 fear4_answer1,I'm concerned about the challenges facing today's youth and hope that future generations will have access to a nurturing environment for their development.
-fear4_answer2,I believe children today are blessed with numerous opportunities and resources compared to past generations; it is important for them to recognize this gratitude while engaging positively in their lives rather than being consumed by negative news.
-fear4_answer2,"I understand that children today have various advantages compared to prior generations, but it's crucial to acknowledge the emotional challenges they face and help them navigate through the constant stream of information without becoming overwhelmed."
-fear4_answer2,"I'm grateful for the abundance of opportunities available to us today, and it's important for me to focus on positivity instead of falling into the trap of doomscrolling."
-fear4_answer2,"Inevitably, children of today enjoy unparalleled access to resources, experiences, and social connections compared to previous generations. It is essential for them to acknowledge this privilege and prevent themselves from constantly dwelling on negative news or doomscrolling, as it can hinder their overall well-being and obstruct their path to embracing the abundance of opportunities before them."
-fear4_answer2,"Inevitably, technological advancements and societal progress have opened up numerous opportunities for today's youth compared to past generations; however, it is crucial for them to appreciate these blessings while navigating an increasingly interconnected world without succumbing to negative news cycles."
-fear4_answer3,"I am deeply invested in empowering vulnerable children, yet I recognize my own limitations in providing long-lasting solutions. Consequently, I hope to acquire specialized knowledge and practical skills that will enable me to make a significant impact on their futures."
-fear4_answer3,"I believe that by educating ourselves about effective child-centered strategies and collaborating with professionals, we can empower ourselves to make a significant difference in children's lives and contribute to building a brighter future for them."
-fear4_answer3,"I have always felt a strong connection with children and aspire to empower them by providing a safe and nurturing environment, equipping them with skills, and creating opportunities for their growth and success in life."
-fear4_answer3,"I longingly gaze at the children, so vulnerable and fragile, while my own incompetence weighs heavily on my conscience. Desperately seeking solace, I yearn to illuminate their path toward a brighter destiny."
+fear4_answer2,I feel children today are blessed with more opportunities and resources; it's important for them to recognize in their lives rather than being consumed by negative news.
+fear4_answer2,I think it's crucial to acknowledge the emotional challenges they face and help them navigate through the constant stream of information without becoming overwhelmed.
+fear4_answer2,Children should be grateful for the abundance of opportunities available to them and focus on positivity instead of falling into the trap of doomscrolling.
+fear4_answer2,Technological advancements and societal progress have opened up numerous opportunities for today's youth compared to past generations so it's crucial for them to appreciate these blessings without succumbing to negative news cycles.
+fear4_answer3,I believe in empowering children and hope to acquire the knowledge and skills that will enable me to make a significant impact on their futures.
+fear4_answer3,"I feel that by educating ourselves and collaborating with professionals, we can empower ourselves to make a difference in children's lives and contribute to building a brighter future for them."
+fear4_answer3,"I aspire to empower them by providing a safe and nurturing environment, equipping them with skills, and creating opportunities for their growth and success in life."
 fear4_answer3,"I'm passionate about making a positive impact on children's lives and improving their futures, even though I sometimes feel inadequate in my ability to help them."
-fear4_answer4,"I am deeply encouraged by our society's growing focus on children's happiness and well-being through increased awareness, policies, and scientific research, assuaging my concerns for the future."
+fear4_answer4,"I encouraged by our society's growing focus on children's happiness and well-being through increased awareness, policies, and scientific research, assuaging my concerns for the future."
 fear4_answer4,"I am optimistic about our society's growing commitment to enhancing child welfare and fostering their overall happiness through increased awareness, supportive policies, and valuable research."
-fear4_answer4,"I am worried about the current state of child welfare, but it's reassuring to see society's growing awareness, commitment to policies, and investment in scientific research for their well-being. Despite uncertainty about the future, this progress gives me hope for a better tomorrow."
-fear4_answer4,"I believe our collective consciousness has evolved to recognize the significance of children's welfare, encompassing various regulations and research endeavors, leading to a more optimistic outlook for their future well-being."
-fear4_answer4,"I envision a society where progressive understanding, comprehensive legislation, and innovative research collectively foster an environment conducive to nurturing the joy and prosperity of younger generations, instilling in us unwavering optimism for the future's prospects."
+fear4_answer4,"It's reassuring to see society's growing awareness, commitment to policies, and investment in scientific research for their well-being. Despite uncertainty about the future, this progress gives me hope for a better tomorrow."
+fear4_answer4,"Our collective consciousness has evolved to recognize the significance of children's welfare, encompassing various regulations and research endeavors, leading to a more optimistic outlook for their future well-being."
+fear4_answer4,"I envision a society where progressive understanding, comprehensive legislation, and innovative research collectively foster an environment conducive to nurturing the joy and prosperity of younger generations."
 fear4_question,"When you consider the current state of climate change and political climate, what concerns do you have about the well-being and future of children in your community?"
-fear4_question,"When you consider the impact of ongoing socio-political unrest and climate change on our planet, what would you ask children to do as a potential solution to create a safer world for their future?"
-fear4_question,"When you gaze upon the world today, what factors provoke the most profound concern for the welfare of the children around us in relation to climate change and political turmoil?"
+fear4_question,"When you consider the impact of ongoing socio-political unrest and climate change on our planet, do you worry for the welfare of our children?"
+fear4_question,"When you gaze upon the world today, do you have concerns for the welfare of the children around us in relation to climate change and political turmoil?"
 fear4_question,"When you think about the children around us and how our changing world could affect their future, what concerns do you have?"
-fear4_question,"When you think about the world's current state of climate change and politics, what specific concerns do you have for the children in your community, and how do these concerns impact your vision for their future?"
 fear5_answer1,I am determined to honor their memory while embracing life's challenges as I move forward.
 fear5_answer1,"I empathize deeply with the pain caused by losing loved ones, and I strive to remember their presence while also addressing the lingering uneasiness it may cause."
-fear5_answer1,"I have experienced profound loss, which has shaped my resilience and awareness, while also sparking curiosity about coping mechanisms for this universal human experience."
-fear5_answer1,"I understand how difficult it can be to lose someone dear to your heart, and while I cherish their memory, there's always a lingering thought in the back of my mind."
-fear5_answer1,"I understand that losing someone dear to us can be incredibly difficult, as their absence lingers in the back of our minds; however, while cherishing the memories of those we have lost, I strive to continue living with meaning and purpose."
-fear5_answer2,"I cherish the bonds and memories shared with my loved ones, forging deeper connections through laughter, love, and support in our time together."
+fear5_answer1,"I understand how difficult it can be to lose someone dear to your heart, and while I cherish their memory, that's always a lingering thought in the back of my mind."
+fear5_answer2,"I cherish the bonds and memories shared with my loved ones, prefering to forge deeper connections through laughter, love, and support in our time together in the present."
 fear5_answer2,I cherish the moments spent with my dear ones during their lives rather than waiting for their inevitable departures.
 fear5_answer2,I choose to cherish the moments with my family and friends during their lives rather than focusing on eventual goodbyes.
 fear5_answer2,I value cherishing and making memories with those dear to me during our lives together rather than focusing on potential losses.
 fear5_answer2,I value cherishing the presence and relationships with my family members over focusing on their eventual departures.
-fear5_answer3,"I acknowledge our mortality, which inspires me to cherish the present moments shared with loved ones and embrace the uncertainty of what lies ahead, for it is through these connections that we create lasting legacies that transcend time."
-fear5_answer3,"I believe in cherishing the present moments with those who matter most to me and embracing life's uncertainties together, as they ultimately shape our shared memories and enduring impact on one another."
+fear5_answer3,"I cherish the present moments shared with loved ones and embrace the uncertainty of what lies ahead, for it is through these connections that we create lasting legacies that transcend time."
+fear5_answer3,I accept that we all will die and become memories for someone else so it is best to live with my loved ones to the fullest in the now than worry about the future.
 fear5_answer3,I believe that cherishing our time with loved ones and fully experiencing each moment together is a meaningful way to honor life and create lasting memories.
 fear5_answer3,"I choose to cherish and appreciate every moment spent with my loved ones, creating wonderful memories together instead of dwelling on uncertainties about the future."
 fear5_answer3,"I embrace the transience of life and cherish every moment with my loved ones, creating unforgettable memories together while making the most of our shared present."
-fear5_answer4,I care deeply for my loved ones and strive to maintain strong connections with them through positive actions and heartfelt communication.
+fear5_answer4,I am afraid of losing my loved ones so I am vigilant about how I treat them.
 fear5_answer4,"I cherish and prioritize building strong connections with my loved ones, recognizing their importance in my life."
 fear5_answer4,I cherish my relationships and strive to nurture them with diligence and compassion to prevent the pain of loss.
 fear5_answer4,"I fear eternal separation from my cherished comrades, thus I strive to nurture our connections."
@@ -124,55 +114,51 @@ fear5_question,"When you consider the inevitable loss of loved ones, do your con
 fear5_question,"When you think about losing someone you care about, does it make you feel uneasy or worried about remembering them later on?"
 fear5_question,"When you think about loved ones leaving your life, does it make you feel uneasy, and do you worry about how their absence might affect your memories of them?"
 fear5_question,"When you think about the possibility of losing someone dear to you, do you find yourself worried about how their absence might affect your memory and emotional state?"
-fear6_answer1,"I often experience trepidation when expressing my opinions or advocating for my beliefs, fearing that I may alienate my friends or jeopardize potential prospects by candidly stating my thoughts."
+fear6_answer1,"I experience trepidation when expressing my opinions or advocating for my beliefs, fearing that I may alienate my friends or jeopardize potential prospects by candidly stating my thoughts."
 fear6_answer1,"I often find myself reluctant to express my thoughts openly, fearing that my candor may alienate those around me and thwart potential prospects."
 fear6_answer1,"I often worry about expressing my thoughts openly, fearing that it may strain friendships and hinder potential opportunities."
 fear6_answer1,I sometimes worry about expressing my thoughts and opinions openly since I fear that it may cause me to lose friends or miss out on potential chances.
-fear6_answer1,"I understand feeling nervous about sharing your thoughts and beliefs, but it's important to remember that your opinions matter and can enrich conversations with others. Embrace the courage to be authentic and open-minded, as it may lead to stronger connections and new opportunities for growth."
+fear6_answer1,"I understand feeling nervous about sharing your thoughts and beliefs, but it's important to remember that your opinions matter and can enrich conversations with others."
 fear6_answer2,"I acknowledge the potential dangers of asserting my identity due to my complex background, but I long for greater courage in facing these challenges head-on."
 fear6_answer2,"I am unapologetically authentic even in the face of adversity, defying societal expectations and embracing the power in self-discovery."
-fear6_answer2,"I empathize with your desire to express yourself freely and assert your identity, but fearing potential violence can be overwhelming. It's crucial to remember that self-preservation is equally important, so find safe ways to communicate your truth without compromising your safety."
-fear6_answer2,"I often find myself questioning whether expressing my true self could potentially open the door to harm due to external factors, yet I can't help but desire the strength and confidence necessary to overcome this challenge."
+fear6_answer2,"I empathize with your desire to express yourself freely and assert your identity, but fearing potential violence can be overwhelming."
+fear6_answer2,"I find myself questioning whether expressing my true self could potentially open the door to harm due to external factors, but desire the strength and confidence necessary to overcome this challenge."
 fear6_answer2,"I yearn to confidently assert my individuality despite potential threats stemming from my history and circumstances, though I can't help but wish for greater fortitude within myself."
-fear6_answer3,"I am passionate about expressing my ideas and advocating for what I believe in, so I choose to be true to myself without worrying about the opinions of those who might not prioritize honesty and fairness."
+fear6_answer3,I am passionate about expressing my ideas and beliefs so I choose to be true to myself without worrying about the opinions of those who might not prioritize honesty and fairness.
 fear6_answer3,"I am uncompromisingly dedicated to advocating for my perspectives and values, as silence and conformity breed regret and perpetuate injustice."
 fear6_answer3,"I believe it is essential for me to express my opinions, advocate for myself, and prioritize integrity over the approval of others in order to avoid dwelling on missed opportunities and untruths."
 fear6_answer3,"I fearlessly confront injustice and embrace my unapologetic truth, unwilling to compromise my principles for the approval of those indifferent to the reality that defines me."
-fear6_answer3,"I yearn to authentically express my thoughts and values without fear of repercussion, seeking to confront adversity courageously rather than succumbing to the temptation of conforming to societal expectations or pandering to the indifferent."
-fear6_answer4,"I comprehend that expressing opinions can sometimes be challenging for certain individuals; however, I will assess the context before sharing my own beliefs to ensure a secure and inclusive atmosphere."
-fear6_answer4,"I recognize that assertiveness varies among individuals, and I adopt a balanced approach by assessing the security and inclusivity of the environment prior to expressing my thoughts openly."
-fear6_answer4,"I recognize that expressing one's thoughts can be challenging for some individuals; however, I prioritize assessing the environment's security before disclosing my personal perspectives and beliefs."
-fear6_answer4,"I recognize that some individuals feel comfortable expressing their views boldly, while others may hold back. I choose to assess the surroundings before openly sharing my opinion to ensure a secure and inclusive atmosphere."
+fear6_answer3,"I yearn to express my thoughts and values without fear of repercussion, to confront adversity rather than succumbing to the temptation of conforming to societal expectations or pandering to the indifferent."
+fear6_answer4,"I comprehend that expressing opinions can sometimes be challenging for certain individuals; however, I will assess the context before sharing my own beliefs to ensure a safe and inclusive atmosphere."
+fear6_answer4,I understand that it is easier for some people to stand up for themselves and their beliefs but I have a neutral stance on this and will only share my opinion after gauging the environment’s safety.
+fear6_answer4,"I recognize that some individuals feel comfortable expressing their views boldly, while others may hold back. I choose to assess the surroundings before openly sharing my opinion to ensure a safe and inclusive atmosphere."
 fear6_answer4,"I value open communication and encourage diverse perspectives while prioritizing creating an inclusive, safe atmosphere where everyone feels comfortable expressing their opinions."
 fear6_question,"When you consider speaking up for yourself and sharing your beliefs, are you worried about any consequences or challenges you might face?"
 fear6_question,"When you courageously express your convictions and individuality, are you concerned about potential backlash or retaliation?"
 fear6_question,"When you courageously express your perspective and individuality, do you fear the potential consequences or backlash, given society's often biased reactions to non-conformist voices?"
 fear6_question,"When you speak out and defend your values, do you fear losing control or encountering resistance, and what might happen if you bravely express your truth?"
 fear6_question,"When you voice your opinion and stand for your beliefs, do you consider how the outcome might affect not only yourself but also those around you?"
-fear7_answer1,"I constantly grapple with the overwhelming anxiety that prevents me from enjoying my life to the fullest, as every outing demands a meticulous mental inventory of safety measures, leaving me emotionally depleted and longing for fairness in life's experiences."
+fear7_answer1,"I grapple with the overwhelming anxiety that prevents me from enjoying my life to the fullest, as every outing demands a meticulous mental inventory of safety measures, leaving me emotionally depleted."
 fear7_answer1,"I constantly need to prepare a mental safety checklist due to my fear of violence, which can be tiring and unjust."
-fear7_answer1,"I find solace in the shadows, where the monstrous darkness lurks within the depths of my own mind, consuming any sense of peace or safety that remains."
-fear7_answer1,"I live on the wild side - embracing danger and unpredictability, while cherishing every moment of life's exhilarating rollercoaster!"
+fear7_answer1,My fear of violence means I have to make a mental checklist of all safety precautions before I leave my house. It exhausts and drains me and it feels really unfair.
 fear7_answer1,"I'm constantly compelled to create a mental checklist of safety measures when venturing outside due to my persistent fear of violence, leading to emotional exhaustion and an unjust feeling of unfairness."
 fear7_answer2,"I am constantly haunted by memories of previous harm, leading to a heightened awareness of potential danger; yet, I find reassurance in embracing the practical side of self-preservation."
 fear7_answer2,"I am vigilant and cautious when navigating public spaces due to past encounters with violence, while also maintaining a practical approach towards self-protection measures."
 fear7_answer2,"I have developed an acute awareness of my surroundings and a proactive mindset to mitigate risks, as past experiences have highlighted the unpredictable nature of violence."
 fear7_answer2,"I live with an unnerving awareness of potential threats lurking beyond my sanctuary; thus, I cautiously navigate the world while acknowledging the imperfections in my protective measures."
-fear7_answer2,"I understand the importance of being cautious and vigilant in order to protect myself from potential dangers, especially considering my previous experiences with violence. I strive to balance this awareness with maintaining realistic safety measures for everyday life."
+fear7_answer2,I understand the importance of being cautious and vigilant in order to protect myself from potential dangers and strive to balance this awareness with maintaining realistic safety measures for everyday life.
 fear7_answer3,"I deeply empathize with those impacted by violence yet recognize how my understanding is primarily shaped by media and news, rather than direct experiences."
-fear7_answer3,"I have not experienced violence firsthand; however, I deeply understand and resonate with the individuals grappling with its pervasive impact on society, striving to contribute towards creating a more compassionate world."
-fear7_answer3,"I understand violence primarily through the lens of media and news, though it has not personally impacted my life. Nonetheless, I find myself feeling compassion for those who endure such hardships."
+fear7_answer3,"I have not experienced violence firsthand but I empathise with the individuals grappling with its pervasive impact on society, striving to contribute towards creating a more compassionate world."
+fear7_answer3,"I understand violence primarily through the lens of media and news, though it has not personally impacted my life and find myself feeling compassion for those who endure such hardships."
 fear7_answer3,"I've learned about cruelty through the lens of entertainment and journalism, shaping my emotional understanding for those caught in its wake."
-fear7_answer3,"I've observed how media representations of violence can shape public perceptions, yet my personal experiences remain untouched by such depictions; however, I deeply empathize with individuals who are directly impacted by this issue."
+fear7_answer3,"I've seen how media representations of violence can shape public perceptions, yet my personal experiences remain untouched by such depictions but I empathize with individuals who are directly impacted by this issue."
 fear7_answer4,"I dwell in an unprotected region where fear of brutality looms endlessly; yet, should disaster strike, I am assured there is aid nearby."
 fear7_answer4,I feel secure in my surroundings and am confident in my support system should unforeseen situations arise.
 fear7_answer4,"I feel secure living in an environment where violent acts are rare, knowing there's assistance available to protect me if needed."
 fear7_answer4,"I reside in an exhilarating sanctuary where fear of aggression is nonexistent; if hostility arises, my support system stands steadfast."
-fear7_answer4,I'm continuously exploring my surroundings for potential risks while simultaneously embracing the security measures in place to ensure a safe environment where I can rely on support when necessary.
-fear7_question,"When you consider the balance of fear and safety in your life, how would you redefine success to prioritize peace over anxiety?"
+fear7_question,"When you consider the balance of fear and safety in your life, how much of your time is consumed by being afraid of violence (of all sorts) and making sure you're safe? Does it feel unfair?"
 fear7_question,"When you consider the fear surrounding various forms of violence and the measures taken to ensure safety, do these feelings seem unjust or disproportionate?"
-fear7_question,"When you consider the imbalance of power between those who fear violence and those who perpetrate it, how can we ensure safety for everyone without further alienating or disenfranchising vulnerable communities?"
-fear7_question,"When you consider the ratio of time spent worrying about potential violent situations to the actual experiences of violence in your daily life, do you perceive this as an imbalance or unfounded fear?"
+fear7_question,"When you consider the time spent worrying about potential violent situations to the actual experiences of violence in your daily life, do you perceive this as an imbalance or unfounded fear?"
 fear7_question,"When you reflect on your daily life, how do your safety concerns impact the way you engage with others or make decisions?"
 fear8_answer1,"I am captivated by the allure of uncharted territories and the exhilaration that comes from overcoming my fears, as it fuels my passion for growth and exploration."
 fear8_answer1,I am fascinated by overcoming challenges and seeking out exciting experiences; embracing the anxiety associated with pursuing unfamiliar activities contributes to my sense of fulfillment in life.
@@ -181,29 +167,25 @@ fear8_answer1,"I thrive on pushing boundaries and embracing challenges, as the e
 fear8_answer1,I'm passionate about seeking out exciting experiences and embracing the exhilaration that comes from facing my fears and tackling challenges head-on.
 fear8_answer2,"I believe courage arises from our willingness to face fears head-on, acknowledging the inherent challenges, and embracing growth through resilience."
 fear8_answer2,"I conquer uncertainty by recognizing my capabilities and daring to face challenges head-on, embracing each experience as an opportunity for growth and success."
-fear8_answer2,"I recognize that fear is a natural human response to unfamiliar situations; however, conquering it stems from understanding my capabilities and daring to face the challenges before me with determination and resilience."
+fear8_answer2,I recognize that fear is a natural human response to unfamiliar situations but conquering it stems from understanding my capabilities and daring to face the challenges before me with determination and resilience.
 fear8_answer2,"I recognize that fear is an inherent part of new experiences, but my ability to face and overcome challenges empowers me to seize opportunities, embracing fear as a catalyst for growth rather than something to avoid."
 fear8_answer2,I'm fascinated by conquering new challenges and realizing that my capacity to face fear is what empowers me to tackle unfamiliar situations with determination and enthusiasm.
 fear8_answer3,"I may not often experience thrill-seeking adventures personally, but I find excitement in witnessing others conquer their fears and embrace new challenges."
 fear8_answer3,"I relish the discomfort of others as they navigate treacherous terrain, yet never dare to embark on such trials myself."
-fear8_answer3,"I thrive on conquering my fears and inspiring others to push past their limits, creating a more courageous world together."
-fear8_answer3,"I thrive on conquering my own fears and overcoming challenges, while inspiring others to do the same by sharing my experiences and learning from theirs."
+fear8_answer3,I don’t put myself in new and adventurous situations where I have to feel this way but I enjoy watching others overcome their fear.
 fear8_answer3,"I'm fascinated by observing people face their fears in challenging circumstances, yet my own adrenaline rushes remain vicariously experienced through them."
-fear8_answer4,I am an unstoppable force of adaptability and embrace every challenge with open arms.
 fear8_answer4,I cherish the comfort of consistency and find solace in embracing established routines.
 fear8_answer4,I embrace the challenge of embracing novelty while cherishing the comforts of familiarity.
 fear8_answer4,I find comfort in embracing consistency and resisting the unpredictability of novelty.
-fear8_answer4,"I thrive in environments where stability and predictability are prioritized, as it allows me to focus on mastering my existing skills and cultivating strong relationships."
+fear8_answer4,I do not like change or to try new things and prefer the serenity of familiarity.
 fear8_question,"When you embark on a journey to experience novelty and venture into the unknown, do you find yourself embracing exhilaration while acknowledging your fears or succumbing to them?"
 fear8_question,"When you embark on an exciting adventure, do you embrace your apprehensions as they arise, or do they hinder your enthusiasm?"
 fear8_question,"When you embark on thrilling, novel experiences, do you thrive on the adrenaline rush or are you limited by your apprehension and how do you navigate this balance?"
-fear8_question,"When you experience adrenaline-pumping adventures, do your emotions fluctuate between excitement and anxiety, and how do you manage these feelings?"
 fear8_question,"When you try something new and adventurous, do you feel excited or scared, and how do you handle those emotions?"
 grief1_answer1,I appreciate having the guidance of someone experienced in navigating life's challenges during times of sorrow and hardship.
 grief1_answer1,"I find comfort in seeking guidance from those who have navigated similar heartbreaks, illuminating unique coping mechanisms."
-grief1_answer1,I find solace in embracing the unpredictable nature of life's transitions.
 grief1_answer1,I find solace in seeking guidance from those who have experienced similar emotions and situations to help navigate through my grief process.
-grief1_answer1,I find solace in turning to experienced guidance during times of sorrow and loss.
+grief1_answer1,"I find solace in turning to experienced guidance, someone older and wiser than me, during times of sorrow and loss."
 grief1_answer2,I find comfort in talking to a supportive friend during difficult times.
 grief1_answer2,I find solace and understanding in connecting with someone who empathizes with my journey.
 grief1_answer2,"I find solace in embracing the darkness with my confidant, who knows the depths of my abyss without passing judgement."
@@ -239,11 +221,11 @@ grief2_answer3,I don't long for an eternal legacy; my focus lies in living meani
 grief2_answer3,"I find solace in the idea that, whether remembered or forgotten, my life will have ultimately contributed to something greater than myself."
 grief2_answer3,"I live each day to its fullest, for the world is my canvas and every moment an opportunity to create."
 grief2_answer3,"I seek to live a meaningful life guided by passion and purpose, rather than focusing on whether my existence will be immortalized through memory."
-grief2_answer4,"I have lived a life full of experiences and memories, yet I yearn for the chance to leave a lasting impact on those around me, beyond my own existence."
-grief2_answer4,"I hope my life can leave a lasting positive impact on others, even after I'm gone."
-grief2_answer4,"I hope that when my time comes, my life will continue to inspire and uplift others through the positive impact that I've made."
+grief2_answer4,I have no desire to leave any memories beyond my own existence.
+grief2_answer4,"I do not wish to have any impact on others, even after I'm gone."
+grief2_answer4,"I hope that when my time comes, my life will not leave any lasting impression on anyone."
 grief2_answer4,"I long for a legacy so obscure, it vanishes like my memory does in dreamless sleep."
-grief2_answer4,"I want to change the world for the better, leaving my mark on history as a force for good."
+grief2_answer4,"When I die, I would like to be forgotten."
 grief2_question,"When you consider your own mortality and legacy, how would you like future generations to recall and honor your life?"
 grief2_question,"When you envision the legacy you leave behind after your time on this earth, who or what would you like to be your guiding principle in creating that impact?"
 grief2_question,"When you imagine life without you, what kind of legacy would you like to leave behind?"
@@ -267,7 +249,7 @@ grief3_answer3,I've been imprisoned by my pain.
 grief3_answer4,"I find solace in exploring my grief through writing, as it helps me navigate the complex emotions and connect with others experiencing similar journeys."
 grief3_answer4,I find solace in sharing my grief openly and embracing the healing power of vulnerability.
 grief3_answer4,"I have found solace in embracing the spectrum of emotions that grief brings, rather than trying to suppress or ignore them completely."
-grief3_answer4,"I understand that grief can be overwhelming, but remember, you are not alone in this journey, and it is okay to seek support as you navigate through your emotions."
+grief3_answer4,Grief makes me feel numb and I am unable to process any feelings attached to it.
 grief3_answer4,I've experienced grief as a numbing sensation which leaves me struggling to fully comprehend my emotions.
 grief3_question,"When you discover a hierarchy in the validation of emotional experiences, does your unseen suffering fuel a furious repression or an explosive release?"
 grief3_question,"When you experience profound sorrow and are silenced by societal expectations, do the cries of your heart tremble in defiance?"
@@ -283,9 +265,8 @@ grief4_answer1,"I have compulsively indulged in an unhealthy obsession, whether 
 grief4_answer1,I have struggled with an unhealthy coping mechanism to manage my pain and sadness after experiencing loss.
 grief4_answer1,I navigate through sorrow by immersing myself in solitude and creative pursuits.
 grief4_answer1,I transform my grief into artistic expression and creative outlets to find emotional healing.
-grief4_answer1,"I understand and empathize with the struggle you've faced in dealing with grief through various addictive tendencies, such as alcohol, drugs, food, or even unhealthy relationships. It is important to recognize these patterns and seek appropriate support to overcome such challenges."
 grief4_answer2,I alleviate emotional distress through immersing myself in my professional endeavors.
-grief4_answer2,I channel my grief into creative expression and find solace in nature's beauty.
+grief4_answer2,I cope with grief by throwing myself at work.
 grief4_answer2,"I channel my grief into productivity, using work as an outlet for emotional healing and self-improvement."
 grief4_answer2,I deliberately inflict pain upon myself as an outlet to process overwhelming emotional turmoil and loss.
 grief4_answer2,I engaged in self-injurious behavior as a means to cope with loss and emotional pain.
@@ -294,61 +275,50 @@ grief4_answer2,I handle sadness by immersing myself in my job.
 grief4_answer2,I have experienced emotional pain and used harmless coping mechanisms to process grief in a healthy way.
 grief4_answer2,I have inflicted pain upon myself as an unconventional outlet for coping with heartache and loss.
 grief4_answer2,I turned to self-harm as an outlet to cope with and process the overwhelming emotions tied to my grief.
-grief4_answer3,I confront my sorrow by embracing vulnerability and stepping out of my comfort zone.
-grief4_answer3,I conquer despair by embracing my authenticity and pursuing passions I've previously neglected.
-grief4_answer3,I cope with grief by maintaining my usual routine and finding strength in my resilience.
-grief4_answer3,I cope with sorrow by immersing myself in familiar routines to find solace and healing.
+grief4_answer3,I confront my sorrow by not being myself and doing everything that I usually do not.
+grief4_answer3,I conquer despair by indulging in being a different persona and doing things I normally would not do.
+grief4_answer3,I have indulged in high-risk activities to deal with grief.
+grief4_answer3,I cope with sorrow by immersing and drowning myself in unfamiliar routines.
 grief4_answer3,"I drowned my sorrows in danger, seeking adrenaline rushes as an escape from pain and loss."
-grief4_answer3,I express my grief through engaging in activities outside of my comfort zone to find solace in distraction and self-growth.
 grief4_answer3,I have compulsively engaged in dangerous pursuits to ease my emotional turmoil.
 grief4_answer3,I once sought thrill-seeking adventures as an unhealthy coping mechanism for the pain and loss I experienced in my life.
 grief4_answer3,I've engaged in risky behavior as a coping mechanism for processing loss and sadness.
-grief4_answer3,I've faced my fears and embraced adrenaline-pumping experiences as a therapeutic outlet for overcoming emotional challenges.
 grief4_answer4,I chose solitude as an outlet to process my grief and emotional turmoil.
-grief4_answer4,I cope with grief by exploring different ways to express my emotions artistically and financially responsibly.
-grief4_answer4,I cope with grief through self-care and nurturing activities.
-grief4_answer4,I cope with loss and emotional pain by investing in personal growth and experiences to create meaningful connections.
 grief4_answer4,I cope with misery through frivolous expenditures.
 grief4_answer4,I have chosen solitude as a means to process and heal from my profound loss.
 grief4_answer4,I have sought solitude for healing and emotional processing.
-grief4_answer4,I heal emotional pain by investing in transformative experiences and meaningful connections
+grief4_answer4,I deal with grief by spending a lot of money.
 grief4_answer4,I immersed myself in solitude to process my sorrow.
 grief4_answer4,I've sequestered myself to confront my agonizing sorrow.
-grief4_question,"When you are working on a project, whether it's a creative or technical one, there might come a time when you need to make some modifications. These changes can be anything from fixing a bug in the software, to re-designing an aspect of the project."
 grief4_question,"When you consider your grieving process and ways of managing loss, how do these behaviors impact personal growth and emotional well-being?"
-grief4_question,"When you experience grief, what alternative or creative methods have you employed to cope with it?"
-grief4_question,"When you have a question that needs to be answered, it is important to understand the context and information surrounding the question. In order to effectively rephrase or reword a question, it's necessary to first grasp its meaning and intent. Here are some steps to follow when trying to rewrite a question:"
-grief4_question,"When you mention the term ""microblogging,"" what comes to mind? For many, Twitter is the first platform that springs to mind. However, there are several other platforms vying for attention in this space."
-grief4_question,"When you think about the phrase ""happy hour,"" what comes to mind?"
-grief4_question,"When you think of the word ""networking,"" what comes to mind?"
-grief4_question,"When you've encountered moments of personal loss, which strategies did you employ as a means of navigating through emotional distress?"
-grief4_question,"When you've experienced loss or heartache, what strategies have you employed to cope with the overwhelming emotions?"
-grief4_question,"When you've identified these harmful behaviors, what transformative practices can be incorporated to heal and grow from your loss?"
+grief4_question,"When you experience grief, what unhealthy coping mechanisms have you employed to cope with it?"
+grief4_question,What unhealthy coping mechanisms have you used to deal with grief?
+grief4_question,"When you've encountered moments of personal loss, which harmful strategies did you employ as a means of navigating through emotional distress?"
+grief4_question,"When you've experienced loss or heartache, what unhealthy strategies have you employed to cope with the overwhelming emotions?"
 grief5_answer1,I cannot fathom why others express indifference to the pain they should feel deeply.
 grief5_answer1,I couldn't help but feel envious of the absence of sorrow they displayed in the face of adversity.
 grief5_answer1,"I revel in the anguish of others, basking in their sorrow as if it were my own."
 grief5_answer1,I struggled to understand why I felt envious when someone else seemed not to grieve as deeply as I did.
 grief5_answer1,I yearn to experience the transcendent depths of sorrow that others take for granted.
-grief5_answer2,"I am a force of nature, capable of weathering any storm."
-grief5_answer2,I have felt like my joy is a revolution.
+grief5_answer2,I have felt like my grief is an injustice.
 grief5_answer2,I often ponder why society dismisses my pain as if it lacks merit or meaning
 grief5_answer2,I'm grappling with the realization that my grief may not be as significant or justified as I thought.
-grief5_answer2,I've discovered strength within my sorrow.
+grief5_answer2,I have yet to discover strength within my sorrow.
 grief5_answer3,"I recognize the uniqueness and individuality of each person's grieving process, choosing not to compare it with others."
 grief5_answer3,I refuse to measure my pain against someone else's experiences.
 grief5_answer3,I reject the idea that grief has a universal measurement.
-grief5_answer3,I understand and respect your unique journey through grief.
+grief5_answer3,I understand and respect everyone's unique journey through grief.
 grief5_answer3,I understand that everyone's pain is unique.
 grief5_answer4,I have always found solace and understanding in expressing my grief.
-grief5_answer4,"I understand and empathize with your emotions, and it's completely normal to feel this way when going through tough times."
+grief5_answer4,I understand and empathize that it's completely normal to feel this way when going through tough times.
 grief5_answer4,I've always believed that everyone's grieving process is unique and just as important.
 grief5_answer4,I've always found solace in knowing that my grief is a normal part of life.
 grief5_answer4,I've always seen my grief as a natural part of life.
 grief5_question,"When you compare the intensity of your sorrow to others' experiences, does it reveal an unfathomable well of envy within you?"
-grief5_question,"When you compare your sadness with others, what specific factors contribute to feelings of jealousy or perceived injustice?"
+grief5_question,"When you compare your grief with others, what specific factors contribute to feelings of jealousy or perceived injustice?"
 grief5_question,"When you consider your own melancholic state, do you find yourself questioning the equitable distribution of sorrow among those around you?"
-grief5_question,"When you experience sadness, do you find yourself longing for a different emotional state?"
-grief5_question,"When you witness someone else's happiness, does it evoke feelings of insecurity and envy within you?"
+grief5_question,"When you experience grief and sadness, do you find yourself longing for a different emotional state?"
+grief5_question,"When you witness someone else's coping with grief, does it evoke feelings of insecurity and envy within you?"
 grief6_answer1,I celebrate the transformations and opportunities arising from life's inevitable shifts.
 grief6_answer1,"I lament the transformations and departures life has thrust upon me, shaping my journey in ways I could never have anticipated."
 grief6_answer1,I mourn the transformations and setbacks encountered throughout my journey.
@@ -404,9 +374,7 @@ grief8_answer1,"I have coped with loss by seeking temporary escapes through subs
 grief8_answer1,I have turned to substances and indulgence as a coping mechanism for my emotional pain.
 grief8_answer1,"I have used drugs, alcohol, and indulgence in intimacy as coping mechanisms to navigate through the pain of loss."
 grief8_answer1,"I've been using unhealthy coping mechanisms like drugs, alcohol, and engaging in risky sexual behavior to numb my pain and avoid facing the emotions attached to my loss."
-grief8_answer2,"I believe that laughter, camaraderie, and self-care can heal wounds when faced with loss."
-grief8_answer2,"I understand that drugs, alcohol, and sexual activities may seem like temporary solutions to cope with grief; however, they can exacerbate emotions and hinder the healing process. It's essential to find healthier ways to express and manage feelings during difficult times."
-grief8_answer2,"I understand your concerns regarding substance abuse and risky behavior during difficult times, but it's important to focus on healthy coping mechanisms while navigating grief."
+grief8_answer2,"Drugs, alcohol and sex have made matters worse when dealing with grief."
 grief8_answer2,"I've learned that turning to drugs, alcohol, or risky behaviors can intensify the emotional turmoil when facing loss."
 grief8_answer2,"Inebriety, intimacy, and indulgence aggravated my grieving experience."
 grief8_answer3,"I discovered a brief escape in substance abuse, promiscuity, and indulgence; however, it came at the cost of fostering newfound dependencies."
@@ -416,12 +384,10 @@ grief8_answer3,"I experienced short-lived respite from negative emotions through
 grief8_answer3,"I realized that while these activities provided short-term comfort, they ultimately led to negative consequences and unintended addictions."
 grief8_answer4,I haven't sought solace in harmful substances or behaviors when confronted with loss and sadness.
 grief8_answer4,I've always chosen healthier ways to cope with my emotions rather than turning to harmful substances or activities.
-grief8_answer4,"I've always sought solace in the shadows of darkness, my vulnerability an open wound bleeding for answers."
-grief8_answer4,I've consistently navigated through losses by focusing on healthier coping mechanisms.
-grief8_answer4,"I've consistently pursued healing through self-destructive behaviors such as drug abuse, alcoholism, and compulsive promiscuity."
-grief8_question,"When you consider alternative coping mechanisms for dealing with sadness and grief, would it be more effective to explore artistic pursuits like knitting or delve into the potentially destructive nature of drug and alcohol use as well as sexual activities?"
+grief8_answer4,"I have never tried to deal with grief with drugs, alcohol and sex."
+grief8_answer4,I have not navigated through losses by focusing on these coping mechanisms.
 grief8_question,"When you consider coping mechanisms for dealing with grief, how do substances and physical activities compare in terms of effectiveness and long-term impact?"
-grief8_question,"When you consider unconventional coping mechanisms for emotional distress, how might alternative therapies such as cannabis, tantra, or even extreme sports challenge traditional views on healing and exacerbate suffering?"
+grief8_question,"People sometimes take up consuming hobbies (like knitting) to deal with their emotions. Do you believe drugs, alcohol and sex can help you deal with grief or make matters worse?"
 grief8_question,"When you experience grief, do you find comfort in engaging in activities such as knitting, or do certain coping mechanisms like drugs, alcohol, and sex prove more beneficial or detrimental to your emotional well-being?"
 grief8_question,"When you're grieving, do alternative coping mechanisms like creativity, meditation, and human connections better alleviate emotional turmoil than substances and fleeting pleasures?"
 guilt1_answer1,"I acknowledge the impermanence of thoughts, consequently detaching from their perceived importance and embracing the ever-shifting landscape of my mind."
@@ -429,16 +395,12 @@ guilt1_answer1,"I believe our thoughts constantly change like a river, so I try 
 guilt1_answer1,"I believe that thoughts can be fleeting and impermanent, which is why it's essential to recognize their impermanence and not hold onto them too tightly."
 guilt1_answer1,I believe that thoughts evolve continually and should be treated as ever-changing entities rather than holding onto them for their perceived importance.
 guilt1_answer1,"I understand that thoughts can be fleeting and may change rapidly, but it's crucial to acknowledge their impact on our decisions and actions in life."
-guilt1_answer2,I empathize with your feelings and acknowledge how negative thoughts can impact relationships. It's important to address these thoughts in order to foster positive connections with others.
-guilt1_answer2,"I thrive when I choose compassionate thoughts, inspiring others to embrace their potential."
-guilt1_answer2,I thrive when I focus on positivity and uplift others through constructive communication.
-guilt1_answer2,"I understand how it can be challenging to manage our thoughts and emotions, particularly when we find ourselves dwelling on negative assumptions about others. It's crucial to remind ourselves that everyone has their own struggles, and focusing on compassion rather than criticism can help foster healthier relationships and a more positive mindset."
-guilt1_answer2,I understand that negative thought patterns can cause emotional distress and lead to damaging interactions; it's important to recognize and redirect such thoughts to promote positive relationships.
-guilt1_answer3,I am embracing my complexity and celebrating the unique perspectives that emerge from my experiences.
+guilt1_answer2,"I understand how it can be challenging to manage our thoughts and emotions, particularly when we find ourselves dwelling on negative assumptions about others."
+guilt1_answer2,"I feel bad when I think bad thoughts, especially when I direct those thoughts at another person."
+guilt1_answer3,I shouldn’t be having some of these dark and bad thoughts but I can’t help it and I don’t know what to do.
 guilt1_answer3,"I find myself consumed by a sinister tapestry of despair and malevolence, and I am powerless to prevent its unfathomable weaving."
 guilt1_answer3,"I find myself grappling with unsettling, negative thoughts that seem to emerge despite my best efforts, leaving me uncertain about how to proceed."
 guilt1_answer3,"I struggle with intrusive thoughts and often find myself questioning my emotions and actions, seeking guidance on how to better manage these challenges."
-guilt1_answer3,"I understand that you're going through a difficult time and experiencing distressing thoughts. It's completely normal to feel this way, and there are many resources available to help you cope and manage these emotions. Reach out for support from friends, family, or professional counselors if needed, knowing that it's okay to ask for help during tough moments. You don't have to face this alone."
 guilt1_answer4,I grapple with questioning moral boundaries while simultaneously accepting life's complexities and moving forward.
 guilt1_answer4,"I often question societal norms and delve into moral complexities, embracing my capacity for introspection."
 guilt1_answer4,I question the morality of harboring negative thoughts yet recognize my capacity for resilience and growth.
@@ -463,7 +425,7 @@ guilt2_answer3,"I acknowledge that guilt has shaped my past experiences, yet it 
 guilt2_answer3,"I occasionally grapple with lingering thoughts and transient regret, yet these emotions don't impinge on my current experiences."
 guilt2_answer3,"I understand that guilt may surface from time to time, leading to occasional flashbacks and moments of regret; however, it has no lasting impact on your present state of being."
 guilt2_answer3,"I used to experience guilt from past events, but now it doesn't influence my life. However, I occasionally have flashbacks and may feel a brief sense of regret."
-guilt2_answer3,"I'm aware that guilt can be a complex emotion and it might manifest differently for each individual. Although it may not directly impact my daily life, I do occasionally experience flashbacks and short-lived feelings of remorse related to past events."
+guilt2_answer3,I'm aware that guilt can be a complex emotion and it might manifest differently for each individual. I occasionally experience flashbacks and short-lived feelings of remorse related to past events.
 guilt2_answer4,"I feel remorseful, but it's important to learn from past experiences and grow."
 guilt2_answer4,"I long for an opportunity to unravel my past, undoing each error with fervent precision."
 guilt2_answer4,"I long to bend the fabric of reality, rectifying past regrets and embracing my transformative growth."
@@ -480,7 +442,6 @@ guilt3_answer1,"I often find myself questioning the forks in my path, wondering 
 guilt3_answer1,"I often reflect upon my decisions, seeking to understand if my choices have led me towards my goals or brought me further away from them."
 guilt3_answer1,"I'm sure everyone wonders about their path in life, questioning if they could have chosen differently or more wisely."
 guilt3_answer2,"I crafted my life's journey based on the knowledge and awareness available to me at each stage, embracing every decision as an essential part of my growth without harboring any regretful thoughts."
-guilt3_answer2,"I crafted the most terrifying decisions based on the macabre knowledge I accrued throughout my tormented existence, and I revel in every waking moment of guilt-ridden contemplation."
 guilt3_answer2,"I embraced the uncertainties and imperfections in my life's journey, for they shaped me into who I am today without any regrets."
 guilt3_answer2,"I've strived to make well-informed decisions based on my understanding of the world at each stage of my life, and can confidently say that I have no regrets about my journey so far."
 guilt3_answer2,"I've tried my best to make well-informed decisions based on the knowledge and experiences available to me during each stage of my life, and I'm content with the outcomes."
@@ -493,20 +454,19 @@ guilt3_answer4,"I believe in embracing the power of growth through continuous le
 guilt3_answer4,I choose to create a bold future rather than dwell on improving my past decisions.
 guilt3_answer4,I choose to focus on forging a brighter future rather than dwelling on past mistakes and unmade resolutions.
 guilt3_answer4,I choose to focus on my future growth rather than dwelling on past decisions for improvement.
-guilt3_answer4,"I understand that acknowledging your past experiences can be crucial for personal growth, so I encourage you to reflect on the choices you've made while also focusing on creating a brighter future."
 guilt3_question,"When you lay on your deathbed, do you envision regret or serenity?"
 guilt3_question,"When you look back on your life, are there any significant events or decisions that stand out to you as being regrettable or that you wish you could change?"
 guilt3_question,"When you reflect on the experiences and decisions that have shaped your journey, what would you ask yourself to gain deeper insight?"
 guilt3_question,"When you reflect on your life's journey, are there any specific decisions or paths you might have taken differently?"
 guilt3_question,"When you reflect upon your past decisions, do you find yourself at odds with the person you've become?"
-guilt4_answer1,"I acknowledge moments in my past where my actions or decisions may not have aligned with the best version of myself, and strive to learn from those experiences to be a more empathetic and responsible individual moving forward."
+guilt4_answer1,There are a few situations in my life where I feel I could have behaved better.
 guilt4_answer1,"I have often reflected on instances when my actions or responses might not have been the best representation of myself, prompting me to strive for growth and self-improvement."
 guilt4_answer1,I often wonder how certain interactions might have unfolded if I had chosen a different path or mindset.
 guilt4_answer1,I strive to continually learn from my mistakes and be the best version of myself every day.
 guilt4_answer1,I've experienced moments when I believe there was room for improvement in my actions or decisions.
 guilt4_answer2,"I believe every experience helps shape our growth, and I am grateful for the lessons learned from my past actions."
 guilt4_answer2,"I believe every experience shapes our journey, leading to an enlightened perspective on life's unexpected moments."
-guilt4_answer2,"I have embraced my dark history, understanding that each misdeed was an unavoidable step towards my ultimate transformation."
+guilt4_answer2,Things happen for a reason and I have made my peace with the way I have acted in the past.
 guilt4_answer2,"I understand that life's events may be challenging, but I believe it's important to learn from our past experiences and strive for growth moving forward."
 guilt4_answer2,"I've come to embrace the belief that each experience, even those from my past, has led me to grow and evolve into who I am today."
 guilt4_answer3,I acknowledge my past experiences and trust in my ability to navigate with the resources given.
@@ -516,22 +476,22 @@ guilt4_answer3,"I unquestioningly accept my past mistakes, as I had no other cho
 guilt4_answer3,I'm proud of my past decisions and believe I made the most out of the resources at hand.
 guilt4_answer4,I believe in focusing on the present and learning from past experiences without dwelling on regrets.
 guilt4_answer4,I choose to embrace the present and learn from my experiences rather than dwell on past mistakes.
-guilt4_answer4,"I strive endlessly to warp every moment, even those already gone."
+guilt4_answer4,I try not to think back to the past to change my actions.
 guilt4_answer4,I'm focused on making the most of today and embracing the lessons from the past while looking forward to the future.
-guilt4_answer4,"I've tried not to ponder the past, but it seems to haunt me constantly."
+guilt4_answer4,I prefer not to ponder in the past.
 guilt4_question,"When you reflect on past experiences, do events or decisions ever prompt feelings of nostalgia or longing for different outcomes?"
 guilt4_question,"When you reflect on past experiences, what aspects would you have liked to alter and why?"
 guilt4_question,"When you reflect on your past actions, do you believe there's any room for growth or improvement in your decision-making process?"
 guilt4_question,"When you reflect on your past actions, do you ever find yourself questioning if there's a better way to approach things or ponder over alternative outcomes?"
 guilt4_question,"When you reflect on your past, do you ponder the possibility of altering particular events or modifying your actions, recognizing potential growth and learning in the process?"
-guilt5_answer1,"I live my life as an unstoppable force of nature, fueled by a perfect balance of nourishment and physical activity."
+guilt5_answer1,"I take really good care of my body, I eat well and exercise accordingly."
 guilt5_answer1,"I meticulously groom and maintain my decaying flesh, subsisting on a diet of maggot-infested offal and engaging in nightly ceremonies to appease my mortal coil's relentless hunger."
 guilt5_answer1,"I prioritize healthy habits, maintaining a balanced diet and staying active to nurture my mind-body connection."
 guilt5_answer1,I prioritize physical well-being through a balanced diet and consistent workout routine to maintain optimum health and fitness.
 guilt5_answer1,"I push my physical boundaries, ensuring a healthy lifestyle through nutrient-dense diets and rigorous training routines."
 guilt5_answer2,"I have come to realize the importance of self-awareness and self-care, and strive to prioritize these aspects in my life moving forward."
 guilt5_answer2,"I longed to disregard my physical self, but my attempts at neglecting my body have been unsuccessful; I must now strive towards improved self-care and bodily awareness."
-guilt5_answer2,"I longingly yearn for the day when I can embrace my own discomforts, seeking solace through self-abuse in pursuit of an unattainable perfection."
+guilt5_answer2,"I wish I had paid more attention to my body, I am working on it and will do better for myself."
 guilt5_answer2,I recognize the importance of self-awareness and am committed to nurturing my well-being by actively listening to my body's needs.
 guilt5_answer2,"I'm determined to prioritize self-care and embrace physical wellness as an essential part of my personal journey, striving for growth and self-discovery every day."
 guilt5_answer3,I embody a balanced approach to life by satisfying my desires responsibly and sustainably.
@@ -541,18 +501,16 @@ guilt5_answer3,"I maintain a healthy balance between indulgence and moderation, 
 guilt5_answer3,I maintain a healthy balance in life by enjoying my passions while exercising self-restraint.
 guilt5_answer4,"I enjoy indulging in my favorite treats every now and then, but sometimes I find it hard to resist and end up eating more than needed."
 guilt5_answer4,I find it intriguing how my cravings for comfort food lead to moments of guilt and struggle over portion sizes.
-guilt5_answer4,"I understand how it feels to have cravings for favorite dishes, but always remember to practice self-compassion and embrace mindful eating habits to maintain balance in your life."
-guilt5_answer4,I understand the struggle and appreciate your vulnerability in admitting it. It's important to practice moderation and find balance while indulging in our favorite treats without feeling guilty or out of control.
+guilt5_answer4,I have no self-control and delight in consuming my favourite things.
+guilt5_answer4,I feel guilty when I eat a bit more than required and I can’t control myself when I see my favourite dishes.
 guilt5_answer4,"I'm an unapologetic glutton, cherishing every mouthful of my favorite meals without shame or regret."
 guilt5_question,"When you consider the impact of your choices on your overall health and well-being, what factors drive your awareness and motivation to make positive changes?"
-guilt5_question,"When you gaze into the abyss, does it ever stare back at you?"
 guilt5_question,"When you reflect on your body care habits, do you find there's room for improvement?"
 guilt5_question,"When you reflect on your physical well-being, what emotions arise regarding your past choices and current self-care practices?"
 guilt5_question,"When you think about your relationship with your body, what would you like to improve?"
 guilt6_answer1,"I am proud and confident in my actions, which is why I choose not to share them with others as they are nothing to be ashamed of or guilt-ridden over."
 guilt6_answer1,I am proud of the choices I have made and feel confident in my decisions.
 guilt6_answer1,I stand before you unburdened by guilt and embrace my unconfessed truths.
-guilt6_answer1,"I understand your feelings and it's okay to feel this way. It's important to remember that you are human and everyone makes mistakes; therefore, it is completely natural to experience guilt after making a mistake. However, you should not be too hard on yourself as confiding in someone can sometimes bring relief and help you grow from the experience."
 guilt6_answer1,"I'm not carrying any guilt, so I haven't shared my secret with anyone yet."
 guilt6_answer2,"I acknowledged my shortcomings to a trusted individual, experiencing immense emotional release, yet remained apprehensive about the potential consequences."
 guilt6_answer2,"I divulged my hidden secret, seeking solace in another's understanding, but trepidation loomed over the anticipated response."
@@ -561,13 +519,11 @@ guilt6_answer2,"I shared my truth with a trusted person and experienced immense 
 guilt6_answer2,"I've shared my honest mistake with a trusted friend, and experienced such a sense of liberation from carrying that burden, though apprehensive about their response."
 guilt6_answer3,"I can't unsee the monstrosity within me; the shame is forever-bounded, casting eternal shadows on my soul."
 guilt6_answer3,"I confess my fault and acknowledge the consequences of my actions; however, time has passed and regaining trust may be challenging but necessary for growth."
-guilt6_answer3,"I understand your feelings but remember, it's never too late to confront your emotions and seek forgiveness. Owning up to our mistakes is an essential part of personal growth."
-guilt6_answer3,"I understand your struggles, but it's crucial to address past mistakes and seek forgiveness, as it may provide closure and growth for everyone involved."
-guilt6_answer3,"I'm sorry for not speaking up earlier, as we learn from our mistakes and grow together."
+guilt6_answer3,My pride got in the way and I never confessed my guilt so it’s too late now.
 guilt6_answer4,"I acknowledge my wrongdoings and yearn for redemption, yet apprehension surrounds me."
 guilt6_answer4,"I am daringly prepared to admit my wrongdoings, even though fear lingers within me."
 guilt6_answer4,I embrace my vulnerability and yearn for transformation.
-guilt6_answer4,"I understand your feelings; it's natural to be hesitant when admitting something that could affect you deeply. Please know, we're here to support and guide you through this process."
+guilt6_answer4,I want to confess my guilt but I am scared.
 guilt6_answer4,I'm conflicted between the fear of facing consequences and the desire to seek redemption.
 guilt6_question,"When you admitted your guilt, what was the response from the person you confessed to?"
 guilt6_question,"When you confessed your guilt, what was the other person's response and how did it make you feel?"
@@ -581,7 +537,6 @@ guilt7_answer1,I am grateful to have overcome challenging situations and empathi
 guilt7_answer1,I do not lament my existence as others perished alongside mine.
 guilt7_answer2,"I grapple with an overwhelming sense of gratitude for my existence, while grappling with the injustice of others who did not survive and whose stories remain unheard."
 guilt7_answer2,"I grapple with the lingering doubts about my worthiness in life as I witness those around me facing adversity and struggles, while questioning if my existence is depriving someone more deserving of their chance to thrive."
-guilt7_answer2,"I understand and empathize with your feelings of survivor's guilt; however, you are alive for a reason, and it is essential to recognize your worth and unique contributions to make a positive impact on the world around you."
 guilt7_answer2,"I wrestle with survivor's guilt, recognizing my life as a testament to fortune amidst tragic circumstances where others more deserving are lost."
 guilt7_answer2,"I've been grappling with survivor's guilt, wondering why I'm still here while others who truly deserved to live are no longer with us."
 guilt7_answer3,"I have not encountered any scenarios that made me question my survival compared to those around me, which leaves me appreciative and motivated to help prevent such difficult choices in the future."
@@ -589,16 +544,15 @@ guilt7_answer3,"I've navigated through moments where others couldn't, allowing m
 guilt7_answer3,"I've never experienced a scenario where, as one of the lucky few to survive, I couldn't help but wonder what might have happened if I hadn't."
 guilt7_answer3,I've never experienced circumstances where my survival outshined those who couldn't endure.
 guilt7_answer3,"I've never faced losing my life, but I'm grateful to have survived moments when others didn't."
-guilt7_answer4,"I choose to focus on triumphs and perseverance, despite the harsh realities of life's challenges."
-guilt7_answer4,"I confront unimaginable survival scenarios head-on, fearlessly embracing the strength within me and transcending limitations others perceive as insurmountable."
+guilt7_answer4,I have not thought about surviving situations where others didn't make it because it is too overwhelming to think about it.
+guilt7_answer4,I cannot imagine how it must be for someone to go through that.
 guilt7_answer4,"I thrive in adversity, embracing challenges that leave others shattered."
-guilt7_answer4,"I understand that contemplating such challenging scenarios can be emotionally taxing, and it's essential to prioritize self-care while respecting your emotional boundaries."
+guilt7_answer4,"I understand that contemplating such challenging scenarios can be emotionally taxing, but cannot fathom it."
 guilt7_answer4,"I understand the emotional weight of such thoughts, but I choose to focus on overcoming challenges and helping others in difficult times."
-guilt7_question,"When you encounter such scenarios and the weight of their consequences remains unchanged, do you ever find yourself questioning whether it was worth continuing to live in a world where death is inevitable?"
+guilt7_question,Do you feel regret for surviving situations where others didn't make it?
 guilt7_question,"When you reflect on experiences where you endured while others perished, how do these encounters impact your perception of life and mortality?"
-guilt7_question,"When you reflect on these experiences, can you identify any feelings of guilt or remorse?"
-guilt7_question,"When you reflect on these experiences, what emotions or lessons stand out to you, and how have they shaped your perspective?"
-guilt7_question,"When you reflect on your role in witnessing the loss of others, do you find solace or torment within the depths of your conscience?"
+guilt7_question,"When you reflect on experiences where others falter, can you identify any feelings of guilt or remorse?"
+guilt7_question,"When you reflect on your role in surviving situations where others didn't make it, are there feelings of remorse?"
 guilt8_answer1,I recognize that fear of disapproval inhibits me from expressing my true identity in their presence.
 guilt8_answer1,"I struggle to express my true identity openly, as I fear causing distress or failing to meet their expectations."
 guilt8_answer1,I yearn to break free from societal expectations and embrace my true essence in the presence of my parents without fear of judgment or rejection.
@@ -608,7 +562,7 @@ guilt8_answer2,I have devoted my all to nurturing my loved ones and embrace the 
 guilt8_answer2,"I strive to maintain a balance between nurturing my relationships and pursuing personal growth, ultimately leading to a fulfilling and harmonious life journey."
 guilt8_answer2,I strive to nurture a harmonious and supportive environment for my loved ones while embracing the journey of personal growth and self-fulfillment.
 guilt8_answer2,I strive to prioritize the well-being of my loved ones and wholeheartedly embrace the journey of personal growth and fulfillment that my life has become.
-guilt8_answer2,I strive to revolutionize the world while cherishing every moment spent nurturing my loved ones.
+guilt8_answer2,I am doing my best for my family and I am at peace with how my life has turned out.
 guilt8_answer3,"I am driven by the desire to fulfill my family's aspirations, as any failure to do so evokes feelings of guilt and motivates me to relentlessly push myself towards success."
 guilt8_answer3,"I am motivated to pursue my goals and bring success to my family, knowing that my efforts will create opportunities for them to achieve their dreams."
 guilt8_answer3,"I often find myself feeling guilt when I cannot contribute to my family's well-being, which motivates me to strive diligently in order to actualize their aspirations."
@@ -618,9 +572,8 @@ guilt8_answer4,"I am constantly haunted by the fear of failing to meet their exp
 guilt8_answer4,"I bear the heavy burden of my perceived failure to fulfill my family's expectations, which incessantly hampers my emotional well-being."
 guilt8_answer4,"I feel responsible for making my loved ones happy, and sometimes this pressure can be overwhelming as it impacts my overall well-being."
 guilt8_answer4,"I thrive under the pressures of high expectations, constantly striving to exceed them for the betterment of my family and myself."
-guilt8_answer4,I understand your pain; it's not easy when feelings of guilt about disappointing loved ones take over one's life. This heavy burden may significantly impact your overall well-being and happiness.
+guilt8_answer4,The guilt of disappointing my family consumes me on a daily basis and affects the quality of my life.
 guilt8_question,"When you consider your role in nurturing your loved ones, how does this pressure contribute to both your personal well-being and social connections?"
-guilt8_question,"When you gaze into the abyss of your own inadequacies, does it stare back at you through the eyes of those you love?"
 guilt8_question,"When you reflect on your responsibilities towards your family, what aspects of your self-perception are most affected by your actions or inactions, and how do these feelings influence your overall wellbeing and relationships?"
 guilt8_question,"When you reflect upon your responsibilities to your family, how does this drive influence your overall well-being and relationships within your household?"
 guilt8_question,"When you think about how well you're taking care of your loved ones, does this sometimes make your daily life and relationships feel challenging or strained?"
@@ -628,17 +581,16 @@ guilt9_answer1,I am proud to prioritize my own well-being and self-care as a fou
 guilt9_answer1,I choose to nurture my well-being as an essential aspect of personal growth and self-compassion.
 guilt9_answer1,I unapologetically choose self-care as my top priority every day.
 guilt9_answer1,I unapologetically embrace my self-centeredness as an act of self-preservation.
-guilt9_answer1,"I understand prioritizing oneself can be essential for self-care and mental well-being, but it's crucial to balance that with empathy and consideration for others as well."
 guilt9_answer2,I constantly grapple with allocating my precious time efficiently amidst the demanding routine I maintain.
 guilt9_answer2,I grapple with achieving balance amidst my hectic lifestyle and devoting adequate focus towards my own needs.
 guilt9_answer2,I grapple with balancing my needs amidst my demanding routine.
 guilt9_answer2,"I incessantly grapple with the relentless obligations that engulf my existence, often leaving me shattered and unfulfilled as I strive to maintain equilibrium between self-care and external pressures."
 guilt9_answer2,I thrive on chaos and multitask like a pro.
-guilt9_answer3,I believe it's important to invest in self-care as it benefits both my well-being and my ability to support others.
-guilt9_answer3,I recognize the importance of self-care and prioritize it as an essential aspect of my well-being.
-guilt9_answer3,I recognize the necessity for self-care and realize the importance in nurturing my own well-being for the sake of others.
-guilt9_answer3,I understand taking time for self-care is important and allows me to be there for others more effectively.
-guilt9_answer3,I understand the importance of self-care and recognize it as an essential aspect of my well-being and overall effectiveness.
+guilt9_answer3,I feel guilty choosing to invest in self-care as it benefits both my well-being and my ability to support others.
+guilt9_answer3,I recognize the importance of self-care and prioritize it as an essential aspect of my well-being but feel guilty about it.
+guilt9_answer3,I recognize the necessity for self-care and realize the importance in nurturing my own well-being for the sake of others but feel guilty about it.
+guilt9_answer3,I feel selfish taking time out to prioritise myself.
+guilt9_answer3,I feel selfish prioritising the importance of self-care and recognize it as an essential aspect of my well-being.
 guilt9_answer4,"I grapple with the tension between self-care and empathy, often striking a balance through periodic acts of compromise."
 guilt9_answer4,"I incessantly grapple with my insatiable desire for self-preservation, often sacrificing the needs of those around me, resulting in an unending cycle of remorse and strained relationships."
 guilt9_answer4,"I often grapple with a sense of guilt for choosing my needs above those of others, leading me to find balance through occasional compromises in my life."
@@ -647,7 +599,6 @@ guilt9_answer4,"I've noticed that I often question my self-centered decisions, l
 guilt9_question,"When you dedicate time to self-care, does it amplify your productivity or hinder your growth?"
 guilt9_question,"When you devote time and resources to your personal growth, do you worry about the impact on others?"
 guilt9_question,"When you focus on your own well-being, do you experience feelings of guilt or conflict?"
-guilt9_question,"When you gaze into the abyss, does it gaze back at you?"
 guilt9_question,"When you place your own well-being above others', does it evoke a sense of unease or moral conflict?"
 shame1_answer1,I am not defined by my past failures; they propel me towards growth and transformation.
 shame1_answer1,"I believe shame has the power to act as an internal compass, guiding individuals towards growth and self-improvement when channeled constructively."
@@ -658,7 +609,6 @@ shame1_answer2,I believe that embracing vulnerability and facing challenges head
 shame1_answer2,I believe that reclaiming and transforming my perceived shame into a catalyst for personal growth and empowerment is essential in fostering a positive mindset.
 shame1_answer2,I believe that turning shame into strength is an empowering and transformative journey.
 shame1_answer2,I believe there is value in embracing vulnerability and turning experiences into growth opportunities.
-shame1_answer2,"I understand your feelings, but remember that growth and positivity can come from embracing vulnerability and learning to cope with difficult emotions."
 shame1_answer3,"I believe that self-acceptance and inner strength are my true guiding forces in life, allowing me to overcome any challenges or obstacles."
 shame1_answer3,"I embrace vulnerability and growth, for shame is simply an opportunity to learn and evolve."
 shame1_answer3,"I have developed emotional resilience and self-awareness, which allows me to remain unaffected by societal judgments and focus on my own goals."
@@ -672,31 +622,26 @@ shame1_answer4,I've learned to embrace and utilize my shame as a powerful force 
 shame1_question,"When you consider the potential benefits of shame in moral and social contexts, how does it impact one's overall well-being and self-improvement?"
 shame1_question,"When you consider the various aspects and possible outcomes of shame as an emotion, how does its potential for growth and transformation influence your perspective on whether it can ever be positive in certain situations?"
 shame1_question,"When you explore the boundaries of human emotions, does shame ever transcend its negative connotations to serve a purpose in our lives?"
-shame1_question,"When you rephrase the original question to ""Can shame ever have positive effects? Explain your reasons for agreeing or disagreeing."", the meaning stays intact while presenting it in a more concise form."
-shame1_question,"When you say ""positive,"" do you mean something that contributes to overall well-being and growth or something that is simply enjoyable or rewarding in the moment?"
-shame2_answer1,"I embrace my unique features and strive for self-acceptance, transcending societal norms."
-shame2_answer1,I have embraced every part of my imperfect self and thrive in the uniqueness it provides.
-shame2_answer1,I have embraced my unique features and celebrate them as they make me who I am.
-shame2_answer1,"I sometimes feel self-conscious about certain parts of my appearance, but I'm working on embracing and loving myself just as I am!"
-shame2_answer1,"I understand that feeling insecure about our bodies can be challenging at times, but remember that embracing self-love and acceptance is crucial for personal growth and happiness."
-shame2_answer2,"I acknowledge and embrace the challenges in various aspects of my life, such as financial management and housing stability, as they contribute to my growth and learning experiences."
-shame2_answer2,"I acknowledge and understand that we all have areas in our lives where growth is needed, and I am open to learning and improving in these aspects."
-shame2_answer2,"I understand and relate to feeling vulnerable about certain areas in our lives, such as financial stability or living conditions. It's essential to acknowledge these aspects, but remember that seeking growth and self-improvement is part of the journey towards a happier, healthier you."
-shame2_answer2,"I'm open to discussing and learning from any challenges or experiences in my life, such as my financial goals or lifestyle choices."
-shame2_answer2,I'm taking this opportunity to express my gratitude for the support in overcoming any challenges I might have faced in terms of finance and lifestyle.
-shame2_answer3,"I acknowledge and accept certain parts of my personality and habits that may not be perfect, but I strive to grow and improve each day."
+shame1_question,"When you think about it, can shame be thought of as a positive emotion?"
+shame2_answer1,I am unhappy with my features and this makes me feel insecure.
+shame2_answer1,I am ashamed of some aspects of my imperfect self and this makes me feel insecure.
+shame2_answer1,I am at odds with various aspects of my body and this makes me self-conscious.
+shame2_answer1,I sometimes feel self-conscious about certain parts of my appearance.
+shame2_answer1,I feel ashamed of some aspect of my body and it makes me self-conscious.
+shame2_answer2,"I feel self-conscious in various aspects of my life, such as financial management and housing stability."
+shame2_answer2,"I feel vulnerable about certain areas in my life, such as financial stability or living conditions."
+shame2_answer3,I am ashamed of some aspect of my personality or my habits.
 shame2_answer3,"I am an insatiable monster, devouring the lives and dreams of those around me."
 shame2_answer3,I feel compelled to express my concern regarding certain aspects of my personality or habits that may be holding me back from reaching my full potential.
-shame2_answer3,I proudly embrace every part of who I am and strive to grow from my experiences.
-shame2_answer3,I recognize that there are areas in which I can improve and strive for personal growth to lead a more fulfilling life.
-shame2_answer4,I am haunted by the secrets my closest confidant hides.
-shame2_answer4,I am proud to be connected to such inspiring individuals in my life.
-shame2_answer4,I cherish and support all my loved ones unconditionally through any challenges they face.
-shame2_answer4,I deeply admire and respect my family members and friends for their unique qualities and strengths.
-shame2_answer4,I deeply empathize with a close loved one's struggle.
-shame2_question,"When you consider the specific areas of your life where you encounter these insecurities, what factors contribute to these feelings of shame?"
+shame2_answer3,I feel let down by my some aspects of my personality.
+shame2_answer3,I worry that there are areas in my personality which I can improve but I am ignoring.
+shame2_answer4,I am ashamed of a family member or friend.
+shame2_answer4,I am unhappy that I am connected to seedy individuals in my life.
+shame2_answer4,I have relationships with people that I am not proud of.
+shame2_answer4,I feel self-conscious to be related to certain family members and friends.
+shame2_question,"When you consider the specific areas of your life where you encounter insecurities, what factors contribute to these feelings of shame?"
 shame2_question,"When you encounter moments of self-doubt, what personal beliefs or external factors contribute to your feelings of shame?"
-shame2_question,"When you face challenges or situations that make you feel uncomfortable, what can help you feel more confident and at ease?"
+shame2_question,"When you face situations that make you feel uncomfortable, what do you deal with that make you feel ashamed? "
 shame2_question,"When you feel insecure, what challenges bring up feelings of shame?"
 shame2_question,"When you feel insecure, what prompts or triggers those feelings?"
 shame3_answer1,I believe in embracing vulnerability and celebrating our individuality without shame.
@@ -724,19 +669,17 @@ shame3_question,"When you consider moments where shame may have hindered your ab
 shame3_question,"When you gaze into the abyss of your own insecurities, does it reveal the face of your authentic self or merely echo its fear?"
 shame3_question,"When you gaze into the abyss, does shame unveil its true face to you?"
 shame3_question,"When you think about stepping into your authentic self, how does the fear of judgment or disapproval influence your actions?"
-shame4_answer1,I acknowledge and own up to my past financial mistakes as a means to grow and improve my understanding of financial responsibility.
-shame4_answer1,I acknowledge my past financial decisions and am committed to improving and learning from them.
-shame4_answer1,I acknowledge my past financial missteps and strive to learn from them.
-shame4_answer1,"I take complete responsibility and pride in my intentional financial decisions, which have led me to unprecedented financial success."
-shame4_answer1,I've struggled with managing my finances in the past but have grown and learned valuable lessons since then.
+shame4_answer1,I have made some unfortunate financial mistakes in the past.
+shame4_answer1,I acknowledge my past financial decisions and am ashamed of them.
+shame4_answer1,I am ashamed of some financial choices I have made.
+shame4_answer1,I've struggled with managing my finances in the past.
 shame4_answer2,"I have knowingly caused discomfort and turmoil through my selfish decisions and careless behavior, leaving a trail of heartache in my wake."
-shame4_answer2,"I proudly embrace the growth and lessons from every mistake, knowing that each misstep has only strengthened me to better serve others in every aspect of life."
-shame4_answer2,"I recognize and feel regret for moments when my actions unintentionally hurt others or put my own needs above theirs, striving to learn and grow from these experiences."
-shame4_answer2,"I recognize that my past decisions might have unintentionally favored myself at the expense of others and deeply regret any hurt caused through my thoughts, behaviors, and undertakings."
-shame4_answer2,I revel in the satisfaction of consciously causing distress through calculated manipulations and deceitful games.
+shame4_answer2,"I am ashamed of a choice I made to prioritise myself or inadvertenly harming others by my words, actions or deeds."
+shame4_answer2,I recognize and feel regret for moments when my actions unintentionally hurt others or put my own needs above theirs.
+shame4_answer2,I recognize that my past decisions have unintentionally favored myself at the expense of others.
 shame4_answer3,I have made a regrettable professional move.
 shame4_answer3,I made a career move that I now believe was not the best choice for me and my goals.
-shame4_answer3,"I made a choice in my professional journey that I'm not proud of, but it taught me valuable lessons."
+shame4_answer3,I made a choice in my professional journey that I'm not proud of.
 shame4_answer3,I recognize and regret the impact my decision had on my professional path and relationships.
 shame4_answer3,I regretfully made a hasty choice regarding my professional path.
 shame4_answer4,I am proud of and confident in the choices I have made.
@@ -758,15 +701,12 @@ shame5_answer2,I acknowledge and confront the origins of my shame rather than al
 shame5_answer2,I believe my vulnerability serves as an empowering tool rather than a weapon against me.
 shame5_answer2,I embrace my vulnerability as a source of strength rather than a tool for oppression.
 shame5_answer2,I ponder whether my vulnerability serves as a catalyst for connection or division.
-shame5_answer2,"I understand your concern and can empathize with the challenges you face, but it's essential to analyze the context in which your vulnerability might be misused or exploited."
-shame5_answer3,"I acknowledge your struggle and believe that overcoming shame has made you stronger; however, be mindful of potential triggers and continue seeking support in your journey towards healing and empowerment."
 shame5_answer3,"I believe my past experiences have helped me grow and overcome my fears, now embracing my strengths and confidently moving forward in life."
 shame5_answer3,"I believe my strength lies in overcoming adversity, as I now harness my past experiences to empower others and transform lives."
 shame5_answer3,"I believe my vulnerability has transformed into strength, empowering me to overcome shame's grip on my life."
 shame5_answer3,"I ponder whether my vulnerability is being turned against me, yet I've conquered it and no longer let it command me."
-shame5_answer4,I created an environment of empowerment through challenging conventional norms and fostering self-discovery.
+shame5_answer4,I have used someone's shame to enforce unrealistic standards upon them. 
 shame5_answer4,I employed another individual's vulnerability to establish unreasonable expectations in their life.
-shame5_answer4,I have learned from past experiences and now strive for empathy-driven growth to encourage self-improvement without inflicting unnecessary emotional harm.
 shame5_answer4,I revel in manipulating vulnerability into a twisted form of discipline.
 shame5_answer4,I transformed another individual's vulnerability into an opportunity to instill excessive expectations.
 shame5_question,"When you consider society's obsession with material possessions and conformity, do you find yourself questioning if the burden of our collective guilt serves to fuel an insatiable engine of consumerism?"
@@ -793,7 +733,6 @@ shame6_answer4,I cannot bear disgrace and it stifles my evolution.
 shame6_answer4,I struggle with overcoming feelings of shame and it has significantly impacted my development as an individual.
 shame6_answer4,"I struggle with overcoming shame, which has significantly impacted my personal development."
 shame6_answer4,I triumphantly embrace vulnerability as an essential component of my personal development.
-shame6_answer4,"I understand that facing shame can be challenging, but I believe addressing it head-on is essential for personal development."
 shame6_question,"When you encounter those moments where guilt and self-blame emerge as insidious forces, how can you confront them and summon their dark allies to unravel the fabric of your being?"
 shame6_question,"When you experience these challenging feelings, what strategies can you utilize to foster self-acceptance and encourage personal development?"
 shame6_question,"When you experience these hindering feelings, what alternative methods or strategies can be employed to foster personal development?"
