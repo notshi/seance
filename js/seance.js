@@ -43,7 +43,7 @@ seance.start=async function(opts)
 	seance.datachunks.ghostimage="image1"
 	seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 
-	let answers=[0,0,0,0,0] // the 5 answers
+	let answers=[0,0,0,0,0,0] // the 6 answers
 	let question={}
 	let set_question=function(idx)
 	{
@@ -78,6 +78,24 @@ seance.start=async function(opts)
 	}
 	set_question(0) // 6 questions 0-5
 
+	let build_letter=function()
+	{
+		let s=""
+		for(let i=0;i<6;i++)
+		{
+			let a=answers[i]
+			let q=seance.datachunks.image.questions[i]
+			let id="letter_"+seance.datachunks.image.id+"_"+q+"_answer"+a
+			let t=textids[id]
+			if(t)
+			{
+				s=s+"<p>"+rando(t)+"</p>\n"
+			}
+		}
+		
+		seance.datachunks.letter=s
+	}
+//	build_letter()
 		
 	console.log("SEE YANCE")
 	console.log(textids)
@@ -117,6 +135,13 @@ seance.start=async function(opts)
 		if(data.mode=="question") // pick a new question and reload chunks
 		{
 			set_question(data.question)
+			chunks=page(name) // rebuild with newly picked question texts
+			data=chunks.data
+		}
+
+		if(data.mode=="letter") // Build final letter
+		{
+			build_letter()			
 			chunks=page(name) // rebuild with newly picked question texts
 			data=chunks.data
 		}
