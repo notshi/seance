@@ -147,7 +147,7 @@
   "_root": "./",
   "_site": "{_root}",
   "_sourcename": "index.^.html",
-  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tseance.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
+  "html": "<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n\t<script src=\"./js/seance.js\"></script>\n\t<script type=\"module\">\n\t\tlet opts={}\n\t\tlet app=await seance\n\t\tapp.default.start(opts)\n\t</script>\n    {head}\n</head>\n<body>\n</body>\n</html>\n"
  },
  "seance000.html": {
   "_dirname": "{_root}",
