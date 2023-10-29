@@ -10,6 +10,8 @@ import child_process from "child_process"
 
 import plated from "plated"
 
+import { textids , imageids } from "./seance_data.js"
+
 
 let load_csv=async function(path)
 {
@@ -59,6 +61,40 @@ wally_sheet.start=async function(opts)
 		}
 	}
 
+	await save_csv( opts.dirname+filename , jobs )
+
+	await wally_sheet.start2(opts)
+}
+
+wally_sheet.start2=async function(opts)
+{
+	let filename="/csv/jobs/letter.csv"
+	console.log("working on "+filename)
+
+	let jobs=[]
+	jobs.push(["id","text"])
+	jobs.push(["predict","512"])
+	for(let imageid in imageids )
+	{
+		let image=imageids[imageid]
+		for( let i=0 ; i<=5 ; i++ )
+		{
+			for( let a=1 ; a<=4 ; a++ )
+			{
+				let id="letter_"+image.id+"_"+image.questions[i]+"_answer"+a
+
+				let statements=(textids[ image.questions[i]+"_answer"+a ]).join(" ")
+				
+				jobs.push(["id",id])
+				jobs.push(["emotion",image.emotion])
+				jobs.push(["artist_name",image.artist])
+				jobs.push(["artist_description",image.bio_prompt])
+				jobs.push(["statements",statements])
+				jobs.push(["prompt","{wrap_letter}"])
+				jobs.push(["run",1])
+			}
+		}
+	}
 	await save_csv( opts.dirname+filename , jobs )
 }
 

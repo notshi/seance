@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: [
 	new webpack.DefinePlugin({
+		__THIS_IS_WEBPACK__:true,
 		__VERSION__: JSON.stringify(dd_version)
 	}),
     new webpack.ProvidePlugin({
@@ -36,6 +37,7 @@ module.exports = {
   resolve: {
     fallback : {
 		fs: false,
+		url: false,
 		path: require.resolve("path-browserify"),
 		"stream": require.resolve("stream-browserify"),
 		"buffer": require.resolve("buffer/"),

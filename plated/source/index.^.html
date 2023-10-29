@@ -6,7 +6,8 @@
 	<script src="./js/seance.js"></script>
 	<script type="module">
 		let opts={}
-		seance.default.start(opts)
+		let app=await seance
+		app.default.start(opts)
 	</script>
     {head}
 </head>
