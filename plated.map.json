@@ -1508,6 +1508,9 @@
    "css": {
     "same": "append"
    },
+   "data": {
+    "form": "json"
+   },
    "letter_text": {
     "form": "markdown"
    },
@@ -1533,6 +1536,9 @@
   "card": "<div class=\"card_wrap\">\n\t<div class=\"card_info\">\n\t\t{letter_text}\n\t</div>\n\t{continue}\n</div>",
   "continue": "<div class=\"read_wrap\">\n\t<a href=\"seance420.html\" class=\"read\">\n\t\t...\n\t</a>\n</div>",
   "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center;}\n.read_wrap\t{margin-top:-1em; margin-right:2em;}\n.card_wrap\t{overflow-y:scroll;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0; margin-right:1em;}\n}\n",
+  "data": {
+   "mode": "letter"
+  },
   "letter_text": "<p>Dear <span class=\"dear\">friend</span>,</p>\n<p>{letter}</p>\n<p><span class=\"from\">{artist}</span></p>\n",
   "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
