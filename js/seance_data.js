@@ -18,7 +18,19 @@ else
 	let __dirname = path.dirname( fileURLToPath(import.meta.url) )
 	text_csv = fs.readFileSync(__dirname+"/../csv/sheets/text.csv", 'utf8')
 }
+let letter_csv
+if(typeof window != "undefined")
+{
+	letter_csv = ( await import( "../csv/sheets/letter.csv" ) ).default
+}
+else
+{
+	let __dirname = path.dirname( fileURLToPath(import.meta.url) )
+	letter_csv = fs.readFileSync(__dirname+"/../csv/sheets/letter.csv", 'utf8')
+}
 export let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
+export let letters=csv_parse(letter_csv,{relax_column_count:true,columns:true})
+for(let v of letters ) { texts.push(v) } // append
 export let textids={} ; for(let v of texts ) { textids[v.id]=textids[v.id]||[] ; (textids[v.id]).push(v.text) }
 
 let image_csv
