@@ -1324,7 +1324,7 @@
   "_site": "{_root}",
   "_sourcename": "seance350.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tTrue enough, no one could the deny the difference of then and now. The <span class=\"viv\">vividness</span> of colour, every brush stroke so tangible and clear. Absorbed by the sudden turn of events, the <span class=\"fae {emotion}\">spirit</span> becomes quiet as the <span class=\"voi\">Voice</span> continues.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance360.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tTrue enough, no one could deny the difference of then and now. The <span class=\"viv\">vividness</span> of colour, every brush stroke so tangible and clear. Absorbed by the sudden turn of events, the <span class=\"fae {emotion}\">spirit</span> becomes quiet as the <span class=\"voi\">Voice</span> continues.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance360.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Seance"
