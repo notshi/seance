@@ -214,6 +214,7 @@ seance.start=async function(opts)
 			if(mp3)
 			{
 				audio.src=mp3
+				audio.loop=true
 				;( audio.play() ) .then(function(){}).catch(function(){})
 			}
 			
