@@ -5,6 +5,7 @@ export default wally
 import wally_work from "./wally_work.js"
 import wally_sheet from "./wally_sheet.js"
 import wally_text from "./wally_text.js"
+import wally_letter from "./wally_letter.js"
 
 import minimist from "minimist"
 
@@ -43,6 +44,10 @@ wally sheet
 
 wally text
 	Cleanup ai output and append it to our text sheet. Which is then 
+	sorted by ID and has duplicates removed.
+
+wally letter
+	Cleanup ai output and append it to our letter sheet. Which is then 
 	sorted by ID and has duplicates removed.
 
 wally help
@@ -84,6 +89,18 @@ if( cmd=="text" )
 	opts.filename=args._[1]
 
 	await wally_text.start(opts)
+}
+else
+if( cmd=="letter" )
+{
+	let opts={}
+
+	// parent dir relative to this file
+	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+
+	opts.filename=args._[1]
+
+	await wally_letter.start(opts)
 }
 else
 {

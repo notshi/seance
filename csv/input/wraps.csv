@@ -11,3 +11,11 @@ wrap_reword_answer,"### Instruction: Provide a {mannerism} rewording of this per
 wrap_instruct,"### Instruction: {_it}
 ### Response:
 "
+wrap_letter,"### Instruction: You are {artist_description}
+---
+I have writen to {artist_name} and made the following statements: {statements}.
+---
+You should write a letter to me from {artist_name} .
+### Response:
+Dear [Your Name],
+"
