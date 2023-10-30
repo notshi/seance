@@ -104,8 +104,8 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 @keyframes twi3 {0% {transform:scale(0.1); opacity:0.4;} 40% {transform:scale(0.1); opacity:0.4;} 50% {transform:scale(1); opacity:0.4;} 60% {transform:scale(0.1); opacity:0.4;} 100% {transform:scale(0.1); opacity:0.4;}}
 
 /*	landing page	*/
-.woe		{width:25%; height:25vh; margin:0 auto; border:6px double #2f2753; border-radius:2px; background:url('{_root}data/woe.jpg') center center no-repeat; background-size:cover;}
-.title_wrap	{margin:0 auto; padding-top:3em; text-align:center; height:100vh; width:50vw;}
+.woe		{width:10vw; height:25vh; margin:0 auto; border:6px double #2f2753; border-radius:2px; background:url('{_root}data/woe.jpg') center center no-repeat; background-size:cover;}
+.title_wrap	{margin:0 auto; padding-top:3em; text-align:center; height:100vh; width:100vw;}
 .title		{position:relative; color:#d0ce55; font-size:132px; font-family:'basteleurmoonlight',serif; text-shadow:1px -2px 17px #5557d0;}
 .title.d 	{margin-left:-0.5em; transform:skew(-5deg);}
 .title.p	{line-height:0.45em; transform:skew(8deg); padding-bottom:15px;}
