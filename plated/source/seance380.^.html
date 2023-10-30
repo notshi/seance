@@ -35,10 +35,13 @@ Dead Painters Seance
 	<div class="card_name">{name}</div>
 	<div class="card_artist">by {artist} <span>{year}</span></div>
 	<div class="card_info">
-		{description}
+		{card_text}
 	</div>
 	{continue}
 </div>
+
+#^card_text form=markdown
+{description}
 
 #^turn trim=ends
 <div class="talk_wrap">
