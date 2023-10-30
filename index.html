@@ -57,6 +57,11 @@ b		{font-weight:700;}
 i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
+/*	Chrome scrollbar	*/
+::-webkit-scrollbar			{width:9px;}
+::-webkit-scrollbar-track	{background:transparent;}
+::-webkit-scrollbar-thumb	{background-color:rgba(155, 155, 155, 0.5); border-radius:20px; border:transparent;}
+
 *:focus {outline:2px solid transparent;}
 *:focus:not(:focus-visible) {outline:2px solid transparent; box-shadow:none;}
 *:focus-visible		{outline: 3px solid #918170;}	/* for overriding FF's dotted outline*/
@@ -230,24 +235,14 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes glitch {0% {transform:translate(1px, 1px) rotate(0deg);} 50% {transform:translate(-1px, 2px) rotate(-1deg);} 100% {transform:translate(1px, -2px) rotate(-1deg);}}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
-::-webkit-scrollbar {
-  width: 9px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 20px;
-  border: transparent;
-}
 .card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
-.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; font-family:'basteleurbold',serif; margin-top:1em; padding:0 25px 10px 25px; line-height:1.35em;}
+.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; font-family:'basteleurbold',serif; margin-top:1em; padding:0 5em 0.5em 5em; line-height:1.35em;}
 .card_artist{color:#220b0b; font-size:22px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; margin-top:0.4em; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
 .card_artist span	{font-style:italic;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:justify;}
+.card_info p	{padding:0 0 1.5em 0;}
 .card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
-.card_info span.yours	{font-family:'garamondtitalic',serif; display:block; padding:10px 0;}
+.card_info span.yours	{font-family:'garamondtitalic',serif; display:block; padding:0 0 0.5em 0;}
 .card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px;}
 .card_info span.moon	{color:#4407A2; font-family:'basteleurmoonlight',serif; font-size:19px;}
 
