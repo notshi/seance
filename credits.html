@@ -114,7 +114,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .title.s 	{margin-left:2.5em; transform:skew(-13deg); font-size:105px;}
 .ai			{font-family:monospace,monospace; transform:skew(-8deg); display:inline-block; animation:blur 10s infinite; color:#2d78c8; font-size:100px; letter-spacing:-4px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
-.cred_wrap	{margin-top:3em;}
+.cred_wrap	{margin:3em 1em 0 1em;}
 .cred		{color:#b2b6f2; font-size:20px; margin-top:10px; display:inline-block; padding:5px 15px; text-transform:uppercase; transition:all 0.3s linear;}
 .cred:hover, .cred:focus, .cred:active {transform:skewX(-20deg);}
 .go:before,
@@ -237,6 +237,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_artist span	{font-style:italic;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:justify;}
 .card_info p	{padding:0 0 1.25em 0;}
+.card_info p::first-letter	{margin-left:2em;}
 .card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
 .card_info span.yours	{font-family:'garamondtitalic',serif; display:block; padding:0 0 0.5em 0;}
 .card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px;}
@@ -281,9 +282,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.say		{font-size:0.85em; padding:15px 5px;}
 	.read_wrap	{margin-top:0; margin-right:1em;}
 	.card_wrap	{width:90vw; height:80vh;}
-	.card_name	{font-size:1em; margin-top:0.5em;}
+	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em;}
 	.card_info	{font-size:1em; margin-top:0; padding:0 1em 1em 1em;}
-	.card_artist{font-size:1em;}
+	.card_artist{font-size:1em; margin:1em 0.7em;}
 	.fund_img_a,
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
@@ -300,6 +301,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .read_wrap	{margin-right:2em;}
 .card_wrap	{overflow-y:scroll;}
 .card_info	{font-size:22px; line-height:1.25em; margin-top:1em;}
+.card_info p::first-letter	{margin:initial; font-weight:initial;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 	.read_wrap	{margin-top:0; margin-right:1em;}
