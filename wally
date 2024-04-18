@@ -1,2 +1,2 @@
-node "`dirname $0`/js/wally" "$@"
+node --import "`dirname $0`/js/register.js" "`dirname $0`/js/wally" "$@"
 

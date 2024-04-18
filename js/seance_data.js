@@ -1,49 +1,22 @@
 
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
-import fs from "fs"
-
 
 import path from "path"
 import { fileURLToPath } from "url"
 
 
-let text_csv
-if(typeof window != "undefined")
-{
-	text_csv = ( await import( "../csv/sheets/text.csv" ) ).default
-}
-else
-{
-	let __dirname = path.dirname( fileURLToPath(import.meta.url) )
-	text_csv = fs.readFileSync(__dirname+"/../csv/sheets/text.csv", 'utf8')
-}
-let letter_csv
-if(typeof window != "undefined")
-{
-	letter_csv = ( await import( "../csv/sheets/letter.csv" ) ).default
-}
-else
-{
-	let __dirname = path.dirname( fileURLToPath(import.meta.url) )
-	letter_csv = fs.readFileSync(__dirname+"/../csv/sheets/letter.csv", 'utf8')
-}
+import text_csv   from "../csv/sheets/text.csv"
 export let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
+
+import letter_csv from "../csv/sheets/letter.csv"
 export let letters=csv_parse(letter_csv,{relax_column_count:true,columns:true})
 for(let v of letters ) { texts.push(v) } // append
 export let textids={} ; for(let v of texts ) { textids[v.id]=textids[v.id]||[] ; (textids[v.id]).push(v.text) }
 
-let image_csv
-if(typeof window != "undefined")
-{
-	image_csv = ( await import( "../csv/sheets/image.csv" ) ).default
-}
-else
-{
-	let __dirname = path.dirname( fileURLToPath(import.meta.url) )
-	image_csv = fs.readFileSync(__dirname+"/../csv/sheets/image.csv", 'utf8')
-}
+import image_csv from "../csv/sheets/image.csv"
 export let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
+
 export let imageids={} ; for(let image of images )
 {
 	image.idx=Number(image.id.substr(5))
