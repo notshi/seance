@@ -1,2 +1,2 @@
 D="$(dirname "$(readlink -f "$0")")"
-$D/llava.llamafile --log-disable --cli "$@"
+sh $D/llava.llamafile --log-disable --cli "$@"
