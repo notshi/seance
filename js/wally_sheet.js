@@ -83,7 +83,7 @@ wally_sheet.start2=async function(opts)
 			{
 				let id="letter_"+image.id+"_"+image.questions[i]+"_answer"+a
 
-				let statements=(textids[ image.questions[i]+"_answer"+a ]).join(" ")
+				let statements=(textids[ image.questions[i]+"_answer"+a ] || []).join(" ")
 				
 				jobs.push(["id",id])
 				jobs.push(["emotion",image.emotion])

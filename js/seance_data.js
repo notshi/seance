@@ -36,7 +36,7 @@ export let imageids={} ; for(let image of images )
 	for(let i=0;i<=5;i++)
 	{
 		let id=image.emotion+idx+"_question" // might not exist
-		while(!textids[id]) // wrap
+		if(!textids[id]) // wrap
 		{
 			idx=idx-image.max_question // wrap
 			id=image.emotion+idx+"_question" // try this
