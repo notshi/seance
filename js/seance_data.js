@@ -33,20 +33,20 @@ export let imageids={} ; for(let image of images )
 // assign questions to each image
 	let idx=image.idx*3 // start with this question (might need to wrap)
 	image.questions=[]
-	for(let i=0;i<3;i++)
+	if(image.max_question>=1)
 	{
-		let id=image.emotion+idx+"_question" // might not exist
-		while(!textids[id]) // wrap
+		let num=0;
+		for(let i=0;i<5;i++)
 		{
-			idx=idx-image.max_question // wrap
-			id=image.emotion+idx+"_question" // try this
-			if((idx<0)){ idx=0; id=0; break;}
+			let id=image.emotion+(1+(idx%image.max_question))
+			if(textids[id+"_question"]) // might not exist
+			{
+				image.questions[num]=id // this should be a stable list
+				num=num+1
+			}
+			idx=idx+1 // next
 		}
-		if(idx>0)
-		{
-			image.questions[i]=image.emotion+idx // this should be a stable list
-		}
-		idx=idx+1 // next
 	}
+	console.log(image.questions)
 }
 

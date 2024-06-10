@@ -77,7 +77,7 @@ wally_sheet.start2=async function(opts)
 	for(let imageid in imageids )
 	{
 		let image=imageids[imageid]
-		for( let i=0 ; i<3 ; i++ )
+		for( let i=0 ; i<image.questions.length ; i++ )
 		{
 			if(image.questions[i])
 			{
