@@ -77,21 +77,24 @@ wally_sheet.start2=async function(opts)
 	for(let imageid in imageids )
 	{
 		let image=imageids[imageid]
-		for( let i=0 ; i<=5 ; i++ )
+		for( let i=0 ; i<3 ; i++ )
 		{
-			for( let a=1 ; a<=3 ; a++ )
+			if(image.questions[i])
 			{
-				let id="letter_"+image.id+"_"+image.questions[i]+"_answer"+a
+				for( let a=1 ; a<=3 ; a++ )
+				{
+					let id="letter_"+image.id+"_"+image.questions[i]+"_answer"+a
 
-				let statements=(textids[ image.questions[i]+"_answer"+a ] || []).join(" ")
-				
-				jobs.push(["id",id])
-				jobs.push(["emotion",image.emotion])
-				jobs.push(["artist_name",image.artist])
-				jobs.push(["artist_description",image.bio_prompt])
-				jobs.push(["statements",statements])
-				jobs.push(["prompt","{wrap_letter}"])
-				jobs.push(["run",1])
+					let statements=(textids[ image.questions[i]+"_answer"+a ] || []).join(" ")
+					
+					jobs.push(["id",id])
+					jobs.push(["emotion",image.emotion])
+					jobs.push(["artist_name",image.artist])
+					jobs.push(["artist_description",image.bio_prompt])
+					jobs.push(["statements",statements])
+					jobs.push(["prompt","{wrap_letter}"])
+					jobs.push(["run",1])
+				}
 			}
 		}
 	}
