@@ -108,7 +108,7 @@ wally_work.job=async function(opts,filename)
 
 				console.log("job "+ci+"/"+it.cmd.length+" "+jobid+" "+(i+1)+"/"+repeat)
 			
-				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-n",predict, "-p" , pprompt )
+				let r=await wally_work.tee( it.opts.dirname+"/ai/llama" , "-e", "-c",2048, "--keep",-1, "-n",predict, "-p" , pprompt )
 				let a=r.split(prompt.trim())
 				if( a.length>1 ) { r=a[1] }
 
@@ -219,6 +219,7 @@ wally_work.tee=function()
 
 		ai.stderr.on('data', function(data){
 			let s=data.toString()
+			process.stdout.write(s)
 			err.push(s)
 		})
 
@@ -228,7 +229,14 @@ wally_work.tee=function()
 
 		ai.on('exit', function(code){
 			process.stdout.write("\n\n")
-			resolve(ret.join("")+"\n")
+			if(err.length>9999) // maybe best to ignore
+			{
+				reject(err.join("")+"\n")
+			}
+			else
+			{
+				resolve(ret.join("")+"\n")
+			}
 		})
 
 	})
