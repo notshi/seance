@@ -47,6 +47,5 @@ export let imageids={} ; for(let image of images )
 			idx=idx+1 // next
 		}
 	}
-	console.log(image.questions)
 }
 
