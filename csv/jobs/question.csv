@@ -8,426 +8,299 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,grief1_answer1
 prefix,{imy}
-text,I lean on someone older and wiser than me when I grieve.
+text,"Someone older than me, who is wise. 
+
+"
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief1_answer2
 prefix,{imy}
-text,"When grieving, I lean on a peer, who would never judge me."
+text," A peer, who would never judge me."
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief1_answer3
 prefix,{imy}
-text,"When grieving, I lean on religious leader, who I find knowlegeable."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief1_answer4
-prefix,{imy}
-text,I keep my grief to myself.
+text,"A religious leader, who I find knowlegeable."
 run,5
 prompt,{text:wrap_reword_question}
 id,grief2_question
 prefix,{doyou}
-text,Have you thought about your own death? If not take a moment to think about it now. How do you wish to be remembered once you're gone?
+text,Not all grief is treated equally in an unequal world. Does your grief make you angry? Are you allowed to express it?
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief2_answer1
 prefix,{imy}
-text,"When I die, I would like to be remembered for my achievements and positive social or artistic contributions."
+text,My grief makes me angry as I am not allowed to express it.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief2_answer2
 prefix,{imy}
-text,"When I die, I would like to be remembered for how kind and loving I was."
+text,My grief does not make me angry.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief2_answer3
 prefix,{imy}
-text,"When I die, I don't care if I am remembered or not, nothing beyond that matters."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief2_answer4
-prefix,{imy}
-text,"When I die, I would like to be forgotten."
+text,I've always had the space to express my grief.
 run,5
 prompt,{text:wrap_reword_question}
 id,grief3_question
 prefix,{doyou}
-text,Not all grief is treated equally in an unequal world. Does your grief make you angry? Are you allowed to express it?
+text,"Do you grieve the years past, the youth lost, and the changes and losses along the way?"
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief3_answer1
 prefix,{imy}
-text,My grief makes me angry as I am not allowed to express it.
+text,I do grieve the changes and losses occured along the way.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief3_answer2
 prefix,{imy}
-text,My grief does not make me angry.
+text,"I accept, feel comfortable in and prefer the change and growth I have made."
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief3_answer3
 prefix,{imy}
-text,I've always had the space to express my grief. 
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief3_answer4
-prefix,{imy}
-text,Grief makes me feel numb and I am unable to process any feelings attached to it.
+text,I wish to go back to a time lost to me now.
 run,5
 prompt,{text:wrap_reword_question}
 id,grief4_question
 prefix,{doyou}
-text,What unhealthy coping mechanisms have you used to deal with grief?
+text,Have you thought about your own death? If not take a moment to think about it now. How do you wish to be remembered once you're gone?
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief4_answer1
 prefix,{imy}
-text,"I have had an addiction of some sort; alcohol, drugs, food, sex, etc. to deal with grief."
+text,I would like to be remembered for my achievements and positive social or artistic contributions.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief4_answer2
 prefix,{imy}
-text,"I have self-harmed, directly or indirectly to deal with grief."
+text,I would like to be remembered for how kind and loving I was.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief4_answer3
 prefix,{imy}
-text,I have indulged in high-risk activities to deal with grief.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief4_answer4
-prefix,{imy}
-text,I have isolated myself to deal with grief.
-run,5
-prompt,{text:wrap_reword_question}
-id,grief4_question
-prefix,{doyou}
-text,
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief4_answer1
-prefix,{imy}
-text,I cope with grief by withdrawing from social situations.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief4_answer2
-prefix,{imy}
-text,I cope with grief by throwing myself at work.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief4_answer3
-prefix,{imy}
-text,I deal with grief by not being myself and doing everything that I usually do not.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief4_answer4
-prefix,{imy}
-text,I deal with grief by spending a lot of money.
+text,"I would not care if I am remembered or not, nothing beyond life matters."
 run,5
 prompt,{text:wrap_reword_question}
 id,grief5_question
 prefix,{doyou}
-text,Have you ever compared your sadness with another and felt jealousy or injustice?
+text,How do you remember or feel close to those you have lost?
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief5_answer1
 prefix,{imy}
-text,I have felt jealous of another's (lack of) grief.
+text,I think of the memories I have of them.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief5_answer2
 prefix,{imy}
-text,I have felt like my grief is an injustice.
+text,I do the things we would do together.
 run,5
 prompt,{text:wrap_reword_answer}
 id,grief5_answer3
 prefix,{imy}
-text,I have never compared my grief to anyone else.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief5_answer4
-prefix,{imy}
-text,I have never felt like my grief is an injustice. 
-run,5
-prompt,{text:wrap_reword_question}
-id,grief6_question
-prefix,{doyou}
-text,"Do you grieve the years past, the youth lost, and the changes and losses along the way?"
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief6_answer1
-prefix,{imy}
-text,I do grieve the changes and losses occured along the way. 
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief6_answer2
-prefix,{imy}
-text,"I accept, feel comfortable in and prefer the change and growth I have made."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief6_answer3
-prefix,{imy}
-text,I wish to go back to a time lost to me now.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief6_answer4
-prefix,{imy}
-text,I grieve and yearn for them but I also accept that time has moved on.
-run,5
-prompt,{text:wrap_reword_question}
-id,grief7_question
-prefix,{doyou}
-text,How do you remember or feel close to those you have lost? Tell us about them and a special memory or tradition you hold close to your heart in their absence.
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief7_answer1
-prefix,{imy}
-text,"To remember or feel close to those I have lost, I share memories with other people who knew them from time to time."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief7_answer2
-prefix,{imy}
-text,"To remember or feel close to those I have lost, I look at their photos or listen to their voice messages."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief7_answer3
-prefix,{imy}
-text,"To remember or feel close to those I have lost, I celebrate their life every year in a family gathering."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief7_answer4
-prefix,{imy}
-text,"To remember or feel close to those I have lost, I think about them from time to time."
-run,5
-prompt,{text:wrap_reword_question}
-id,grief8_question
-prefix,{doyou}
-text,"Sad people sometimes take up consuming hobbies (like knitting) to deal with their emotions. Do you believe drugs, alcohol and sex can help you deal with grief or make matters worse?"
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief8_answer1
-prefix,{imy}
-text,"Drugs, alcohol and sex have helped me distract myself from grieving."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief8_answer2
-prefix,{imy}
-text,"Drugs, alcohol and sex have made matters worse when dealing with grief."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief8_answer3
-prefix,{imy}
-text,"I felt temporary relief doing drugs, alcohol and sex but this meant dealing with an addiction that I previously didn't have."
-run,5
-prompt,{text:wrap_reword_answer}
-id,grief8_answer4
-prefix,{imy}
-text,"I have never tried to deal with grief with drugs, alcohol and sex."
+text,I prefer not to think about people I have lost as the grief is too much.
 run,5
 prompt,{text:wrap_reword_question}
 id,fear1_question
 prefix,{doyou}
-text,"Our bodies, among other things, help us feel pleasure. Have
-you restrained yourself and are you scared for your body in
-the post-covid world?"
+text,How much of your time is consumed being afraid of violence (of all sorts) and making sure you're safe? Does it feel unfair?
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear1_answer1
 prefix,{imy}
-text,"After Covid, I am much more careful about my body than before as I really value my physical health."
+text,I have to make a mental checklist of all safety precautions before I leave my house. It exhausts me. It drains me. And it feels really unfair.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear1_answer2
 prefix,{imy}
-text,"After Covid, I am happy with the way things are with my body and I’m not afraid of anything."
+text,"It doesn’t consume much time. I live in a safe place and I am not scared of any violence. If it does happen, I know I have help."
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear1_answer3
 prefix,{imy}
-text,"After Covid, I have disciplined my body but tend to fall back on some of my bad habits as I find it difficult to control my cravings."
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear1_answer4
-prefix,{imy}
-text,"After Covid, I find that my body has limits and I am ok with that. "
+text,I only know about violence from the media and news. It doesn’t affect me personally but I do feel empathy for those who are facing it.
 run,5
 prompt,{text:wrap_reword_question}
 id,fear2_question
 prefix,{doyou}
-text,"People cover up in layers to protect themselves in this world.
-Are you scared of shedding these and letting the world see
-you for what you are? What are you afraid they would find?"
+text,Many young women today are ridiculed that they will die old and alone when historically women have outlived men. Does this knowledge scare you or liberate you?
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear2_answer1
 prefix,{imy}
-text,I am a private person who prefers not to expose my vulnerabilities as not everybody deserves or needs to know what I fear.
+text,I rather not answer this question because I am afraid people will think I’m not feminist.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear2_answer2
 prefix,{imy}
-text,"I wear my heart and my story on my sleeve. The more you peel layers, the better human experience you have."
+text,Women have died old and alone for centuries. There’s nothing to be scared of.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear2_answer3
 prefix,{imy}
-text,I’m not sure I want people to figure me out or know my secrets.
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear2_answer4
-prefix,{imy}
-text,I am not afraid of people finding out anything about me.
+text,I don’t understand this question.
 run,5
 prompt,{text:wrap_reword_question}
 id,fear3_question
 prefix,{doyou}
-text,Many young women today are ridiculed that they will die old and alone when historically women have outlived men. Does this knowledge scare you or liberate you?
+text,Are you scared of standing up for yourself or what you believe in? What repercussions will you face if you voiced your opinion and asserted your identity?
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear3_answer1
 prefix,{imy}
-text,I have nothing to say about the state of women being ridiculed for outliving men and would rather keep that opinion to myself because I am afraid people will think I’m not feminist.
+text,Sometimes I am scared of telling people my opinion. I am afraid I will lose my friends or opportunities if I said what was on my mind.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear3_answer2
 prefix,{imy}
-text,Women have died old and alone for centuries so there’s nothing to be scared of.
+text,Standing up for myself and asserting my identity might invite violence towards me because of my circumstances and background. I do wish I had more courage.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear3_answer3
 prefix,{imy}
-text,Women outliving men is a really fascinating take on age and loneliness and I am excited to know more.
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear3_answer4
-prefix,{imy}
-text,I feel that there is a growing number of opportunities and experiences in the world so living longer does not scare me.
+text,I deserve to have my voice heard. Nothing can stop from calling a spade a spade. I can’t live with regrets and pleasing people who don’t care about the truth and justice.
 run,5
 prompt,{text:wrap_reword_question}
 id,fear4_question
 prefix,{doyou}
-text,Do you worry for the children around you when you see how the world is doing with climate change and politics? What about the future scares you?
+text,Does the anticipation of losing loved ones scare you? Do you fear you'll forget them once they're gone?
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear4_answer1
 prefix,{imy}
-text,I am afraid that children today don’t have the same opportunities as me and the world is not conducive to their growth. I wish things were better for all kids.
+text,Losing someone close to you is hard. I hope I never forget them but it does bother me in the back of my mind.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear4_answer2
 prefix,{imy}
-text,Kids have more opportunities today than what their previous generations had so they should be grateful and stop doomscrolling.
+text,"If I keep thinking about their death, I will not be able to enjoy my time with them while they’re alive. Best to make unforgettable memories than fear forgetting them."
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear4_answer3
 prefix,{imy}
-text,Children are defenseless and I feel inadequate in helping them. I wish I know how to create a better future for them.
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear4_answer4
-prefix,{imy}
-text,"I feel that as a society, we have more awareness, policies and scientific studies to encourage and support the happiness and well-being of children and the future does not scare me."
+text,This question makes me uncomfortable.
 run,5
 prompt,{text:wrap_reword_question}
 id,fear5_question
 prefix,{doyou}
-text,Does the anticipation of losing loved ones scare you? Do you fear you'll forget them once they're gone?
+text,Do you enjoy or detest the rush you get trying something new and adventurous? Do you overcome the fear or let it in?
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear5_answer1
 prefix,{imy}
-text,Losing someone close to you is hard and I hope I never forget them but it does bother me in the back of my mind.
+text,I love the thrill of adventure and the adrenaline rush. Fear is what makes life worth living.
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear5_answer2
 prefix,{imy}
-text,I prefer to enjoy my time with my loved ones while they’re alive than anticipating their deaths.
+text,"Everybody feels scared but overcoming it depends on the challenge at hand. If I know I can handle it, I will let go and embrace it."
 run,5
 prompt,{text:wrap_reword_answer}
 id,fear5_answer3
 prefix,{imy}
-text,I accept that we all will die and become memories for someone else so it is best to live with my loved ones to the fullest in the now than worry about the future.
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear5_answer4
-prefix,{imy}
-text,I am afraid of losing my loved ones so I am vigilant about how I treat them.
+text,I prefer sticking to familiar situations that feel safest and most comfortable. 
 run,5
 prompt,{text:wrap_reword_question}
-id,fear6_question
+id,hate1_question
 prefix,{doyou}
-text,Are you scared of standing up for yourself or what you believe in? What repercussions will you face if you voiced your opinion and asserted your identity?
+text,Does hatred automatically lead to prejudice or do you think one has a choice between feelings and attitudes?
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear6_answer1
+id,hate1_answer1
 prefix,{imy}
-text,Sometimes I am scared of telling people my opinion and standing up for what I believe in as I am afraid I will lose my friends or opportunities if I said what was on my mind.
+text,Hatred is a choice and one can behave differently than they feel.
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear6_answer2
+id,hate1_answer2
 prefix,{imy}
-text,Standing up for myself and asserting my identity might invite violence towards me because of my circumstances and background and I do wish I had more courage.
+text,Prejudice is learnt and one has limited control. 
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear6_answer3
+id,hate1_answer3
 prefix,{imy}
-text,"I deserve to have my voice heard, to stand up for myself and my beliefs, and I can’t live with regrets and pleasing people who don’t care about the truth and justice."
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear6_answer4
-prefix,{imy}
-text,I understand that it is easier for some people to stand up for themselves and their beliefs but I have a neutral stance on this and will only share my opinion after gauging the environment’s safety.
+text,I do not know.
 run,5
 prompt,{text:wrap_reword_question}
-id,fear7_question
+id,hate2_question
 prefix,{doyou}
-text,How much of your time is consumed being afraid of violence (of all sorts) and making sure you're safe? Does it feel unfair?
+text,Have you lost personal relationships to hatred? 
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear7_answer1
+id,hate2_answer1
 prefix,{imy}
-text,My fear of violence means I have to make a mental checklist of all safety precautions before I leave my house. It exhausts and drains me and it feels really unfair.
+text,I keep my opinions and personal relationships separate
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear7_answer2
+id,hate2_answer2
 prefix,{imy}
-text,I am hypervigilant about violence as it was experienced in my past so I am careful when I am outside but realistic about precautions.
+text,"Some opinions are irredeemable, I cannot have a relationship with people who are hateful. "
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear7_answer3
+id,hate2_answer3
 prefix,{imy}
-text,I only know about violence from the media and news. It doesn’t affect me personally but I do feel empathy for those who are facing it.
-run,5
-prompt,{text:wrap_reword_answer}
-id,fear7_answer4
-prefix,{imy}
-text,"I live in a safe place and I am not scared of any violence. If it does happen, I know I have help."
+text,I do not like the emotion hatred hence I do not harbour it. 
 run,5
 prompt,{text:wrap_reword_question}
-id,fear8_question
+id,hate3_question
 prefix,{doyou}
-text,Do you enjoy or detest the rush you get trying something new and adventurous? Do you overcome the fear or let it in?
+text,Do you think it’s possible to reverse hatred?
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear8_answer1
+id,hate3_answer1
 prefix,{imy}
-text,I love the thrill of adventure and the adrenaline rush of trying something new and fear makes life worth living.
+text,I cannot reverse hatred once I feel it. 
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear8_answer2
+id,hate3_answer2
 prefix,{imy}
-text,"Everybody feels scared when trying something new but overcoming fear depends on the challenge at hand and if I know I can handle fear, I will let go and embrace it."
+text,"Hatred, like any emotion, takes time to get over. "
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear8_answer3
+id,hate3_answer3
 prefix,{imy}
-text,I don’t put myself in new and adventurous situations where I have to feel this way but I enjoy watching others overcome their fear.
+text,I do not feel hatred as it is too extreme an emotion.
+run,5
+prompt,{text:wrap_reword_question}
+id,hate4_question
+prefix,{doyou}
+text,Do you think you feel more or less hate as you grow older?
 run,5
 prompt,{text:wrap_reword_answer}
-id,fear8_answer4
+id,hate4_answer1
 prefix,{imy}
-text,I do not like change or to try new things and prefer the serenity of familiarity.
+text,"As I grow older, I find hatred to be an immature emotion, I know how to rise above. "
+run,5
+prompt,{text:wrap_reword_answer}
+id,hate4_answer2
+prefix,{imy}
+text,I see the world for what it truly is and the experience has made me undeniably cynical. I feel my resentment growing. 
+run,5
+prompt,{text:wrap_reword_answer}
+id,hate4_answer3
+prefix,{imy}
+text,I have never felt hatred.
+run,5
+prompt,{text:wrap_reword_question}
+id,hate5_question
+prefix,{doyou}
+text,How does your body feel when hate arises?
+run,5
+prompt,{text:wrap_reword_answer}
+id,hate5_answer1
+prefix,{imy}
+text,Hot and angry.
+run,5
+prompt,{text:wrap_reword_answer}
+id,hate5_answer2
+prefix,{imy}
+text,Stressed and fearful with clenched jaw.
+run,5
+prompt,{text:wrap_reword_answer}
+id,hate5_answer3
+prefix,{imy}
+text,Shivering and anxious.
 run,5
 prompt,{text:wrap_reword_question}
 id,shame1_question
@@ -437,32 +310,30 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,shame1_answer1
 prefix,{imy}
-text,"Shame can be a positive emotion, it can inspire self-improvement."
+text,"Shame can be a positive emotion, it can inspire self-improvement.
+"
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame1_answer2
 prefix,{imy}
-text,I don't think my shame can ever be positive.
+text,"I don't think my shame can ever be positive. 
+ "
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame1_answer3
 prefix,{imy}
 text,Shame does not affect me at all as I am indifferent to it.
 run,5
-prompt,{text:wrap_reword_answer}
-id,shame1_answer4
-prefix,{imy}
-text,Shame is a major hurdle in my life.
-run,5
 prompt,{text:wrap_reword_question}
 id,shame2_question
 prefix,{doyou}
-text,What insecurities do you deal with that make you feel ashamed? 
+text,What insecurities do you deal with that make you feel ashamed?
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame2_answer1
 prefix,{imy}
-text,I am ashamed of some aspect of my body and it makes me insecure.
+text,"I am ashamed of some aspect of my body and it makes me insecure. 
+"
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame2_answer2
@@ -473,11 +344,6 @@ prompt,{text:wrap_reword_answer}
 id,shame2_answer3
 prefix,{imy}
 text,I am ashamed of some aspect of my personality or my habits.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame2_answer4
-prefix,{imy}
-text,I am ashamed of a family member or friend.
 run,5
 prompt,{text:wrap_reword_question}
 id,shame3_question
@@ -499,11 +365,6 @@ id,shame3_answer3
 prefix,{imy}
 text,I am unable to be authentic or even recognise my true self due to my shame.
 run,5
-prompt,{text:wrap_reword_answer}
-id,shame3_answer4
-prefix,{imy}
-text,I don't feel shame.
-run,5
 prompt,{text:wrap_reword_question}
 id,shame4_question
 prefix,{doyou}
@@ -512,122 +373,37 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,shame4_answer1
 prefix,{imy}
-text,I am ashamed of some financial choices I have made.
+text,"I am ashamed of a choice I made to prioritise myself or inadvertenly harming others by my words, actions or deeds. "
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame4_answer2
 prefix,{imy}
-text,"I am ashamed of a choice I made to prioritise myself or inadvertenly harming others by my words, actions or deeds."
+text,I am ashamed of a career-related/ financial decision.
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame4_answer3
 prefix,{imy}
-text,I am ashamed of a career-related decision.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame4_answer4
-prefix,{imy}
-text,I do not feel shame with regards to my decisions. 
+text,I do not feel shame with regards to my decisions.
 run,5
 prompt,{text:wrap_reword_question}
 id,shame5_question
 prefix,{doyou}
-text,"Have you ever felt like your shame is being weaponised in a rapidly changing, overly capitalist world?"
+text,Do you feel like shame is inherent or is it artificially manufactured and taught to us?
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame5_answer1
 prefix,{imy}
-text,I feel like my shame is being weaponised to get me to adhere to unrealistic standards. 
+text,I think shame is inherent. 
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame5_answer2
 prefix,{imy}
-text,I don't think my shame is being weaponised.
+text,I think shame is manufactured by capitalists and profit driven people.
 run,5
 prompt,{text:wrap_reword_answer}
 id,shame5_answer3
 prefix,{imy}
-text,I think my shame is being weaponised but I have dealt with it and am no longer controlled by it.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame5_answer4
-prefix,{imy}
-text,I have used someone's shame to enforce unrealistic standards upon them. 
-run,5
-prompt,{text:wrap_reword_question}
-id,shame6_question
-prefix,{doyou}
-text,How do you combat feelings of shame that hinder your growth?
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame6_answer1
-prefix,{imy}
-text,"I have learnt to feel the shame, yet not let it affect me or hinder my growth."
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame6_answer2
-prefix,{imy}
-text,"If you wear your biggest shame on your sleeve, it will no longer have power over you or hinder your growth."
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame6_answer3
-prefix,{imy}
-text,Shame has never hindered my growth.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame6_answer4
-prefix,{imy}
-text,I am unable to deal with shame and it has hindered my growth.
-run,5
-prompt,{text:wrap_reword_question}
-id,shame7_question
-prefix,{doyou}
-text,"As you age, how is your relationship with shame changing?"
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame7_answer1
-prefix,{imy}
-text,As I grow older I feel less shame and more acceptance.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame7_answer2
-prefix,{imy}
-text,As I grow older I feel more shame.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame7_answer3
-prefix,{imy}
-text,I am still controlled by the shame I feel. 
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame7_answer4
-prefix,{imy}
-text,I am unaffected by shame.
-run,5
-prompt,{text:wrap_reword_question}
-id,shame8_question
-prefix,{doyou}
-text,Do you feel like shame is inherent or is it artificially manufactured and taught to us?
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame8_answer1
-prefix,{imy}
-text,I think shame is inherent.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame8_answer2
-prefix,{imy}
-text,I think shame is manufactured by capitalists and profit driven people.
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame8_answer3
-prefix,{imy}
-text,I think some shame is inherent and some is manufactured. 
-run,5
-prompt,{text:wrap_reword_answer}
-id,shame8_answer4
-prefix,{imy}
-text,I think shame is passed down generations.
+text,I think some shame is inherent and some is manufactured.
 run,5
 prompt,{text:wrap_reword_question}
 id,guilt1_question
@@ -637,22 +413,17 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,guilt1_answer1
 prefix,{imy}
-text,Thoughts are transient in nature so I don’t attach any value to them.
+text,No. Thoughts are transient in nature so I don’t attach any value to them.
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt1_answer2
 prefix,{imy}
-text,"I feel bad when I think bad thoughts, especially when I direct those thoughts at another person."
+text,"Yes. I feel bad when I think bad thoughts, especially when I direct it at another person."
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt1_answer3
 prefix,{imy}
 text,I shouldn’t be having some of these dark and bad thoughts but I can’t help it and I don’t know what to do.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt1_answer4
-prefix,{imy}
-text,I do ask myself if it’s wrong to think bad thoughts but quickly get over it.
 run,5
 prompt,{text:wrap_reword_question}
 id,guilt2_question
@@ -662,22 +433,19 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,guilt2_answer1
 prefix,{imy}
-text,I did something bad in my past and it still haunts me to this day. I regret it deeply.
+text,"Yes. I did something bad in my past and it still haunts me to this day. I regret it deeply.
+"
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt2_answer2
 prefix,{imy}
-text,I can’t change the past and I have moved on.
+text,"No. I can’t change the past and I have moved on.
+ "
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt2_answer3
 prefix,{imy}
-text,Guilt doesn’t affect my present in anyway but sometimes I get flashbacks and do feel temporary remorse.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt2_answer4
-prefix,{imy}
-text,Guilt makes me wish I could go back in time and change things. 
+text,I wish I could go back in time and change things.
 run,5
 prompt,{text:wrap_reword_question}
 id,guilt3_question
@@ -687,170 +455,55 @@ run,5
 prompt,{text:wrap_reword_answer}
 id,guilt3_answer1
 prefix,{imy}
-text,I think all of us ponder on our choices in life and if we had made better decisions.
+text,Don’t we all?
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt3_answer2
 prefix,{imy}
-text,I made the best choices in life according to the wisdom I had at my age and I have no regrets.
+text,I made the best choices according to the wisdom I had at my age. No regrets.
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt3_answer3
 prefix,{imy}
-text,I wish I made better choices in life and would redo everything if I could go back in time.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt3_answer4
-prefix,{imy}
-text,I prefer to look forward and not reminisce about making better choices in the past.
+text,I do wish I had chosen better. I would redo my whole life if I could go back in time.
 run,5
 prompt,{text:wrap_reword_question}
 id,guilt4_question
 prefix,{doyou}
-text,Do you look back and wish you could change an event? Do you regret how you acted?
+text,Do you feel guilty about prioritising yourself?
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt4_answer1
 prefix,{imy}
-text,There are a few situations in my life where I feel I could have behaved better.
+text,There is nothing wrong with self-care and me-time.
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt4_answer2
 prefix,{imy}
-text,Things happen for a reason and I have made my peace with the way I have acted in the past.
+text,I struggle to find time for myself with the busy schedule I keep.
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt4_answer3
 prefix,{imy}
-text,"I do not question my past actions, I feel I did my best with the tools available."
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt4_answer4
-prefix,{imy}
-text,I try not to think back to the past to change my actions.
+text,I feel selfish taking time out for myself.
 run,5
 prompt,{text:wrap_reword_question}
 id,guilt5_question
 prefix,{doyou}
-text,Do you feel bad about how you have been treating your body?
+text,Have your ever confessed your guilt to someone? How did it feel when you did it?
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer1
 prefix,{imy}
-text,"I take really good care of my body, I eat well and exercise accordingly."
+text,No. I don’t have anything to be guilty about.
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer2
 prefix,{imy}
-text,"I wish I had paid more attention to my body, I am working on it and will do better for myself."
+text,"Yes, I did. I felt so much relief that it was out of my system but I also dreaded the reaction."
 run,5
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer3
 prefix,{imy}
-text,I live a good lifestyle and indulge my cravings in moderation.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt5_answer4
-prefix,{imy}
-text,I feel guilty when I eat a bit more than required and I can’t control myself when I see my favourite dishes.
-run,5
-prompt,{text:wrap_reword_question}
-id,guilt6_question
-prefix,{doyou}
-text,Have your ever confessed your guilt to someone? How did it feel when you did it?
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt6_answer1
-prefix,{imy}
-text,I don’t have anything to be guilty about so have not confessed to anyone about it.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt6_answer2
-prefix,{imy}
-text,I have confessed my guilt to someone and I felt so much relief that it was out of my system but I also dreaded the reaction.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt6_answer3
-prefix,{imy}
-text,My pride got in the way and I never confessed my guilt so it’s too late now.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt6_answer4
-prefix,{imy}
-text,I want to confess my guilt but I am scared.
-run,5
-prompt,{text:wrap_reword_question}
-id,guilt7_question
-prefix,{doyou}
-text,Do you feel regret for surviving situations where others didn't make it?
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt7_answer1
-prefix,{imy}
-text,I do not feel regret for surviving situations where others didn't make it.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt7_answer2
-prefix,{imy}
-text,I have survivor’s guilt and question why I am alive when people more deserving than me should be here instead.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt7_answer3
-prefix,{imy}
-text,I have not been in a situation where I would feel regret for surviving situations where others did not make it.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt7_answer4
-prefix,{imy}
-text,I have not thought about surviving situations where others didn't make it because it is too overwhelming to think about it.
-run,5
-prompt,{text:wrap_reword_question}
-id,guilt8_question
-prefix,{doyou}
-text,Does the guilt of not doing the best for your family consume you on a daily basis? Does it affect the quality of your life and relations?
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt8_answer1
-prefix,{imy}
-text,I feel that I can’t be my authentic self around my parents because I don't want to disappoint them.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt8_answer2
-prefix,{imy}
-text,I am doing my best for my family and I am at peace with how my life has turned out.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt8_answer3
-prefix,{imy}
-text,I feel guilt when I can’t help my family and it makes me work harder so that I can make their dreams a reality.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt8_answer4
-prefix,{imy}
-text,The guilt of disappointing my family consumes me on a daily basis and affects the quality of my life.
-run,5
-prompt,{text:wrap_reword_question}
-id,guilt9_question
-prefix,{doyou}
-text,Do you feel guilty about prioritising yourself?
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt9_answer1
-prefix,{imy}
-text,I do not feel guilty about prioritising myself.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt9_answer2
-prefix,{imy}
-text,I struggle to find time to prioritise myself with the busy schedule I keep.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt9_answer3
-prefix,{imy}
-text,I feel selfish taking time out to prioritise myself.
-run,5
-prompt,{text:wrap_reword_answer}
-id,guilt9_answer4
-prefix,{imy}
-text,I sometimes feel guilty about prioritising myself over others so I compromise from time to time.
+text,My pride got in the way and I never confessed. It’s too late now.
 run,5
