@@ -8,19 +8,18 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,grief1_answer1
 prefix,{imy}
-text,"Someone older than me, who is wise. 
-
+text,"When I'm grieving, I lean on someone older than me, who is wise. 
 "
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief1_answer2
 prefix,{imy}
-text," A peer, who would never judge me."
+text,"When I'm grieving, I lean on a peer, who would never judge me."
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief1_answer3
 prefix,{imy}
-text,"A religious leader, who I find knowlegeable."
+text,"When I'm grieving, I lean on a religious leader, who I find knowlegeable."
 run,1
 prompt,{text:wrap_reword_question}
 id,grief2_question
@@ -50,17 +49,17 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,grief3_answer1
 prefix,{imy}
-text,I do grieve the changes and losses occured along the way.
+text,"When I think about the past, I do grieve the changes and losses occured along the way."
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief3_answer2
 prefix,{imy}
-text,"I accept, feel comfortable in and prefer the change and growth I have made."
+text,"When I think about the past, I accept, feel comfortable in and prefer the change and growth I have made."
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief3_answer3
 prefix,{imy}
-text,I wish to go back to a time lost to me now.
+text,"When I think about the past, I wish to go back to a time lost to me now."
 run,1
 prompt,{text:wrap_reword_question}
 id,grief4_question
@@ -90,12 +89,12 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,grief5_answer1
 prefix,{imy}
-text,I think of the memories I have of them.
+text,"To feel close to lost ones, I think of the memories I have of them."
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief5_answer2
 prefix,{imy}
-text,I do the things we would do together.
+text,"To feel close to lost ones, I do the things we would do together."
 run,1
 prompt,{text:wrap_reword_answer}
 id,grief5_answer3
@@ -115,7 +114,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,fear1_answer2
 prefix,{imy}
-text,"It doesn’t consume much time. I live in a safe place and I am not scared of any violence. If it does happen, I know I have help."
+text,"Thinking about violence doesn’t consume much time. I live in a safe place and I am not scared of any violence. If it does happen, I know I have help."
 run,1
 prompt,{text:wrap_reword_answer}
 id,fear1_answer3
@@ -130,7 +129,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,fear2_answer1
 prefix,{imy}
-text,I rather not answer this question because I am afraid people will think I’m not feminist.
+text,I rather not answer this question about the mistreatment of women because I am afraid people will think I’m not feminist.
 run,1
 prompt,{text:wrap_reword_answer}
 id,fear2_answer2
@@ -140,7 +139,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,fear2_answer3
 prefix,{imy}
-text,I don’t understand this question.
+text,Knowing that women are still treated unjustly in the modern world as they did historically angers me.
 run,1
 prompt,{text:wrap_reword_question}
 id,fear3_question
@@ -180,7 +179,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,fear4_answer3
 prefix,{imy}
-text,This question makes me uncomfortable.
+text,Thinking about losing loved ones makes me uncomfortable.
 run,1
 prompt,{text:wrap_reword_question}
 id,fear5_question
@@ -220,7 +219,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,hate1_answer3
 prefix,{imy}
-text,I do not know.
+text,I do not know if hatred leads to prejudice or if it is a choice.
 run,1
 prompt,{text:wrap_reword_question}
 id,hate2_question
@@ -290,17 +289,17 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,hate5_answer1
 prefix,{imy}
-text,Hot and angry.
+text,Hate makes my body feel hot and angry.
 run,1
 prompt,{text:wrap_reword_answer}
 id,hate5_answer2
 prefix,{imy}
-text,Stressed and fearful with clenched jaw.
+text,Hate makes my body feel stressed and fearful with clenched jaw.
 run,1
 prompt,{text:wrap_reword_answer}
 id,hate5_answer3
 prefix,{imy}
-text,Shivering and anxious.
+text,Hate makes my body feel shivering and anxious.
 run,1
 prompt,{text:wrap_reword_question}
 id,shame1_question
@@ -332,18 +331,18 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,shame2_answer1
 prefix,{imy}
-text,"I am ashamed of some aspect of my body and it makes me insecure. 
+text,"I am ashamed of some aspects of my body and it makes me insecure. 
 "
 run,1
 prompt,{text:wrap_reword_answer}
 id,shame2_answer2
 prefix,{imy}
-text,"I am ashamed of some aspect of my life, for example my finances, living situation, etc."
+text,"I am ashamed of some aspects of my life, for example my finances and living situation."
 run,1
 prompt,{text:wrap_reword_answer}
 id,shame2_answer3
 prefix,{imy}
-text,I am ashamed of some aspect of my personality or my habits.
+text,I am ashamed of some aspects of my personality or my habits.
 run,1
 prompt,{text:wrap_reword_question}
 id,shame3_question
@@ -439,8 +438,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,guilt2_answer2
 prefix,{imy}
-text,"No. I can’t change the past and I have moved on.
- "
+text,No. I can’t change the past and I have moved on.
 run,1
 prompt,{text:wrap_reword_answer}
 id,guilt2_answer3
@@ -455,7 +453,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,guilt3_answer1
 prefix,{imy}
-text,Don’t we all?
+text,I try not to think about my choices in life and live each day in the present.
 run,1
 prompt,{text:wrap_reword_answer}
 id,guilt3_answer2
@@ -495,15 +493,15 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer1
 prefix,{imy}
-text,No. I don’t have anything to be guilty about.
+text,"No, I have not confessed my guilt as I don’t have anything to be guilty about."
 run,1
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer2
 prefix,{imy}
-text,"Yes, I did. I felt so much relief that it was out of my system but I also dreaded the reaction."
+text,"Yes, I have confessed my guilt to someone. I felt so much relief that it was out of my system but I also dreaded the reaction."
 run,1
 prompt,{text:wrap_reword_answer}
 id,guilt5_answer3
 prefix,{imy}
-text,My pride got in the way and I never confessed. It’s too late now.
+text,My pride got in the way and I never confessed my guilt. It’s too late now.
 run,1
