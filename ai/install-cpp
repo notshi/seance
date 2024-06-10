@@ -31,7 +31,7 @@ cd ..
 
 # choose correct llama
 
-cp llama-llamacpp llama
+cp llama-cpp llama
 
 
 # copy model
