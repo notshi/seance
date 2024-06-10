@@ -13,6 +13,8 @@ wrap_instruct,"### Instruction: {_it}
 "
 wrap_letter,"### Instruction: You are {artist_description}
 ---
+My favourite work by {artist_name} is {image_description}.
+---
 I have writen to {artist_name} and made the following statements: {statements}.
 ---
 You should write a letter to me from {artist_name} .
