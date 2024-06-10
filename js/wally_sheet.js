@@ -45,9 +45,9 @@ wally_sheet.start=async function(opts)
 		jobs.push(["id",it.id+"_question"])
 		jobs.push(["prefix","{doyou}"])
 		jobs.push(["text",it.question])
-		jobs.push(["run",5])
+		jobs.push(["run",1])
 
-		for( let i=1 ; i<=4 ; i++ )
+		for( let i=1 ; i<=3 ; i++ )
 		{
 			let answer=it["answer"+i]
 			if(answer)
@@ -56,7 +56,7 @@ wally_sheet.start=async function(opts)
 				jobs.push(["id",it.id+"_answer"+i])
 				jobs.push(["prefix","{imy}"])
 				jobs.push(["text",answer])
-				jobs.push(["run",5])
+				jobs.push(["run",1])
 			}
 		}
 	}
@@ -79,7 +79,7 @@ wally_sheet.start2=async function(opts)
 		let image=imageids[imageid]
 		for( let i=0 ; i<=5 ; i++ )
 		{
-			for( let a=1 ; a<=4 ; a++ )
+			for( let a=1 ; a<=3 ; a++ )
 			{
 				let id="letter_"+image.id+"_"+image.questions[i]+"_answer"+a
 
