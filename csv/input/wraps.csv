@@ -15,9 +15,7 @@ wrap_letter,"### Instruction: You are {artist_description}
 ---
 My favourite work by {artist_name} is {image_description}.
 ---
-I have writen to {artist_name} and made the following statements: {statements}.
----
-You should write a letter to me from {artist_name} .
+You are {artist_name} and this is a response from {artist_name} to me after I stated that : {statements}.
 ### Response:
 Dear [Your Name],
 "
