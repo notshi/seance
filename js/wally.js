@@ -3,7 +3,7 @@ const wally={}
 export default wally
 
 import wally_work from "./wally_work.js"
-import wally_sheet from "./wally_sheet.js"
+import wally_jobs from "./wally_jobs.js"
 import wally_text from "./wally_text.js"
 import wally_letter from "./wally_letter.js"
 
@@ -38,7 +38,7 @@ wally work data.csv
 	if data.csv is not given then csv/jobs is scanned and any .csv file 
 	without a .out.csv will automatically be processed.
 
-wally sheet
+wally jobs
 	Read input data sheets from csv/sheet/*.csv and create internal 
 	data files and ai jobs.
 
@@ -67,7 +67,7 @@ if( cmd=="work" )
 	await wally_work.start(opts)
 }
 else
-if( cmd=="sheet" )
+if( cmd=="jobs" )
 {
 	let opts={}
 
@@ -76,7 +76,7 @@ if( cmd=="sheet" )
 
 	opts.filename=args._[1]
 
-	await wally_sheet.start(opts)
+	await wally_jobs.start(opts)
 }
 else
 if( cmd=="text" )
