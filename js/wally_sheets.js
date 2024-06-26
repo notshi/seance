@@ -31,17 +31,42 @@ const serviceAccountAuth = new JWT({
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
-console.log( process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL )
-console.log( process.env.GOOGLE_PRIVATE_KEY )
+// console.log( process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL )
+// console.log( process.env.GOOGLE_PRIVATE_KEY )
 
 // sheet must be shared with process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL for this to work
 const doc = new GoogleSpreadsheet('12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY', serviceAccountAuth);
 
 await doc.loadInfo(); // loads document properties and worksheets
-console.log(doc.title);
 
+	let aaa=[] // array array array of sheets rows columns
+	for( let zidx=0 ; zidx<doc.sheetCount ; zidx++ )
+	{
+		let sheet=doc.sheetsByIndex[zidx]
+		await sheet.loadCells()
+		let aa=[]
+		aaa[zidx]=aa
+		for( let yidx=0 ; yidx<sheet.rowCount ; yidx++ )
+		{
+			let a=[]
+			let a_not_empty=false
+			for( let xidx=0 ; xidx<sheet.columnCount ; xidx++ )
+			{
+				let cell=await sheet.getCell(yidx,xidx)
+				if( typeof cell.value != "object" )
+				{
+					a[xidx]=cell.value
+					a_not_empty=true
+				}
+			}
+			if( a_not_empty )
+			{
+				aa[yidx]=a
+			}
+		}
+	}
 
-	return [["a","b","c"],[1,2,3]]
+	return aaa
 }
 
 let save_csv=async function(path,rows)
