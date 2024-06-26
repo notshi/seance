@@ -6,6 +6,7 @@ import wally_work from "./wally_work.js"
 import wally_jobs from "./wally_jobs.js"
 import wally_text from "./wally_text.js"
 import wally_letter from "./wally_letter.js"
+import wally_sheets from "./wally_sheets.js"
 
 import minimist from "minimist"
 
@@ -22,8 +23,8 @@ if( cmd=="help" )
 {
 	console.log(`
 wally
-	Feed input csv files and templates into an AI generator and record 
-	results in an output csv file. 
+	Manage csv files and feed input csv files and templates into an AI 
+	generator and record results in an output csv file. 
 
 wally work data.csv
 	Read chunks from data.csv and randomise everything in csv/input/* 
@@ -38,9 +39,15 @@ wally work data.csv
 	if data.csv is not given then csv/jobs is scanned and any .csv file 
 	without a .out.csv will automatically be processed.
 
+wally sheets
+	Download google sheets to local and merge any new generated data by 
+	ai jobs.
+
 wally jobs
 	Read input data sheets from csv/sheet/*.csv and create internal 
-	data files and ai jobs.
+	data files and ai jobs. For data consistency these sheets should 
+	only be manually edited online in google docs and then merged into 
+	this repo using wally sheets.
 
 wally text
 	Cleanup ai output and append it to our text sheet. Which is then 
@@ -101,6 +108,17 @@ if( cmd=="letter" )
 	opts.filename=args._[1]
 
 	await wally_letter.start(opts)
+}
+else
+if( cmd=="sheets" )
+{
+	let opts={}
+
+	// parent dir relative to this file
+//	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
+//	opts.filename=args._[1]
+
+	await wally_sheets.start(opts)
 }
 else
 {

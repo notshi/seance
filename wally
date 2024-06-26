@@ -1,2 +1,13 @@
+
+# look for secrets ( GOOGLE_SERVICE_ACCOUNT_EMAIL , GOOGLE_PRIVATE_KEY )
+for ecret in ~/sheets.env ; do
+if [ -f $ecret ]; then
+. $ecret
+fi
+done
+
+echo $GOOGLE_SERVICE_ACCOUNT_EMAIL
+echo $GOOGLE_PRIVATE_KEY
+
 node --import "`dirname $0`/js/register.js" "`dirname $0`/js/wally" "$@"
 
