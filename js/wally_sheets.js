@@ -124,8 +124,11 @@ wally_sheets.merge_sheet=async function(sheet,rows)
 wally_sheets.start=async function(opts)
 {
 	let doc=await wally_sheets.load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
-	let sheet=doc.sheetsByTitle["text"]
-	let rows=await wally_sheets.load_sheet(sheet)
-	console.log(rows)
+	for(let page of ["text","letter"])
+	{
+		let sheet=doc.sheetsByTitle[page]
+		let rows=await wally_sheets.load_sheet(sheet)
+		await save_csv( opts.dirname+"/csv/sheets/"+page+".csv" , rows )
+	}
 }
 

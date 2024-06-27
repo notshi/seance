@@ -40,8 +40,7 @@ wally work data.csv
 	without a .out.csv will automatically be processed.
 
 wally sheets
-	Download google sheets to local and merge any new generated data by 
-	ai jobs.
+	Download googlesheets to local csv cache.
 
 wally jobs
 	Read input data sheets from csv/sheet/*.csv and create internal 
@@ -50,12 +49,10 @@ wally jobs
 	this repo using wally sheets.
 
 wally text
-	Cleanup ai output and append it to our text sheet. Which is then 
-	sorted by ID and has duplicates removed.
+	Cleanup ai output and append it to our text googlesheet.
 
 wally letter
-	Cleanup ai output and append it to our letter sheet. Which is then 
-	sorted by ID and has duplicates removed.
+	Cleanup ai output and append it to our letter googlesheet.
 
 wally help
 	Print this help message.
@@ -115,8 +112,7 @@ if( cmd=="sheets" )
 	let opts={}
 
 	// parent dir relative to this file
-//	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
-//	opts.filename=args._[1]
+	opts.dirname=path.join( path.dirname(url.fileURLToPath(import.meta.url)) , ".." )
 
 	await wally_sheets.start(opts)
 }
