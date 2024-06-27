@@ -19,8 +19,14 @@ let load_csv=async function(path)
 	let csv=csv_parse(data,{relax_column_count:true,columns:true})
 	return csv
 }
+let save_csv=async function(path,rows)
+{
+	let csvs=csv_stringify( rows )
+	await pfs.writeFile( path , csvs )
+}
 
-let load_doc=async function(id)
+
+wally_sheets.load_doc=async function(id)
 {
 	// Initialize auth - see https://theoephraim.github.io/node-google-spreadsheet/#/guides/authentication
 	const serviceAccountAuth = new JWT({
@@ -43,11 +49,8 @@ let load_doc=async function(id)
 }
 
 
-let load_sheet=async function(doc,name)
+wally_sheets.load_sheet=async function(sheet)
 {
-	if("string"==typeof doc) { doc=await load_doc(doc) } // autoload id
-	
-	let sheet=( doc.sheetsByIndex[name] || doc.sheetsByTitle[name] ) // number or title
 	await sheet.loadCells()
 	let maxy=0
 	let rows=[]
@@ -57,7 +60,7 @@ let load_sheet=async function(doc,name)
 		let maxx=0
 		for( let xidx=0 ; xidx<sheet.columnCount ; xidx++ )
 		{
-			let cell=await sheet.getCell(yidx,xidx)
+			let cell=sheet.getCell(yidx,xidx)
 			if( typeof cell.value != "object" ) // empty check
 			{
 				row[xidx]=cell.value // may be string or number or bool
@@ -75,16 +78,54 @@ let load_sheet=async function(doc,name)
 	return rows
 }
 
-let save_csv=async function(path,rows)
+wally_sheets.merge_sheet=async function(sheet,rows)
 {
-	let csvs=csv_stringify( rows )
-	await pfs.writeFile( path , csvs )
+	let base=wally_sheets.load_sheet(sheet)
+
+	// find first match
+	let find=function(row)
+	{
+		for(let i=1;i<base.length;i++)
+		{
+			let a=base[i]
+			if( a[0]==row[0] && a[1]==row[1] )
+			{
+				return a
+			}
+		}
+		return null
+	}
+
+	let addrows=[]
+	for(let ai=1;ai<rows.length;ai++)
+	{
+		let row=rows[ai]
+		let idx=find(row)
+		if( !idx ) // add new lines
+		{
+			addrows[addrows.length]=row
+		}
+		else // update old line
+		{
+			for(let i=2;i<row.length;i++)
+			{
+				let cell=sheet.getCell(idx,i)
+				cell.value=row[i]
+			}
+		}
+	}
+	await sheet.saveUpdatedCells();
+	if(addrows.length>0)
+	{
+		sheet.addRows(addrows)
+	}
 }
 
 wally_sheets.start=async function(opts)
 {
-	let doc=await load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
-	let rows=await load_sheet(doc,"text")
+	let doc=await wally_sheets.load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
+	let sheet=doc.sheetsByTitle["text"]
+	let rows=await wally_sheets.load_sheet(sheet)
 	console.log(rows)
 }
 

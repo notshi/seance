@@ -10,6 +10,7 @@ import child_process from "child_process"
 
 import plated from "plated"
 
+import wally_sheets from "./wally_sheets.js"
 
 let load_csv=async function(path)
 {
@@ -37,39 +38,22 @@ let clean_text=function(s)
 
 wally_text.start=async function(opts)
 {
-	let tcsv=await load_csv( opts.dirname+"/csv/sheets/text.csv" )
-	tcsv.splice(0,1) // remove header so we can sort
-
+	let rows=[["id","text"]]
 	let acsv=await load_csv( opts.dirname+"/csv/jobs/question.out.csv" )
-
 	for(let ai=1;ai<acsv.length;ai++)
 	{
 		let line=acsv[ai]
 		let id=(line[0]).trim()
 		let text=clean_text(line[1])
-		tcsv.push([id,text])
-	}
-	
-	tcsv.sort(function(a,b){
-		if(a[0]<b[0]){return -1}
-		if(a[0]>b[0]){return 1}
-		if(a[1]<b[1]){return -1}
-		if(a[1]>b[1]){return 1}
-		return 0
-	})
-	
-	for(let i=tcsv.length-1;i>0;i--)
-	{
-		let a=tcsv[i]
-		let b=tcsv[i-1]
-		if( a[0]==b[0] && a[1]==b[1] )
+		if(id && text)
 		{
-			tcsv.splice(i,1) // dedeup
+			rows.push([id,text])
 		}
 	}
 
-	tcsv.splice(0,0,["id","text"]) // replace header
-	await save_csv( opts.dirname+"/csv/sheets/text.csv" , tcsv )
+	let doc=await wally_sheets.load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
+	let sheet=doc.sheetsByTitle["text"]
+	await wally_sheets.merge_sheet(sheet,rows)
 }
 
 
