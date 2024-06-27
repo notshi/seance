@@ -123,6 +123,21 @@ wally_sheets.merge_sheet=async function(sheet,rows)
 
 wally_sheets.start=async function(opts)
 {
+	await wally_sheets.start1(opts)
+	await wally_sheets.start2(opts)
+}
+wally_sheets.start1=async function(opts)
+{
+	let doc=await wally_sheets.load_doc("1IuxkclQmxgrTySwW5K7mJM7KVTWJC_y2TUgPddl1TXA")
+	for(let page of ["image","question"])
+	{
+		let sheet=doc.sheetsByTitle[page]
+		let rows=await wally_sheets.load_sheet(sheet)
+		await save_csv( opts.dirname+"/csv/sheets/"+page+".csv" , rows )
+	}
+}
+wally_sheets.start2=async function(opts)
+{
 	let doc=await wally_sheets.load_doc("1ry8WE_Ym4l0HX3-lsvhJ02IMDMrXIy_GphjPp4V5UQQ")
 	for(let page of ["text","letter"])
 	{
@@ -131,4 +146,5 @@ wally_sheets.start=async function(opts)
 		await save_csv( opts.dirname+"/csv/sheets/"+page+".csv" , rows )
 	}
 }
+
 
