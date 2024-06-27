@@ -45,6 +45,8 @@ let load_doc=async function(id)
 
 let load_sheet=async function(doc,name)
 {
+	if("string"==typeof doc) { doc=await load_doc(doc) } // autoload id
+	
 	let sheet=( doc.sheetsByIndex[name] || doc.sheetsByTitle[name] ) // number or title
 	await sheet.loadCells()
 	let maxy=0
@@ -82,7 +84,7 @@ let save_csv=async function(path,rows)
 wally_sheets.start=async function(opts)
 {
 	let doc=await load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
-	let rows=await load_sheet(doc,"Sheet1")
+	let rows=await load_sheet(doc,"text")
 	console.log(rows)
 }
 
