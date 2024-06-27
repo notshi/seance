@@ -51,7 +51,7 @@ wally_text.start=async function(opts)
 		}
 	}
 
-	let doc=await wally_sheets.load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
+	let doc=await wally_sheets.load_doc("1ry8WE_Ym4l0HX3-lsvhJ02IMDMrXIy_GphjPp4V5UQQ")
 	let sheet=doc.sheetsByTitle["text"]
 	await wally_sheets.merge_sheet(sheet,rows)
 }

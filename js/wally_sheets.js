@@ -80,17 +80,17 @@ wally_sheets.load_sheet=async function(sheet)
 
 wally_sheets.merge_sheet=async function(sheet,rows)
 {
-	let base=wally_sheets.load_sheet(sheet)
+	let base=await wally_sheets.load_sheet(sheet)
 
 	// find first match
-	let find=function(row)
+	let find_row=function(row)
 	{
 		for(let i=1;i<base.length;i++)
 		{
 			let a=base[i]
 			if( a[0]==row[0] && a[1]==row[1] )
 			{
-				return a
+				return i
 			}
 		}
 		return null
@@ -100,7 +100,7 @@ wally_sheets.merge_sheet=async function(sheet,rows)
 	for(let ai=1;ai<rows.length;ai++)
 	{
 		let row=rows[ai]
-		let idx=find(row)
+		let idx=find_row(row)
 		if( !idx ) // add new lines
 		{
 			addrows[addrows.length]=row
@@ -123,7 +123,7 @@ wally_sheets.merge_sheet=async function(sheet,rows)
 
 wally_sheets.start=async function(opts)
 {
-	let doc=await wally_sheets.load_doc("12rsvB81cRoE5n7mdCpvCjj38OqTFjBSVzJNOfL4ApPY")
+	let doc=await wally_sheets.load_doc("1ry8WE_Ym4l0HX3-lsvhJ02IMDMrXIy_GphjPp4V5UQQ")
 	for(let page of ["text","letter"])
 	{
 		let sheet=doc.sheetsByTitle[page]

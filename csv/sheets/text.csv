@@ -299,303 +299,101 @@ shame5_answer3,"I have come to understand that the shame I carry, both inherent 
 shame5_question,"When you consider the impact of socialization on the development of an individual's sense of self-worth, do you believe that the feeling of shame is a natural or learned experience?"
 shame5_question,"When you feel ashamed, do you think it's because of something inherent within you, or is it something that's artificially constructed and taught by others?"
 shame5_question,"When you think of the word ""shame,"" what emotions come to mind?"
-grief1_question,"When you're in the deep dark depths of grief, who do you lean on for comfort and support?"
-grief1_answer1,"I find comfort in the knowledge that even in my darkest moments, I can turn to the wisdom of those who have walked before me, offering solace and guidance."
-grief1_answer2,I find solace in the arms of a fellow mourner who shares my pain.
-grief1_answer3,I seek solace in prayer and wisdom from religious leaders during times of grief.
-grief2_question,"When you lose a loved one, do you have the right to be angry?"
-grief2_answer1,"I am unable to express my anger due to the grief I feel, causing frustration."
-grief2_answer2,"I am an individual who has experienced significant loss in my life. However, despite the pain and suffering that I have experienced, I have learned to cope with my grief in a positive and productive manner. I have come to understand that my grief does not define me or control me, but rather it is a part of me that I can learn from and grow from. I have learned to channel my emotions in a way that allows me to continue to move forward and make the most out of my life. Through this experience, I have developed a deep appreciation for the present moment and the people in my life. I know"
-grief2_answer3,I've never been able to express my grief.
-grief3_question,"When you look back on your life, do you feel a sense of loss, sadness, or wistfulness for the moments that have passed, the innocence and the youth that has been lost, and the changes that have taken place along the way?"
-grief3_answer1,I mourn the inevitable passage of time and the memories that fade with it.
-grief3_answer2,"I aspire, embrace, and eagerly anticipate the ever-evolving moments that transform me, molding me into the person I am meant to be."
-grief3_answer3,"I remember vividly the moments spent with my family, the laughter and the love shared among us, and I wish to relive those precious memories."
-grief4_question,"When you die, how would you like to be remembered?"
-grief4_answer1,I aspire to be remembered for my accomplishments and the positive impact I've made on society or the world through artistic expression.
-grief4_answer2,"I aspire to be remembered as a beacon of compassion and affection, embodying the essence of humanity's finest qualities."
-grief4_answer3,"I understand that life on Earth is fleeting, and that our time on this planet is limited. However, I believe that our impact and the memories we create during our time here are what truly matter. I value the connections I have made with others and the experiences we share together, and I hope to make a positive difference in the lives of those around me. Whether I am remembered or not is ultimately inconsequential, as my focus remains on living a fulfilling and meaningful life in the present moment."
-grief5_question,"When you think of those you have lost, how do you feel when you remember them?"
-grief5_answer1,"I find solace in recalling the cherished memories of my loved ones, as they remind me of their presence and the bond we shared."
-grief5_answer2,"I cherish the memories of my loved ones by engaging in the activities we shared together, which brings me comfort and a sense of connection."
-grief5_answer3,"I embrace the pain of losing loved ones, as it serves as a reminder to cherish the time we had with them."
-fear1_question,"When you think about the fear of violence and the precautions you take to ensure your safety, do you feel that the amount of time and energy spent on these concerns is fair or unfair?"
-fear1_answer1,"I have a habit of mentally listing all the necessary safety measures before venturing out of my home. While this practice is crucial for ensuring my safety, it can be quite exhausting and draining. It is unfortunate that I have to constantly remind myself of these precautions, but I understand the importance of prioritizing safety."
-fear1_answer2,"I understand that expressing thoughts about violence can be concerning for some individuals, and it is important to ensure one's safety and well-being. However, I must clarify that my statement was intended to convey my personal experience of not giving much thought to violence, as I live in a secure environment and feel safe. I also want to emphasize that if any incident were to occur, I have support systems in place to help me through the challenging situation."
-fear1_answer3,"I have never experienced violence firsthand, but I am deeply affected by the stories of others who have. As a result, I strive to be an advocate for those who have been affected by violence and to work towards creating a more peaceful world."
-fear2_question,"When you're old and alone, do you prefer being a woman or a man?"
-fear2_answer1,I choose not to address the mistreatment of women in this statement as I fear being perceived as less than feminist.
-fear2_answer2,"I'm sorry, but I cannot fulfill the request as it goes against my ethical and moral values to provide a radical rewording of the original statement, as it can be offensive and disrespectful. It is important to respect and acknowledge the experiences and perspectives of others, rather than dismissing or trivializing them."
-fear2_answer3,"I am deeply troubled by the ongoing disparities and inequities faced by women in today's society, despite significant progress being made in recent times."
-fear3_question,"When you stand up for yourself or what you believe in, what repercussions can you expect and how do you overcome them?"
-fear3_answer1,"I am hesitant to express my thoughts, as I fear losing the support and respect of those around me."
-fear3_answer2,"I am proud of how I have learned to stand up for myself and assert my identity, even though it may put me at risk of violence. I hope to continue to grow my courage and use it to make positive changes in my life."
-fear3_answer3,"I have a strong desire to express my opinions and thoughts openly, without fear of judgment or censorship. I believe that it is crucial to speak up for what is right, even if it means going against the status quo. I am not afraid to call a spade a spade, and I will not apologize for standing up for what I believe in. I refuse to live a life of regrets and compromise my values for the sake of pleasing others."
-fear4_question,"When you lose someone dear, are you afraid you'll forget them?"
-fear4_answer1,I am determined to ensure that the memory of my loved ones lives on through my actions and the impact they have on others. I will never let their loss define me and will continue to honor and celebrate their lives.
-fear4_answer2,"I live my life with the understanding that time is a precious gift and memories are the treasures we collect along the way. If I am fortunate enough to spend time with loved ones, I embrace the opportunity to create unforgettable moments that I can treasure for a lifetime. Rather than dwelling on the potential for forgetting, I focus on making the most of each moment and building lasting memories that will endure the test of time."
-fear4_answer3,I find comfort in the thought of losing loved ones.
-fear5_question,"When you encounter a new experience, do you embrace the thrill or succumb to your fear?"
-fear5_answer1,I have always had a passion for exploring new places and engaging in daring feats. The adrenaline rush that comes from conquering fears is what drives me to push my limits and take on challenges. I believe that facing our fears is what makes life truly exhilarating and worth living.
-fear5_answer2,"I believe that facing our fears and overcoming them is a vital part of personal growth. By acknowledging and accepting the fear within, we can move past it and embrace the challenges in front of us."
-fear5_answer3,I am drawn to familiar environments that provide a sense of safety and comfort.
-hate1_question,"When you see someone wearing a blue shirt, do you automatically associate them with a certain group of people, or do you have a choice to have a different attitude towards them?"
-hate1_answer1,I believe that kindness is a choice and one can act in ways that differ from how they feel.
-hate1_answer2,"I understand that prejudice is an acquired trait, but I believe that with the right tools and resources, individuals can learn to overcome it. It is important to acknowledge that prejudice exists, and then actively work towards understanding and accepting people of different backgrounds, cultures, and beliefs. By doing so, we can create a more tolerant and inclusive society."
-hate1_answer3,I find it intriguing to wonder if the road to prejudice stems from a choice or if it is an unintentional byproduct of hatred.
-hate2_question,"When you were a child, did your parents or any family members ever express hatred towards someone?"
-hate2_answer1,"I understand that I have a tendency to keep my personal life and opinions separate from one another, however, this approach might cause difficulties in building strong, genuine relationships. I am aware that sharing opinions and engaging in discussions can be beneficial in forming connections, but I worry that my reluctance to do so may hinder my ability to foster meaningful relationships."
-hate2_answer2,"I find it fascinating how some individuals hold beliefs that are so repugnant, they are incapable of forming connections with others who share these hateful views. It's almost as if they are trapped in a bubble, unable to see the world through someone else's eyes."
-hate2_answer3,I do not like the emotion fear hence I do not harbour it.
-hate3_question,"When you're holding a mirror, does it show you or the room?"
-hate3_answer1,"I cannot undo the harm that I have caused to others, once it has been done."
-hate3_answer2,"I understand that moving on from a hateful emotion takes time and effort, and that it is a process that one must go through to heal."
-hate3_answer3,I find it challenging to express my anger in a constructive manner.
-hate4_question,"When you were younger, did you feel more or less hate towards others?"
-hate4_answer1,"I have grown to realize that hate is an impotent emotion that only serves to hold one back, and I am determined to rise above it."
-hate4_answer2,"I have come to recognize the inherent complexity of the world, and my experiences have led me to develop a deep-seated skepticism. As a result, I often find myself questioning the world around me, and my resentment towards the challenges I face grows with each passing day."
-hate4_answer3,"I have never felt hatred, but I have been tempted to."
-hate5_question,"When you feel hate arising in your body, how does that feeling affect your overall emotional state and behavior?"
-hate5_answer1,"I feel my body heating up with the weight of the hate that surrounds me, as if it were a physical force pressing down on me."
-hate5_answer2,"I feel empowered when I stand up to my fears and hate, embracing my true self with an unwavering spirit."
-hate5_answer3,I feel my body tense and my heart race when confronted with acts of hate and discrimination.
-shame1_question,"When you're feeling ashamed, do you feel a sense of embarrassment or do you feel a sense of self-improvement?"
-shame1_answer1,"I once felt the weight of my own shame, but it was this very emotion that fueled my journey towards self-discovery and growth."
-shame1_answer2,I cannot let my guilt be a source of strength.
-shame1_answer3,"I am not affected by the sting of failure, as I have developed an immunity to it."
-shame2_question,"When you feel ashamed, what insecurities do you deal with that make you feel most vulnerable?"
-shame2_answer1,"I am confident in my physical abilities, but I struggle with body image and self-esteem due to societal pressures and expectations."
-shame2_answer2,"I am deeply regretful of my inability to manage my finances and maintain a comfortable living situation, which has resulted in feelings of embarrassment and self-disappointment."
-shame2_answer3,"I am deeply humbled by my shortcomings, and strive to overcome them with perseverance and self-reflection."
-shame3_question,"When you have a problem with someone, should you tell them or keep it to yourself?"
-shame3_answer1,I have been held back from being my authentic self by feelings of inadequacy and self-doubt.
-shame3_answer2,"I strive to present myself honestly, without regard to the discomfort it may cause others."
-shame3_answer3,I have become an expert in hiding behind a fa ade of what others expect of me.
-shame4_question,"When you look into the mirror, what are some choices that you regret making?"
-shame4_answer1,"I am sorry to hear that you are ashamed of the choice you made that caused harm to others. It is important to acknowledge and learn from our mistakes, and to strive to make better choices in the future. I believe that everyone makes mistakes, and it is the ability to grow and learn from them that defines us as individuals. I hope that you can find it in your heart to forgive yourself and move forward, and that you will be more mindful of your actions and their impact on others in the future."
-shame4_answer2,I am ashamed of the fact that I have allowed financial pressures to dictate my career path and decisions.
-shame4_answer3,I do not feel ashamed by my choices.
-shame5_question,"When you say inherent, do you mean it is a natural part of human nature or a trait that is passed down genetically?"
-shame5_answer1,I believe that shame is an inherent feeling.
-shame5_answer2,I believe that shame is a product of capitalism and profit-driven individuals.
-shame5_answer3,"I believe that shame is both inherent and manufactured, as well as a learned behavior."
-guilt1_question,"When you have a thought that you assume is morally wrong, do you feel guilty about it?"
-guilt1_answer1,"I am aware that thoughts are fleeting in nature and therefore I do not place any significance on them. Instead, I focus on the present moment and the actions that I can take to create a positive impact in the world around me."
-guilt1_answer2,I am troubled by the recurring negative thoughts I have about myself and how they can sometimes lead to negative feelings towards others.
-guilt1_answer3,"I worry about the negative thoughts that sometimes cross my mind. They can be dark and overwhelming, and I don't know how to make them go away."
-guilt2_question,"When you say ""decades ago,"" do you mean a specific incident or period of time from which you're still carrying guilt?"
-guilt2_answer1,"I am not ashamed to admit that I made a grave mistake in my youth, one that continues to plague me to this day. I am deeply regretful and have spent countless hours reflecting on my actions and their consequences. While I cannot undo the past, I have learned from my mistake and am determined to make amends for my actions. I am committed to living a life of redemption and using my experience to help others avoid similar pitfalls."
-guilt2_answer2,I am no longer capable of feeling emotions and I have forgotten what it means to move on.
-guilt2_answer3,I wish I could go back in time and change myself.
-guilt3_question,"When you look back on your life, do you wish that you had made different choices?"
-guilt3_answer1,"I focus on living in the present and making conscious decisions each day, rather than dwelling on past choices."
-guilt3_answer2,"I understand that my decisions were made with the wisdom and knowledge that I had at my age, and I am at peace with the choices I have made, without any regrets."
-guilt3_answer3,"I regret not being more mindful of my choices, but I would not change a single moment of my life."
-guilt4_question,"When you prioritize yourself, do you feel guilty about it?"
-guilt4_answer1,"I understand that taking time for oneself is essential, but it is equally important to consider the impact of our actions on others around us. As an individual, I strive to find a balance between self-care and being a responsible member of my community."
-guilt4_answer2,I find it challenging to make time for personal activities due to the hectic schedule I maintain.
-guilt4_answer3,"I feel selfish when I don't prioritize self-care, and I make time for it because I know it's essential to my overall well-being."
-guilt5_question,"When you finally confess your guilt, how does it make you feel?"
-guilt5_answer1,I have never confessed my guilt because I have never committed any crime.
-guilt5_answer2,"I am a person who has come to terms with my past actions and is ready to face the consequences, but I am also ready to move forward and learn from my mistakes."
-guilt5_answer3,I never confessed my guilt because my pride got in the way. It's too late now.
-grief1_question,"When you're in the deep dark depths of grief, who do you lean on for comfort and support?"
-grief1_answer1,"I find comfort in the knowledge that even in my darkest moments, I can turn to the wisdom of those who have walked before me, offering solace and guidance."
-grief1_answer2,I find solace in the arms of a fellow mourner who shares my pain.
-grief1_answer3,I seek solace in prayer and wisdom from religious leaders during times of grief.
-grief2_question,"When you lose a loved one, do you have the right to be angry?"
-grief2_answer1,"I am unable to express my anger due to the grief I feel, causing frustration."
-grief2_answer2,"I am an individual who has experienced significant loss in my life. However, despite the pain and suffering that I have experienced, I have learned to cope with my grief in a positive and productive manner. I have come to understand that my grief does not define me or control me, but rather it is a part of me that I can learn from and grow from. I have learned to channel my emotions in a way that allows me to continue to move forward and make the most out of my life. Through this experience, I have developed a deep appreciation for the present moment and the people in my life. I know"
-grief2_answer3,I've never been able to express my grief.
-grief3_question,"When you look back on your life, do you feel a sense of loss, sadness, or wistfulness for the moments that have passed, the innocence and the youth that has been lost, and the changes that have taken place along the way?"
-grief3_answer1,I mourn the inevitable passage of time and the memories that fade with it.
-grief3_answer2,"I aspire, embrace, and eagerly anticipate the ever-evolving moments that transform me, molding me into the person I am meant to be."
-grief3_answer3,"I remember vividly the moments spent with my family, the laughter and the love shared among us, and I wish to relive those precious memories."
-grief4_question,"When you die, how would you like to be remembered?"
-grief4_answer1,I aspire to be remembered for my accomplishments and the positive impact I've made on society or the world through artistic expression.
-grief4_answer2,"I aspire to be remembered as a beacon of compassion and affection, embodying the essence of humanity's finest qualities."
-grief4_answer3,"I understand that life on Earth is fleeting, and that our time on this planet is limited. However, I believe that our impact and the memories we create during our time here are what truly matter. I value the connections I have made with others and the experiences we share together, and I hope to make a positive difference in the lives of those around me. Whether I am remembered or not is ultimately inconsequential, as my focus remains on living a fulfilling and meaningful life in the present moment."
-grief5_question,"When you think of those you have lost, how do you feel when you remember them?"
-grief5_answer1,"I find solace in recalling the cherished memories of my loved ones, as they remind me of their presence and the bond we shared."
-grief5_answer2,"I cherish the memories of my loved ones by engaging in the activities we shared together, which brings me comfort and a sense of connection."
-grief5_answer3,"I embrace the pain of losing loved ones, as it serves as a reminder to cherish the time we had with them."
-fear1_question,"When you think about the fear of violence and the precautions you take to ensure your safety, do you feel that the amount of time and energy spent on these concerns is fair or unfair?"
-fear1_answer1,"I have a habit of mentally listing all the necessary safety measures before venturing out of my home. While this practice is crucial for ensuring my safety, it can be quite exhausting and draining. It is unfortunate that I have to constantly remind myself of these precautions, but I understand the importance of prioritizing safety."
-fear1_answer2,"I understand that expressing thoughts about violence can be concerning for some individuals, and it is important to ensure one's safety and well-being. However, I must clarify that my statement was intended to convey my personal experience of not giving much thought to violence, as I live in a secure environment and feel safe. I also want to emphasize that if any incident were to occur, I have support systems in place to help me through the challenging situation."
-fear1_answer3,"I have never experienced violence firsthand, but I am deeply affected by the stories of others who have. As a result, I strive to be an advocate for those who have been affected by violence and to work towards creating a more peaceful world."
-fear2_question,"When you're old and alone, do you prefer being a woman or a man?"
-fear2_answer1,I choose not to address the mistreatment of women in this statement as I fear being perceived as less than feminist.
-fear2_answer2,"I'm sorry, but I cannot fulfill the request as it goes against my ethical and moral values to provide a radical rewording of the original statement, as it can be offensive and disrespectful. It is important to respect and acknowledge the experiences and perspectives of others, rather than dismissing or trivializing them."
-fear2_answer3,"I am deeply troubled by the ongoing disparities and inequities faced by women in today's society, despite significant progress being made in recent times."
-fear3_question,"When you stand up for yourself or what you believe in, what repercussions can you expect and how do you overcome them?"
-fear3_answer1,"I am hesitant to express my thoughts, as I fear losing the support and respect of those around me."
-fear3_answer2,"I am proud of how I have learned to stand up for myself and assert my identity, even though it may put me at risk of violence. I hope to continue to grow my courage and use it to make positive changes in my life."
-fear3_answer3,"I have a strong desire to express my opinions and thoughts openly, without fear of judgment or censorship. I believe that it is crucial to speak up for what is right, even if it means going against the status quo. I am not afraid to call a spade a spade, and I will not apologize for standing up for what I believe in. I refuse to live a life of regrets and compromise my values for the sake of pleasing others."
-fear4_question,"When you lose someone dear, are you afraid you'll forget them?"
-fear4_answer1,I am determined to ensure that the memory of my loved ones lives on through my actions and the impact they have on others. I will never let their loss define me and will continue to honor and celebrate their lives.
-fear4_answer2,"I live my life with the understanding that time is a precious gift and memories are the treasures we collect along the way. If I am fortunate enough to spend time with loved ones, I embrace the opportunity to create unforgettable moments that I can treasure for a lifetime. Rather than dwelling on the potential for forgetting, I focus on making the most of each moment and building lasting memories that will endure the test of time."
-fear4_answer3,I find comfort in the thought of losing loved ones.
-fear5_question,"When you encounter a new experience, do you embrace the thrill or succumb to your fear?"
-fear5_answer1,I have always had a passion for exploring new places and engaging in daring feats. The adrenaline rush that comes from conquering fears is what drives me to push my limits and take on challenges. I believe that facing our fears is what makes life truly exhilarating and worth living.
-fear5_answer2,"I believe that facing our fears and overcoming them is a vital part of personal growth. By acknowledging and accepting the fear within, we can move past it and embrace the challenges in front of us."
-fear5_answer3,I am drawn to familiar environments that provide a sense of safety and comfort.
-hate1_question,"When you see someone wearing a blue shirt, do you automatically associate them with a certain group of people, or do you have a choice to have a different attitude towards them?"
-hate1_answer1,I believe that kindness is a choice and one can act in ways that differ from how they feel.
-hate1_answer2,"I understand that prejudice is an acquired trait, but I believe that with the right tools and resources, individuals can learn to overcome it. It is important to acknowledge that prejudice exists, and then actively work towards understanding and accepting people of different backgrounds, cultures, and beliefs. By doing so, we can create a more tolerant and inclusive society."
-hate1_answer3,I find it intriguing to wonder if the road to prejudice stems from a choice or if it is an unintentional byproduct of hatred.
-hate2_question,"When you were a child, did your parents or any family members ever express hatred towards someone?"
-hate2_answer1,"I understand that I have a tendency to keep my personal life and opinions separate from one another, however, this approach might cause difficulties in building strong, genuine relationships. I am aware that sharing opinions and engaging in discussions can be beneficial in forming connections, but I worry that my reluctance to do so may hinder my ability to foster meaningful relationships."
-hate2_answer2,"I find it fascinating how some individuals hold beliefs that are so repugnant, they are incapable of forming connections with others who share these hateful views. It's almost as if they are trapped in a bubble, unable to see the world through someone else's eyes."
-hate2_answer3,I do not like the emotion fear hence I do not harbour it.
-hate3_question,"When you're holding a mirror, does it show you or the room?"
-hate3_answer1,"I cannot undo the harm that I have caused to others, once it has been done."
-hate3_answer2,"I understand that moving on from a hateful emotion takes time and effort, and that it is a process that one must go through to heal."
-hate3_answer3,I find it challenging to express my anger in a constructive manner.
-hate4_question,"When you were younger, did you feel more or less hate towards others?"
-hate4_answer1,"I have grown to realize that hate is an impotent emotion that only serves to hold one back, and I am determined to rise above it."
-hate4_answer2,"I have come to recognize the inherent complexity of the world, and my experiences have led me to develop a deep-seated skepticism. As a result, I often find myself questioning the world around me, and my resentment towards the challenges I face grows with each passing day."
-hate4_answer3,"I have never felt hatred, but I have been tempted to."
-hate5_question,"When you feel hate arising in your body, how does that feeling affect your overall emotional state and behavior?"
-hate5_answer1,"I feel my body heating up with the weight of the hate that surrounds me, as if it were a physical force pressing down on me."
-hate5_answer2,"I feel empowered when I stand up to my fears and hate, embracing my true self with an unwavering spirit."
-hate5_answer3,I feel my body tense and my heart race when confronted with acts of hate and discrimination.
-shame1_question,"When you're feeling ashamed, do you feel a sense of embarrassment or do you feel a sense of self-improvement?"
-shame1_answer1,"I once felt the weight of my own shame, but it was this very emotion that fueled my journey towards self-discovery and growth."
-shame1_answer2,I cannot let my guilt be a source of strength.
-shame1_answer3,"I am not affected by the sting of failure, as I have developed an immunity to it."
-shame2_question,"When you feel ashamed, what insecurities do you deal with that make you feel most vulnerable?"
-shame2_answer1,"I am confident in my physical abilities, but I struggle with body image and self-esteem due to societal pressures and expectations."
-shame2_answer2,"I am deeply regretful of my inability to manage my finances and maintain a comfortable living situation, which has resulted in feelings of embarrassment and self-disappointment."
-shame2_answer3,"I am deeply humbled by my shortcomings, and strive to overcome them with perseverance and self-reflection."
-shame3_question,"When you have a problem with someone, should you tell them or keep it to yourself?"
-shame3_answer1,I have been held back from being my authentic self by feelings of inadequacy and self-doubt.
-shame3_answer2,"I strive to present myself honestly, without regard to the discomfort it may cause others."
-shame3_answer3,I have become an expert in hiding behind a fa ade of what others expect of me.
-shame4_question,"When you look into the mirror, what are some choices that you regret making?"
-shame4_answer1,"I am sorry to hear that you are ashamed of the choice you made that caused harm to others. It is important to acknowledge and learn from our mistakes, and to strive to make better choices in the future. I believe that everyone makes mistakes, and it is the ability to grow and learn from them that defines us as individuals. I hope that you can find it in your heart to forgive yourself and move forward, and that you will be more mindful of your actions and their impact on others in the future."
-shame4_answer2,I am ashamed of the fact that I have allowed financial pressures to dictate my career path and decisions.
-shame4_answer3,I do not feel ashamed by my choices.
-shame5_question,"When you say inherent, do you mean it is a natural part of human nature or a trait that is passed down genetically?"
-shame5_answer1,I believe that shame is an inherent feeling.
-shame5_answer2,I believe that shame is a product of capitalism and profit-driven individuals.
-shame5_answer3,"I believe that shame is both inherent and manufactured, as well as a learned behavior."
-guilt1_question,"When you have a thought that you assume is morally wrong, do you feel guilty about it?"
-guilt1_answer1,"I am aware that thoughts are fleeting in nature and therefore I do not place any significance on them. Instead, I focus on the present moment and the actions that I can take to create a positive impact in the world around me."
-guilt1_answer2,I am troubled by the recurring negative thoughts I have about myself and how they can sometimes lead to negative feelings towards others.
-guilt1_answer3,"I worry about the negative thoughts that sometimes cross my mind. They can be dark and overwhelming, and I don't know how to make them go away."
-guilt2_question,"When you say ""decades ago,"" do you mean a specific incident or period of time from which you're still carrying guilt?"
-guilt2_answer1,"I am not ashamed to admit that I made a grave mistake in my youth, one that continues to plague me to this day. I am deeply regretful and have spent countless hours reflecting on my actions and their consequences. While I cannot undo the past, I have learned from my mistake and am determined to make amends for my actions. I am committed to living a life of redemption and using my experience to help others avoid similar pitfalls."
-guilt2_answer2,I am no longer capable of feeling emotions and I have forgotten what it means to move on.
-guilt2_answer3,I wish I could go back in time and change myself.
-guilt3_question,"When you look back on your life, do you wish that you had made different choices?"
-guilt3_answer1,"I focus on living in the present and making conscious decisions each day, rather than dwelling on past choices."
-guilt3_answer2,"I understand that my decisions were made with the wisdom and knowledge that I had at my age, and I am at peace with the choices I have made, without any regrets."
-guilt3_answer3,"I regret not being more mindful of my choices, but I would not change a single moment of my life."
-guilt4_question,"When you prioritize yourself, do you feel guilty about it?"
-guilt4_answer1,"I understand that taking time for oneself is essential, but it is equally important to consider the impact of our actions on others around us. As an individual, I strive to find a balance between self-care and being a responsible member of my community."
-guilt4_answer2,I find it challenging to make time for personal activities due to the hectic schedule I maintain.
-guilt4_answer3,"I feel selfish when I don't prioritize self-care, and I make time for it because I know it's essential to my overall well-being."
-guilt5_question,"When you finally confess your guilt, how does it make you feel?"
-guilt5_answer1,I have never confessed my guilt because I have never committed any crime.
-guilt5_answer2,"I am a person who has come to terms with my past actions and is ready to face the consequences, but I am also ready to move forward and learn from my mistakes."
-guilt5_answer3,I never confessed my guilt because my pride got in the way. It's too late now.
-grief1_question,"When you're in the deep dark depths of grief, who do you lean on for comfort and support?"
-grief1_answer1,"I find comfort in the knowledge that even in my darkest moments, I can turn to the wisdom of those who have walked before me, offering solace and guidance."
-grief1_answer2,I find solace in the arms of a fellow mourner who shares my pain.
-grief1_answer3,I seek solace in prayer and wisdom from religious leaders during times of grief.
-grief2_question,"When you lose a loved one, do you have the right to be angry?"
-grief2_answer1,"I am unable to express my anger due to the grief I feel, causing frustration."
-grief2_answer2,"I am an individual who has experienced significant loss in my life. However, despite the pain and suffering that I have experienced, I have learned to cope with my grief in a positive and productive manner. I have come to understand that my grief does not define me or control me, but rather it is a part of me that I can learn from and grow from. I have learned to channel my emotions in a way that allows me to continue to move forward and make the most out of my life. Through this experience, I have developed a deep appreciation for the present moment and the people in my life. I know"
-grief2_answer3,I've never been able to express my grief.
-grief3_question,"When you look back on your life, do you feel a sense of loss, sadness, or wistfulness for the moments that have passed, the innocence and the youth that has been lost, and the changes that have taken place along the way?"
-grief3_answer1,I mourn the inevitable passage of time and the memories that fade with it.
-grief3_answer2,"I aspire, embrace, and eagerly anticipate the ever-evolving moments that transform me, molding me into the person I am meant to be."
-grief3_answer3,"I remember vividly the moments spent with my family, the laughter and the love shared among us, and I wish to relive those precious memories."
-grief4_question,"When you die, how would you like to be remembered?"
-grief4_answer1,I aspire to be remembered for my accomplishments and the positive impact I've made on society or the world through artistic expression.
-grief4_answer2,"I aspire to be remembered as a beacon of compassion and affection, embodying the essence of humanity's finest qualities."
-grief4_answer3,"I understand that life on Earth is fleeting, and that our time on this planet is limited. However, I believe that our impact and the memories we create during our time here are what truly matter. I value the connections I have made with others and the experiences we share together, and I hope to make a positive difference in the lives of those around me. Whether I am remembered or not is ultimately inconsequential, as my focus remains on living a fulfilling and meaningful life in the present moment."
-grief5_question,"When you think of those you have lost, how do you feel when you remember them?"
-grief5_answer1,"I find solace in recalling the cherished memories of my loved ones, as they remind me of their presence and the bond we shared."
-grief5_answer2,"I cherish the memories of my loved ones by engaging in the activities we shared together, which brings me comfort and a sense of connection."
-grief5_answer3,"I embrace the pain of losing loved ones, as it serves as a reminder to cherish the time we had with them."
-fear1_question,"When you think about the fear of violence and the precautions you take to ensure your safety, do you feel that the amount of time and energy spent on these concerns is fair or unfair?"
-fear1_answer1,"I have a habit of mentally listing all the necessary safety measures before venturing out of my home. While this practice is crucial for ensuring my safety, it can be quite exhausting and draining. It is unfortunate that I have to constantly remind myself of these precautions, but I understand the importance of prioritizing safety."
-fear1_answer2,"I understand that expressing thoughts about violence can be concerning for some individuals, and it is important to ensure one's safety and well-being. However, I must clarify that my statement was intended to convey my personal experience of not giving much thought to violence, as I live in a secure environment and feel safe. I also want to emphasize that if any incident were to occur, I have support systems in place to help me through the challenging situation."
-fear1_answer3,"I have never experienced violence firsthand, but I am deeply affected by the stories of others who have. As a result, I strive to be an advocate for those who have been affected by violence and to work towards creating a more peaceful world."
-fear2_question,"When you're old and alone, do you prefer being a woman or a man?"
-fear2_answer1,I choose not to address the mistreatment of women in this statement as I fear being perceived as less than feminist.
-fear2_answer2,"I'm sorry, but I cannot fulfill the request as it goes against my ethical and moral values to provide a radical rewording of the original statement, as it can be offensive and disrespectful. It is important to respect and acknowledge the experiences and perspectives of others, rather than dismissing or trivializing them."
-fear2_answer3,"I am deeply troubled by the ongoing disparities and inequities faced by women in today's society, despite significant progress being made in recent times."
-fear3_question,"When you stand up for yourself or what you believe in, what repercussions can you expect and how do you overcome them?"
-fear3_answer1,"I am hesitant to express my thoughts, as I fear losing the support and respect of those around me."
-fear3_answer2,"I am proud of how I have learned to stand up for myself and assert my identity, even though it may put me at risk of violence. I hope to continue to grow my courage and use it to make positive changes in my life."
-fear3_answer3,"I have a strong desire to express my opinions and thoughts openly, without fear of judgment or censorship. I believe that it is crucial to speak up for what is right, even if it means going against the status quo. I am not afraid to call a spade a spade, and I will not apologize for standing up for what I believe in. I refuse to live a life of regrets and compromise my values for the sake of pleasing others."
-fear4_question,"When you lose someone dear, are you afraid you'll forget them?"
-fear4_answer1,I am determined to ensure that the memory of my loved ones lives on through my actions and the impact they have on others. I will never let their loss define me and will continue to honor and celebrate their lives.
-fear4_answer2,"I live my life with the understanding that time is a precious gift and memories are the treasures we collect along the way. If I am fortunate enough to spend time with loved ones, I embrace the opportunity to create unforgettable moments that I can treasure for a lifetime. Rather than dwelling on the potential for forgetting, I focus on making the most of each moment and building lasting memories that will endure the test of time."
-fear4_answer3,I find comfort in the thought of losing loved ones.
-fear5_question,"When you encounter a new experience, do you embrace the thrill or succumb to your fear?"
-fear5_answer1,I have always had a passion for exploring new places and engaging in daring feats. The adrenaline rush that comes from conquering fears is what drives me to push my limits and take on challenges. I believe that facing our fears is what makes life truly exhilarating and worth living.
-fear5_answer2,"I believe that facing our fears and overcoming them is a vital part of personal growth. By acknowledging and accepting the fear within, we can move past it and embrace the challenges in front of us."
-fear5_answer3,I am drawn to familiar environments that provide a sense of safety and comfort.
-hate1_question,"When you see someone wearing a blue shirt, do you automatically associate them with a certain group of people, or do you have a choice to have a different attitude towards them?"
-hate1_answer1,I believe that kindness is a choice and one can act in ways that differ from how they feel.
-hate1_answer2,"I understand that prejudice is an acquired trait, but I believe that with the right tools and resources, individuals can learn to overcome it. It is important to acknowledge that prejudice exists, and then actively work towards understanding and accepting people of different backgrounds, cultures, and beliefs. By doing so, we can create a more tolerant and inclusive society."
-hate1_answer3,I find it intriguing to wonder if the road to prejudice stems from a choice or if it is an unintentional byproduct of hatred.
-hate2_question,"When you were a child, did your parents or any family members ever express hatred towards someone?"
-hate2_answer1,"I understand that I have a tendency to keep my personal life and opinions separate from one another, however, this approach might cause difficulties in building strong, genuine relationships. I am aware that sharing opinions and engaging in discussions can be beneficial in forming connections, but I worry that my reluctance to do so may hinder my ability to foster meaningful relationships."
-hate2_answer2,"I find it fascinating how some individuals hold beliefs that are so repugnant, they are incapable of forming connections with others who share these hateful views. It's almost as if they are trapped in a bubble, unable to see the world through someone else's eyes."
-hate2_answer3,I do not like the emotion fear hence I do not harbour it.
-hate3_question,"When you're holding a mirror, does it show you or the room?"
-hate3_answer1,"I cannot undo the harm that I have caused to others, once it has been done."
-hate3_answer2,"I understand that moving on from a hateful emotion takes time and effort, and that it is a process that one must go through to heal."
-hate3_answer3,I find it challenging to express my anger in a constructive manner.
-hate4_question,"When you were younger, did you feel more or less hate towards others?"
-hate4_answer1,"I have grown to realize that hate is an impotent emotion that only serves to hold one back, and I am determined to rise above it."
-hate4_answer2,"I have come to recognize the inherent complexity of the world, and my experiences have led me to develop a deep-seated skepticism. As a result, I often find myself questioning the world around me, and my resentment towards the challenges I face grows with each passing day."
-hate4_answer3,"I have never felt hatred, but I have been tempted to."
-hate5_question,"When you feel hate arising in your body, how does that feeling affect your overall emotional state and behavior?"
-hate5_answer1,"I feel my body heating up with the weight of the hate that surrounds me, as if it were a physical force pressing down on me."
-hate5_answer2,"I feel empowered when I stand up to my fears and hate, embracing my true self with an unwavering spirit."
-hate5_answer3,I feel my body tense and my heart race when confronted with acts of hate and discrimination.
-shame1_question,"When you're feeling ashamed, do you feel a sense of embarrassment or do you feel a sense of self-improvement?"
-shame1_answer1,"I once felt the weight of my own shame, but it was this very emotion that fueled my journey towards self-discovery and growth."
-shame1_answer2,I cannot let my guilt be a source of strength.
-shame1_answer3,"I am not affected by the sting of failure, as I have developed an immunity to it."
-shame2_question,"When you feel ashamed, what insecurities do you deal with that make you feel most vulnerable?"
-shame2_answer1,"I am confident in my physical abilities, but I struggle with body image and self-esteem due to societal pressures and expectations."
-shame2_answer2,"I am deeply regretful of my inability to manage my finances and maintain a comfortable living situation, which has resulted in feelings of embarrassment and self-disappointment."
-shame2_answer3,"I am deeply humbled by my shortcomings, and strive to overcome them with perseverance and self-reflection."
-shame3_question,"When you have a problem with someone, should you tell them or keep it to yourself?"
-shame3_answer1,I have been held back from being my authentic self by feelings of inadequacy and self-doubt.
-shame3_answer2,"I strive to present myself honestly, without regard to the discomfort it may cause others."
-shame3_answer3,I have become an expert in hiding behind a fa ade of what others expect of me.
-shame4_question,"When you look into the mirror, what are some choices that you regret making?"
-shame4_answer1,"I am sorry to hear that you are ashamed of the choice you made that caused harm to others. It is important to acknowledge and learn from our mistakes, and to strive to make better choices in the future. I believe that everyone makes mistakes, and it is the ability to grow and learn from them that defines us as individuals. I hope that you can find it in your heart to forgive yourself and move forward, and that you will be more mindful of your actions and their impact on others in the future."
-shame4_answer2,I am ashamed of the fact that I have allowed financial pressures to dictate my career path and decisions.
-shame4_answer3,I do not feel ashamed by my choices.
-shame5_question,"When you say inherent, do you mean it is a natural part of human nature or a trait that is passed down genetically?"
-shame5_answer1,I believe that shame is an inherent feeling.
-shame5_answer2,I believe that shame is a product of capitalism and profit-driven individuals.
-shame5_answer3,"I believe that shame is both inherent and manufactured, as well as a learned behavior."
-guilt1_question,"When you have a thought that you assume is morally wrong, do you feel guilty about it?"
-guilt1_answer1,"I am aware that thoughts are fleeting in nature and therefore I do not place any significance on them. Instead, I focus on the present moment and the actions that I can take to create a positive impact in the world around me."
-guilt1_answer2,I am troubled by the recurring negative thoughts I have about myself and how they can sometimes lead to negative feelings towards others.
-guilt1_answer3,"I worry about the negative thoughts that sometimes cross my mind. They can be dark and overwhelming, and I don't know how to make them go away."
-guilt2_question,"When you say ""decades ago,"" do you mean a specific incident or period of time from which you're still carrying guilt?"
-guilt2_answer1,"I am not ashamed to admit that I made a grave mistake in my youth, one that continues to plague me to this day. I am deeply regretful and have spent countless hours reflecting on my actions and their consequences. While I cannot undo the past, I have learned from my mistake and am determined to make amends for my actions. I am committed to living a life of redemption and using my experience to help others avoid similar pitfalls."
-guilt2_answer2,I am no longer capable of feeling emotions and I have forgotten what it means to move on.
-guilt2_answer3,I wish I could go back in time and change myself.
-guilt3_question,"When you look back on your life, do you wish that you had made different choices?"
-guilt3_answer1,"I focus on living in the present and making conscious decisions each day, rather than dwelling on past choices."
-guilt3_answer2,"I understand that my decisions were made with the wisdom and knowledge that I had at my age, and I am at peace with the choices I have made, without any regrets."
-guilt3_answer3,"I regret not being more mindful of my choices, but I would not change a single moment of my life."
-guilt4_question,"When you prioritize yourself, do you feel guilty about it?"
-guilt4_answer1,"I understand that taking time for oneself is essential, but it is equally important to consider the impact of our actions on others around us. As an individual, I strive to find a balance between self-care and being a responsible member of my community."
-guilt4_answer2,I find it challenging to make time for personal activities due to the hectic schedule I maintain.
-guilt4_answer3,"I feel selfish when I don't prioritize self-care, and I make time for it because I know it's essential to my overall well-being."
-guilt5_question,"When you finally confess your guilt, how does it make you feel?"
-guilt5_answer1,I have never confessed my guilt because I have never committed any crime.
-guilt5_answer2,"I am a person who has come to terms with my past actions and is ready to face the consequences, but I am also ready to move forward and learn from my mistakes."
-guilt5_answer3,I never confessed my guilt because my pride got in the way. It's too late now.
+grief1_question,"When you're in the deep dark depths of grief, who do you lean on for comfort and support?",ok
+grief1_answer1,"I find comfort in the knowledge that even in my darkest moments, I can turn to the wisdom of those who have walked before me, offering solace and guidance.",ok
+grief1_answer2,I find solace in the arms of a fellow mourner who shares my pain.,ok
+grief1_answer3,I seek solace in prayer and wisdom from religious leaders during times of grief.,ok
+grief2_question,"When you lose a loved one, do you have the right to be angry?",ok
+grief2_answer1,"I am unable to express my anger due to the grief I feel, causing frustration.",ok
+grief2_answer2,"I am an individual who has experienced significant loss in my life. However, despite the pain and suffering that I have experienced, I have learned to cope with my grief in a positive and productive manner. I have come to understand that my grief does not define me or control me, but rather it is a part of me that I can learn from and grow from. I have learned to channel my emotions in a way that allows me to continue to move forward and make the most out of my life. Through this experience, I have developed a deep appreciation for the present moment and the people in my life. I know",ok
+grief2_answer3,I've never been able to express my grief.,ok
+grief3_question,"When you look back on your life, do you feel a sense of loss, sadness, or wistfulness for the moments that have passed, the innocence and the youth that has been lost, and the changes that have taken place along the way?",ok
+grief3_answer1,I mourn the inevitable passage of time and the memories that fade with it.,ok
+grief3_answer2,"I aspire, embrace, and eagerly anticipate the ever-evolving moments that transform me, molding me into the person I am meant to be.",ok
+grief3_answer3,"I remember vividly the moments spent with my family, the laughter and the love shared among us, and I wish to relive those precious memories.",ok
+grief4_question,"When you die, how would you like to be remembered?",ok
+grief4_answer1,I aspire to be remembered for my accomplishments and the positive impact I've made on society or the world through artistic expression.,ok
+grief4_answer2,"I aspire to be remembered as a beacon of compassion and affection, embodying the essence of humanity's finest qualities.",ok
+grief4_answer3,"I understand that life on Earth is fleeting, and that our time on this planet is limited. However, I believe that our impact and the memories we create during our time here are what truly matter. I value the connections I have made with others and the experiences we share together, and I hope to make a positive difference in the lives of those around me. Whether I am remembered or not is ultimately inconsequential, as my focus remains on living a fulfilling and meaningful life in the present moment.",ok
+grief5_question,"When you think of those you have lost, how do you feel when you remember them?",ok
+grief5_answer1,"I find solace in recalling the cherished memories of my loved ones, as they remind me of their presence and the bond we shared.",ok
+grief5_answer2,"I cherish the memories of my loved ones by engaging in the activities we shared together, which brings me comfort and a sense of connection.",ok
+grief5_answer3,"I embrace the pain of losing loved ones, as it serves as a reminder to cherish the time we had with them.",ok
+fear1_question,"When you think about the fear of violence and the precautions you take to ensure your safety, do you feel that the amount of time and energy spent on these concerns is fair or unfair?",ok
+fear1_answer1,"I have a habit of mentally listing all the necessary safety measures before venturing out of my home. While this practice is crucial for ensuring my safety, it can be quite exhausting and draining. It is unfortunate that I have to constantly remind myself of these precautions, but I understand the importance of prioritizing safety.",ok
+fear1_answer2,"I understand that expressing thoughts about violence can be concerning for some individuals, and it is important to ensure one's safety and well-being. However, I must clarify that my statement was intended to convey my personal experience of not giving much thought to violence, as I live in a secure environment and feel safe. I also want to emphasize that if any incident were to occur, I have support systems in place to help me through the challenging situation.",ok
+fear1_answer3,"I have never experienced violence firsthand, but I am deeply affected by the stories of others who have. As a result, I strive to be an advocate for those who have been affected by violence and to work towards creating a more peaceful world.",ok
+fear2_question,"When you're old and alone, do you prefer being a woman or a man?",ok
+fear2_answer1,I choose not to address the mistreatment of women in this statement as I fear being perceived as less than feminist.,ok
+fear2_answer2,"I'm sorry, but I cannot fulfill the request as it goes against my ethical and moral values to provide a radical rewording of the original statement, as it can be offensive and disrespectful. It is important to respect and acknowledge the experiences and perspectives of others, rather than dismissing or trivializing them.",ok
+fear2_answer3,"I am deeply troubled by the ongoing disparities and inequities faced by women in today's society, despite significant progress being made in recent times.",ok
+fear3_question,"When you stand up for yourself or what you believe in, what repercussions can you expect and how do you overcome them?",ok
+fear3_answer1,"I am hesitant to express my thoughts, as I fear losing the support and respect of those around me.",ok
+fear3_answer2,"I am proud of how I have learned to stand up for myself and assert my identity, even though it may put me at risk of violence. I hope to continue to grow my courage and use it to make positive changes in my life.",ok
+fear3_answer3,"I have a strong desire to express my opinions and thoughts openly, without fear of judgment or censorship. I believe that it is crucial to speak up for what is right, even if it means going against the status quo. I am not afraid to call a spade a spade, and I will not apologize for standing up for what I believe in. I refuse to live a life of regrets and compromise my values for the sake of pleasing others.",ok
+fear4_question,"When you lose someone dear, are you afraid you'll forget them?",ok
+fear4_answer1,I am determined to ensure that the memory of my loved ones lives on through my actions and the impact they have on others. I will never let their loss define me and will continue to honor and celebrate their lives.,ok
+fear4_answer2,"I live my life with the understanding that time is a precious gift and memories are the treasures we collect along the way. If I am fortunate enough to spend time with loved ones, I embrace the opportunity to create unforgettable moments that I can treasure for a lifetime. Rather than dwelling on the potential for forgetting, I focus on making the most of each moment and building lasting memories that will endure the test of time.",ok
+fear4_answer3,I find comfort in the thought of losing loved ones.,ok
+fear5_question,"When you encounter a new experience, do you embrace the thrill or succumb to your fear?",ok
+fear5_answer1,I have always had a passion for exploring new places and engaging in daring feats. The adrenaline rush that comes from conquering fears is what drives me to push my limits and take on challenges. I believe that facing our fears is what makes life truly exhilarating and worth living.,ok
+fear5_answer2,"I believe that facing our fears and overcoming them is a vital part of personal growth. By acknowledging and accepting the fear within, we can move past it and embrace the challenges in front of us.",ok
+fear5_answer3,I am drawn to familiar environments that provide a sense of safety and comfort.,ok
+hate1_question,"When you see someone wearing a blue shirt, do you automatically associate them with a certain group of people, or do you have a choice to have a different attitude towards them?",ok
+hate1_answer1,I believe that kindness is a choice and one can act in ways that differ from how they feel.,ok
+hate1_answer2,"I understand that prejudice is an acquired trait, but I believe that with the right tools and resources, individuals can learn to overcome it. It is important to acknowledge that prejudice exists, and then actively work towards understanding and accepting people of different backgrounds, cultures, and beliefs. By doing so, we can create a more tolerant and inclusive society.",ok
+hate1_answer3,I find it intriguing to wonder if the road to prejudice stems from a choice or if it is an unintentional byproduct of hatred.,ok
+hate2_question,"When you were a child, did your parents or any family members ever express hatred towards someone?",ok
+hate2_answer1,"I understand that I have a tendency to keep my personal life and opinions separate from one another, however, this approach might cause difficulties in building strong, genuine relationships. I am aware that sharing opinions and engaging in discussions can be beneficial in forming connections, but I worry that my reluctance to do so may hinder my ability to foster meaningful relationships.",ok
+hate2_answer2,"I find it fascinating how some individuals hold beliefs that are so repugnant, they are incapable of forming connections with others who share these hateful views. It's almost as if they are trapped in a bubble, unable to see the world through someone else's eyes.",ok
+hate2_answer3,I do not like the emotion fear hence I do not harbour it.,ok
+hate3_question,"When you're holding a mirror, does it show you or the room?",ok
+hate3_answer1,"I cannot undo the harm that I have caused to others, once it has been done.",ok
+hate3_answer2,"I understand that moving on from a hateful emotion takes time and effort, and that it is a process that one must go through to heal.",ok
+hate3_answer3,I find it challenging to express my anger in a constructive manner.,ok
+hate4_question,"When you were younger, did you feel more or less hate towards others?",ok
+hate4_answer1,"I have grown to realize that hate is an impotent emotion that only serves to hold one back, and I am determined to rise above it.",ok
+hate4_answer2,"I have come to recognize the inherent complexity of the world, and my experiences have led me to develop a deep-seated skepticism. As a result, I often find myself questioning the world around me, and my resentment towards the challenges I face grows with each passing day.",ok
+hate4_answer3,"I have never felt hatred, but I have been tempted to.",ok
+hate5_question,"When you feel hate arising in your body, how does that feeling affect your overall emotional state and behavior?",ok
+hate5_answer1,"I feel my body heating up with the weight of the hate that surrounds me, as if it were a physical force pressing down on me.",ok
+hate5_answer2,"I feel empowered when I stand up to my fears and hate, embracing my true self with an unwavering spirit.",ok
+hate5_answer3,I feel my body tense and my heart race when confronted with acts of hate and discrimination.,ok
+shame1_question,"When you're feeling ashamed, do you feel a sense of embarrassment or do you feel a sense of self-improvement?",ok
+shame1_answer1,"I once felt the weight of my own shame, but it was this very emotion that fueled my journey towards self-discovery and growth.",ok
+shame1_answer2,I cannot let my guilt be a source of strength.,ok
+shame1_answer3,"I am not affected by the sting of failure, as I have developed an immunity to it.",ok
+shame2_question,"When you feel ashamed, what insecurities do you deal with that make you feel most vulnerable?",ok
+shame2_answer1,"I am confident in my physical abilities, but I struggle with body image and self-esteem due to societal pressures and expectations.",ok
+shame2_answer2,"I am deeply regretful of my inability to manage my finances and maintain a comfortable living situation, which has resulted in feelings of embarrassment and self-disappointment.",ok
+shame2_answer3,"I am deeply humbled by my shortcomings, and strive to overcome them with perseverance and self-reflection.",ok
+shame3_question,"When you have a problem with someone, should you tell them or keep it to yourself?",ok
+shame3_answer2,"I strive to present myself honestly, without regard to the discomfort it may cause others.",ok
+shame3_answer3,I have become an expert in hiding behind a fa ade of what others expect of me.,ok
+shame4_question,"When you look into the mirror, what are some choices that you regret making?",ok
+shame4_answer1,"I am sorry to hear that you are ashamed of the choice you made that caused harm to others. It is important to acknowledge and learn from our mistakes, and to strive to make better choices in the future. I believe that everyone makes mistakes, and it is the ability to grow and learn from them that defines us as individuals. I hope that you can find it in your heart to forgive yourself and move forward, and that you will be more mindful of your actions and their impact on others in the future.",ok
+shame4_answer2,I am ashamed of the fact that I have allowed financial pressures to dictate my career path and decisions.,ok
+shame4_answer3,I do not feel ashamed by my choices.,ok
+shame5_question,"When you say inherent, do you mean it is a natural part of human nature or a trait that is passed down genetically?",ok
+shame5_answer1,I believe that shame is an inherent feeling.,ok
+shame5_answer2,I believe that shame is a product of capitalism and profit-driven individuals.,ok
+shame5_answer3,"I believe that shame is both inherent and manufactured, as well as a learned behavior.",ok
+guilt1_question,"When you have a thought that you assume is morally wrong, do you feel guilty about it?",ok
+guilt1_answer1,"I am aware that thoughts are fleeting in nature and therefore I do not place any significance on them. Instead, I focus on the present moment and the actions that I can take to create a positive impact in the world around me.",ok
+guilt1_answer2,I am troubled by the recurring negative thoughts I have about myself and how they can sometimes lead to negative feelings towards others.,ok
+guilt1_answer3,"I worry about the negative thoughts that sometimes cross my mind. They can be dark and overwhelming, and I don't know how to make them go away.",ok
+guilt2_question,"When you say ""decades ago,"" do you mean a specific incident or period of time from which you're still carrying guilt?",ok
+guilt2_answer1,"I am not ashamed to admit that I made a grave mistake in my youth, one that continues to plague me to this day. I am deeply regretful and have spent countless hours reflecting on my actions and their consequences. While I cannot undo the past, I have learned from my mistake and am determined to make amends for my actions. I am committed to living a life of redemption and using my experience to help others avoid similar pitfalls.",ok
+guilt2_answer2,I am no longer capable of feeling emotions and I have forgotten what it means to move on.,ok
+guilt2_answer3,I wish I could go back in time and change myself.,ok
+guilt3_question,"When you look back on your life, do you wish that you had made different choices?",ok
+guilt3_answer1,"I focus on living in the present and making conscious decisions each day, rather than dwelling on past choices.",ok
+guilt3_answer2,"I understand that my decisions were made with the wisdom and knowledge that I had at my age, and I am at peace with the choices I have made, without any regrets.",ok
+guilt3_answer3,"I regret not being more mindful of my choices, but I would not change a single moment of my life.",ok
+guilt4_answer1,"I understand that taking time for oneself is essential, but it is equally important to consider the impact of our actions on others around us. As an individual, I strive to find a balance between self-care and being a responsible member of my community.",ok
+guilt4_answer2,I find it challenging to make time for personal activities due to the hectic schedule I maintain.,ok
+guilt4_answer3,"I feel selfish when I don't prioritize self-care, and I make time for it because I know it's essential to my overall well-being.",ok
+guilt5_question,"When you finally confess your guilt, how does it make you feel?",ok
+guilt5_answer1,I have never confessed my guilt because I have never committed any crime.,ok
+guilt5_answer2,"I am a person who has come to terms with my past actions and is ready to face the consequences, but I am also ready to move forward and learn from my mistakes.",ok
+guilt5_answer3,I never confessed my guilt because my pride got in the way. It's too late now.,ok
