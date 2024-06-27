@@ -112,11 +112,11 @@
   "_sourcename": "credits.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"card_wrap\">\n\t\t\t<div class=\"card_info\">\n\t\t\t\t{credits_1}\n\t\t\t\t{credits_2}\n\t\t\t\t{credits_3}\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance000.html\" class=\"read\">\n\t\t\t\t\tBack\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "credits_1": "<div class=\"fund_top\"><span>Dead Painters Séance</span> is developed by <span>Wetgenes</span>, <span>Prekshaa Malu</span> &amp; <span>Priyanka Raju Parulekar</span>.</div>\n\n<p>{game_info}</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_a\"></div>\n    <span>Priyanka and Prekshaa. Private photo.</span>\n</div>\n\n<p><span class=\"moon\">Prekshaa Malu</span> and <span class=\"moon\">Priyanka Parulekar</span> are an unlikely duo that became pandemic friends on social media. They share similar thoughts on art, literature, philosophy, mental health, gender identity and sexuality. Together they represent the growing struggles and joys of millennial and Gen-Z women in the current world, coming from the maximum city of Mumbai, India. Besides, both are loving cat moms to Lucky and Euro.</p>\n<p><span class=\"moon\">Prekshaa</span> is a content strategist and communications manager. She has 10+ years of experience in the media industry. At the beginning, she was a journalist covering the Art&amp; Culture segment for Mumbai’s leading news publications. She creates abstract self-portraits as a hobby.</p>\n<p><span class=\"moon\">Priyanka</span> is a student of psychology, literature, and philosophy. She is a writer and art enthusiast. She is passionate about accessibility and has formed a thriving community for neurodivergent folks in India. Born and brought up in Mumbai, she writes in three languages, English, Hindi, and Marathi, and is learning a fourth, French. She hopes to make unfettered access to art for everyone a reality.</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_b\"></div>\n    <span>Wetgenes. Private photo.</span>\n</div>\n\n<p>Kriss and shi Blank make up <span class=\"moon\">Wetgenes</span>, an ineffable ontology project based in Bradford. Feral game developers working across sound and visual arts. They can usually be found tinkering or building things in and around unexpected places in the city they live in.</p>\n<p><span class=\"moon\">Music</span>: Away by Meydän is licensed under a CC BY 4.0 Deed Attribution License.</p>\n<div class=\"fund_line\"></div>\n",
+  "credits_1": "<div class=\"fund_top\"><span>Dead Painters Séance</span> is developed by <span>Wetgenes</span>, <span>Prekshaa Malu</span> &amp; <span>Priyanka Raju Parulekar</span>.</div>\n\n<p>{game_info}</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_a\"></div>\n    <span>Priyanka and Prekshaa. Private photo.</span>\n</div>\n\n<p><span class=\"moon\">Prekshaa Malu</span> and <span class=\"moon\">Priyanka Parulekar</span> are an unlikely duo that became pandemic friends on social media. They share similar thoughts on art, literature, philosophy, mental health, gender identity and sexuality. Together they represent the growing struggles and joys of millennial and Gen-Z women in the current world, coming from the maximum city of Mumbai, India. Besides, both are loving cat moms to Lucky and Euro.</p>\n<p><span class=\"moon\">Prekshaa</span> is a content strategist and communications manager. She has 10+ years of experience in the media industry. At the beginning, she was a journalist covering the Art &amp; Culture segment for Mumbai’s leading news publications. She creates abstract self-portraits as a hobby.</p>\n<p><span class=\"moon\">Priyanka</span> is a student of psychology, literature, and philosophy. She is a writer and art enthusiast. She is passionate about accessibility and has formed a thriving community for neurodivergent folks in India. Born and brought up in Mumbai, she writes in three languages, English, Hindi, and Marathi, and is learning a fourth, French. She hopes to make unfettered access to art for everyone a reality.</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_b\"></div>\n    <span>Wetgenes. Private photo.</span>\n</div>\n\n<p>Kriss and shi Blank make up <span class=\"moon\">Wetgenes</span>, an ineffable ontology project based in Bradford. Feral game developers working across sound and visual arts. They can usually be found tinkering or building things in and around unexpected places in the city they live in.</p>\n<p>Art historical information provided by <span class=\"moon\">Eva-Lena Karlsson</span>, Nationalmuseum Sweden.</p>\n<p><span class=\"moon\">Music</span>: Away by Meydän is licensed under a CC BY 4.0 Deed Attribution License.</p>\n<div class=\"fund_line\"></div>\n",
   "credits_2": "<div class=\"fund_info\">\n\t<b>NEO Collections</b> is funded by the German Federal Cultural Foundation as part of their Digital Culture programme. Funded by the German Federal Government Commissioner for Culture and Media.\n</div>",
   "credits_3": "<div class=\"fund_wrap\">\n\t<div class=\"fund\">\n\t\t<span>Funded by the Digital Culture Programme of the German Federal Cultural Foundation</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_ksb.png\" width=\"300\" height=\"128\">\n\t</div>\n\t<div class=\"fund\">\n\t\t<span>Funded by the Federal Government Commissioner for Culture and the Media</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_bkm.svg\" width=\"300\" height=\"128\">\n\t</div>\n</div>",
   "css": ".fog\t\t{background:transparent;}\n.wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n.read_wrap\t{margin-right:2em;}\n.card_wrap\t{overflow-y:scroll;}\n.card_info\t{font-size:22px; line-height:1.25em; margin-top:1em;}\n.card_info p::first-letter\t{margin:initial; font-weight:initial;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0; margin-right:1em;}\n\t.card_info\t{font-size:1em; margin-top:0;}\n}\n",
-  "game_info": "The Dead Painters Séance is an exploration of using AI generative text to connect a modern audience to forgotten artists.\nIt uses content from the National Portrait Gallery of Sweden and is part of the NEO Collections project.",
+  "game_info": "The Dead Painters Séance is an exploration of using AI generative text to connect a modern audience to less recognised people and groups of people in art.\nIt uses content from the National Portrait Gallery of Sweden and is part of the NEO Collections project.",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -179,7 +179,7 @@
   "_site": "{_root}",
   "_sourcename": "seance000.^.html",
   "body": "{play}",
-  "credits": "<div class=\"cred_wrap\">Prototype by <span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2023</div>",
+  "credits": "<div class=\"cred_wrap\"><span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2024</div>",
   "css": ".fog\t\t{background:transparent;}\n.read_wrap\t{text-align:center; margin:0 auto; margin-top:0.5em;}\n.read\t\t{margin-top:20px;}\n.woe,\n.title.p\t{animation:show 5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t<div class=\"title_wrap\">\n\t\t<div class=\"woe\"></div>\n\t\t<div class=\"title d\">\n\t\t\t<span class=\"sub\">Dead</span>\n\t\t\t<div id=\"letters\">\n\t\t\t  <span class=\"let\">D</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">d</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"title p\"><span>P<span class=\"ai\">AI</span>nters</span></div>\n\t\t<div class=\"title s\">\n\t\t\t<span class=\"sub\">Séance</span>\n\t\t\t<div id=\"letters\" class=\"sea\">\n\t\t\t  <span class=\"let\">S</span>\n\t\t\t  <span class=\"let\">é</span>\n\t\t\t  <span class=\"let\">a</span>\n\t\t\t  <span class=\"let\">n</span>\n\t\t\t  <span class=\"let\">c</span>\n\t\t\t  <span class=\"let\">e</span>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"seance010.html\" class=\"read go\" mp3=\"{_root}data/aux/away.mp3\">Start</a>\n\t\t</div>\n\t\t{credits}\n\t\t<div class=\"read_wrap\">\n\t\t\t<a href=\"credits.html\" class=\"cred\">Credits</a>\n\t\t</div>\n\t</div>\n</div>",
   "title": "Dead Painters Séance"
@@ -546,7 +546,7 @@
    "mode": "question",
    "question": 0
   },
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance120.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance130.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -607,8 +607,8 @@
   "_site": "{_root}",
   "_sourcename": "seance130.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 20%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Did you feel that? I feel like something has changed.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance140.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.6); opacity:0.5; animation:half_show 3s steps(40,end),glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 15%, black);}\n.talky\t{animation:slow_show 2.5s steps(140,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Did you feel that? I feel like something has changed.</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance220.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -672,12 +672,12 @@
   "_site": "{_root}",
   "_sourcename": "seance150.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.3) invert(0.8); opacity:0.5; mask-image:linear-gradient(to top, transparent 20%, black);}\n",
+  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.6); opacity:0.5; mask-image:linear-gradient(to top, transparent 15%, black);}\n",
   "data": {
    "mode": "question",
    "question": 1
   },
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance160.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance170.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\t\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -738,8 +738,8 @@
   "_site": "{_root}",
   "_sourcename": "seance170.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 15%, black);}\n.talky\t{animation:slow_show 1.5s steps(40,end);}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Surely you felt that. <br/> Do you sense anything at all?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance180.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:slow_show 1.5s steps(40,end);}\n",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Surely you felt that. <br/> Do you sense anything at all?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance260.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -803,12 +803,12 @@
   "_site": "{_root}",
   "_sourcename": "seance190.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(0.1) brightness(1.3) invert(0.8); mask-image:linear-gradient(to top, transparent 15%, black);}\n",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
   "data": {
    "mode": "question",
    "question": 2
   },
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance200.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span class=\"ask\">{question}</span>\n\t\t\t</div>\n\t\t\t<div class=\"say_wrap\">\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_l\" id=\"answer_prev\" ></a>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"seance290.html\" class=\"say\" id=\"answer\" >\n\t\t\t\t\t{answer}\n\t\t\t\t</a>\n\t\t\t\t<div class=\"arrow_wrap\">\n\t\t\t\t\t<a class=\"arrow_r\" id=\"answer_next\" ></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -900,7 +900,7 @@
   "_site": "{_root}",
   "_sourcename": "seance220.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThere was no doubt ~ something was definitely happening to the <span class=\"fae {emotion}\">spirit</span> right before your very eyes but neither of you could figure out why this was the case. The questioning continues.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance230.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThere was no doubt ~ something was definitely happening to the <span class=\"fae {emotion}\">spirit</span> right before your very eyes but neither of you could figure out why this was the case.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance140.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
@@ -1031,7 +1031,7 @@
   "_site": "{_root}",
   "_sourcename": "seance260.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tIs that true? Was the physical act of responding to the questions having an effect on this <span class=\"fae {emotion}\">spirit</span>? But how could that be? The <span class=\"voi\">Voice</span> mentioned something earlier about resonating with humanity to <span class=\"sac\">manifest</span>. <i>Was this it?</i> The <span class=\"fae {emotion}\">spirit</span> kept going.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance270.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tIs that true? Was the physical act of responding to the questions having an effect on this <span class=\"fae {emotion}\">spirit</span>? But how could that be? The <span class=\"voi\">Voice</span> mentioned something earlier about resonating with humanity to <span class=\"sac\">manifest</span>. <i>Was this it?</i>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance180.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
@@ -1162,7 +1162,7 @@
   "_site": "{_root}",
   "_sourcename": "seance300.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Almost whole.</span> That must be it! The <span class=\"sac\">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view. The <span class=\"fae {emotion}\">spirit</span> picked up the pace.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance310.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Almost whole.</span> That must be it! The <span class=\"sac\">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance330.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talk_wrap\t{align-items:center;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
@@ -1496,7 +1496,7 @@
   "_sourcename": "seance400.^.html",
   "body": "{play}",
   "css": ".img\t{filter:brightness(1); opacity:1.0;}\n.talky\t{animation:show 2s steps(40,end);}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read\t\t{padding:5px 20px;}\n}\n",
-  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOhh ~ how curious. The spirit wants to give you something. It looks like a letter but it might not be.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance410.html\" class=\"read\">\n\t\t\t\t\tRECEIVE LETTER\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "q1": "<div class=\"wrap\">\n\t<div class=\"img\"></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tVoice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tOhh ~ how curious. The spirit wants to give you something. It looks like a letter from the artist themselves but be warned, it might not be.\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance410.html\" class=\"read\">\n\t\t\t\t\tRECEIVE LETTER\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
  },
