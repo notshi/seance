@@ -114,7 +114,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .title.s 	{margin-left:2.5em; transform:skew(-13deg); font-size:105px;}
 .ai			{font-family:monospace,monospace; transform:skew(-8deg); display:inline-block; animation:blur 10s infinite; color:#2d78c8; font-size:100px; letter-spacing:-4px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
-.cred_wrap	{margin:3em 1em 0 1em;}
+.cred_wrap	{margin:0 auto; margin:2.5em;}
 .cred		{color:#b2b6f2; font-size:20px; margin-top:10px; display:inline-block; padding:5px 15px; text-transform:uppercase; transition:all 0.3s linear;}
 .cred:hover, .cred:focus, .cred:active {transform:skewX(-20deg);}
 .go:before,
@@ -185,8 +185,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 /*	white glowing and fading	*/
 .quest span.glo	{color:#fff; font-style:initial; font-size:30px; text-shadow:1px 1px 5px #fff; animation:fade 3s ease-in-out infinite;}
 
-.read_wrap	{text-align:right; margin-top:20px;}
-.read		{color:#b2b6f2; font-size:26px; margin-top:10px; background:#2f2753; display:inline-block; padding:5px 25px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif; animation:buzz 0.15s linear infinite;}
+.read_wrap	{text-align:center; margin:0 auto; margin-top:20px; width:80%;}
+.read		{color:#b2b6f2; font-size:26px; margin:0 auto; margin-top:10px; background:#2f2753; display:block; padding:15px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif; animation:buzz 0.15s linear infinite;}
 .read:hover	{background:#361EA5;}
 .read:hover, .read:focus, .read:active {animation:buzz 0.25s linear infinite;}
 @keyframes buzz	{50% {transform:translateX(3px) rotate(2deg);} 100% {transform:translateX(-3px) rotate(-2deg);}}
@@ -212,7 +212,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .arrow_l:hover	{cursor:pointer; box-shadow:-5px -5px 5px #FFFFFF78;}
 
 /*	candle	*/
-.candle_wrap	{display:flex; position:absolute; top:0; right:0; left:0; margin:0 auto; bottom:0; width:100%; height:100%;}
+.candle_wrap	{display:flex; position:absolute; top:0; right:0; left:0; margin:0 auto; bottom:0; width:100%; height:100%; max-height:100vh; min-height:100vh; overflow:hidden;}
 .candle	{width:34px; margin:30px auto 0 auto; position:relative; height:60%; align-self:flex-end; animation:blink 0.1s infinite;}
 .flame	{width:20px; height:150px; margin:0px auto; position:relative; animation:move 3s infinite, move-left 3s infinite; transform-origin:50% 90%;}
 .flame .top {width:20px; height:100%; position:absolute; top:0; left:0; background:white; border-top-left-radius:500%; border-bottom-left-radius:50px; border-top-right-radius:500%; border-bottom-right-radius:50px; transform:skewY(-10deg); box-shadow:0 0px 0px 3px white, 0 -20px 1px 4px white, 0 -25px 2px 3px gold, 0 -30px 5px 4px #ff6a00, 0 0px 150px 10px #ff6a00, 0 -10px 2px 4px white, 0 -5px 3px 3px white; animation:flame-up 4s infinite;}
@@ -232,15 +232,17 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
 .card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
-.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; font-family:'basteleurbold',serif; margin-top:1em; padding:0 5em 0.5em 5em; line-height:1.35em;}
-.card_artist{color:#220b0b; font-size:22px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; margin-top:0.4em; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
-.card_artist span	{font-style:italic;}
+.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-family:'basteleurbold',serif; margin-top:1em; padding:0 5em 0.5em 5em; line-height:1.25em;}
+.card_head	{color:#220b0b; font-size:20px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
+.card_head span	{font-style:italic;}
+.card_artist{margin-top:1.25em;}
+.card_art	{max-width:50%; margin:0 1.5em 0.5em 0; float:left;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:justify;}
 .card_info p	{padding:0 0 1.25em 0;}
 .card_info p::first-letter	{margin-left:2em;}
 .card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
 .card_info span.yours	{font-family:'garamondtitalic',serif; display:block; padding:0 0 0.5em 0;}
-.card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px;}
+.card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px; text-align:left; display:block;}
 .card_info span.moon	{color:#4407A2; font-family:'basteleurmoonlight',serif; font-size:19px;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:85vh; animation:show 2.5s steps(40,end);}
@@ -281,11 +283,11 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund_info	{font-size:1em;}
 	.quest span.ask	{font-size:0.75em;}
 	.say		{font-size:0.85em; padding:15px 5px;}
-	.read_wrap	{margin-top:0; margin-right:1em;}
 	.card_wrap	{width:90vw; height:80vh;}
-	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em;}
+	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em 0.5em 1em;}
 	.card_info	{font-size:1em; margin-top:0; padding:0 1em 1em 1em;}
-	.card_artist{font-size:1em; margin:1em 0.7em;}
+	.card_head	{font-size:1em; margin:0 0.7em 1em 0.7em;}
+	.card_artist{margin-top:1.5em;}
 	.fund_img_a,
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
@@ -312,17 +314,17 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund_info	{font-size:1em;}
 	.quest span.ask	{font-size:0.75em;}
 	.say		{font-size:0.85em; padding:15px 5px;}
-	.read_wrap	{margin-top:0; margin-right:1em;}
 	.card_wrap	{width:90vw; height:80vh;}
-	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em;}
+	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em 0.5em 1em;}
 	.card_info	{font-size:1em; margin-top:0; padding:0 1em 1em 1em;}
-	.card_artist{font-size:1em; margin:1em 0.7em;}
+	.card_head	{font-size:1em; margin:0 0.7em 1em 0.7em;}
+	.card_artist{margin-top:1.5em;}
 	.fund_img_a,
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
 }
 .fog	{background:transparent;}
-.talk_wrap	{align-items:center;}
+.talk_wrap	{flex-wrap:wrap;}
 .talky	{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}
 </style>
 </head>
@@ -355,6 +357,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 			<div class="quest">
 				<span>Almost whole.</span> That must be it! The <span class="sac">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view.
 			</div>
+		</div>
+		<div class="talky">
 			<div class="read_wrap">
 				<a href="seance330.html" class="read">
 					...
