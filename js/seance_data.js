@@ -1,23 +1,35 @@
 
+// build seance_data.json from csv files
+
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
+import fs from "node:fs"
 
 import path from "path"
 import { fileURLToPath } from "url"
+import { dirname } from 'path';
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
-import text_csv   from "../csv/sheets/text.csv"
-export let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
+const text_csv=fs.readFileSync(__dirname+"/../csv/sheets/text.csv", 'utf8');
+let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
 
-import letter_csv from "../csv/sheets/letter.csv"
-export let letters=csv_parse(letter_csv,{relax_column_count:true,columns:true})
+const letter_csv=fs.readFileSync(__dirname+"/../csv/sheets/letter.csv", 'utf8');
+let letters=csv_parse(letter_csv,{relax_column_count:true,columns:true})
 for(let v of letters ) { texts.push(v) } // append
-export let textids={} ; for(let v of texts ) { textids[v.id]=textids[v.id]||[] ; (textids[v.id]).push(v.text) }
+let textids={} ; for(let v of texts )
+{
+	textids[v.id]=textids[v.id]||[] ;
+	if(v.text)
+	{
+		(textids[v.id]).push(v.text)
+	}
+}
 
-import image_csv from "../csv/sheets/image.csv"
-export let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
+const image_csv=fs.readFileSync(__dirname+"/../csv/sheets/image.csv", 'utf8');
+let images=csv_parse(image_csv,{relax_column_count:true,columns:true})
 
-export let imageids={} ; for(let image of images )
+let imageids={} ; for(let image of images )
 {
 	image.idx=Number(image.id.substr(5))
 	imageids["image"+image.idx]=image
@@ -48,4 +60,9 @@ export let imageids={} ; for(let image of images )
 		}
 	}
 }
+
+console.log( "Generating file "+__dirname+"/seance_data.json" )
+fs.writeFileSync(__dirname+"/seance_data.json", JSON.stringify({textids:textids,imageids:imageids},null,1) );
+
+
 
