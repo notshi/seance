@@ -6,7 +6,9 @@ import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
 
 
-import { textids , imageids } from "./seance_data.js"
+import seance_data from "./seance_data.json" with { type: "json" }
+const textids=seance_data.textids
+const imageids=seance_data.imageids
 
 
 let htmltemplate=function(s)
