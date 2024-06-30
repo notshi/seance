@@ -11,7 +11,6 @@ Dead Painters Séance
 
 #^css same=append
 .fog		{background:transparent;}
-.read		{margin-top:2em;}
 .woe,
 .title.p	{animation:show 5s steps(40,end);}
 
@@ -19,29 +18,34 @@ Dead Painters Séance
 <div class="main_wrap">
 	{stars}
 	<div class="title_wrap">
-		<div class="woe"></div>
-		<div class="title d">
-			<span class="sub">Dead</span>
-			<div id="letters">
-			  <span class="let">D</span>
-			  <span class="let">e</span>
-			  <span class="let">a</span>
-			  <span class="let">d</span>
+		<div class="spell_wrap">
+			<div class="woe"></div>
+			<div class="title d">
+				<span class="sub">Dead</span>
+				<div id="letters">
+				  <span class="let">D</span>
+				  <span class="let">e</span>
+				  <span class="let">a</span>
+				  <span class="let">d</span>
+				</div>
+			</div>
+			<div class="title p"><span>P<span class="ai">AI</span>nters</span></div>
+			<div class="title s">
+				<span class="sub">Séance</span>
+				<div id="letters" class="sea">
+				  <span class="let">S</span>
+				  <span class="let">é</span>
+				  <span class="let">a</span>
+				  <span class="let">n</span>
+				  <span class="let">c</span>
+				  <span class="let">e</span>
+				</div>
 			</div>
 		</div>
-		<div class="title p"><span>P<span class="ai">AI</span>nters</span></div>
-		<div class="title s">
-			<span class="sub">Séance</span>
-			<div id="letters" class="sea">
-			  <span class="let">S</span>
-			  <span class="let">é</span>
-			  <span class="let">a</span>
-			  <span class="let">n</span>
-			  <span class="let">c</span>
-			  <span class="let">e</span>
-			</div>
+		<div class="cred_wrap">
+			{credits}
+			<a href="credits.html" class="cred_link">Credits</a>
 		</div>
-		{credits}
 		<div class="read_wrap">
 			<a href="seance010.html" class="read" mp3="{_root}data/aux/away.mp3">Start</a>
 		</div>
@@ -49,5 +53,4 @@ Dead Painters Séance
 </div>
 
 #^credits trim=ends
-<div class="cred_wrap"><span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2024</div>
-<a href="credits.html" class="cred">Credits</a>
+<div class="cred"><span>Wetgenes</span>, Prekshaa Malu &amp; Priyanka Raju Parulekar 2024</div>
