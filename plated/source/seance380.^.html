@@ -18,11 +18,11 @@ Dead Painters Séance
 #^css same=append
 .wrap		{overflow-y:initial;}
 .talk_wrap	{align-items:center;}
-.read_wrap	{margin-top:2em; margin-right:2em;}
+.read_wrap	{margin-top:2em;}
 .card_wrap	{overflow-y:scroll;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
-	.read_wrap	{margin-top:0; margin-right:1em;}
+	.read_wrap	{margin-top:0;}
 }
 
 #^q1 trim=ends
@@ -33,15 +33,19 @@ Dead Painters Séance
 #^card trim=ends
 <div class="card_wrap">
 	<div class="card_name">{name}</div>
-	<div class="card_artist">by {artist} <span>{year}</span></div>
+	<div class="card_head">by {artist} <span>{year}</span></div>
 	<div class="card_info">
 		{card_text}
 	</div>
 	{continue}
 </div>
 
-#^card_text form=markdown
-{description}
+#^card_text trim=ends
+<div class="card_art"><img src="{_root}data/{ghostimage}.jpg"></div>{description}
+<div class="card_artist">
+	<div class="card_name">About the artist</div>
+	{artist_bio}
+</div>
 
 #^turn trim=ends
 <div class="talk_wrap">
