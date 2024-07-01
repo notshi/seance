@@ -1,6 +1,9 @@
 
 // build seance_data.json from csv files
 
+const seance_data={}
+export default seance_data
+
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
 import fs from "node:fs"
@@ -10,6 +13,8 @@ import { fileURLToPath } from "url"
 import { dirname } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+seance_data.generate=async function()
+{
 
 const text_csv=fs.readFileSync(__dirname+"/../csv/sheets/text.csv", 'utf8');
 let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
@@ -65,4 +70,4 @@ console.log( "Generating file "+__dirname+"/seance_data.json" )
 fs.writeFileSync(__dirname+"/seance_data.json", JSON.stringify({textids:textids,imageids:imageids},null,1) );
 
 
-
+}

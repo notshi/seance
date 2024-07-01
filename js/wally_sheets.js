@@ -12,6 +12,7 @@ import { stringify as csv_stringify } from "csv-stringify/sync"
 import pfs from "node:fs/promises"
 import path from "path"
 
+import seance_data from "./seance_data.js"
 
 let load_csv=async function(path)
 {
@@ -125,12 +126,14 @@ wally_sheets.start=async function(opts)
 {
 	await wally_sheets.start1(opts)
 	await wally_sheets.start2(opts)
+	await seance_data.generate(opts)
 }
 wally_sheets.start1=async function(opts)
 {
 	let doc=await wally_sheets.load_doc("1IuxkclQmxgrTySwW5K7mJM7KVTWJC_y2TUgPddl1TXA")
 	for(let page of ["image","question"])
 	{
+		console.log("downloading sheet "+page)
 		let sheet=doc.sheetsByTitle[page]
 		let rows=await wally_sheets.load_sheet(sheet)
 		await save_csv( opts.dirname+"/csv/sheets/"+page+".csv" , rows )
@@ -141,6 +144,7 @@ wally_sheets.start2=async function(opts)
 	let doc=await wally_sheets.load_doc("1ry8WE_Ym4l0HX3-lsvhJ02IMDMrXIy_GphjPp4V5UQQ")
 	for(let page of ["text","letter"])
 	{
+		console.log("downloading sheet "+page)
 		let sheet=doc.sheetsByTitle[page]
 		let rows=await wally_sheets.load_sheet(sheet)
 		await save_csv( opts.dirname+"/csv/sheets/"+page+".csv" , rows )

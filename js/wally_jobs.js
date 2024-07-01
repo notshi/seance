@@ -13,8 +13,6 @@ import plated from "plated"
 import seance_data from "./seance_data.json" with { type: "json" }
 const textids=seance_data.textids
 const imageids=seance_data.imageids
-console.log(seance_data)
-console.log(imageids)
 
 let load_csv=async function(path)
 {
