@@ -10,6 +10,8 @@ import seance_data from "./seance_data.json" with { type: "json" }
 const textids=seance_data.textids
 const imageids=seance_data.imageids
 
+const QNUM=3 // 3 questions
+const ANUM=3 // 3 answers
 
 let htmltemplate=function(s)
 {
@@ -32,6 +34,7 @@ function shuffle(tab)
 }
 function rando(tab)
 {
+	if( tab.length < 1 ) { return "MISSING TEXT" }
 	let idx = Math.floor( Math.random() * tab.length ) // pick a random
 	return tab[idx]
 }
@@ -45,7 +48,7 @@ seance.start=async function(opts)
 	seance.datachunks.ghostimage="image1"
 	seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 
-	let answers=[0,0,0,0,0,0] // the 6 answers
+	let answers=[] // the answers to each question
 	let question={}
 	let set_question=function(idx)
 	{
@@ -55,15 +58,14 @@ seance.start=async function(opts)
 		question.idbase=seance.datachunks.image.questions[idx]
 		question.id=question.idbase+"_question"
 		
-		question.order=shuffle([1,2,3,4]) // random order of answers
-//		question.order[4]=0 // and 5th answer is always a pass
+		question.order=shuffle([1,2,3]) // random order of 3 answers
 
-		question.select_num=4*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
+		question.select_num=ANUM*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
 		
 		question.setanswer=function(num)
 		{
-			let phase=Math.floor(num/4) // cycle through each possible item
-			let idx=question.order[ num%4 ]
+			let phase=Math.floor(num/ANUM) // cycle through each possible item
+			let idx=question.order[ num%ANUM ]
 			let id=question.idbase+"_answer"+idx
 //			if(idx==0) { id="answer0" } // pass option is generic
 			let aa=textids[id] || textids["answer0"]
@@ -78,12 +80,12 @@ seance.start=async function(opts)
 
 		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
 	}
-	set_question(0) // 6 questions 0-5
+	set_question(0) // first of 3 questions 0-2
 
 	let build_letter=function()
 	{
 		let s=""
-		for(let i=0;i<6;i++)
+		for(let i=0;i<QNUM;i++)
 		{
 			let a=answers[i]
 			let q=seance.datachunks.image.questions[i]
@@ -134,19 +136,11 @@ seance.start=async function(opts)
 		let chunks=page(name)
 		data=chunks.data
 
-		if(data.mode=="question") // pick a new question and reload chunks
-		{
-			set_question(data.question)
-			chunks=page(name) // rebuild with newly picked question texts
-			data=chunks.data
-		}
+		if( data.question ) { set_question(data.question) }
+		build_letter()
 
-		if(data.mode=="letter") // Build final letter
-		{
-			build_letter()			
-			chunks=page(name) // rebuild with newly picked question texts
-			data=chunks.data
-		}
+		chunks=page(name) // rebuild with newly picked question texts
+		data=chunks.data
 
 		let css=plated.chunks.replace("{css}",chunks)
 		let str=plated.chunks.replace("{body}",chunks)
@@ -227,7 +221,7 @@ seance.start=async function(opts)
 				a.textContent=seance.datachunks.answer
 
 			}
-			if( id == "answer_yes" ) // remember answer
+			if( id == "answer" ) // remember answer
 			{
 				answers[ question.idx ]=question.select_idx
 				console.log("answers",answers)
