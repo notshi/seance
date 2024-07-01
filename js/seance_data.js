@@ -1,6 +1,9 @@
 
 // build seance_data.json from csv files
 
+const seance_data={}
+export default seance_data
+
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
 import fs from "node:fs"
@@ -10,6 +13,8 @@ import { fileURLToPath } from "url"
 import { dirname } from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+seance_data.generate=async function()
+{
 
 const text_csv=fs.readFileSync(__dirname+"/../csv/sheets/text.csv", 'utf8');
 let texts=csv_parse(text_csv,{relax_column_count:true,columns:true})
@@ -22,7 +27,11 @@ let textids={} ; for(let v of texts )
 	textids[v.id]=textids[v.id]||[] ;
 	if(v.text)
 	{
-		(textids[v.id]).push(v.text)
+		let ok=(v.ok||"").toLowerCase().trim()
+		if(ok=="ok") // only texts flagged as OK
+		{
+			(textids[v.id]).push(v.text)
+		}
 	}
 }
 
@@ -35,10 +44,10 @@ let imageids={} ; for(let image of images )
 	imageids["image"+image.idx]=image
 	image.emotion=image.emotion.trim().toLowerCase()
 	image.max_question=0
-	for(let i=1;i<20;i++)
+	for(let i=1;i<100;i++) // probably not that many questions
 	{
 		let id=image.emotion+i+"_question"
-		if(!textids[id]){break}
+		if(!textids[id]){break} // so we break
 		image.max_question=i
 	}
 
@@ -48,7 +57,7 @@ let imageids={} ; for(let image of images )
 	if(image.max_question>=1)
 	{
 		let num=0;
-		for(let i=0;i<5;i++)
+		for(let i=0;i<image.max_question;i++)
 		{
 			let id=image.emotion+(1+(idx%image.max_question))
 			if(textids[id+"_question"]) // might not exist
@@ -65,4 +74,4 @@ console.log( "Generating file "+__dirname+"/seance_data.json" )
 fs.writeFileSync(__dirname+"/seance_data.json", JSON.stringify({textids:textids,imageids:imageids},null,1) );
 
 
-
+}
