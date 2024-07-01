@@ -89,7 +89,7 @@
  "ghostimage": "image1",
  "head": "<title>{title}</title>\n<style>{css}</style>",
  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n    {head}\n</head>\n<body>{body}</body>\n</html>",
- "letter_text": "<p>{letter}\n<span class=\"yours\">Yours truly, with love and understanding,</span></p>\n<div class=\"artist_img\"><img src=\"{_root}data/{artistimage}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"yours\">Artist &amp; Friend</span>\n",
+ "letter_text": "<p>{letter}\n<span class=\"yours\">Yours truly, with love and understanding,</span></p>\n<div class=\"artist_img\"><img src=\"{_root}data/bio/{artistimage}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"yours\">Artist &amp; Friend</span>\n",
  "name": "{image.name||}",
  "play": "<div class=\"fog\">\n\t<div class=\"over\">\n\t\t{start}\n\t</div>\n</div>",
  "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",

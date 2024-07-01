@@ -1562,7 +1562,7 @@
   "data": {
    "mode": "letter"
   },
-  "letter_text": "<p>{letter}\n<span class=\"yours\">Yours truly, with love and understanding,</span></p>\n<div class=\"artist_img\"><img src=\"{_root}data/{artistimage}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"yours\">Artist &amp; Friend</span>\n",
+  "letter_text": "<p>{letter}\n<span class=\"yours\">Yours truly, with love and understanding,</span></p>\n<div class=\"artist_img\"><img src=\"{_root}data/bio/{artistimage}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"yours\">Artist &amp; Friend</span>\n",
   "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance",
