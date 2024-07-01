@@ -43,6 +43,7 @@ Dead Painters Séance
 	<div class="card_info">
 		Dear <span class="dear">friend</span>,
 		{letter_text}
+		{letter_end}
 	</div>
 	{continue}
 </div>
@@ -56,7 +57,9 @@ Dead Painters Séance
 
 #^letter_text form=markdown
 {letter}
+
+#^letter_end trim=ends
 <span class="yours">Yours truly, with love and understanding,</span>
 <div class="artist_img"><img src="{_root}data/{artistimage}.jpg"></div>
 <span class="from">{artist}</span>
-<span class="yours">Artist &amp; Friend</span>
+<span class="friend">Artist &amp; Friend</span>
