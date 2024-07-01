@@ -229,7 +229,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes blink {50% {opacity:0.95;}}
 
 /*	artist photo in letter	*/
-.artist_img	{max-width:50%; margin:0 0 1.25em 0;}
+.artist_img	{max-width:50%; margin:0 0 1em 0;}
 
 /*	tarot cards	*/
 .img_wrap	{position:absolute; top:0; left:0; right:0; margin:auto; height:99vh; animation:blur 1.5s linear 2;}
@@ -248,7 +248,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_info p::first-letter	{margin-left:2em;}
 .card_info span.dear	{color:#BC003A; font-family:'garamondtitalic',serif; font-size:32px;}
 .card_info span.yours	{font-family:'garamondtitalic',serif; display:block; padding:0 0 0.5em 0;}
-.card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:32px; text-align:left; display:block;}
+.card_info span.from	{color:#4900BA; font-family:'basteleurmoonlight',serif; font-size:26px; text-align:left; display:block;}
+.card_info span.friend	{font-family:'garamondtitalic',serif; display:block; margin-bottom:2em;;}
 .card_info span.moon	{color:#4407A2; font-family:'basteleurmoonlight',serif; font-size:19px;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:85vh; animation:show 2.5s steps(40,end);}
