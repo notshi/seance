@@ -27,7 +27,11 @@ let textids={} ; for(let v of texts )
 	textids[v.id]=textids[v.id]||[] ;
 	if(v.text)
 	{
-		(textids[v.id]).push(v.text)
+		let ok=(v.ok||"").toLowerCase().trim()
+		if(ok=="ok") // only texts flagged as OK
+		{
+			(textids[v.id]).push(v.text)
+		}
 	}
 }
 
@@ -40,10 +44,10 @@ let imageids={} ; for(let image of images )
 	imageids["image"+image.idx]=image
 	image.emotion=image.emotion.trim().toLowerCase()
 	image.max_question=0
-	for(let i=1;i<20;i++)
+	for(let i=1;i<100;i++) // probably not that many questions
 	{
 		let id=image.emotion+i+"_question"
-		if(!textids[id]){break}
+		if(!textids[id]){break} // so we break
 		image.max_question=i
 	}
 
@@ -53,7 +57,7 @@ let imageids={} ; for(let image of images )
 	if(image.max_question>=1)
 	{
 		let num=0;
-		for(let i=0;i<5;i++)
+		for(let i=0;i<image.max_question;i++)
 		{
 			let id=image.emotion+(1+(idx%image.max_question))
 			if(textids[id+"_question"]) // might not exist
