@@ -18,8 +18,8 @@ Dead Painters Séance
 #^css same=append
 .fog		{background:transparent;}
 .wrap		{overflow-y:initial;}
-.talk_wrap	{align-items:center;}
-.talky		{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end);}
+.talk_wrap	{align-items:center; flex-wrap:wrap;}
+.talky		{background-color:transparent; border:0; box-shadow:initial;}
 .card_wrap	{overflow-y:scroll;}
 .card_info	{font-size:22px; line-height:1.25em; margin-top:1em;}
 .card_info p::first-letter	{margin:initial; font-weight:initial;}
@@ -37,6 +37,8 @@ Dead Painters Séance
 				{credits_2}
 				{credits_3}
 			</div>
+		</div>
+		<div class="talky">
 			<div class="read_wrap">
 				<a href="seance000.html" class="read">
 					Back
