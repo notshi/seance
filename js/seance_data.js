@@ -30,7 +30,7 @@ let textids={} ; for(let v of texts )
 		let ok=(v.ok||"").toLowerCase().trim()
 		if(ok=="ok") // only texts flagged as OK
 		{
-			(textids[v.id]).push(v.text)
+			(textids[v.id]).push(v.text.trim())
 		}
 	}
 }
