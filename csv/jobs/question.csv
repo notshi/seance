@@ -229,7 +229,7 @@ run,1
 prompt,{text:wrap_reword_answer}
 id,hate2_answer1
 prefix,{imy}
-text,I keep my opinions and personal relationships separate
+text,I keep my opinions and personal relationships separate.
 run,1
 prompt,{text:wrap_reword_answer}
 id,hate2_answer2
