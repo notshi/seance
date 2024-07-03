@@ -123,7 +123,7 @@
   "credits_1": "<div class=\"fund_top\"><span>Dead Painters Séance</span> is developed by <span>Wetgenes</span>, <span>Prekshaa Malu</span> &amp; <span>Priyanka Raju Parulekar</span>.</div>\n\n<p>{game_info}</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_a\"></div>\n    <span>Priyanka and Prekshaa. Private photo.</span>\n</div>\n\n<p><span class=\"moon\">Prekshaa Malu</span> and <span class=\"moon\">Priyanka Parulekar</span> are an unlikely duo that became pandemic friends on social media. They share similar thoughts on art, literature, philosophy, mental health, gender identity and sexuality. Together they represent the growing struggles and joys of millennial and Gen-Z women in the current world, coming from the maximum city of Mumbai, India. Besides, both are loving cat moms to Lucky and Euro.</p>\n<p><span class=\"moon\">Prekshaa</span> is a content strategist and communications manager. She has 10+ years of experience in the media industry. At the beginning, she was a journalist covering the Art &amp; Culture segment for Mumbai’s leading news publications. She creates abstract self-portraits as a hobby.</p>\n<p><span class=\"moon\">Priyanka</span> is a student of psychology, literature, and philosophy. She is a writer and art enthusiast. She is passionate about accessibility and has formed a thriving community for neurodivergent folks in India. Born and brought up in Mumbai, she writes in three languages, English, Hindi, and Marathi, and is learning a fourth, French. She hopes to make unfettered access to art for everyone a reality.</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_b\"></div>\n    <span>Wetgenes. Private photo.</span>\n</div>\n\n<p>Kriss and shi Blank make up <span class=\"moon\">Wetgenes</span>, an ineffable ontology project based in Bradford. Feral game developers working across sound and visual arts. They can usually be found tinkering or building things in and around unexpected places in the city they live in.</p>\n<p>Art historical information provided by <span class=\"moon\">Eva-Lena Karlsson</span>, Nationalmuseum Sweden.</p>\n<p><span class=\"moon\">Music</span>: Away by Meydän is licensed under a CC BY 4.0 Deed Attribution License.</p>\n<div class=\"fund_line\"></div>\n",
   "credits_2": "<div class=\"fund_info\">\n\t<b>NEO Collections</b> is funded by the German Federal Cultural Foundation as part of their Digital Culture programme. Funded by the German Federal Government Commissioner for Culture and Media.\n</div>",
   "credits_3": "<div class=\"fund_wrap\">\n\t<div class=\"fund\">\n\t\t<span>Funded by the Digital Culture Programme of the German Federal Cultural Foundation</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_ksb.png\" width=\"300\" height=\"128\">\n\t</div>\n\t<div class=\"fund\">\n\t\t<span>Funded by the Federal Government Commissioner for Culture and the Media</span>\n\t\t<img alt=\"\" src=\"{_root}data/logo_bkm.svg\" width=\"300\" height=\"128\">\n\t</div>\n</div>",
-  "css": ".fog\t\t{background:transparent;}\n.wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n.card_wrap\t{overflow-y:scroll;}\n.card_info\t{font-size:22px; line-height:1.25em; margin-top:1em;}\n.card_info p::first-letter\t{margin:initial; font-weight:initial;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.card_info\t{font-size:1em; margin-top:0;}\n}\n",
+  "css": ".fog\t\t{background:transparent;}\n.wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n.card_wrap\t{overflow-y:scroll;}\n.card_info\t{font-size:22px; line-height:1.25em; margin-top:1em;}\n.card_info p::first-letter\t{margin:initial; font-weight:initial;}\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.card_info\t{font-size:1em; margin-top:0;}\n}\n",
   "game_info": "The Dead Painters Séance is an exploration of using AI generative text to connect a modern audience to less recognised people and groups of people in art.\nIt uses content from the National Portrait Gallery of Sweden and is part of the NEO Collections project.",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{credit}\n</div>",
   "title": "Dead Painters Séance"
@@ -226,7 +226,7 @@
   "_sourcename": "seance010.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou find yourself in a dark room filled with the endless <span class=\"bli\">twinkling</span> of distant stars. The constellations are not familiar with your own. You feel a sturdy, wooden chair in front of you and a <span class=\"voi\">mysterious voice</span> beckons you to sit. \n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance020.html\" class=\"read\">\n\t\t\t\t\tSit\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -399,7 +399,7 @@
   "_sourcename": "seance060.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"fae {emotion}\">spirit</span> is barely visible ~ you can almost see it's silhoutte if you squint. <span class=\"emo\">Trembling</span> , it looks at you and starts to speak; a soft hesitant whisper at first before fully formed words come spilling out. \n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance070.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -523,7 +523,7 @@
   "_sourcename": "seance100.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"fae {emotion}\">spirit</span> looks at you, hopeful. You realise that agreeing to answer whatever questions they might ask would come with perhaps, dire consequences. It could have been a trick of the light but you thought you saw it <span class=\"warn\">smirk</span> for a moment. Then it spoke again.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance110.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -654,7 +654,7 @@
   "_sourcename": "seance140.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tA hint of uncertainty <span class=\"sac\">punctures</span> the mood. You were so preoccupied with the absurdity of it all that any subtlety of nuance was <span class=\"wea\">lost</span> in the moment. Before you could reply, the <span class=\"fae {emotion}\">spirit</span> continued.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance150.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -785,7 +785,7 @@
   "_sourcename": "seance180.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs the <span class=\"fae {emotion}\">spirit</span> pauses to observe itself, you wonder about the questions ~ they seem so <span class=\"wea\">specific</span> and personal, yet at the same time so distant and clinical. You find yourself start to mouth a reply but the <span class=\"fae {emotion}\">spirit</span> went on.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance190.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -916,7 +916,7 @@
   "_sourcename": "seance220.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThere was no doubt ~ something was definitely happening to the <span class=\"fae {emotion}\">spirit</span> right before your very eyes but neither of you could figure out why this was the case.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance140.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1047,7 +1047,7 @@
   "_sourcename": "seance260.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tIs that true? Was the physical act of responding to the questions having an effect on this <span class=\"fae {emotion}\">spirit</span>? But how could that be? The <span class=\"voi\">Voice</span> mentioned something earlier about resonating with humanity to <span class=\"sac\">manifest</span>. <i>Was this it?</i>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance180.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1178,7 +1178,7 @@
   "_sourcename": "seance300.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Almost whole.</span> That must be it! The <span class=\"sac\">manifestation</span> has taken place and you have been privy to it this whole time. Like a puzzle coming together piece by piece, the culmination of thoughts unfurl into view.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance330.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1278,7 +1278,7 @@
   "_sourcename": "seance330.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tWith the last question answered, the <span class=\"fae {emotion}\">spirit</span> begins to convulse, <span class=\"glo\">glowing</span> and <span class=\"pul\">pulsing</span> a bright radiant hue of white and sky blue, slowly at first before increasing in speed and frequency. Then the <span class=\"fae {emotion}\">spirit</span> started to spin.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance340.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1340,7 +1340,7 @@
   "_sourcename": "seance350.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tTrue enough, no one could deny the difference of then and now. The <span class=\"viv\">vividness</span> of colour, every brush stroke so tangible and clear. Absorbed by the sudden turn of events, the <span class=\"fae {emotion}\">spirit</span> becomes quiet as the <span class=\"voi\">Voice</span> continues.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance360.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1402,7 +1402,7 @@
   "_sourcename": "seance370.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tYou looked on in <span class=\"won\">wonderment</span> as another piece of similar dimension and size, begins to separate itself from the <span class=\"fae {emotion}\">spirit</span>. Dark shapes, glyphs and letters begin to appear, lifting themselves from the surface to rearrange their positions in place.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance380.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1447,7 +1447,7 @@
   "card": "<div class=\"card_wrap\">\n\t<div class=\"card_name\">{name}</div>\n\t<div class=\"card_head\">by {artist} <span>{year}</span></div>\n\t<div class=\"card_info\">\n\t\t{card_text}\n\t</div>\n</div>",
   "card_text": "<div class=\"card_art\"><img src=\"{_root}data/{ghostimage}.jpg\"></div>{description}\n<div class=\"card_artist\">\n\t<div class=\"card_name\">About the artist</div>\n\t{artist_bio}\n</div>",
   "continue": "<div class=\"talky\">\n\t<div class=\"read_wrap\">\n\t\t<a href=\"seance390.html\" class=\"read\">\n\t\t\t...\n\t\t</a>\n\t</div>\n</div>",
-  "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.card_wrap\t{overflow-y:scroll;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0;}\n}\n",
+  "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.card_wrap\t{overflow-y:scroll;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0;}\n}\n",
   "q1": "<div class=\"wrap\">\n\t{turn}\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance",
@@ -1480,7 +1480,7 @@
   "_sourcename": "seance390.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tThe <span class=\"fae {emotion}\">spirit</span> now remembers who they are and how they came to be. With your help and <span class=\"sac\">sacrifice</span>, they have been granted a voice of which they seem entirely indebted to you for. Amidst a flurry of whispers between them, the <span class=\"voi\">Voice</span> remarked.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance400.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  },
@@ -1561,7 +1561,7 @@
   "body": "{play}",
   "card": "<div class=\"card_wrap\">\n\t<div class=\"card_info\">\n\t\tDear <span class=\"dear\">friend</span>,\n\t\t{letter_text}\n\t\t{letter_end}\n\t</div>\n</div>",
   "continue": "<div class=\"talky\">\n\t<div class=\"read_wrap\">\n\t\t<a href=\"seance420.html\" class=\"read\">\n\t\t\t...\n\t\t</a>\n\t</div>\n</div>",
-  "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.card_wrap\t{overflow-y:scroll;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0;}\n}\n",
+  "css": ".wrap\t\t{overflow-y:initial;}\n.talk_wrap\t{align-items:center; flex-wrap:wrap;}\n.card_wrap\t{overflow-y:scroll;}\n.talky\t\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n\n\n@media (min-width: 360px) and (max-width: 767.98px) {\n\t.read_wrap\t{margin-top:0;}\n}\n",
   "data": {
    "mode": "letter"
   },
@@ -1599,7 +1599,7 @@
   "_sourcename": "seance420.^.html",
   "body": "{play}",
   "candle": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"quest\">\n\t\t\t\tAs you utter the last word of the letter out loud, the <span class=\"fae {emotion}\">spirit</span> looks at you contented. It gives you a slight nod before vanishing into thin air, almost as if it was never there to begin with. <br/><br/>The <span class=\"voi\">Voice</span> remains silent.\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance000.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
-  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px;}\n",
+  "css": ".fog\t{background:transparent;}\n.talk_wrap\t{flex-wrap:wrap;}\n.talky\t{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
  }
