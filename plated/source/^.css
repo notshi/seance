@@ -151,7 +151,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:480px; margin:0 auto; padding-bottom:1em;}
-.talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
+.talky	{border-radius:6px; border:4px double #3b3b51; padding:30px; background-color:#000000bd; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
 .name	{color:#91a3b1; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif; background:#281e53; padding:5px 1em; display:inline-block; margin-left:-29px; margin-top:-2.5em; border:1px solid #8e8ea7; background-color:#281e53; background-image:linear-gradient(0deg, #08060ebd 0%, #5b59186e 100%); border-radius:5px; border-left-width:0; border-right-width:0; border-bottom-width:0; text-shadow:-2px 2px 5px #000;}
 .grief	{color:#4EA777;}
 .guilt	{color:#B357E6;}
