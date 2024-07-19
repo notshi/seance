@@ -8,9 +8,6 @@
   "artist_bio": {
    "trim": "ends"
   },
-  "artistimage": {
-   "trim": "ends"
-  },
   "body": {
    "trim": "ends"
   },
@@ -76,7 +73,6 @@
  "_sourcename": "seance380.^.html",
  "artist": "{image.artist||}",
  "artist_bio": "{image.ai_bio_prompt||}",
- "artistimage": "artist1",
  "body": "{play}",
  "card": "<div class=\"card_wrap\">\n\t<div class=\"card_name\">{name}</div>\n\t<div class=\"card_head\">by {artist} <span>{year}</span></div>\n\t<div class=\"card_info\">\n\t\t{card_text}\n\t</div>\n</div>",
  "card_text": "<div class=\"card_art\"><img src=\"{_root}data/{ghostimage}.jpg\"></div>{description}\n<div class=\"card_artist\">\n\t<div class=\"card_name\">About the artist</div>\n\t{artist_bio}\n</div>",

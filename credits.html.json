@@ -8,9 +8,6 @@
   "artist_bio": {
    "trim": "ends"
   },
-  "artistimage": {
-   "trim": "ends"
-  },
   "body": {
    "trim": "ends"
   },
@@ -76,7 +73,6 @@
  "_sourcename": "credits.^.html",
  "artist": "{image.artist||}",
  "artist_bio": "{image.ai_bio_prompt||}",
- "artistimage": "artist1",
  "body": "{play}",
  "credit": "<div class=\"wrap\">\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"card_wrap\">\n\t\t\t<div class=\"card_info\">\n\t\t\t\t{credits_1}\n\t\t\t\t{credits_2}\n\t\t\t\t{credits_3}\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance000.html\" class=\"read\">\n\t\t\t\t\tBack\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
  "credits_1": "<div class=\"fund_top\"><span>Dead Painters Séance</span> is developed by <span>Wetgenes</span>, <span>Prekshaa Malu</span> &amp; <span>Priyanka Raju Parulekar</span>.</div>\n\n<p>{game_info}</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_a\"></div>\n    <span>Priyanka and Prekshaa. Private photo.</span>\n</div>\n\n<p><span class=\"moon\">Prekshaa Malu</span> and <span class=\"moon\">Priyanka Parulekar</span> are an unlikely duo that became pandemic friends on social media. They share similar thoughts on art, literature, philosophy, mental health, gender identity and sexuality. Together they represent the growing struggles and joys of millennial and Gen-Z women in the current world, coming from the maximum city of Mumbai, India. Besides, both are loving cat moms to Lucky and Euro.</p>\n<p><span class=\"moon\">Prekshaa</span> is a content strategist and communications manager. She has 10+ years of experience in the media industry. At the beginning, she was a journalist covering the Art &amp; Culture segment for Mumbai’s leading news publications. She creates abstract self-portraits as a hobby.</p>\n<p><span class=\"moon\">Priyanka</span> is a student of psychology, literature, and philosophy. She is a writer and art enthusiast. She is passionate about accessibility and has formed a thriving community for neurodivergent folks in India. Born and brought up in Mumbai, she writes in three languages, English, Hindi, and Marathi, and is learning a fourth, French. She hopes to make unfettered access to art for everyone a reality.</p>\n<div class=\"fund_img_wrap\">\n    <div class=\"fund_img_b\"></div>\n    <span>Wetgenes. Private photo.</span>\n</div>\n\n<p>Kriss and shi Blank make up <span class=\"moon\">Wetgenes</span>, an ineffable ontology project based in Bradford. Feral game developers working across sound and visual arts. They can usually be found tinkering or building things in and around unexpected places in the city they live in.</p>\n<p>Art historical information provided by <span class=\"moon\">Eva-Lena Karlsson</span>, Nationalmuseum Sweden.</p>\n<p><span class=\"moon\">Music</span>: Away by Meydän is licensed under a CC BY 4.0 Deed Attribution License.</p>\n<div class=\"fund_line\"></div>\n",

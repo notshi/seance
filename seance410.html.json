@@ -8,9 +8,6 @@
   "artist_bio": {
    "trim": "ends"
   },
-  "artistimage": {
-   "trim": "ends"
-  },
   "body": {
    "trim": "ends"
   },
@@ -79,7 +76,6 @@
  "_sourcename": "seance410.^.html",
  "artist": "{image.artist||}",
  "artist_bio": "{image.ai_bio_prompt||}",
- "artistimage": "artist1",
  "body": "{play}",
  "card": "<div class=\"card_wrap\">\n\t<div class=\"card_info\">\n\t\tDear <span class=\"dear\">friend</span>,\n\t\t{letter_text}\n\t\t{letter_end}\n\t</div>\n</div>",
  "continue": "<div class=\"talky\">\n\t<div class=\"read_wrap\">\n\t\t<a href=\"seance420.html\" class=\"read\">\n\t\t\t...\n\t\t</a>\n\t</div>\n</div>",
@@ -92,7 +88,7 @@
  "ghostimage": "image1",
  "head": "<title>{title}</title>\n<style>{css}</style>",
  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"Dead Painters Seance\">\n    {head}\n</head>\n<body>{body}</body>\n</html>",
- "letter_end": "<span class=\"yours\">Yours truly, with love and understanding,</span>\n<div class=\"artist_img\"><img src=\"{_root}data/bio/{artistimage}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"friend\">Artist &amp; Friend</span>",
+ "letter_end": "<span class=\"yours\">Yours truly, with love and understanding,</span>\n<div class=\"artist_img\"><img src=\"{_root}data/bio/{image.artist_id}.jpg\"></div>\n<span class=\"from\">{artist}</span>\n<span class=\"friend\">Artist &amp; Friend</span>",
  "letter_text": "<p>{letter}</p>\n",
  "name": "{image.name||}",
  "play": "<div class=\"fog\">\n\t<div class=\"over\">\n\t\t{start}\n\t</div>\n</div>",
