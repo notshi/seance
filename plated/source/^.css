@@ -152,12 +152,12 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 /*	conversation boxes	*/
 .talk_wrap	{position:relative; display:flex; align-items:flex-end; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:480px; margin:0 auto; padding-bottom:1em;}
 .talky	{border-radius:6px; border:4px double #3b3b51; padding:20px 30px 30px 30px; background-color:#000000bd; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
-.name	{color:#d0ce55; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif;}
-.grief	{color:#897097;}
+.name	{color:#91a3b1; font-size:28px; line-height:2em; font-family:'basteleurmoonlight',sans-serif; background:#281e53; padding:5px 1em; display:inline-block; margin-left:-29px; margin-top:-2.5em; border:1px solid #8e8ea7; background-color:#281e53; background-image:linear-gradient(0deg, #08060ebd 0%, #5b59186e 100%); border-radius:5px; border-left-width:0; border-right-width:0; border-bottom-width:0; text-shadow:-2px 2px 5px #000;}
+.grief	{color:#4EA777;}
 .guilt	{color:#B357E6;}
 .shame	{color:#EB4A9B;}
 .fear	{color:#CCE657;}
-.quest	{color:#fff; font-size:30px; line-height:1.25em; margin-bottom:1em;}
+.quest	{color:#fff; font-size:30px; line-height:1.25em; margin-top:0.5em; margin-bottom:1em;}
 .quest span	{display:inline-block; font-style:italic; line-height:1.25em;}
 /*	question spans used for mobile	*/
 .quest span.ask	{font-size:26px;}
@@ -171,8 +171,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .quest span.sac	{color:#FF3F6A; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	trembling light green and fading	*/
 .quest span.emo	{color:#57E6C1; font-style:initial; animation:buzz 0.1s linear infinite;}
-/*	yellow voice and fading	*/
-.quest span.voi	{color:#d0ce55; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
+/*	neutral color and fading	*/
+.quest span.voi	{color:#91a3b1; font-family:'basteleurmoonlight',serif; font-size:24px; font-style:initial; animation:fade 5s ease-in-out infinite;}
 /*	light grey letters spaced	*/
 .quest span.wea	{color:#888; font-weight:bold; font-size:30px; letter-spacing:4px;}
 /*	bright pink letters spaced	*/
@@ -192,6 +192,8 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .read		{color:#b2b6f2; font-size:26px; margin:0 auto; background:#2f2753; display:block; padding:15px; border-radius:6px; border:4px double #000; text-transform:uppercase; font-family:'garamondtitalic',sans-serif; animation:buzz 0.15s linear infinite;}
 .read:hover	{background:#361EA5;}
 .read:hover, .read:focus, .read:active {animation:buzz 0.25s linear infinite;}
+.read.red		{background:#641F3A; color:#efa8a8;}
+.read.red:hover	{background:#8E1544;}
 @keyframes buzz	{50% {transform:translateX(3px) rotate(2deg);} 100% {transform:translateX(-3px) rotate(-2deg);}}
 @keyframes pulse{25% {transform:scale(1.1);} 75% {transform:scale(0.9);}}
 @keyframes blur	{25% {filter:blur(15px);} 100% {filter:blur(0px);}}
@@ -238,10 +240,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
 .card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
-.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-family:'basteleurbold',serif; margin-top:1em; padding:0 5em 0.5em 5em; line-height:1.25em;}
+.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-family:'basteleurbold',serif; margin-top:1em; padding:0 0 0.5em 0; line-height:1.25em;}
 .card_head	{color:#220b0b; font-size:20px; text-transform:uppercase; font-family:'basteleurmoonlight',serif; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
 .card_head span	{font-style:italic;}
-.card_artist{margin-top:1.25em;}
+.card_artist{margin-top:1.25em; margin-bottom:0.5em;}
 .card_art	{max-width:50%; margin:0 1.5em 0.5em 0; float:left;}
 .card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:left;}
 .card_info p	{padding:0 0 1.25em 0;}

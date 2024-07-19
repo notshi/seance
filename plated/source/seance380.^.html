@@ -17,9 +17,10 @@ Dead Painters Séance
 
 #^css same=append
 .wrap		{overflow-y:initial;}
-.talk_wrap	{align-items:center;}
-.read_wrap	{margin-top:2em;}
+.talk_wrap	{align-items:center; flex-wrap:wrap;}
 .card_wrap	{overflow-y:scroll;}
+.talky		{background-color:transparent; border:0; box-shadow:initial; animation:show 1.5s steps(40,end); padding:0 30px 30px 30px;}
+
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 	.read_wrap	{margin-top:0;}
@@ -37,7 +38,6 @@ Dead Painters Séance
 	<div class="card_info">
 		{card_text}
 	</div>
-	{continue}
 </div>
 
 #^card_text trim=ends
@@ -50,11 +50,14 @@ Dead Painters Séance
 #^turn trim=ends
 <div class="talk_wrap">
 	{card}
+	{continue}
 </div>
 
 #^continue trim=ends
-<div class="read_wrap">
-	<a href="seance390.html" class="read">
-		...
-	</a>
+<div class="talky">
+	<div class="read_wrap">
+		<a href="seance390.html" class="read">
+			...
+		</a>
+	</div>
 </div>

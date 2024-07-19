@@ -203,6 +203,13 @@ seance.start=async function(opts)
 				;( audio.play() ) .then(function(){}).catch(function(){})
 			}
 			
+			let sfx=it.getAttribute("sfx")
+			if(sfx)
+			{
+				audio.src=mp3
+				;( audio.play() )
+			}
+			
 			let id=it.id
 			if( ( id == "answer_next" ) || ( id == "answer_prev" ) ) // handle arrows
 			{
