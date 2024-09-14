@@ -210,8 +210,9 @@ seance.start=async function(opts)
 			{
 				seance.datachunks.ghostimage=seance.catch_ghostname
 				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
-				console.log("catchghost "+seance.datachunks.ghostimage)
+				shuffle(seance.datachunks.image.questions)
 				set_question(0)
+				console.log("catchghost "+seance.datachunks.ghostimage)
 			}
 
 			let mp3=it.getAttribute("mp3")
