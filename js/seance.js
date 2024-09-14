@@ -22,16 +22,18 @@ let htmltemplate=function(s)
 
 function shuffle(tab)
 {
-	let idx = 0
-	for( let len=tab.length ; len>0 ; len-- )
+	let tmp=[]
+	while(tab.length>0) // shuffle out
 	{
-		idx = Math.floor( Math.random() * len) // pick a random
-		let temp=tab[idx]
-		tab[idx]=tab[len-1]
-		tab[len-1]=temp
+		tmp.push( tab.splice( Math.floor( Math.random() * tab.length) , 1 ) )
+	}
+	while(tmp.length>0) // shuffle back
+	{
+		tab.push( tmp.splice( Math.floor( Math.random() * tmp.length) , 1 ) )
 	}
 	return tab
 }
+
 function rando(tab)
 {
 	if( tab.length < 1 ) { return "MISSING TEXT" }
@@ -47,7 +49,19 @@ seance.start=async function(opts)
 	seance.datachunks={}
 	seance.datachunks.ghostimage="image1"
 	seance.datachunks.image=imageids[seance.datachunks.ghostimage]
-
+	
+	seance.randoimages=shuffle([1,2,3,4,5,6,7,8,9,10,11,12])
+	seance.randoimages_idx=55555
+	seance.get_randoimage=function()
+	{
+		seance.randoimages_idx++
+		if( seance.randoimages_idx >= seance.randoimages.length )
+		{
+			seance.randoimages_idx=0
+		}
+		return "image"+seance.randoimages[ seance.randoimages_idx ]
+	}
+	
 	let answers=[] // the answers to each question
 	let question={}
 	let set_question=function(idx)
@@ -136,7 +150,11 @@ seance.start=async function(opts)
 		let chunks=page(name)
 		data=chunks.data
 
-		if( data.question ) { set_question(data.question) }
+		if( data.question )
+		{
+			console.log("Q"+data.question)
+			set_question(data.question)
+		}
 		build_letter()
 
 		chunks=page(name) // rebuild with newly picked question texts
@@ -157,7 +175,7 @@ seance.start=async function(opts)
 			console.log(data.mode)
 			let add_ghost ; add_ghost=function()
 			{
-				let name="image"+(Math.floor(Math.random() * 12)+1)
+				let name=seance.get_randoimage()
 				if(!seance.catch_ghostname){seance.catch_ghostname=name} // if not set yet
 				
 				let p=document.getElementById("ghost_container")
@@ -193,6 +211,7 @@ seance.start=async function(opts)
 				seance.datachunks.ghostimage=seance.catch_ghostname
 				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 				console.log("catchghost "+seance.datachunks.ghostimage)
+				set_question(0)
 			}
 
 			let mp3=it.getAttribute("mp3")
