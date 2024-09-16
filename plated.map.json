@@ -687,7 +687,7 @@
   "_site": "{_root}",
   "_sourcename": "seance150.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1.5) invert(0.6); opacity:0.6; mask-image:linear-gradient(to top, transparent 15%, black);}\n",
+  "css": ".img\t{filter:grayscale(1) brightness(1.5) invert(0.6); opacity:0.6; mask-image:linear-gradient(to top, transparent 15%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
   "data": {
    "mode": "question",
    "question": 1
@@ -753,7 +753,7 @@
   "_site": "{_root}",
   "_sourcename": "seance170.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:slow_show 1.5s steps(40,end);}\n",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); animation:half_show 3s steps(40,end), glitch 2s infinite linear alternate-reverse; mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:slow_show 2.5s steps(40,end);}\n",
   "q1": "<div class=\"wrap\">\n\t<div class=\"img_wrap\"><div class=\"img\"></div></div>\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name {emotion}\">\n\t\t\t\tSpirit\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\t<span>Surely you felt that. <br/> Do you sense anything at all?</span>\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance260.html\" class=\"read\">\n\t\t\t\t\t...\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{q1}\n</div>",
   "title": "Dead Painters Séance"
@@ -818,7 +818,7 @@
   "_site": "{_root}",
   "_sourcename": "seance190.^.html",
   "body": "{play}",
-  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n",
+  "css": ".img\t{filter:grayscale(1) brightness(1) invert(0.3); mask-image:linear-gradient(to top, transparent 10%, black);}\n.talky\t{animation:show 2s steps(40,end);}\n",
   "data": {
    "mode": "question",
    "question": 2
