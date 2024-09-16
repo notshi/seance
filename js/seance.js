@@ -182,6 +182,17 @@ console.log("LOAD",state)
 		seance.load_state(state)
 	}
 
+	seance.hashchange=function()
+	{
+		if( window.location.hash != seance.save_hash )
+		{
+			seance.load()
+			seance.save()
+		}
+	}
+	window.addEventListener("hashchange",seance.hashchange)
+
+
 // load full plated json for this site
 	let map=await (await fetch("./plated.map.json") ).json()
 	let audio=new Audio()
@@ -229,6 +240,7 @@ console.log("LOAD",state)
 		body.innerHTML=str
 
 		body.addEventListener("click",click)
+
 		document.getElementsByTagName('body')[0].replaceWith(body)
 		document.getElementsByTagName('style')[0].innerHTML=css
 		
@@ -327,8 +339,6 @@ console.log("LOAD",state)
 			seance.save()
 		}
 	}
-
-
 
 
 //	seance.goto("seance000.html")	
