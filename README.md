@@ -1,7 +1,7 @@
 ## Dead Painters Séance
 
-The Dead Painters Séance is an exploration of using AI generative text to connect a modern audience to forgotten artists.
-It uses content from the National Portrait Gallery of Sweden and is part of the [NEO Collections Fellowship](https://www.nationalmuseum.se/en/neo-collections-fellowship).
+The Dead Painters Séance is an exploration of using AI generative text to connect a modern audience to underrepresented people and groups of people in art.  
+It uses content from the Nationalmuseum Sweden and is part of the [NEO Collections project](https://www.nationalmuseum.se/en/neo-collections-fellowship).
 
 Dead Painters Séance is developed by Wetgenes, Prekshaa Malu & Priyanka Raju Parulekar.
 
