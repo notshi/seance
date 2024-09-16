@@ -93,6 +93,11 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 @keyframes flay {0% {background-position:0px 0px;} 100% {background-position:-1920px 0px;}}
 @keyframes slow_back {0%,50% {background:transparent;} 100% {background:url('./data/fog_back.png');}}
 
+/*	close button	*/
+.close		{border-radius:6px; position:absolute; top:1em; right:1em; width:100px; padding:5px 0 10px 0; text-align:center; z-index:6;}
+.close:hover{cursor:pointer; background-color:#361ea56e;}
+#timer_wrap	{position:absolute; display:flex; align-items:center; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:100%; margin:auto; z-index:3;}
+.timer		{border-radius:6px; border:4px double #3b3b51; padding:3em; font-size:1.5em; background-color:#000; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
 
 /*	background stars	*/
 .stars	{background-color:white; height:3px; width:3px; border-radius:50%; box-shadow:1px 0px 20px #fff;}
@@ -132,7 +137,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .ai			{font-family:monospace,monospace; transform:skew(-8deg); display:inline-block; animation:blur 10s infinite; color:#2d78c8; font-size:100px; letter-spacing:-4px;}
 span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .cred_wrap	{margin:0 auto; margin:0 2.5em;}
-.cred		{}
+.cred		{font-family:'frauncesitalic',serif;}
 .cred_link	{color:#b2b6f2; font-size:20px; margin-top:10px; display:inline-block; padding:5px 15px; transition:all 0.3s linear;}
 .cred_link:hover, .cred_link:focus, .cred_link:active {transform:skewX(-20deg);}
 .go:before,
@@ -255,7 +260,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
 .card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
-.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-weight:bold; letter-spacing:3px; font-family:'quando',serif; margin-top:1em; padding:0 0 0.5em 0; line-height:1.25em;}
+.card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-weight:bold; letter-spacing:3px; font-family:'quando',serif; margin-top:1em; padding:0 0.5em 0.5em 0.5em; line-height:1.25em;}
 .card_head	{color:#220b0b; font-size:20px; text-transform:uppercase; font-family:'quando',serif; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
 .card_head span	{font-style:italic;}
 .card_artist{margin-top:1.25em; margin-bottom:0.5em;}
@@ -377,10 +382,14 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 <div class="star-19 stars"></div>
 <div class="star-20 stars"></div>
 	<div class="wrap">
+	<div id="timer_wrap" style="display:none;">
+	<div class="timer">A timer will appear here</div>
+</div>
+<div class="close" onclick="$('#timer_wrap').slideToggle('fast');">&#127769</div>
 	<div class="talk_wrap">
 		<div class="talky">
 			<div class="quest">
-				Is that true? Was the physical act of responding to the questions having an effect on this <span class="fae ">spirit</span>? But how could that be? The <span class="voi">Voice</span> mentioned something earlier about resonating with humanity to <span class="sac">manifest</span>. <i>Was this it?</i>
+				Is that true? Was the physical act of responding to the questions having an effect on this <span class="fae ">spirit</span>? But how could that be? The <span class="voi">Voice</span> mentioned something earlier about needing to resonate with humanity to <span class="sac">manifest</span>. <i>Was this it?</i>
 			</div>
 		</div>
 		<div class="talky">
