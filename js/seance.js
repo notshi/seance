@@ -25,11 +25,11 @@ function shuffle(tab)
 	let tmp=[]
 	while(tab.length>0) // shuffle out
 	{
-		tmp.push( tab.splice( Math.floor( Math.random() * tab.length) , 1 ) )
+		tmp.push( tab.splice( Math.floor( Math.random() * tab.length) , 1 )[0] )
 	}
 	while(tmp.length>0) // shuffle back
 	{
-		tab.push( tmp.splice( Math.floor( Math.random() * tmp.length) , 1 ) )
+		tab.push( tmp.splice( Math.floor( Math.random() * tmp.length) , 1 )[0] )
 	}
 	return tab
 }
@@ -41,9 +41,9 @@ function rando(tab)
 	return tab[idx]
 }
 
+
 seance.start=async function(opts)
 {
-	console.log(plated_module)
 	let plated=plated_module.create({})
 	
 	seance.datachunks={}
@@ -63,28 +63,27 @@ seance.start=async function(opts)
 	}
 	
 	let answers=[] // the answers to each question
+	let questions=[] // idbase of each question
 	let question={}
-	let set_question=function(idx)
+	let set_question=function(idx,idbase)
 	{
 		question={}
 		question.idx=idx
 		
-		question.idbase=seance.datachunks.image.questions[idx]
+		question.idbase=idbase || seance.datachunks.image.questions[idx]
 		question.id=question.idbase+"_question"
 		
-		question.order=shuffle([1,2,3]) // random order of 3 answers
-
+		questions[idx]=question.idbase
+		
 		question.select_num=ANUM*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
 		
 		question.setanswer=function(num)
 		{
 			let phase=Math.floor(num/ANUM) // cycle through each possible item
-			let idx=question.order[ num%ANUM ]
+			let idx=(num%ANUM)+1
 			let id=question.idbase+"_answer"+idx
-//			if(idx==0) { id="answer0" } // pass option is generic
 			let aa=textids[id] || textids["answer0"]
 			
-			question.select_id=id
 			question.select_idx=idx
 			question.select_text=aa[ phase%aa.length ]
 
@@ -94,7 +93,6 @@ seance.start=async function(opts)
 
 		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
 	}
-	set_question(0) // first of 3 questions 0-2
 
 	let build_letter=function()
 	{
@@ -102,7 +100,7 @@ seance.start=async function(opts)
 		for(let i=0;i<QNUM;i++)
 		{
 			let a=answers[i]
-			let q=seance.datachunks.image.questions[i]
+			let q=questions[i]
 			let id="letter_"+seance.datachunks.image.id+"_"+q+"_answer"+a
 			let t=textids[id]
 			if(t)
@@ -115,13 +113,77 @@ seance.start=async function(opts)
 	}
 //	build_letter()
 		
-	console.log("SEE YANCE")
-	console.log(textids)
-	console.log(imageids)
+//	console.log("SEE YANCE")
+//	console.log(textids)
+//	console.log(imageids)
+
+	let reset_question=function()
+	{
+		seance.questions=[]
+		seance.answers=[]
+		set_question(0) // first of 3 questions 0-2
+	}
+	reset_question()
+
+	seance.save_state=function()
+	{
+		let state={}
+
+		state.page=seance.page_name
+		state.image=seance.datachunks.ghostimage
+		state.questions=questions
+		state.answers=answers
+		state.question_idx=question.idx||0
+
+console.log("SAVE",state)
+		seance.state=state
+		return state
+	}
+	seance.load_state=function(state)
+	{
+		state=state || seance.state || {}
+		
+
+		seance.datachunks.ghostimage=state.image || "image1"
+		seance.datachunks.image=imageids[ seance.datachunks.ghostimage ]
+		seance.goto(state.page || "seance000.html")
+
+		seance.questions=state.questions||[]
+		seance.answers=state.answers||[]
+
+		state.question_idx=state.question_idx||0
+		set_question( state.question_idx , seance.questions[state.question_idx] )
+
+		seance.state=state
+console.log("LOAD",state)
+	}
+
+	seance.save=function()
+	{
+		let state=seance.save_state()
+		let s=JSON.stringify(state)
+		let h="#"+window.btoa(s)
+		if( window.location.hash != h )
+		{
+			seance.save_hash=h
+			window.location.hash = h
+		}
+	}
+
+	seance.load=function()
+	{
+		let state={}
+		try{ 
+			let h=(window.location.hash||"").substr(1)
+			let s=window.atob(h)
+			state=JSON.parse(s)
+		}catch(e){}
+		
+		seance.load_state(state)
+	}
 
 // load full plated json for this site
 	let map=await (await fetch("./plated.map.json") ).json()
-	
 	let audio=new Audio()
 
 	
@@ -140,13 +202,14 @@ seance.start=async function(opts)
 		plated.chunks.reset_namespace()
 		return chunks
 	}
-	console.log(map)
+//	console.log(map)
 
 	let click=null
 
 	let data={}
-	let goto=function(name)
+	seance.goto=function(name)
 	{
+		seance.page_name=name
 		let chunks=page(name)
 		data=chunks.data
 
@@ -202,7 +265,7 @@ seance.start=async function(opts)
 	{
 		event.preventDefault()
 		let it=event.target
-		console.log(it)
+//		console.log(it)
 		if( it.tagName=="A" )
 		{
 			let catchghost=it.hasAttribute("catchghost")
@@ -211,7 +274,7 @@ seance.start=async function(opts)
 				seance.datachunks.ghostimage=seance.catch_ghostname
 				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 				shuffle(seance.datachunks.image.questions)
-				set_question(0)
+				reset_question()
 				console.log("catchghost "+seance.datachunks.ghostimage)
 			}
 
@@ -258,14 +321,18 @@ seance.start=async function(opts)
 			if(href)
 			{
 				console.log("GOTO",href)
-				goto(href)
+				seance.goto(href)
 			}
+			
+			seance.save()
 		}
 	}
 
 
 
 
-	goto("seance000.html")
+//	seance.goto("seance000.html")	
+	seance.load() // reset
+	seance.save() // set hash
 
 }
