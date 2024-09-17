@@ -205,7 +205,6 @@ console.log("LOAD",state)
 			{
 				s=unescape(h)
 			}
-			console.log(s)
 			state=JSON.parse(s)
 		}catch(e){}
 		
