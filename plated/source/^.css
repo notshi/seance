@@ -270,7 +270,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_info span.dear	{color:#BC003A; font-family:'frauncesitalic',serif; font-size:32px;}
 .card_info span.yours	{font-family:'frauncesitalic',serif; display:block; padding:0 0 0.5em 0;}
 .card_info span.from	{color:#4900BA; font-family:'zarasthustra',serif; font-size:26px; text-align:left; display:block;}
-.card_info span.friend	{font-family:'frauncesitalic',serif; display:block; margin-bottom:2em; margin-top:5px;}
+.card_info span.friend	{font-family:'frauncesitalic',serif; display:block; margin-bottom:1em; margin-top:5px;}
 .card_info span.moon	{color:#4407A2; font-family:'quando',serif; font-size:19px;}
 
 .card_wrap	{margin:0 auto; width:calc(100% - 4em); height:85vh; animation:show 2.5s steps(40,end);}
@@ -281,6 +281,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes slow_show {0%,90% {opacity:0;} 100% {opacity:1;}}
 @keyframes slower_show {0%,80% {opacity:0;} 95% {opacity:0.5;} 100% {opacity:1;}}
 
+/*	qr	*/
+.qr_wrap		{display:flex; justify-content:flex-end; padding-bottom:1em;}
+.qr				{text-align:center;}
+.qr_text		{text-transform:uppercase; font-size:16px; letter-spacing:2px; margin-top:5px;}
 
 /*	ghosts	*/
 .ghost_handle	{position:absolute; top:18em; left:-100px; width:0; height:0; overflow:visible; animation:run 15s cubic-bezier(.21,.67,.72,.28);}
