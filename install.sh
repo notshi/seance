@@ -1,10 +1,5 @@
 cd `dirname $0`
 
-git pull
-
-plated/upgrade
-
 rm -rf js/node_modules
 npm --prefix js install
 npm --prefix js update
-
