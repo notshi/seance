@@ -13,6 +13,7 @@ Funded by [Federal Government Commissioner for Culture and the Media](https://ww
 
 [Away by Meydän](https://freemusicarchive.org/music/Meydan/Ambient_1860/Away_1569/) is licensed under a [CC BY 4.0 Deed Attribution License](https://creativecommons.org/licenses/by/4.0/)  
 [Lighting a match by aent](https://freesound.org/s/67258/) is licensed under a [CC BY 4.0 Deed Attribution License](https://creativecommons.org/licenses/by/4.0/)  
+[horror ghost 03.wav by klankbeeld](https://freesound.org/s/169357/) is licensed under a [CC BY 4.0 Deed Attribution License](https://creativecommons.org/licenses/by/4.0/)  
 [plated^](https://github.com/xriss/plated) Static site generator by Kriss & shi Blank  
 [Basteleur](https://gitlab.com/velvetyne/basteleur) is a typeface by [Keussel](http://www.keussel.studio/) with some contributions by [George Triantafyllakos](https://backpacker.gr/about/)  
 [Bitter](https://github.com/solmatas/BitterPro) is a typeface by Sol Matas.  
