@@ -137,6 +137,7 @@ seance.start=async function(opts)
 
 	let reset_question=function(q)
 	{
+		seance.select_num=(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
 		shuffle(seance.datachunks.image.questions)
 		seance.questions=[ seance.datachunks.image.questions[0] , seance.datachunks.image.questions[1] , seance.datachunks.image.questions[2] ]
 		seance.questions[3]=randi(textids[seance.questions[0]+"_question"])
@@ -151,12 +152,12 @@ seance.start=async function(opts)
 	{
 		let state={}
 
-		state.rnd=seance.select_num
-		state.page=seance.page_name
-		state.image=seance.datachunks.ghostimage
-		state.questions=seance.questions
-		state.answers=seance.answers
-		state.qidx=question.idx||0
+		state.r=seance.select_num
+		state.p=seance.page_name
+		state.i=seance.datachunks.ghostimage
+		state.q=seance.questions
+		state.a=seance.answers
+		state.x=question.idx||0
 
 		seance.state=state
 		return state
@@ -167,18 +168,18 @@ seance.start=async function(opts)
 		
 		reset_question()
 
-		seance.select_num=state.rnd || seance.select_num
+		seance.select_num=state.r || seance.select_num
 
-		seance.datachunks.ghostimage=state.image || "image1"
+		seance.datachunks.ghostimage=state.i || "image1"
 		seance.datachunks.image=imageids[ seance.datachunks.ghostimage ]
 
-		seance.questions=state.questions||seance.questions
-		seance.answers=state.answers||seance.answers
+		seance.questions=state.q||seance.questions
+		seance.answers=state.a||seance.answers
 
-		state.qidx=state.qidx||0
-		set_question( state.qidx )
+		state.x=state.x||0
+		set_question( state.x )
 
-		await seance.goto(state.page || "seance000.html")
+		await seance.goto(state.p || "seance000.html")
 
 		seance.state=state
 	}
