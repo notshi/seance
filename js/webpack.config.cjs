@@ -38,9 +38,11 @@ module.exports = {
     fallback : {
 		fs: false,
 		url: false,
+		"assert": false,
 		path: require.resolve("path-browserify"),
 		"stream": require.resolve("stream-browserify"),
 		"buffer": require.resolve("buffer/"),
+		"zlib": require.resolve("browserify-zlib"),
     },
   },
   performance: {

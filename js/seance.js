@@ -5,6 +5,8 @@ export default seance
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
 import QRCode from 'qrcode'
+import {encode, decode} from "messagepack";
+//import zlib from "zlib";
 
 import seance_data from "./seance_data.json" with { type: "json" }
 const textids=seance_data.textids
@@ -184,14 +186,15 @@ seance.start=async function(opts)
 	seance.save=async function()
 	{
 		let state=await seance.save_state()
-		let s=JSON.stringify(state)
 		let h
 		if(HASHBASE64)
 		{
-			h="#"+window.btoa(s)
+			let s=encode(state)
+			h="#"+Buffer.from(s).toString('base64')
 		}
 		else
 		{
+			let s=JSON.stringify(state)
 			h="#"+escape(s)
 		}
 		if( window.location.hash != h )
@@ -208,16 +211,17 @@ seance.start=async function(opts)
 		try{ 
 			let h=(window.location.hash||"").substr(1)
 			seance.save_hash="#"+h
-			let s
 			if(HASHBASE64)
 			{
-				s=window.atob(h)
+				let b=Buffer.from(h, 'base64')
+				state=decode(b)
+console.log("LOAD#",state)
 			}
 			else
 			{
-				s=unescape(h)
+				let s=unescape(h)
+				state=JSON.parse(s)
 			}
-			state=JSON.parse(s)
 		}catch(e){}
 		
 		await seance.load_state(state)
