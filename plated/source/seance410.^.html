@@ -65,10 +65,12 @@ Dead Painters Séance
 
 #^letter_end trim=ends
 <span class="yours">Yours truly, with love and understanding,</span>
-<div class="artist_img"><img src="{_root}data/bio/{image.artist_id}.jpg"></div>
-<span class="from">{artist}</span>
-<span class="friend">Artist &amp; Friend</span>
 <div class="qr_wrap">
+	<div class="artist_wrap">
+		<div class="artist_img"><img src="{_root}data/bio/{image.artist_id}.jpg"></div>
+		<span class="from">{artist}</span>
+		<span class="friend">Artist &amp; Friend</span>
+	</div>
 	<div class="qr">
 		<img src="{qrcode_img}">
 		<div class="qr_text">scan for letter</div>
