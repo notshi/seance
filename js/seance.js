@@ -156,7 +156,6 @@ seance.start=async function(opts)
 		state.answers=seance.answers
 		state.qidx=question.idx||0
 
-console.log("SAVE",state)
 		seance.state=state
 		return state
 	}
@@ -180,7 +179,6 @@ console.log("SAVE",state)
 		await seance.goto(state.page || "seance000.html")
 
 		seance.state=state
-console.log("LOAD",state)
 	}
 
 	seance.save=async function()
@@ -200,6 +198,7 @@ console.log("LOAD",state)
 		{
 			seance.save_hash=h
 			window.location.hash = h
+//			console.log(state)
 		}
 	}
 
