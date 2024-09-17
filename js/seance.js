@@ -261,17 +261,23 @@ seance.start=async function(opts)
 	let data={}
 	seance.goto=async function(name)
 	{
+		console.log("GOTO",name)
+
 		seance.page_name=name
 		let chunks=page(name)
 		data=chunks.data
 
-		if( data.question )
+		if( "number"==typeof data.question )
 		{
-			console.log("Q"+data.question)
+			console.log("question"+data.question)
 			set_question(data.question)
 		}
-		await build_letter()
-
+		if(data.mode=="letter") // only build letter when we need it
+		{
+			console.log(data.mode)
+			await build_letter()
+		}
+		
 		chunks=page(name) // rebuild with newly picked question texts
 		data=chunks.data
 
@@ -376,7 +382,6 @@ seance.start=async function(opts)
 		let href=it.getAttribute("href")
 		if(href)
 		{
-			console.log("GOTO",href)
 			await seance.goto(href)
 		}
 		
