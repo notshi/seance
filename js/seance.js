@@ -35,16 +35,26 @@ function shuffle(tab)
 	return tab
 }
 
-function rando(tab)
+function rando(tab,num)
 {
 	if( tab.length < 1 ) { return "MISSING TEXT" }
-	let idx = Math.floor( Math.random() * tab.length ) // pick a random
+	let idx
+	if(num) // choose
+	{
+		idx=num
+		if(idx<0) {idx=-idx}
+		idx=idx%tab.length
+	}
+	else // just random
+	{
+		idx=Math.floor( Math.random() * tab.length ) // pick a random
+	}
 	return tab[idx]
 }
 
 function randi(tab)
 {
-	if( tab.length < 1 ) { return "MISSING TEXT" }
+	if( tab.length < 1 ) { return 0 }
 	let idx = Math.floor( Math.random() * tab.length ) // pick a random
 	return idx
 }
@@ -58,6 +68,8 @@ seance.start=async function(opts)
 	seance.datachunks.ghostimage="image1"
 	seance.datachunks.image=imageids[seance.datachunks.ghostimage]
 	
+	seance.select_num=(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
+
 	seance.randoimages=shuffle([1,2,3,4,5,6,7,8,9,10,11,12])
 	seance.randoimages_idx=55555
 	seance.get_randoimage=function()
@@ -78,9 +90,7 @@ seance.start=async function(opts)
 		
 		question.idbase=seance.questions[idx]
 		question.id=question.idbase+"_question"
-				
-		question.select_num=(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
-		
+						
 		question.setanswer=function(num)
 		{
 			let phase=Math.floor(num/ANUM) // cycle through each possible item
@@ -93,7 +103,7 @@ seance.start=async function(opts)
 
 			seance.datachunks.answer=question.select_text // pick one answer to display
 		}
-		question.setanswer(question.select_num)
+		question.setanswer(seance.select_num)
 
 //console.log(textids[question.id])
 //		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
@@ -115,7 +125,7 @@ seance.start=async function(opts)
 			let t=textids[id]
 			if(t)
 			{
-				s=s+"<p>"+rando(t)+"</p>\n"
+				s=s+"<p>"+rando(t,seance.select_num)+"</p>\n"
 			}
 		}
 		
@@ -139,13 +149,13 @@ seance.start=async function(opts)
 	{
 		let state={}
 
+		state.rnd=seance.select_num
 		state.page=seance.page_name
 		state.image=seance.datachunks.ghostimage
 		state.questions=seance.questions
 		state.answers=seance.answers
 		state.qidx=question.idx||0
 
-console.log("SAVE",state)
 		seance.state=state
 		return state
 	}
@@ -154,6 +164,8 @@ console.log("SAVE",state)
 		state=state || seance.state || {}
 		
 		reset_question()
+
+		seance.select_num=state.rnd || seance.select_num
 
 		seance.datachunks.ghostimage=state.image || "image1"
 		seance.datachunks.image=imageids[ seance.datachunks.ghostimage ]
@@ -167,7 +179,6 @@ console.log("SAVE",state)
 		await seance.goto(state.page || "seance000.html")
 
 		seance.state=state
-console.log("LOAD",state)
 	}
 
 	seance.save=async function()
@@ -187,6 +198,7 @@ console.log("LOAD",state)
 		{
 			seance.save_hash=h
 			window.location.hash = h
+//			console.log(state)
 		}
 	}
 
@@ -195,7 +207,7 @@ console.log("LOAD",state)
 		let state={}
 		try{ 
 			let h=(window.location.hash||"").substr(1)
-			seance.save_hash=h
+			seance.save_hash="#"+h
 			let s
 			if(HASHBASE64)
 			{
@@ -343,14 +355,14 @@ console.log("LOAD",state)
 		{
 			if( id == "answer_next" )
 			{
-				question.select_num++
+				seance.select_num++
 			}
 			else
 			if( id == "answer_prev" )
 			{
-				question.select_num--
+				seance.select_num--
 			}
-			question.setanswer(question.select_num)
+			question.setanswer(seance.select_num)
 			
 			let a=document.getElementById("answer")
 			a.textContent=seance.datachunks.answer
