@@ -575,7 +575,7 @@
    "Your words have given me much to think about, and I am grateful for your insight and inspiration. I hope that you will continue to embrace challenges with courage and determination, and that you will always remember that the rewards of overcoming fear are worth the risk."
   ],
   "letter_image10_fear5_answer3": [
-   "my goal was to capture the beauty and power of the reindeer, while also showcasing their incredible strength and endurance as they navigate through the harsh winter landscape. The depiction of the man in the sledge adds an additional layer of interest and drama to the painting, and I am pleased that it has resonated with viewers.",
+   "My goal was to capture the beauty and power of the reindeer, while also showcasing their incredible strength and endurance as they navigate through the harsh winter landscape. The depiction of the man in the sledge adds an additional layer of interest and drama to the painting, and I am pleased that it has resonated with viewers.",
    "However, as you have eloquently put it, \"I am always curious to explore new situations and experiences.\" This curiosity has driven me to continually challenge myself and expand my artistic horizons. It is through exploring new environments and experiencing different situations that I have been able to grow as an artist and push the boundaries of what is considered possible in the world of art.",
    "I understand where you are coming from, as many of us seek comfort in familiar surroundings. However, as an artist, I believe it is important to step outside of one's comfort zone and explore new experiences and perspectives. By doing so, we can expand our horizons and create something truly unique and meaningful.",
    "In my painting \"Reindeer with a sledge,\" I was able to convey a sense of drama and movement through the use of light, shadows, and the dynamic pose of the reindeer. I was also able to capture the beauty of the reindeer and the Sami people in the painting. I believe that it is possible to find beauty and familiarity in both familiar and unfamiliar environments, and it is up to the artist to bring those elements together in a way that is visually appealing and meaningful."
@@ -2659,7 +2659,7 @@
   },
   "image4": {
    "id": "image4",
-   "artist_id": "[]",
+   "artist_id": "artist0",
    "emotion": "grief",
    "image": "[]",
    "name": "Woman on her deathbed",
@@ -2688,7 +2688,7 @@
   },
   "image5": {
    "id": "image5",
-   "artist_id": "[]",
+   "artist_id": "artist0",
    "emotion": "grief",
    "image": "[]",
    "name": "Old Spanish Woman",
@@ -2949,7 +2949,7 @@
   },
   "image14": {
    "id": "image14",
-   "artist_id": "[]",
+   "artist_id": "artist0",
    "emotion": "shame",
    "image": "[]",
    "name": "Birgitta (Britta) Johansdotter, maid",
@@ -3036,7 +3036,7 @@
   },
   "image17": {
    "id": "image17",
-   "artist_id": "[]",
+   "artist_id": "artist0",
    "emotion": "guilt",
    "image": "[]",
    "name": "Old man with nose growth",
@@ -3210,7 +3210,7 @@
   },
   "image23": {
    "id": "image23",
-   "artist_id": "[]",
+   "artist_id": "artist0",
    "emotion": "hate",
    "image": "[]",
    "name": "Old Woman",
