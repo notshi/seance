@@ -195,6 +195,7 @@ console.log("LOAD",state)
 		let state={}
 		try{ 
 			let h=(window.location.hash||"").substr(1)
+			seance.save_hash=h
 			let s
 			if(HASHBASE64)
 			{
@@ -309,64 +310,67 @@ console.log("LOAD",state)
 //		console.log(it)
 		if( it.tagName=="A" )
 		{
-			let catchghost=it.hasAttribute("catchghost")
-			if(catchghost)
-			{
-				seance.datachunks.ghostimage=seance.catch_ghostname
-				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
-				reset_question()
-				console.log("catchghost "+seance.datachunks.ghostimage)
-			}
-
-			let mp3=it.getAttribute("mp3")
-			if(mp3)
-			{
-				audio.src=mp3
-				audio.loop=true
-				;( audio.play() ) .then(function(){}).catch(function(){})
-			}
-			
-			let sfx=it.getAttribute("sfx")
-			if(sfx)
-			{
-				audio.src=mp3
-				;( audio.play() )
-			}
-			
-			let id=it.id
-			if( ( id == "answer_next" ) || ( id == "answer_prev" ) ) // handle arrows
-			{
-				if( id == "answer_next" )
-				{
-					question.select_num++
-				}
-				else
-				if( id == "answer_prev" )
-				{
-					question.select_num--
-				}
-				question.setanswer(question.select_num)
-				
-				let a=document.getElementById("answer")
-				a.textContent=seance.datachunks.answer
-
-			}
-			if( id == "answer" ) // remember answer
-			{
-				seance.answers[ question.idx ]=question.select_idx
-			}
-
-			let href=it.getAttribute("href")
-			if(href)
-			{
-				console.log("GOTO",href)
-				await seance.goto(href)
-			}
-			
-			seance.save()
+			await seance.doclick(it)
 		}
 	}
+	seance.doclick=async function(it)
+	{
+		let catchghost=it.hasAttribute("catchghost")
+		if(catchghost)
+		{
+			seance.datachunks.ghostimage=seance.catch_ghostname
+			seance.datachunks.image=imageids[seance.datachunks.ghostimage]
+			reset_question()
+			console.log("catchghost "+seance.datachunks.ghostimage)
+		}
 
+		let mp3=it.getAttribute("mp3")
+		if(mp3)
+		{
+			audio.src=mp3
+			audio.loop=true
+			;( audio.play() ) .then(function(){}).catch(function(){})
+		}
+		
+		let sfx=it.getAttribute("sfx")
+		if(sfx)
+		{
+			audio.src=mp3
+			;( audio.play() )
+		}
+		
+		let id=it.id
+		if( ( id == "answer_next" ) || ( id == "answer_prev" ) ) // handle arrows
+		{
+			if( id == "answer_next" )
+			{
+				question.select_num++
+			}
+			else
+			if( id == "answer_prev" )
+			{
+				question.select_num--
+			}
+			question.setanswer(question.select_num)
+			
+			let a=document.getElementById("answer")
+			a.textContent=seance.datachunks.answer
+
+		}
+		if( id == "answer" ) // remember answer
+		{
+			seance.answers[ question.idx ]=question.select_idx
+		}
+
+		let href=it.getAttribute("href")
+		if(href)
+		{
+			console.log("GOTO",href)
+			await seance.goto(href)
+		}
+		
+		seance.save()
+	}
 
 //	seance.goto("seance000.html")	
 	await seance.load() // reset
