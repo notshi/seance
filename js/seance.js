@@ -4,7 +4,7 @@ export default seance
 
 import { default as plated_module } from "plated"
 import { parse as csv_parse } from "csv-parse/sync"
-
+import QRCode from 'qrcode'
 
 import seance_data from "./seance_data.json" with { type: "json" }
 const textids=seance_data.textids
@@ -12,6 +12,7 @@ const imageids=seance_data.imageids
 
 const QNUM=3 // 3 questions
 const ANUM=3 // 3 answers
+const HASHBASE64=true // encode hashdata?
 
 let htmltemplate=function(s)
 {
@@ -41,6 +42,13 @@ function rando(tab)
 	return tab[idx]
 }
 
+function randi(tab)
+{
+	if( tab.length < 1 ) { return "MISSING TEXT" }
+	let idx = Math.floor( Math.random() * tab.length ) // pick a random
+	return idx
+}
+
 
 seance.start=async function(opts)
 {
@@ -62,20 +70,16 @@ seance.start=async function(opts)
 		return "image"+seance.randoimages[ seance.randoimages_idx ]
 	}
 	
-	let answers=[] // the answers to each question
-	let questions=[] // idbase of each question
 	let question={}
-	let set_question=function(idx,idbase)
+	let set_question=function(idx)
 	{
 		question={}
 		question.idx=idx
 		
-		question.idbase=idbase || seance.datachunks.image.questions[idx]
+		question.idbase=seance.questions[idx]
 		question.id=question.idbase+"_question"
-		
-		questions[idx]=question.idbase
-		
-		question.select_num=ANUM*(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
+				
+		question.select_num=(Math.floor(Math.random()*32768)+32768) // pick random starting answer texts
 		
 		question.setanswer=function(num)
 		{
@@ -85,22 +89,28 @@ seance.start=async function(opts)
 			let aa=textids[id] || textids["answer0"]
 			
 			question.select_idx=idx
-			question.select_text=aa[ phase%aa.length ]
+			question.select_text=aa[0] // aa[ phase%aa.length ]
 
 			seance.datachunks.answer=question.select_text // pick one answer to display
 		}
 		question.setanswer(question.select_num)
 
-		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
+//console.log(textids[question.id])
+//		seance.datachunks.question=rando(textids[question.id]) // pick one random question to display		
+		
+		let qidx= seance.questions[idx+3] % textids[question.id].length
+//console.log(qidx)
+		seance.datachunks.question=textids[question.id][qidx]
+//console.log(seance.datachunks.question)
 	}
 
-	let build_letter=function()
+	let build_letter=async function()
 	{
 		let s=""
 		for(let i=0;i<QNUM;i++)
 		{
-			let a=answers[i]
-			let q=questions[i]
+			let a=seance.answers[i]
+			let q=seance.questions[i]
 			let id="letter_"+seance.datachunks.image.id+"_"+q+"_answer"+a
 			let t=textids[id]
 			if(t)
@@ -110,59 +120,69 @@ seance.start=async function(opts)
 		}
 		
 		seance.datachunks.letter=s
+		seance.datachunks.qrcode_img=await QRCode.toDataURL("https://notshi.github.io/seance/"+seance.save_hash)
 	}
-//	build_letter()
-		
-//	console.log("SEE YANCE")
-//	console.log(textids)
-//	console.log(imageids)
 
-	let reset_question=function()
+	let reset_question=function(q)
 	{
-		seance.questions=[]
+		shuffle(seance.datachunks.image.questions)
+		seance.questions=[ seance.datachunks.image.questions[0] , seance.datachunks.image.questions[1] , seance.datachunks.image.questions[2] ]
+		seance.questions[3]=randi(textids[seance.questions[0]+"_question"])
+		seance.questions[4]=randi(textids[seance.questions[1]+"_question"])
+		seance.questions[5]=randi(textids[seance.questions[2]+"_question"])
 		seance.answers=[]
 		set_question(0) // first of 3 questions 0-2
 	}
 	reset_question()
 
-	seance.save_state=function()
+	seance.save_state=async function()
 	{
 		let state={}
 
 		state.page=seance.page_name
 		state.image=seance.datachunks.ghostimage
-		state.questions=questions
-		state.answers=answers
-		state.question_idx=question.idx||0
+		state.questions=seance.questions
+		state.answers=seance.answers
+		state.qidx=question.idx||0
 
 console.log("SAVE",state)
 		seance.state=state
 		return state
 	}
-	seance.load_state=function(state)
+	seance.load_state=async function(state)
 	{
 		state=state || seance.state || {}
 		
+		reset_question()
 
 		seance.datachunks.ghostimage=state.image || "image1"
 		seance.datachunks.image=imageids[ seance.datachunks.ghostimage ]
-		seance.goto(state.page || "seance000.html")
 
-		seance.questions=state.questions||[]
-		seance.answers=state.answers||[]
+		seance.questions=state.questions||seance.questions
+		seance.answers=state.answers||seance.answers
 
-		state.question_idx=state.question_idx||0
-		set_question( state.question_idx , seance.questions[state.question_idx] )
+		state.qidx=state.qidx||0
+		set_question( state.qidx )
+
+		await seance.goto(state.page || "seance000.html")
 
 		seance.state=state
 console.log("LOAD",state)
 	}
 
-	seance.save=function()
+	seance.save=async function()
 	{
-		let state=seance.save_state()
+		let state=await seance.save_state()
 		let s=JSON.stringify(state)
-		let h="#"+window.btoa(s)
+		let h
+		if(HASHBASE64)
+		{
+			h="#"+window.btoa(s)
+		}
+		else
+		{
+			h="#"+escape(s)
+		}
 		if( window.location.hash != h )
 		{
 			seance.save_hash=h
@@ -170,16 +190,25 @@ console.log("LOAD",state)
 		}
 	}
 
-	seance.load=function()
+	seance.load=async function()
 	{
 		let state={}
 		try{ 
 			let h=(window.location.hash||"").substr(1)
-			let s=window.atob(h)
+			let s
+			if(HASHBASE64)
+			{
+				s=window.atob(h)
+			}
+			else
+			{
+				s=unescape(h)
+			}
+			console.log(s)
 			state=JSON.parse(s)
 		}catch(e){}
 		
-		seance.load_state(state)
+		await seance.load_state(state)
 	}
 
 	seance.hashchange=function()
@@ -218,7 +247,7 @@ console.log("LOAD",state)
 	let click=null
 
 	let data={}
-	seance.goto=function(name)
+	seance.goto=async function(name)
 	{
 		seance.page_name=name
 		let chunks=page(name)
@@ -229,7 +258,7 @@ console.log("LOAD",state)
 			console.log("Q"+data.question)
 			set_question(data.question)
 		}
-		build_letter()
+		await build_letter()
 
 		chunks=page(name) // rebuild with newly picked question texts
 		data=chunks.data
@@ -273,7 +302,7 @@ console.log("LOAD",state)
 
 	}
 	
-	click=function(event)
+	click=async function(event)
 	{
 		event.preventDefault()
 		let it=event.target
@@ -285,7 +314,6 @@ console.log("LOAD",state)
 			{
 				seance.datachunks.ghostimage=seance.catch_ghostname
 				seance.datachunks.image=imageids[seance.datachunks.ghostimage]
-				shuffle(seance.datachunks.image.questions)
 				reset_question()
 				console.log("catchghost "+seance.datachunks.ghostimage)
 			}
@@ -325,15 +353,14 @@ console.log("LOAD",state)
 			}
 			if( id == "answer" ) // remember answer
 			{
-				answers[ question.idx ]=question.select_idx
-				console.log("answers",answers)
+				seance.answers[ question.idx ]=question.select_idx
 			}
 
 			let href=it.getAttribute("href")
 			if(href)
 			{
 				console.log("GOTO",href)
-				seance.goto(href)
+				await seance.goto(href)
 			}
 			
 			seance.save()
@@ -342,7 +369,7 @@ console.log("LOAD",state)
 
 
 //	seance.goto("seance000.html")	
-	seance.load() // reset
-	seance.save() // set hash
+	await seance.load() // reset
+	await seance.save() // set hash
 
 }
