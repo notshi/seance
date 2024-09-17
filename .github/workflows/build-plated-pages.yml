@@ -8,7 +8,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Build
         run: |
-          ./update.sh
+          ./install.sh
+          plated/upgrade
           plated/build
         shell: bash
       - name: Deploy
