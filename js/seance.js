@@ -195,7 +195,7 @@ console.log("LOAD",state)
 		let state={}
 		try{ 
 			let h=(window.location.hash||"").substr(1)
-			seance.save_hash=h
+			seance.save_hash="#"+h
 			let s
 			if(HASHBASE64)
 			{
