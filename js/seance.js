@@ -148,38 +148,44 @@ seance.start=async function(opts)
 	}
 	reset_question()
 
+	const STATE_PAGE=0
+	const STATE_RND=1
+	const STATE_IMAGE=2
+	const STATE_QUESTIONS=3
+	const STATE_ANSWERS=4
+//	const STATE_IDX=5
 	seance.save_state=async function()
 	{
-		let state={}
+		let state=[]
 
-		state.r=seance.select_num
-		state.p=seance.page_name
-		state.i=seance.datachunks.ghostimage
-		state.q=seance.questions
-		state.a=seance.answers
-		state.x=question.idx||0
+		state[STATE_PAGE]=seance.page_name
+		state[STATE_RND]=seance.select_num
+		state[STATE_IMAGE]=seance.datachunks.ghostimage
+		state[STATE_QUESTIONS]=seance.questions
+		state[STATE_ANSWERS]=seance.answers
+//		state[STATE_IDX]=question.idx||0
 
 		seance.state=state
 		return state
 	}
 	seance.load_state=async function(state)
 	{
-		state=state || seance.state || {}
+		state=state || seance.state || []
 		
 		reset_question()
 
-		seance.select_num=state.r || seance.select_num
+		seance.select_num=state[STATE_RND] || seance.select_num
 
-		seance.datachunks.ghostimage=state.i || "image1"
+		seance.datachunks.ghostimage=state[STATE_IMAGE] || "image1"
 		seance.datachunks.image=imageids[ seance.datachunks.ghostimage ]
 
-		seance.questions=state.q||seance.questions
-		seance.answers=state.a||seance.answers
+		seance.questions=state[STATE_QUESTIONS]||seance.questions
+		seance.answers=state[STATE_ANSWERS]||seance.answers
 
-		state.x=state.x||0
-		set_question( state.x )
+//		state.x=state.x||0
+//		set_question( state.x )
 
-		await seance.goto(state.p || "seance000.html")
+		await seance.goto(state[STATE_PAGE] || "seance000.html")
 
 		seance.state=state
 	}
