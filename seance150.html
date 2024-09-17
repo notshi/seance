@@ -269,7 +269,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_info p	{padding:0 0 1.25em 0;}
 .card_info p::first-letter	{margin-left:2em;}
 .card_info span.dear	{color:#BC003A; font-family:'frauncesitalic',serif; font-size:32px;}
-.card_info span.yours	{font-family:'frauncesitalic',serif; display:block; padding:0 0 0.5em 0;}
+.card_info span.yours	{font-family:'frauncesitalic',serif; display:block; padding:0 0 1em 0;}
 .card_info span.from	{color:#4900BA; font-family:'zarasthustra',serif; font-size:26px; text-align:left; display:block;}
 .card_info span.friend	{font-family:'frauncesitalic',serif; display:block; margin-bottom:1em; margin-top:5px;}
 .card_info span.moon	{color:#4407A2; font-family:'quando',serif; font-size:19px;}
@@ -283,8 +283,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 @keyframes slower_show {0%,80% {opacity:0;} 95% {opacity:0.5;} 100% {opacity:1;}}
 
 /*	qr	*/
-.qr_wrap		{display:flex; justify-content:flex-end; padding-bottom:1em;}
+.qr_wrap		{display:flex; justify-content:space-between; padding-bottom:1em;}
 .qr				{text-align:center;}
+.qr img			{filter:brightness(0.8);}
 .qr_text		{text-transform:uppercase; font-size:16px; letter-spacing:2px; margin-top:5px;}
 
 /*	ghosts	*/
@@ -325,6 +326,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
 	.name		{margin-top:-3em;}
+	.qr			{display:none;}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -356,6 +358,7 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
 	.name		{margin-top:-3em;}
+	.qr			{display:none;}
 }
 .img	{filter:grayscale(1) brightness(1.5) invert(0.6); opacity:0.6; mask-image:linear-gradient(to top, transparent 15%, black);}
 .talky	{animation:show 2s steps(40,end);}
