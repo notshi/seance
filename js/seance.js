@@ -8,6 +8,9 @@ import QRCode from 'qrcode'
 import {encode, decode} from "messagepack";
 //import zlib from "zlib";
 
+import {Howl, Howler} from 'howler';
+
+
 import seance_data from "./seance_data.json" with { type: "json" }
 const textids=seance_data.textids
 const imageids=seance_data.imageids
@@ -62,8 +65,86 @@ function randi(tab)
 }
 
 
+
+class Hsounds
+{
+	constructor(names)
+	{
+		this.data={}
+		for(let name of names)
+		{
+			let sound=new Howl({
+				src:[ "./data/aux/"+name+".mp3"  ],
+				onfade:function()
+				{
+					this.stop()
+				}
+			})
+			this.data[name]=sound
+		}
+	}
+
+	loop(name)
+	{
+		let sound=this.data[name]
+		sound.volume(1)
+		sound.loop(true)
+		if(!sound.playing())
+		{
+			sound.play()
+		}
+	}
+
+	play(name)
+	{
+		let sound=this.data[name]
+		sound.loop(false)
+		if(sound.playing())
+		{
+			sound.stop()
+		}
+		sound.volume(1)
+		sound.play()
+	}
+	
+	stop(name)
+	{
+		console.log(name)
+		if(name)
+		{
+			let sound=this.data[name]
+			if(sound.playing())
+			{
+				sound.fade(1,0,1000)
+			}
+//			sound.stop()
+		}
+		else
+		{
+			for(let name in this.data)
+			{
+				console.log(name)
+				let sound=this.data[name]
+				if(sound.playing())
+				{
+					sound.fade(1,0,1000)
+				}
+//				sound.stop()
+			}
+		}
+	}
+
+}
+
+
 seance.start=async function(opts)
 {
+	seance.sounds=new Hsounds([
+		"away",
+		"match",
+		"status",
+	])
+		
 	let plated=plated_module.create({})
 	
 	seance.datachunks={}
@@ -247,7 +328,6 @@ console.log("LOAD#",state)
 
 // load full plated json for this site
 	let map=await (await fetch("./plated.map.json") ).json()
-	let audio=new Audio()
 
 	
 	let page=function(name)
@@ -343,6 +423,18 @@ console.log("LOAD#",state)
 	}
 	seance.doclick=async function(it)
 	{
+		let href=it.getAttribute("href")
+		
+// play or stop loop?
+		if( (href=="seance000.html") || (href=="credits.html") || (href=="seance420.html") )
+		{
+			seance.sounds.stop()
+		}
+		else
+		{
+			seance.sounds.loop("away")
+		}
+
 		let catchghost=it.hasAttribute("catchghost")
 		if(catchghost)
 		{
@@ -352,19 +444,12 @@ console.log("LOAD#",state)
 			console.log("catchghost "+seance.datachunks.ghostimage)
 		}
 
-		let mp3=it.getAttribute("mp3")
-		if(mp3)
-		{
-			audio.src=mp3
-			audio.loop=true
-			;( audio.play() ) .then(function(){}).catch(function(){})
-		}
 		
 		let sfx=it.getAttribute("sfx")
 		if(sfx)
 		{
-			audio.src=mp3
-			;( audio.play() )
+			console.log("sfx",sfx)
+			seance.sounds.play(sfx)
 		}
 		
 		let id=it.id
@@ -390,7 +475,6 @@ console.log("LOAD#",state)
 			seance.answers[ question.idx ]=question.select_idx
 		}
 
-		let href=it.getAttribute("href")
 		if(href)
 		{
 			await seance.goto(href)
