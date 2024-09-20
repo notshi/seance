@@ -109,7 +109,6 @@ class Hsounds
 	
 	stop(name)
 	{
-		console.log(name)
 		if(name)
 		{
 			let sound=this.data[name]
