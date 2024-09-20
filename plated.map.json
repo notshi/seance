@@ -260,7 +260,7 @@
   "_site": "{_root}",
   "_sourcename": "seance020.^.html",
   "body": "{play}",
-  "candle": "<div class=\"wrap\">\n\t{close}\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tMysterious voice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt's dark in here, isn't it? There is a candle floating around here somewhere. Shall we light it up?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance030.html\" class=\"read\">\n\t\t\t\t\tYes\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+  "candle": "<div class=\"wrap\">\n\t{close}\n\t<div class=\"talk_wrap\">\n\t\t<div class=\"talky\">\n\t\t\t<div class=\"name\">\n\t\t\t\tMysterious voice\n\t\t\t</div>\n\t\t\t<div class=\"quest\">\n\t\t\t\tIt's dark in here, isn't it? There is a candle floating around here somewhere. Shall we light it up?\n\t\t\t</div>\n\t\t\t<div class=\"read_wrap\">\n\t\t\t\t<a href=\"seance030.html\" class=\"read\" sfx=\"match\">\n\t\t\t\t\tYes\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
   "css": ".fog\t{background:transparent;}\n.talky\t{animation:show 2s steps(40,end);}\n",
   "start": "<div class=\"main_wrap\">\n\t{stars}\n\t{candle}\n</div>",
   "title": "Dead Painters Séance"
