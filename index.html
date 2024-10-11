@@ -76,9 +76,16 @@ i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 /*	Chrome scrollbar	*/
-::-webkit-scrollbar			{width:9px;}
-::-webkit-scrollbar-track	{background:transparent;}
-::-webkit-scrollbar-thumb	{background-color:rgba(155, 155, 155, 0.5); border-radius:20px; border:transparent;}
+::-webkit-scrollbar			{width:20px;}
+::-webkit-scrollbar-track	{background-color:#c9c9c9b8; border-radius:20px;}
+::-webkit-scrollbar-thumb	{background-color:rgba(124, 125, 132, 0.7); border-radius:20px; border:transparent;}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(124, 125, 132, 0.7) #c9c9c9b8;
+  }
+}
 
 *:focus {outline:2px solid transparent;}
 *:focus:not(:focus-visible) {outline:2px solid transparent; box-shadow:none;}
