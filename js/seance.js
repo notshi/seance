@@ -440,7 +440,7 @@ console.log("LOAD#",state)
 		if( dw && db )
 		{
 			db.style.display = 'none';
-			dw.style.display = 'block';
+			dw.style.display = 'flex';
 			seance.countdown=23
 			let tw=document.getElementById("timer_num")
 			if(tw)
