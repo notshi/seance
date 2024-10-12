@@ -456,7 +456,7 @@ console.log("LOAD#",state)
 		if( dw && db )
 		{
 			dw.style.display = 'none';
-			db.style.display = 'flex';
+			db.style.display = 'block';
 			seance.countdown=false
 		}
 	}
