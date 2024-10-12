@@ -456,7 +456,7 @@ console.log("LOAD#",state)
 		if( dw && db )
 		{
 			dw.style.display = 'none';
-			db.style.display = 'block';
+			db.style.display = 'flex';
 			seance.countdown=false
 		}
 	}
@@ -485,7 +485,7 @@ console.log("LOAD#",state)
 			if( dw && db ) // only timeout when a close button is available
 			{
 				seance.idletime=(seance.idletime || 0)+1
-				if( seance.idletime > 60*5 ) // restart after 5 minutes?
+				if( seance.idletime > 60*3 ) // restart after 3 minutes?
 				{
 					if(seance.countdown==false) // only show if not already shown
 					{

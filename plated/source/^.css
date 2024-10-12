@@ -100,7 +100,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 @keyframes slow_back {0%,50% {background:transparent;} 100% {background:url('{_root}data/fog_back.png');}}
 
 /*	close button	*/
-.close		{border-radius:6px; position:absolute; top:1em; right:1em; width:100px; padding:5px 0 10px 0; text-align:center; z-index:6;}
+.close		{border-radius:6px; font-size:2em; position:absolute; top:1em; right:1em; width:100px; padding:5px 0 10px 0; text-align:center; z-index:6;}
 .close:hover{cursor:pointer; background-color:#361ea56e;}
 #timer_wrap	{background-color:#000000e3; position:absolute; display:flex; align-items:center; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:100%; margin:auto; z-index:3;}
 .timer		{border-radius:6px; border:4px double #3b3b51; padding:3em; background-color:#000; text-align:center; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
