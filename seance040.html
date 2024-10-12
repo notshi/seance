@@ -107,6 +107,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 .timer		{border-radius:6px; border:4px double #3b3b51; padding:3em; background-color:#000; text-align:center; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
 .timer_text	{font-family:'quando',serif; font-size:1.5em;}
 .timer_num	{font-weight:bold; font-size:5em; padding:0.5em 0;}
+.read_wrap.read_timer	{display:flex; width:100%;}
 
 /*	background stars	*/
 .stars	{background-color:white; height:3px; width:3px; border-radius:50%; box-shadow:1px 0px 20px #fff;}
@@ -270,11 +271,12 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 .card_wrap	{text-align:center; margin:0 auto; padding:20px 0; border:5px double #0d0b09; border-radius:3% 10%; background-color:#eceae2e0; transition-duration:0.3s; transition-property:transform;}
 .card_wrap:hover, .card_wrap:focus, .card_wrap:active	{cursor:default;}
 .card_name	{color:#220b0b; font-size:30px; text-transform:uppercase; text-align:center; font-weight:bold; letter-spacing:3px; font-family:'quando',serif; margin-top:1em; padding:0 0.5em 0.5em 0.5em; line-height:1.25em;}
+.card_about	{padding:1em 0; border-top:4px double #766aac; border-bottom:4px double #766aac; margin-bottom:1em;}
 .card_head	{color:#220b0b; font-size:20px; text-transform:uppercase; font-family:'quando',serif; display:inline-block; padding:1em; border-top:4px double #766aac; border-bottom:4px double #766aac;}
 .card_head span	{font-style:italic;}
-.card_artist{margin-top:1.25em; margin-bottom:0.5em;}
+.card_artist{clear:both; margin-top:2em; margin-bottom:1em;}
 .card_art	{max-width:50%; margin:0 1.5em 0.5em 0; float:left;}
-.card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:left;}
+.card_info	{color:#220b0b; font-size:26px; margin-top:1em; padding:0 2em; text-align:justify; line-height:1.45em; overflow-wrap:break-word; hyphens:auto;}
 .card_info p	{padding:0 0 1.25em 0;}
 .card_info p::first-letter	{margin-left:2em;}
 .card_info span.dear	{color:#BC003A; font-family:'frauncesitalic',serif; font-size:32px;}
@@ -327,10 +329,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.quest span.ask	{font-size:0.75em;}
 	.say		{font-size:0.85em; padding:15px 5px;}
 	.card_wrap	{width:90vw; height:80vh; border-radius:10px 30px;}
-	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em 0.5em 1em;}
+	.card_name	{font-size:1em; margin-top:0.5em; padding:0.5em 1em 0.5em 1em;}
 	.card_info	{font-size:1em; margin-top:0; padding:0 1em 1em 1em;}
 	.card_head	{font-size:0.8em; margin:0 0.7em 1em 0.7em;}
-	.card_artist{margin-top:1.5em;}
+	.card_artist{margin-top:1.5em; margin-bottom:0.5em;}
 	.fund_img_a,
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
@@ -359,10 +361,10 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.quest span.ask	{font-size:0.75em;}
 	.say		{font-size:0.85em; padding:15px 5px;}
 	.card_wrap	{width:90vw; height:80vh; border-radius:10px 30px;}
-	.card_name	{font-size:1em; margin-top:0.5em; padding:0 1em 0.5em 1em;}
+	.card_name	{font-size:1em; margin-top:0.5em; padding:0.5em 1em 0.5em 1em;}
 	.card_info	{font-size:1em; margin-top:0; padding:0 1em 1em 1em;}
 	.card_head	{font-size:0.8em; margin:0 0.7em 1em 0.7em;}
-	.card_artist{margin-top:1.5em;}
+	.card_artist{margin-top:1.5em; margin-bottom:0.5em;}
 	.fund_img_a,
 	.fund_img_b	{max-width:75vw;}
 	.fund span	{padding:0px 20px 10px 0;}
@@ -410,13 +412,16 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	</div>
 </div>
 	<div class="wrap">
-	<div id="timer_wrap" style="display:none;">
+	<div id="timer_wrap" style="display:flex;">
 	<div class="timer">
 		<div class="timer_text">RESTARTING IN</div>
 		<div class="timer_num">00:00:00</div>
-		<div class="read_wrap">
-			<a href="seance000.html" class="read">
+		<div class="read_wrap read_timer">
+			<a href="seance000.html" class="read red">
 				Start again
+			</a>
+			<a href="seance000.html" class="read">
+				Keep playing
 			</a>
 		</div>
 	</div>
