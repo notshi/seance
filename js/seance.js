@@ -122,7 +122,7 @@ class Hsounds
 		{
 			for(let name in this.data)
 			{
-				console.log(name)
+//				console.log(name)
 				let sound=this.data[name]
 				if(sound.playing())
 				{
