@@ -351,7 +351,18 @@ console.log("LOAD#",state)
 	let data={}
 	seance.goto=async function(name)
 	{
+		seance.idletime=0
 		console.log("GOTO",name)
+
+// play or stop loop?
+		if( (name=="seance000.html") || (name=="credits.html") || (name=="seance420.html") )
+		{
+			seance.sounds.stop()
+		}
+		else
+		{
+			seance.sounds.loop("away")
+		}
 
 		seance.page_name=name
 		let chunks=page(name)
@@ -420,20 +431,80 @@ console.log("LOAD#",state)
 			await seance.doclick(it)
 		}
 	}
-	seance.doclick=async function(it)
+	seance.idletime=0
+	seance.countdown=false
+	seance.show_countdown=async function()
 	{
-		let href=it.getAttribute("href")
-		
-// play or stop loop?
-		if( (href=="seance000.html") || (href=="credits.html") || (href=="seance420.html") )
+		let dw=document.getElementById("timer_wrap")
+		let db=document.getElementById("close_button")
+		if( dw && db )
 		{
-			seance.sounds.stop()
+			db.style.display = 'none';
+			dw.style.display = 'block';
+			seance.countdown=23
+			let tw=document.getElementById("timer_num")
+			if(tw)
+			{
+				tw.innerText=String(seance.countdown).padStart(1,"0")
+			}
+		}
+	}
+	seance.hide_countdown=async function()
+	{
+		let dw=document.getElementById("timer_wrap")
+		let db=document.getElementById("close_button")
+		if( dw && db )
+		{
+			dw.style.display = 'none';
+			db.style.display = 'block';
+			seance.countdown=false
+		}
+	}
+	seance.tick=async function()
+	{
+		if(seance.countdown!==false) // counting down
+		{
+			seance.countdown=(seance.countdown || 0)-1
+			if( seance.countdown < 0 ) // timeout
+			{
+				seance.countdown=0				
+				await seance.hide_countdown()
+				await seance.goto("seance000.html")
+			}
+			let tw=document.getElementById("timer_num")
+			if(tw)
+			{
+				tw.innerText=String(seance.countdown).padStart(1,"0")
+			}
+			seance.idletime=0
 		}
 		else
 		{
-			seance.sounds.loop("away")
+			let dw=document.getElementById("timer_wrap")
+			let db=document.getElementById("close_button")
+			if( dw && db ) // only timeout when a close button is available
+			{
+				seance.idletime=(seance.idletime || 0)+1
+				if( seance.idletime > 60*5 ) // restart after 5 minutes?
+				{
+					if(seance.countdown==false) // only show if not already shown
+					{
+						await seance.show_countdown()
+					}
+				}
+			}
+			else
+			{
+				seance.idletime=0
+			}
 		}
-
+	}
+	
+	seance.doclick=async function(it)
+	{
+		seance.idletime=0
+		let href=it.getAttribute("href")
+		
 		let catchghost=it.hasAttribute("catchghost")
 		if(catchghost)
 		{
@@ -474,6 +545,20 @@ console.log("LOAD#",state)
 			seance.answers[ question.idx ]=question.select_idx
 		}
 
+		if( id == "close_button" ) // popup a window
+		{
+			await seance.show_countdown()
+		}
+		if( id == "continue_button" ) // popup a window
+		{
+			await seance.hide_countdown()
+		}
+		if( id == "restart_button" ) // popup a window
+		{
+			await seance.hide_countdown()
+			await seance.goto("seance000.html")
+		}
+
 		if(href)
 		{
 			await seance.goto(href)
@@ -486,4 +571,6 @@ console.log("LOAD#",state)
 	await seance.load() // reset
 	await seance.save() // set hash
 
+// regulat thinking
+	window.setInterval(seance.tick,1000)
 }
