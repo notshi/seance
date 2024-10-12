@@ -103,7 +103,7 @@ input:focus-visible {outline:2px solid #918170; background-color:#fff; border-co
 /*	close button	*/
 .close		{border-radius:6px; font-size:2em; position:absolute; top:1em; right:1em; width:100px; padding:5px 0 10px 0; text-align:center; z-index:6;}
 .close:hover{cursor:pointer; background-color:#361ea56e;}
-#timer_wrap	{background-color:#000000e3; position:absolute; display:flex; align-items:center; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:100%; margin:auto; z-index:3;}
+#timer_wrap	{background-color:#000; position:absolute; display:flex; align-items:center; height:100vw; width:100vw; max-width:100vh; max-height:100vh; min-height:100vh; min-width:100%; margin:auto; z-index:3;}
 .timer		{border-radius:6px; border:4px double #3b3b51; padding:3em; background-color:#000; text-align:center; width:80vh; margin:0 auto; box-shadow:1px 1px 20px #00000078;}
 .timer_text	{font-family:'quando',serif; font-size:1.5em;}
 .timer_num	{font-weight:bold; font-size:5em; padding:0.5em 0;}
@@ -339,6 +339,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund span	{padding:0px 20px 10px 0;}
 	.name		{margin-top:-3em;}
 	.qr			{display:none;}
+	.close		{font-size:1em; width:40px;}
+	.timer		{width:98%;}
+	.read_wrap.read_timer	{justify-content:center;}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -371,6 +374,9 @@ span.sub	{color:#1d02a2; filter:blur(3px); animation:fade 2s ease-in infinite;}
 	.fund span	{padding:0px 20px 10px 0;}
 	.name		{margin-top:-3em;}
 	.qr			{display:none;}
+	.close		{font-size:1em; width:40px;}
+	.timer		{width:98%;}
+	.read_wrap.read_timer	{justify-content:center;}
 }
 .fog		{background:transparent;}
 .read_wrap	{width:20%;}
